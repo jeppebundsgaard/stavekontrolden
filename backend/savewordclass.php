@@ -7,7 +7,7 @@ $c=array();
 parse_str($_POST["wordclass"], $c);
 $unescaped=$c;
 $numc=count($c);
-for($i=0;$i<$numc; $i++) {
+foreach($c as $i=>$v) {
 	if(is_string($c[$i]))
 		$c[$i]=$mysqli->real_escape_string($c[$i]);
 }

@@ -40,7 +40,7 @@ $(function(){
 			"dismiss": _("Got it"),
 			"deny": _("Decline"),
 			"link": _("Learn more"),
-			"href": "./?cookiepolicy=1"
+			"href": "./?cookies=1"
 		}
 	});
 	$(".openloginform").click(openloginform);

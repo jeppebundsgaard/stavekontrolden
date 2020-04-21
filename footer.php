@@ -18,7 +18,6 @@
 		<div class="col-md-7 col-5 d-flex justify-content-center">
 			<a class="footer-link text-center mr-3 mr-lg-4 d-none d-md-inline" href="?cookies=1"><?= _('Cookies');?></a>
 			<a class="footer-link text-center mr-3 mr-lg-4 d-none d-md-inline" href="?contact=1"><?= _('Contact');?></a>
-			<a class="footer-link text-center ml-3 ml-lg-4 d-none d-md-inline" href="./?backend=1"><?= _('Log in');?></a>
 		</div>
 		<div class="col">
 			<div  class="icon-link float-right" id="chooselang"><span><button class="btn pb-0 pt-0 "><img data-toggle="collapse" href="#collapseLang" role="button" aria-expanded="false" aria-controls="collapseLang" class="flag-img" src="locale/flags/<?= $locale; ?>.png"></button></div>

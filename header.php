@@ -67,9 +67,9 @@
 						}
 					}
 					?>
-					<li class="nav-item active d-flex justify-content-end">
-						<a class="nav-link menulink" href="./?backend=1"><?= ($_SESSION["user_id"]?_('Log out'):_('Log in'));?></a>
-					</li>
+					<?= (!$_SESSION["user_id"]?'<li class="nav-item active d-flex justify-content-end">
+						<a class="nav-link menulink" href="./?backend=1">'._('Log in').'</a>
+					</li>':''); ;?>
 					<?php if($_SESSION["orgMember"] and $_SESSION["permissions"]=="admin") {?> 
 						<li class="nav-item active d-flex justify-content-end" id="showMyOrg">
 							<a class="nav-link menulink" href="#"><?= _('My Organization');?></a>

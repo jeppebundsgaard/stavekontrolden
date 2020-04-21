@@ -115,6 +115,8 @@ include($backenddir."affixoptions.php");
 							<label for="wordclass" class="col-form-label"><?= _('Word Class');?></label>
 							<select class="newword custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select>
 						</div>
+					</div>
+					<div class="form-row">
 						<div class="col">
 							<label for="strong_declination" class="col-form-label"><?= _('Strong Declension');?></label>
 							<textarea class="newword form-control form-control-sm" name="strong_declension"></textarea>

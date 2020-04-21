@@ -124,7 +124,7 @@ function whenLoaded_hunspell() {
 	$("#hunspellword").keydown(function(e) {if(e.key=="Enter") analyzeword()})
 }
 function analyzeword() {
-	send("hunspell","hunspellresult",{word:$("#hunspellword").val(),spellcheck:$('#hunspellform [name=spellcheck]').val()},"backend")
+	send("hunspell","hunspellresult",{word:$("#hunspellword").val(),spellcheck:$('#hunspellform [name=spellcheck]:checked').val()},"backend")
 }
 function hunspellresult(json) {
 	if(typeof(json.analysisresult)!="undefined")
@@ -149,7 +149,7 @@ function associateaffixclass() {
 	$(this).val(0)
 }
 function clearmodal() {
-	$('.wordmodal').on('hidden.bs.modal', function (e) {
+	$('.modal').on('hidden.bs.modal', function (e) {
 		$(this).find(".editwd").collapse("hide")
 		$(this).find(".addwd").collapse("show")
 		$(this).find(".associaterow").collapse("show")
@@ -752,85 +752,90 @@ jQuery.cachedScript = function( url, options ) {
 function editpageready(json) {
 	if($("#quillscss").length==0)
 		 $('head').append('<link href="//cdn.quilljs.com/1.3.6/quill.snow.css" id="quillcss" rel="stylesheet" type="text/css">')
+		 
 	$.cachedScript("//cdn.quilljs.com/1.3.6/quill.min.js").done(function() {
-		var toolbarOptions = [
-		[{
-		'header': [1, 2, 3, 4, 5, 6, false]
-		}],
-		['bold', 'italic', 'underline', 'strike'], // toggled buttons
-		['blockquote', 'code-block'],
+		$.cachedScript("./js/vendor/image-resize.min.js").done(function() {
+			$.cachedScript("./js/vendor/image-drop.min.js").done(function() {
+				var toolbarOptions = [
+				[{
+				'header': [1, 2, 3, 4, 5, 6, false]
+				}],
+				['bold', 'italic', 'underline', 'strike'], // toggled buttons
+				['blockquote', 'code-block'],
 
-		[{
-		'list': 'ordered'
-		}, {
-		'list': 'bullet'
-		}],
-		[{
-		'indent': '-1'
-		}, {
-		'indent': '+1'
-		}], // outdent/indent
-		[{
-		'size': ['small', false, 'large', 'huge']
-		}], // custom dropdown
-		[{
-		'color': []
-		}, {
-		'background': []
-		}], // dropdown with defaults from theme
-		[{
-		'font': []
-		}],
-		[{
-		'align': []
-		}],
-		['link', 'image', 'video'],
+				[{
+				'list': 'ordered'
+				}, {
+				'list': 'bullet'
+				}],
+				[{
+				'indent': '-1'
+				}, {
+				'indent': '+1'
+				}], // outdent/indent
+				[{
+				'size': ['small', false, 'large', 'huge']
+				}], // custom dropdown
+				[{
+				'color': []
+				}, {
+				'background': []
+				}], // dropdown with defaults from theme
+				[{
+				'font': []
+				}],
+				[{
+				'align': []
+				}],
+				['link', 'image', 'video'],
 
-		['clean'] // remove formatting button
-	];
+				['clean'] // remove formatting button
+			];
 
-		var quill = new Quill('#editor', {
-			modules: {
-				toolbar: toolbarOptions//,
-	// 			imageResize: {
-	// 				modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
-	// 			},
-	// 			imageDrop: true
-	// 			autoformat: true
-			},
-			theme: 'snow',
-		});
-		var change = false
-		quill.on('text-change', function(delta) {
-			change = true
-		});
-		
-		if(json.headers) {
-			headers=json.headers // headers include: headers[1][headernum]: classes, headers[2][headernum]: headercontent, 
-			$("#headernum").change(function() {setheader(quill,$(this).children(":selected").val()) })
-			$("#deleteheader").click(function() {deleteheader(quill)})
-			$("#addheader").click(function() {addheader(quill)})
-			$("#defaultvisibility ,#showfrom, #hidefrom").change(function() {updateheaders(json,quill)})
-			setheader(quill,0)
-		}
+				var quill = new Quill('#editor', {
+					modules: {
+						toolbar: toolbarOptions,
+						imageResize: {
+							modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
+						},
+						imageDrop: true
+			// 			autoformat: true
+					},
+					theme: 'snow',
+				});
+				var change = false
+				quill.on('text-change', function(delta) {
+					change = true
+				});
+				
+				if(json.headers) {
+					headers=json.headers // headers include: headers[1][headernum]: classes, headers[2][headernum]: headercontent, 
+					$("#headernum").change(function() {setheader(quill,$(this).children(":selected").val()) })
+					$("#deleteheader").click(function() {deleteheader(quill)})
+					$("#addheader").click(function() {addheader(quill)})
+					$("#defaultvisibility ,#showfrom, #hidefrom").change(function() {updateheaders(json,quill)})
+					setheader(quill,0)
+				}
 
-		// Save periodically
-		setInterval(function() {
-			if (change) {
-	// 			console.log('Saving changes', change);
-				pageeditsave(json,quill)
-				change = false
-			}
-		}, 5*1000);
+				// Save periodically
+				setInterval(function() {
+					if (change) {
+			// 			console.log('Saving changes', change);
+						pageeditsave(json,quill)
+						change = false
+					}
+				}, 5*1000);
 
-		// Check for unsaved data
-		window.onbeforeunload = function() {
-			if (change) {
-				return _('There are unsaved changes. Are you sure you want to leave?');
-			}
-		}	
-		$("#pageeditsave").click(function() {pageeditsave(json,quill,true)})
-		// 	$('#editor').wysiwyg();
+				// Check for unsaved data
+				window.onbeforeunload = function() {
+					if (change) {
+						return _('There are unsaved changes. Are you sure you want to leave?');
+					}
+				}	
+				$("#pageeditsave").click(function() {pageeditsave(json,quill,true)})
+				// 	$('#editor').wysiwyg();
+			})
+		})
 	})
 }
 function pageeditsave(json,quill,finish) {
