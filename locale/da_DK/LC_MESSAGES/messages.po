@@ -1,0 +1,2422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-20 21:25+0200\n"
+"PO-Revision-Date: 2020-04-21 00:48+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: backend/saveword.php:15
+msgid "Not saved! You need to provide both a word and a word class."
+msgstr "Ikke gemt. Du skal angive både et ord og en ordklasse."
+
+#: backend/get_affixclasses.php:68
+msgid "No more affix classes"
+msgstr "Ikke flere affiksklasser"
+
+#: backend/get_words.php:48
+msgid "No more words"
+msgstr "Ikke flere ord"
+
+#: backend/systemUser.php:28 backend/createOrg.php:32 backend/orgUser.php:23
+msgid ""
+"Unable to invite the user. Are you sure a user with that e-mail address "
+"exists?"
+msgstr ""
+"Det lykkedes ikke at invitere brugeren. Er du sikker på at der findes en "
+"bruger med den e-mailadresse?"
+
+#: backend/systemUser.php:30 backend/createOrg.php:34 backend/orgUser.php:25
+msgid ""
+"Unable to create the user. A user with that e-mail address might exist "
+"already..."
+msgstr ""
+"Det lykkedes ikke at invitere brugeren. Der findes måske allerede en bruger "
+"med den e-mailadresse ..."
+
+#: backend/newwords.php:12
+msgid "Uploaded by user"
+msgstr "Uploadet af bruger"
+
+#: backend/get_affixrules.php:67
+msgid "No more affix rules"
+msgstr "Ikke flere affiksregler"
+
+#: backend/savefugeelement.php:17 backend/savewordclass.php:17
+msgid "Not saved! You need to provide the name of the word class."
+msgstr "Ikke gemt. Du skal angive et navn på ordklassen."
+
+#: backend/affixoptions.php:3
+msgid "Yes"
+msgstr "Ja"
+
+#: backend/affixoptions.php:3
+msgid "No"
+msgstr "Nej"
+
+#: backend/saveaffixclass.php:17
+msgid "Not saved! You need to provide a description of the affix class."
+msgstr "Ikke gemt. Du skal angive et navn på affiksklassen."
+
+#: backend/uploadwords.php:18
+#, php-format
+msgid "The file was not one of the allowed types (%s)"
+msgstr "Filen var ikke en af de tilladte typer (%s)"
+
+#: backend/uploadwords.php:21
+msgid "The upload went wrong for unknown reasons"
+msgstr "Der skete en fejl under uploadningen af ukendte årsager"
+
+#: backend/saveaffixrule.php:17
+msgid "Not saved! You need to provide a description of the affix rule."
+msgstr "Ikke gemt. Du skal angive en beskrivelse af affiksklassen."
+
+#: backend/get_singlevalue.php:36
+msgid "No more values"
+msgstr "Ikke flere værdier"
+
+#: backend/saveCSS.php:7
+msgid "Something went wrong while saving. Please try again."
+msgstr ""
+"Beklager, der gik noget galt under forsøget på at gemme. Prøv venligst igen."
+
+#: backend/createaffixfile.php:75
+msgid "Affix File Created"
+msgstr "Affiksfilen udarbjdet"
+
+#: backend/hunspell.php:15
+msgid "No word given to analyze."
+msgstr "Der var ikke noget ord at analysere."
+
+#: backend/get_fugeelement.php:67 backend/get_wordclasses.php:67
+msgid "No more word classes"
+msgstr "Ikke flere ordklasser"
+
+#: templates/technical_term.php:2
+msgid "<span id=\"numrows\">0</span> Technical Term Categories"
+msgstr "<span id=\"numrows\">0</span> Fagtermkategorier"
+
+#: templates/technical_term.php:3
+msgid "New Technical Term Category"
+msgstr "Ny fagtermkategori"
+
+#: templates/technical_term.php:4
+msgid "Technical Term Category"
+msgstr "Fagtermkategori"
+
+#: templates/orgmasterdata.php:13 templates/myOrganization.php:15
+msgid "Master Data"
+msgstr "Stamdata"
+
+#: templates/orgmasterdata.php:16 templates/orgusers.php:23
+#: templates/systemusers.php:24 templates/organizations.php:20
+#: templates/organizations.php:43 templates/myUser.php:18
+msgid "Name"
+msgstr "Navn"
+
+#: templates/orgmasterdata.php:20 templates/organizations.php:22
+#: templates/organizations.php:47
+msgid "Slogan"
+msgstr "Slogan"
+
+#: templates/orgmasterdata.php:22
+msgid "The slogan is shown at the front page"
+msgstr "Sloganet vises på forsiden"
+
+#: templates/orgmasterdata.php:25
+msgid "URL"
+msgstr "URL"
+
+#: templates/orgmasterdata.php:32
+msgid "This is the direct link to your organization's front page"
+msgstr "Dette er det direkte link til din organisations forside"
+
+#: templates/orgmasterdata.php:35 templates/editpage.php:70
+#: templates/myUser.php:46 templates/editCSS.php:14
+msgid "Finish"
+msgstr "Afslut"
+
+#: templates/wordclasstoaffixclass.php:4
+msgid "Word Class to Affix Class"
+msgstr "Ordklasse til affiksklasse"
+
+#: templates/singlevaluetable.php:49 templates/fugeelement.php:86
+#: templates/words.php:177 templates/affixmodal.php:49
+#: templates/affixmodal.php:101 templates/affixmodal.php:183
+msgid "Previous"
+msgstr "Forrige"
+
+#: templates/singlevaluetable.php:50 templates/fugeelement.php:87
+#: templates/words.php:178 templates/affixmodal.php:50
+#: templates/affixmodal.php:102 templates/affixmodal.php:184
+msgid "Save"
+msgstr "Gem"
+
+#: templates/singlevaluetable.php:51 templates/fugeelement.php:88
+#: templates/words.php:179 templates/affixmodal.php:51
+#: templates/affixmodal.php:103 templates/affixmodal.php:185
+msgid "Next"
+msgstr "Næste"
+
+#: templates/start_definitions.php:2
+msgid "<span id=\"numrows\">0</span> Start Definitions"
+msgstr "<span id=\"numrows\">0</span> Startdefinitioner"
+
+#: templates/start_definitions.php:3
+msgid "New Start Definition"
+msgstr "Ny startdefinition"
+
+#: templates/start_definitions.php:4
+msgid "Start Definition"
+msgstr "Startdefinition"
+
+#: templates/contact.php:5
+msgid "Spellchecker development"
+msgstr "Stavekontroludvikling"
+
+#: templates/contact.php:6 templates/login.php:6
+msgid "Stavekontrolden is beta software. Use it at your own risk."
+msgstr "Stavekontrolden er i betaversion. Brug den på eget ansvar."
+
+#: templates/contact.php:7
+msgid ""
+"Please help us improve Stavekontrolden to become the number system on the "
+"web."
+msgstr ""
+"Hjælp os med at gøre Stavekontrolden til internettets bedste system til "
+"udvikling af stavekontrol."
+
+#: templates/contact.php:7
+msgid ""
+"Found a bug? Ideas for improvements? Want to use Stavekontrolden for your "
+"language?"
+msgstr ""
+"Har du fundet en fejl? Har du forslag til forbedringer? Vil du bruge "
+"Stavekontrolden til dit eget sprog?"
+
+#: templates/contact.php:7
+msgid "Contact the lead developer:"
+msgstr "Kontakt hovedudvikleren:"
+
+#: templates/contact.php:12
+msgid "Attributions and Licences"
+msgstr "Tak og licenser"
+
+#: templates/editpage.php:11 templates/myOrganization.php:21
+msgid "Front Page"
+msgstr "Forside"
+
+#: templates/editpage.php:11
+msgid "Organization Info Page"
+msgstr "Organisationsinfoside"
+
+#: templates/editpage.php:11
+msgid "Site Header"
+msgstr "Sitehoved"
+
+#: templates/editpage.php:11
+msgid "User Page"
+msgstr "Brugerside"
+
+#: templates/editpage.php:13
+msgid "Page already exists"
+msgstr "Siden findes allerede"
+
+#: templates/editpage.php:22
+msgid "Small"
+msgstr "Lille"
+
+#: templates/editpage.php:22
+msgid "Medium"
+msgstr "Medium"
+
+#: templates/editpage.php:22
+msgid "Large"
+msgstr "Stor"
+
+#: templates/editpage.php:22
+msgid "Extra Large"
+msgstr "Ekstra stor"
+
+#: templates/editpage.php:36
+msgid "Header number"
+msgstr "Hovednummer"
+
+#: templates/editpage.php:40
+msgid "Default visiblity"
+msgstr "Synlighed i udgangspunktet"
+
+#: templates/editpage.php:41
+msgid "Show All"
+msgstr "Vis alle"
+
+#: templates/editpage.php:41
+msgid "Show None"
+msgstr "Vis ingen"
+
+#: templates/editpage.php:44
+msgid "Show from"
+msgstr "Vis fra"
+
+#: templates/editpage.php:48
+msgid "Hide from"
+msgstr "Skjul fra"
+
+#: templates/editpage.php:52 templates/orgpages.php:28
+msgid "Delete"
+msgstr "Slet"
+
+#: templates/editpage.php:57
+msgid "Add header"
+msgstr "Tilføj hoved"
+
+#: templates/login.php:12
+msgid "Session timed out. Log in again"
+msgstr "Din session er udløbet. Log ind igen"
+
+#: templates/login.php:12
+msgid "Log in or Sign up!"
+msgstr "Log ind eller opret en bruger!"
+
+#: templates/login.php:13
+msgid "Give us your e-mail and a password"
+msgstr "Angiv en e-mail og et kodeord"
+
+#: templates/login.php:17 templates/newpass.php:15
+msgid "Email address"
+msgstr "Emailadresse"
+
+#: templates/login.php:18 templates/login.php:19
+msgid "Email address or Username"
+msgstr "E-mailadresse eller brugernavn"
+
+#: templates/login.php:20 templates/login.php:21 templates/newpass.php:17
+#: templates/myUser.php:31
+msgid "Password"
+msgstr "Kodeord"
+
+#: templates/login.php:23
+msgid "Remember me"
+msgstr "Husk mig"
+
+#: templates/login.php:25
+msgid "Sign up"
+msgstr "Opret en bruger"
+
+#: templates/login.php:26 header.php:73
+msgid "Log in"
+msgstr "Log ind"
+
+#: templates/login.php:27
+msgid "Forgot your password? Click here to create a new one."
+msgstr "Har du glemt dit kodeord? Klik her for at vælge et nyt."
+
+#: templates/orgusers.php:19
+msgid "Users in the organization"
+msgstr "Brugere i organisationen"
+
+#: templates/orgusers.php:24 templates/orgusers.php:46 templates/myUser.php:22
+msgid "Username"
+msgstr "Brugernavn"
+
+#: templates/orgusers.php:25 templates/orgusers.php:48
+#: templates/systemusers.php:25 templates/myUser.php:26
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/orgusers.php:26 templates/systemusers.php:27
+msgid "Permissions"
+msgstr "Tilladelser"
+
+#: templates/orgusers.php:27 templates/systemusers.php:28
+#: templates/words.php:78
+msgid "Last Change"
+msgstr "Senest ændret"
+
+#: templates/orgusers.php:28 templates/orgusers.php:34
+#: templates/systemusers.php:29 templates/systemusers.php:35
+#: templates/organizations.php:25 templates/organizations.php:31
+msgid "Remove"
+msgstr "Fjern"
+
+#: templates/orgusers.php:41 templates/orgusers.php:53
+msgid "Invite user"
+msgstr "Tilknyt bruger"
+
+#: templates/orgusers.php:50
+msgid ""
+"Invite existing users by username or e-mail. The user will have instant "
+"access to your organization."
+msgstr ""
+"Inviter eksisterende brugere ved brugernavn eller e-mail. Brugere får "
+"umiddelbart adgang til din organisation."
+
+#: templates/orgusers.php:51
+msgid "Only needed if you create a new user"
+msgstr "Kun nødvendig hvis du opretter en ny bruger"
+
+#: templates/orgusers.php:52
+msgid "You only need to provide a password if you create a new user."
+msgstr "Du behøver kun angive et kodeord, hvis du opretter en ny bruger."
+
+#: templates/orgusers.php:53
+msgid "Create user"
+msgstr "Opret bruger"
+
+#: templates/statusalternatives.php:4
+msgid "Status Alternatives"
+msgstr "Statusalternativer"
+
+#: templates/fugeelement.php:13
+msgid "<span id=\"numrows\">0</span> Fuge Elements"
+msgstr "<span id=\"numrows\">0</span> Fugeelementer"
+
+#: templates/fugeelement.php:20
+msgid "New Fuge Element"
+msgstr "Nyt fugeelement"
+
+#: templates/fugeelement.php:30 templates/fugeelement.php:57
+#: templates/words.php:68
+msgid "Fuge Element"
+msgstr "Fugeelement"
+
+#: templates/fugeelement.php:31 templates/affixrules.php:30
+#: templates/wordclasses.php:27
+msgid "Corresponding Affix Classes"
+msgstr "Tilknyttede affiksklasser"
+
+#: templates/fugeelement.php:48
+msgid "Edit Fuge Element"
+msgstr "Rediger fugeelement"
+
+#: templates/fugeelement.php:48
+msgid "Add Fuge Element"
+msgstr "Tilføj fugeelement"
+
+#: templates/fugeelement.php:65 templates/affixmodal.php:28
+#: templates/affixmodal.php:164
+msgid "Associated Affix Classes"
+msgstr "Tilknyttede affiksklasser"
+
+#: templates/fugeelement.php:71 templates/affixmodal.php:34
+#: templates/affixmodal.php:170
+msgid "Select Affix Class"
+msgstr "Vælg affiksklasse"
+
+#: templates/fugeelement.php:74 templates/affixmodal.php:37
+msgid "Create New Affix Class"
+msgstr "Opret en ny affiksklasse"
+
+#: templates/fugeelement.php:85 templates/words.php:176
+#: templates/affixmodal.php:48 templates/affixmodal.php:100
+#: templates/affixmodal.php:182
+msgid "Close"
+msgstr "Luk"
+
+#: templates/systemusers.php:19
+msgid "Stavekontrolden Users"
+msgstr "Stavekontrolden-brugere"
+
+#: templates/systemusers.php:23
+msgid "User-id"
+msgstr "Bruger-id"
+
+#: templates/systemusers.php:26
+msgid "Organization"
+msgstr "Organisation"
+
+#: templates/systemusers.php:35
+msgid "New password"
+msgstr "Nyt kodeord"
+
+#: templates/affixclasses.php:8
+msgid "<span id=\"numrows\">0</span> Affix Classes"
+msgstr "<span id=\"numrows\">0</span> affiksklasser"
+
+#: templates/affixclasses.php:15
+msgid "New Affix Class"
+msgstr "Ny affiksklasse"
+
+#: templates/affixclasses.php:25 templates/affixrules.php:23
+#: templates/affixmodal.php:72 templates/affixmodal.php:123
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: templates/affixclasses.php:26
+msgid "Type"
+msgstr "Type"
+
+#: templates/affixclasses.php:27 templates/affixmodal.php:78
+msgid "Crossproduct"
+msgstr "Crossproduct"
+
+#: templates/affixclasses.php:28
+msgid "Corresponding Affix Rules"
+msgstr "Tilhørende affiksregler"
+
+#: templates/cookies.php:5
+msgid "We don't track you!"
+msgstr "Vi sporer dig ikke!"
+
+#: templates/cookies.php:6
+msgid "We use cookies to remember your choices."
+msgstr "Vi bruger cookies til at huske dine valg."
+
+#: templates/cookies.php:7
+msgid ""
+"Cookies are small files which the browser saves on your device to make it "
+"possible to remember the settings from one page view to the next."
+msgstr ""
+"Cookies er små filer som browseren gemmer på din enhed for at gøre det "
+"muligt at huske dine valg fra besøg til besøg."
+
+#: templates/cookies.php:7
+msgid ""
+"We only use cookies to remember the choices you made. We don't share "
+"anything with anyone else."
+msgstr ""
+"Vi bruger kun cookies til at huske valg du har gjort. Vi deler ikke noget "
+"som helst med nogen som helst andre."
+
+#: templates/cookies.php:7
+msgid ""
+"If you have questions about this or anything else, please write an email to"
+msgstr ""
+"Hvis du har spørgsmål om dette eller andet, så skriv venligst en email til"
+
+#: templates/createdic.php:4
+msgid "Creating Dictionary & Affix-file"
+msgstr "Udarbejder ordliste- og affiks-filer"
+
+#: templates/affixrules.php:8
+msgid "<span id=\"numrows\">0</span> Affix Rules"
+msgstr "<span id=\"numrows\">0</span> affiksregler"
+
+#: templates/affixrules.php:24 templates/affixmodal.php:131
+msgid "Parent Affix Class"
+msgstr "Overordnet affiksklasse"
+
+#: templates/affixrules.php:25 templates/affixmodal.php:138
+msgid "Affix"
+msgstr "Affiks"
+
+#: templates/affixrules.php:26
+msgid "Strip characters"
+msgstr "Fjern bogstaver"
+
+#: templates/affixrules.php:27 templates/affixmodal.php:146
+msgid "Condition"
+msgstr "Betingelse"
+
+#: templates/affixrules.php:28 templates/affixmodal.php:150
+msgid "Replacement"
+msgstr "Erstatning"
+
+#: templates/affixrules.php:29
+msgid "Morphological description"
+msgstr "Morfologisk beskrivelse"
+
+#: templates/morphdescr.php:2
+msgid "<span id=\"numrows\">0</span> Morphological Descriptions"
+msgstr "<span id=\"numrows\">0</span> morfologiske beskrivelser"
+
+#: templates/morphdescr.php:3
+msgid "New Morphological Description"
+msgstr "Ny morfologisk beskrivelse"
+
+#: templates/morphdescr.php:4 templates/adminmenu.php:14
+#: templates/affixmodal.php:156
+msgid "Morphological Description"
+msgstr "Morfologisk beskrivelse"
+
+#: templates/words.php:39
+msgid "<span id=\"numrows\">0</span> Words"
+msgstr "<span id=\"numrows\">0</span> ord"
+
+#: templates/words.php:46
+msgid "Hide details"
+msgstr "Skjul detaljer"
+
+#: templates/words.php:46
+msgid "Show details"
+msgstr "Vis detaljer"
+
+#: templates/words.php:47
+msgid "New Word"
+msgstr "Nyt ord"
+
+#: templates/words.php:54
+msgid ""
+"Click on the word to edit all values. Click on a value to edit directly. Use "
+"Shift+Arrows or TAB to move between values. Cancel with Esc key."
+msgstr ""
+"Klik på ordet for at redigere alle værdier. Klik på en værdi for at redigere "
+"direkte. Brug Skift+Pile eller TAB for at flytte rundt mellem værdierne. "
+"Fortryd med Esc-tasten."
+
+#: templates/words.php:63 templates/words.php:104
+msgid "Word"
+msgstr "Ord"
+
+#: templates/words.php:64 templates/words.php:110
+msgid "Status"
+msgstr "Status"
+
+#: templates/words.php:65 templates/words.php:117 templates/wordclasses.php:26
+#: templates/affixmodal.php:20
+msgid "Word Class"
+msgstr "Ordklasse"
+
+#: templates/words.php:66 templates/words.php:121
+msgid "Strong Declension"
+msgstr "Stærk bøjning"
+
+#: templates/words.php:67 templates/words.php:125
+msgid "Misspellings"
+msgstr "Typiske stavefejl"
+
+#: templates/words.php:69 templates/words.php:135
+msgid "Apostroph"
+msgstr "Apostrof"
+
+#: templates/words.php:69 templates/words.php:136
+msgid "With"
+msgstr "Med"
+
+#: templates/words.php:69 templates/words.php:136
+msgid "Without"
+msgstr "Uden"
+
+#: templates/words.php:71 templates/words.php:164
+msgid "Contributor"
+msgstr "Bidrager"
+
+#: templates/words.php:72 templates/words.php:168
+msgid "Last User"
+msgstr "Seneste bruger"
+
+#: templates/words.php:73 templates/words.php:145
+msgid "Word Definition"
+msgstr "Ordforklaring"
+
+#: templates/words.php:74 templates/words.php:154
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: templates/words.php:75 templates/words.php:139
+msgid "Technical Term"
+msgstr "Fagterm"
+
+#: templates/words.php:76 templates/words.php:149
+msgid "Alternatives"
+msgstr "Alternativer"
+
+#: templates/words.php:77 templates/words.php:160
+msgid "Log"
+msgstr "Revisionshistorik"
+
+#: templates/words.php:95
+msgid "Edit Word"
+msgstr "Rediger ord"
+
+#: templates/words.php:95
+msgid "Add Word"
+msgstr "Tilføj ord"
+
+#: templates/words.php:131
+msgid "Fugelement"
+msgstr "Fugeelement"
+
+#: templates/myOrganization.php:18
+msgid "Stylesheet"
+msgstr "Stylesheet"
+
+#: templates/myOrganization.php:24
+msgid "Create/Edit Pages"
+msgstr "Opret/rediger sider"
+
+#: templates/myOrganization.php:27 templates/mySystem.php:19
+#: templates/organizations.php:24 templates/organizations.php:31
+msgid "Users"
+msgstr "Brugere"
+
+#: templates/dictionaries.php:4 header.php:52
+msgid "Dictionaries"
+msgstr "Ordlister"
+
+#: templates/dictionaries.php:5
+msgid "Produced with Stavekontrolden"
+msgstr "Produceret med Stavekontrolden"
+
+#: templates/dictionaries.php:13
+msgid "Language Code"
+msgstr "Sprogkode"
+
+#: templates/dictionaries.php:14
+msgid "OpenOffice/LibreOffice Extension"
+msgstr "OpenOffice/LibreOffice-udvidelse"
+
+#: templates/dictionaries.php:15
+msgid "Affix file"
+msgstr "Affiksfil"
+
+#: templates/dictionaries.php:16
+msgid "Dictionary file"
+msgstr "Ordlistefil"
+
+#: templates/wordstatus.php:2
+msgid "<span id=\"numrows\">0</span> Status Values"
+msgstr "<span id=\"numrows\">0</span> statusværdier"
+
+#: templates/wordstatus.php:3
+msgid "New Status Value"
+msgstr "Ny statusværdi"
+
+#: templates/wordstatus.php:4
+msgid "Status Value"
+msgstr "Statusværdi"
+
+#: templates/newpass.php:5
+msgid "The link has expired. We can send you a new one."
+msgstr "Linket er udløbet. Vi kan sende dig et nyt."
+
+#: templates/newpass.php:11
+msgid "Create a new password!"
+msgstr "Opret nyt kodeord!"
+
+#: templates/newpass.php:16
+msgid "New Password"
+msgstr "Nyt kodeord"
+
+#: templates/newpass.php:20
+msgid "Update"
+msgstr "Opdater"
+
+#: templates/uploadwords.php:4 templates/adminmenu.php:23
+msgid "Give us your words"
+msgstr "Giv os dine ord"
+
+#: templates/uploadwords.php:11
+msgid "Choose the file to upload"
+msgstr "Vælg en fil at uploade"
+
+#: templates/uploadwords.php:12
+msgid "Uploading ..."
+msgstr "Uploader ..."
+
+#: templates/uploadwords.php:20
+msgid "Thank you so much!"
+msgstr "Tusind tak!"
+
+#: templates/uploadwords.php:21
+msgid ""
+"We will start processing the words. If you want to be part of that work, "
+"please get in contact!"
+msgstr ""
+"Vi går nu i gang med at behandle ordene. Hvis du vil bidrage til det "
+"arbejde, så kontakt venligst <a href=\"mailto:jeppe@bundsgaard.net"
+"\">jeppe@bundsgaard.net</a>."
+
+#: templates/uploadwords.php:28
+msgid "We had all the words"
+msgstr "Vi havde allerede alle ordene"
+
+#: templates/uploadwords.php:29
+msgid ""
+"Thank you for taking the time to upload your words. We didn't find any words "
+"not in our dictionary already. You can download the latest version of the "
+"spellchecker on the Dictionary page."
+msgstr ""
+"Tak for at du tog dig tid til at uploade dine ord. Vi fandt ikke nogen ord "
+"som ikke allerede blev genkendt som korrekt stavede. Du kan downloade og "
+"installere den seneste version af Stavekontrolden på Ordliste-siden."
+
+#: templates/uploadwords.php:36
+msgid "Prepare for inclusion"
+msgstr "Gør klar til inklusion"
+
+#: templates/uploadwords.php:37
+msgid ""
+"Please help us by editing the words before final inclusion into the database."
+msgstr ""
+"Hjælp os venligst med at redigere ordene før den endelige inklusion i "
+"databasen."
+
+#: templates/uploadwords.php:39
+msgid "Change all uppercase words which are not names, to lowercase."
+msgstr ""
+"Ændr alle ord med stort begyndelsesbogstav (som ikke er egenavne) til småt."
+
+#: templates/uploadwords.php:40
+msgid "Reduce all words to their basic form (stem)"
+msgstr "Omskriv alle ord til deres basale form (ordstammen)"
+
+#: templates/uploadwords.php:41
+msgid ""
+"Remove doublets, and other words you don't think should be included in the "
+"database."
+msgstr ""
+"Fjern dubletter og andre ord som du ikke mener skal inkluderes i databasen."
+
+#: templates/uploadwords.php:42
+msgid ""
+"When you think, you are done, hit the <i>'Send to further processing'</i> "
+"button."
+msgstr ""
+"Når du mener ordene er klar, så klik på <i>'Send til videre bearbejdning'</"
+"i>-knappen."
+
+#: templates/uploadwords.php:51
+msgid "Send to further processing"
+msgstr "Send til videre bearbejdning"
+
+#: templates/mySystem.php:16 templates/organizations.php:16
+msgid "Organizations"
+msgstr "Organisationer"
+
+#: templates/mySystem.php:28 header.php:82
+msgid "My Stavekontrolden"
+msgstr "Mit Stavekontrolden"
+
+#: templates/organizations.php:21 templates/organizations.php:45
+msgid "Language"
+msgstr "Sprog"
+
+#: templates/organizations.php:23
+msgid "Url"
+msgstr "URL"
+
+#: templates/organizations.php:38 templates/organizations.php:52
+msgid "Create Organization"
+msgstr "Opret organisation"
+
+#: templates/organizations.php:49
+msgid "URL (shortname)"
+msgstr "URL (kort navn)"
+
+#: templates/adminmenu.php:8
+msgid "Process Words"
+msgstr "Behandl ord"
+
+#: templates/adminmenu.php:10
+msgid "Word Classes"
+msgstr "Ordklasser"
+
+#: templates/adminmenu.php:11
+msgid "Affix Classes"
+msgstr "Affiksklasser"
+
+#: templates/adminmenu.php:12
+msgid "Affix Rules"
+msgstr "Affiksregler"
+
+#: templates/adminmenu.php:13
+msgid "Fuge Elements"
+msgstr "Fugeelementer"
+
+#: templates/adminmenu.php:15
+msgid "Start Definitions"
+msgstr "Startdefinitioner"
+
+#: templates/adminmenu.php:16
+msgid "Technical Terms"
+msgstr "Fagtermer"
+
+#: templates/adminmenu.php:17
+msgid "Unaccepted Words"
+msgstr "Uaccepterede ord"
+
+#: templates/adminmenu.php:20
+msgid "Create Dictionary"
+msgstr "Udarbejd ordliste"
+
+#: templates/adminmenu.php:24
+msgid "Analyze words"
+msgstr "Analyser ord"
+
+#: templates/adminmenu.php:30
+msgid "Download the manual ..."
+msgstr "Hent manualen ..."
+
+#: templates/orgpages.php:11
+msgid "Pages"
+msgstr "Sider"
+
+#: templates/orgpages.php:15
+msgid "New Page"
+msgstr "Ny side"
+
+#: templates/orgpages.php:25
+msgid "Title"
+msgstr "Titel"
+
+#: templates/orgpages.php:26
+msgid "Edit"
+msgstr "Rediger"
+
+#: templates/orgpages.php:27
+msgid "Move"
+msgstr "Flyt"
+
+#: templates/wordclasses.php:9
+msgid "<span id=\"numrows\">0</span> Word classes"
+msgstr "<span id=\"numrows\">0</span> ordklasser"
+
+#: templates/wordclasses.php:16
+msgid "New Word Class"
+msgstr "Ny ordklasse"
+
+#: templates/unaccepted_word.php:2
+msgid "<span id=\"numrows\">0</span> Unaccepted Words"
+msgstr "<span id=\"numrows\">0</span> uaccepterede ord"
+
+#: templates/unaccepted_word.php:3
+msgid "New Unaccepted Word"
+msgstr "Nyt uaccepteret ord"
+
+#: templates/unaccepted_word.php:4
+msgid "Unaccepted Word"
+msgstr "Uaccepteret ord"
+
+#: templates/orgsettings.php:14
+msgid "Standard Settings"
+msgstr "Standardindstillinger"
+
+#: templates/hunspell.php:4
+msgid "Analyze using latest version of the dictionary"
+msgstr "Analyser ord med den seneste version af ordlisten"
+
+#: templates/hunspell.php:9
+msgid "Enter one or more words"
+msgstr "Skriv et eller flere ord"
+
+#: templates/hunspell.php:13
+msgid "Analyze"
+msgstr "Analyser"
+
+#: templates/hunspell.php:17
+msgid "Spellcheck"
+msgstr "Stavekontroller"
+
+#: templates/hunspell.php:20
+msgid "Analyze!"
+msgstr "Analyser!"
+
+#: templates/hunspell.php:24
+msgid "Result"
+msgstr "Resultat"
+
+#: templates/myUser.php:15
+msgid "User Data"
+msgstr "Brugerdata"
+
+#: templates/myUser.php:28
+msgid ""
+"You are welcome to change your e-mail. Please remember to use the new "
+"address for login in the future."
+msgstr ""
+"Du er velkommen til at ændre din e-mail. Husk venligst at bruge den nye "
+"adresse når du skal logge ind fremover."
+
+#: templates/myUser.php:32
+msgid "Unchanged"
+msgstr "Uændret"
+
+#: templates/myUser.php:35
+msgid "Organization:"
+msgstr "Organisation:"
+
+#: templates/myUser.php:38
+msgid "Stay"
+msgstr "Bliv"
+
+#: templates/myUser.php:42
+msgid "Remove me!"
+msgstr "Meld mig ud!"
+
+#: templates/myUser.php:44
+msgid ""
+"If you remove yourself from the organization, you need someone to re-invite "
+"you, before you can come back."
+msgstr ""
+"Hvis du melder dig ud af organisationen, så skal du geninviteres for at "
+"kunne komme tilbage."
+
+#: templates/affixmodal.php:11
+msgid "Edit Word Class"
+msgstr "Rediger ordklasse"
+
+#: templates/affixmodal.php:11
+msgid "View Word Class"
+msgstr "Se ordklasse"
+
+#: templates/affixmodal.php:11
+msgid "Add Word Class"
+msgstr "Tilføj ordklasse"
+
+#: templates/affixmodal.php:63
+msgid "Edit Affix Class"
+msgstr "Rediger affiksklasse"
+
+#: templates/affixmodal.php:63
+msgid "View Affix Class"
+msgstr "Se affiksklasse"
+
+#: templates/affixmodal.php:63
+msgid "Add Affix Class"
+msgstr "Tilføj affiksklasse"
+
+#: templates/affixmodal.php:74
+msgid "Affix Class"
+msgstr "Affiksklasse"
+
+#: templates/affixmodal.php:84
+msgid "Associated Affix Rules"
+msgstr "Tilknyttede affiksklasser"
+
+#: templates/affixmodal.php:89
+msgid "Create New Affix Rule"
+msgstr "Opret en ny affiksregel"
+
+#: templates/affixmodal.php:114
+msgid "Edit Affix Rule"
+msgstr "Rediger affiksregel"
+
+#: templates/affixmodal.php:114
+msgid "View Affix Rule"
+msgstr "Se affiksregel"
+
+#: templates/affixmodal.php:114
+msgid "Add Affix Rule"
+msgstr "Tilføj affiksregel"
+
+#: templates/affixmodal.php:142
+msgid "Strip Characters"
+msgstr "Fjern bogstaver"
+
+#: templates/editCSS.php:15
+msgid "Use changes"
+msgstr "Anvend ændringer"
+
+#: header.php:49
+msgid "Frontpage"
+msgstr "Forside"
+
+#: header.php:77
+msgid "My Organization"
+msgstr "Min organisation"
+
+#: header.php:87
+msgid "My User"
+msgstr "Min bruger"
+
+#: index.php:34
+msgid "Error: No organization with that name"
+msgstr "Fejl: Der er ikke nogen organisation med det navn"
+
+#: functions/filtersettings.php:4
+msgid "Show"
+msgstr "Vis"
+
+#: functions/filtersettings.php:8
+msgid "In word"
+msgstr "I ord"
+
+#: functions/filtersettings.php:8
+msgid "Beginning of word"
+msgstr "Begyndelsen af ord"
+
+#: functions/filtersettings.php:8
+msgid "End of word"
+msgstr "Slutningen af ord"
+
+#: functions/filtersettings.php:8
+msgid "Strict"
+msgstr "Hele strengen"
+
+#: functions/filtersettings.php:18
+msgid "Search"
+msgstr "Søg"
+
+#: frontend/login.php:6
+msgid "Not a valid e-mail address"
+msgstr "Dette er ikke en korrekt emailadresse"
+
+#: frontend/login.php:14
+msgid "E-mail already registered"
+msgstr "E-mailadressen er allerede registreret"
+
+#: frontend/login.php:21
+msgid "Welcome to Stavekontrolden!"
+msgstr "Velkommen til Stavekontrolden!"
+
+#: frontend/login.php:53
+msgid "Welcome back to Stavekontrolden!"
+msgstr "Velkommen tilbage til Stavekontrolden!"
+
+#: frontend/login.php:55
+msgid "E-mail, username or password was wrong"
+msgstr "E-mailadresse, brugernavn eller kodeord var forkert"
+
+#: frontend/forgotpassword.php:11
+msgid "We couldn't find a  user with that e-mail address."
+msgstr "Vi kunne ikke finde en bruger med den e-mailadresse."
+
+#: frontend/forgotpassword.php:37
+msgid "Stavekontrolden Support"
+msgstr "Stavekontrolden-support"
+
+#: frontend/forgotpassword.php:42
+msgid "Create a new password"
+msgstr "Opret et nyt kodeord"
+
+#: frontend/forgotpassword.php:43
+#, php-format
+msgid ""
+"Hello %1$s,<br>Someone asked for a new password for Stavekontrolden. If it "
+"was not you, please disregard this e-mail.<p>Please click on this link to "
+"create a new password:</p><p><a href=\"%2$s\">%2$s</a></p>"
+msgstr ""
+"Hej %1$s,<br>Nogen har anmodet om et nyt kodeord til Stavekontrolden. Hvis "
+"det ikke var dig, så se bare bort fra denne e-mail.<p>Klik venligst på dette "
+"link for at oprette et nyt kodeord:</p><p><a href=\"%2$s\">%2$s</a></p><p>Vi "
+"ses på Stavekontrolden.dk!</p>"
+
+#: footer.php:19 footer.php:31
+msgid "Cookies"
+msgstr "Cookies"
+
+#: footer.php:20 footer.php:32
+msgid "Contact"
+msgstr "Kontakt"
+
+#: footer.php:21 footer.php:33
+msgid "Admin"
+msgstr "Admin"
+
+#: footer.php:26
+msgid "Log out"
+msgstr "Log ud"
+
+#: footer.php:41
+msgid "Tournament Managed by basesystem"
+msgstr "Turnering administreret med Stavekontrolden"
+
+#: footer.php:71
+msgid "Login"
+msgstr "Log ind"
+
+#~ msgid "This is a page"
+#~ msgstr "Dette er en side"
+
+#~ msgid "Use it as a template."
+#~ msgstr "Brug den som skabelon."
+
+#~ msgid "Passwords"
+#~ msgstr "Kodeord"
+
+#~ msgid "Points and Sets"
+#~ msgstr "Point og Sæt"
+
+#~ msgid "Tiebreaker rules for League tables"
+#~ msgstr "Regler for afgørelse ved pointlighed"
+
+#~ msgid "Layout of League tables"
+#~ msgstr "Stillingstabelopsætning"
+
+#~ msgid "Scoresheets"
+#~ msgstr "Kampskema"
+
+#~ msgid "Seeding Points"
+#~ msgstr "Seedningspoint"
+
+#~ msgid "Times"
+#~ msgstr "Tider"
+
+#~ msgid "Preferences"
+#~ msgstr "Foretrukne"
+
+#~ msgid "When inputting scores"
+#~ msgstr "Når point indtastes"
+
+#~ msgid "Master password"
+#~ msgstr "Hovedkodeord"
+
+#~ msgid "Master password and password for each team"
+#~ msgstr "Hovedkodeord og kodeord for hvert hold"
+
+#~ msgid "Live Score Password"
+#~ msgstr "Live scorekodeord"
+
+#~ msgid "Un-changed"
+#~ msgstr "Uændret"
+
+#~ msgid "Points when won:"
+#~ msgstr "Point ved sejr:"
+
+#~ msgid "Points when draw:"
+#~ msgstr "Point ved uafgjort:"
+
+#~ msgid "Custom points function:"
+#~ msgstr "Specialfunktion for pointfordeling:"
+
+#~ msgid "Use sets"
+#~ msgstr "Brug sæt"
+
+#~ msgid "Max number of sets:"
+#~ msgstr "Maksimalt antal sæt:"
+
+#~ msgid "Winning Score:"
+#~ msgstr "Point for at vinde:"
+
+#~ msgid "Winning Score, last set:"
+#~ msgstr "Point for at vinde sidste sæt:"
+
+#~ msgid "Needs to win by at least:"
+#~ msgstr "Mindste overskydende point:"
+
+#~ msgid "Order of tiebreaker criteria"
+#~ msgstr "Rækkefølge for kriterier for afgørelse ved pointlighed"
+
+#~ msgid "Un-used tiebreaker criteria"
+#~ msgstr "Ubrugte kriterier for afgørelse ved pointlighed"
+
+#~ msgid "Columns included in short form league table"
+#~ msgstr "Kolonner inkluderet i den korte form af stillingen"
+
+#~ msgid "Available column names"
+#~ msgstr "Tilgængelige kolonner"
+
+#~ msgid "Columns included in long form league table"
+#~ msgstr "Kolonner inkluderet i den lange form af stillingen"
+
+#~ msgid ""
+#~ "Scoresheet templates can be in Microsoft (.docx, .xlsx), and OpenDocument "
+#~ "(.odt and .ods) format."
+#~ msgstr ""
+#~ "Kampskemaskabeloner kan være i Microsoft  (.docx, .xlsx)-, og "
+#~ "OpenDocument (.odt and .ods)-format."
+
+#~ msgid ""
+#~ "Insert the following variables (e.g. [Team1], including []) in your "
+#~ "scoresheet template to get information about the match into the "
+#~ "scoresheet:"
+#~ msgstr ""
+#~ "Indsæt følgende variable (fx [Team1], inklusive []) i kampskemaskabelonen "
+#~ "for at få information om kampen ind i skabelonen:"
+
+#~ msgid "[Team1]"
+#~ msgstr "[Team1]"
+
+#~ msgid "Team 1"
+#~ msgstr "Holdnavn 1"
+
+#~ msgid "[Team2]"
+#~ msgstr "[Team2]"
+
+#~ msgid "Team 2"
+#~ msgstr "Holdnavn 2"
+
+#~ msgid "[Team1Player1]"
+#~ msgstr "[Team1Player1]"
+
+#~ msgid "Player 1 at Team 1"
+#~ msgstr "Spiller 1 på Hold 1"
+
+#~ msgid "[Team1Player2]"
+#~ msgstr "[Team1Player2]"
+
+#~ msgid "Player 2 at Team 1"
+#~ msgstr "Spiller 2 på Hold 2"
+
+#~ msgid "[Team2Player1]"
+#~ msgstr "[Team2Player1]"
+
+#~ msgid "Player 1 at Team 2"
+#~ msgstr "Spiller 1 på Hold 2"
+
+#~ msgid "[Team2Player2]"
+#~ msgstr "[Team2Player2]"
+
+#~ msgid "Player 2 at Team 2"
+#~ msgstr "Spiller 2 på Hold 2"
+
+#~ msgid "[Official]"
+#~ msgstr "[Official]"
+
+#~ msgid "Official"
+#~ msgstr "Officials"
+
+#~ msgid "[Field]"
+#~ msgstr "[Field]"
+
+#~ msgid "Field Name"
+#~ msgstr "Banenavn"
+
+#~ msgid "[Time]"
+#~ msgstr "[Time]"
+
+#~ msgid "Time"
+#~ msgstr "Tid"
+
+#~ msgid "[EventName]"
+#~ msgstr "[EventName]"
+
+#~ msgid "Name of Event"
+#~ msgstr "Stævnets navn"
+
+#~ msgid "[TournamentName]"
+#~ msgstr "[TournamentName]"
+
+#~ msgid "Name of Tournament"
+#~ msgstr "Turneringens navn"
+
+#~ msgid "[Day]"
+#~ msgstr "[Day]"
+
+#~ msgid "Name of Tournament Day"
+#~ msgstr "Spilledagens navn"
+
+#~ msgid "[Date]"
+#~ msgstr "[Date]"
+
+#~ msgid "Tournament Day Date"
+#~ msgstr "Kampdagsdato"
+
+#~ msgid "[ShortName]"
+#~ msgstr "[ShortName]"
+
+#~ msgid "Tournament Short Name"
+#~ msgstr "Turneringens forkortelse"
+
+#~ msgid "[GroupName]"
+#~ msgstr "[GroupName]"
+
+#~ msgid "Group Name"
+#~ msgstr "Puljenavn"
+
+#~ msgid "[MatchNo]"
+#~ msgstr "[MatchNo]"
+
+#~ msgid "Match Number"
+#~ msgstr "Kampnummer"
+
+#~ msgid "Select an existing scoresheet"
+#~ msgstr "Vælg en eksisterende kampskemaskabelon"
+
+#~ msgid "Delete Scoresheet"
+#~ msgstr "Slet kampskemaskabelon"
+
+#~ msgid "Upload scoresheet"
+#~ msgstr "Upload kampskema"
+
+#~ msgid "Choose Scoresheet File"
+#~ msgstr "Vælg kampskema-fil"
+
+#~ msgid "Scoresheet file uploaded:"
+#~ msgstr "Kampskema-filen er uploadet:"
+
+#~ msgid "Input or paste seeding points given to the teams"
+#~ msgstr "Skriv eller paste de seedningspoints som holdene skal have, ind"
+
+#~ msgid "Start time"
+#~ msgstr "Starttid"
+
+#~ msgid "Match duration"
+#~ msgstr "Kamplængde"
+
+#~ msgid "Break duration"
+#~ msgstr "Pauselængde"
+
+#~ msgid "Only use self-designed tournament systems"
+#~ msgstr "Brug kun selv-designede turneringssystemer"
+
+#~ msgid "Navigation Bar"
+#~ msgstr "Navigationsbar"
+
+#~ msgid "Toggles at small screen sizes"
+#~ msgstr "Ændrer sig ved små skærmstørrelser"
+
+#~ msgid "Click!"
+#~ msgstr "Klik!"
+
+#~ msgid "Tournament Name"
+#~ msgstr "Turneringsnavn"
+
+#~ msgid "Header"
+#~ msgstr "Hoved"
+
+#~ msgid "Normal text"
+#~ msgstr "Normal tekst"
+
+#~ msgid "Table"
+#~ msgstr "Tabel"
+
+#~ msgid "Hover"
+#~ msgstr "Mus over-funktion"
+
+#~ msgid "Cell"
+#~ msgstr "Celle"
+
+#~ msgid "Striped"
+#~ msgstr "Stribet"
+
+#~ msgid "League Table Header"
+#~ msgstr "Stillingsoverskrift"
+
+#~ msgid "League Table"
+#~ msgstr "Stilling"
+
+#~ msgid "In"
+#~ msgstr "I"
+
+#~ msgid "Card"
+#~ msgstr "Kort"
+
+#~ msgid "First Round. Group A"
+#~ msgstr "Første runde. Gruppe A"
+
+#~ msgid "No."
+#~ msgstr "Nej."
+
+#~ msgid "First Round"
+#~ msgstr "Første runde"
+
+#~ msgid "Team"
+#~ msgstr "Hold"
+
+#~ msgid "Number "
+#~ msgstr "Nummer"
+
+#, fuzzy
+#~| msgid "Number of tournaments"
+#~ msgid "Number of teams in tournament?"
+#~ msgstr "Antal turneringer"
+
+#~ msgid "Cannot add team names before number of teams is set"
+#~ msgstr "Kan ikke skrive holdnavne før antallet af hold er fastsat"
+
+#~ msgid "No tournament system options before number of teams is set"
+#~ msgstr "Kan ikke sætte systemindstillinger før antallet af hold er fastsat"
+
+#~ msgid "When tournament system is chosen, the games will be ready here"
+#~ msgstr "Når turneringssystemet er valgt, vil kampene blive vist her"
+
+#~ msgid ""
+#~ "When you have chosen a sport, you can see and change the settings ... "
+#~ msgstr "Når du har valgt en sport, kan du se og ændre indstillingerne ... "
+
+#~ msgid "Tournament name"
+#~ msgstr "Turneringsnavn"
+
+#~ msgid "Enter tournament name"
+#~ msgstr "Skriv turneringens navn"
+
+#~ msgid "Tournament short name"
+#~ msgstr "Turneringens forkortelse"
+
+#~ msgid "Short name"
+#~ msgstr "Forkortelse"
+
+#~ msgid "Number of Teams"
+#~ msgstr "Antal hold"
+
+#~ msgid "Number of teams participating in the tournament"
+#~ msgstr "Antal hold der deltager i turneringen"
+
+#~ msgid "Team Names"
+#~ msgstr "Holdnavne"
+
+#~ msgid "Tournament System"
+#~ msgstr "Turneringssystem"
+
+#, fuzzy
+#~| msgid "View and Share"
+#~ msgid "Time and Place"
+#~ msgstr "Se og del"
+
+#~ msgid "Settings"
+#~ msgstr "Indstillinger"
+
+#~ msgid "Share"
+#~ msgstr "Del"
+
+#~ msgid "let the games begin"
+#~ msgstr "lad spillet begynde"
+
+#~ msgid "Home"
+#~ msgstr "Hjemme"
+
+#~ msgid "Create your own tournament"
+#~ msgstr "Lav din egen turnering"
+
+#, fuzzy
+#~| msgid "Set points"
+#~ msgid "Sets and points"
+#~ msgstr "Bolde"
+
+#, fuzzy
+#~| msgid "Standard game duration:"
+#~ msgid "Standard durations"
+#~ msgstr "Standardvarighed for kampe:"
+
+#~ msgid "(Changes only take effect on new fields, not existing)"
+#~ msgstr "(Ændringer har kun effekt for nye baner, ikke eksisterende)"
+
+#~ msgid "Standard game duration:"
+#~ msgstr "Standardvarighed for kampe:"
+
+#~ msgid "Standard break duration:"
+#~ msgstr "Standardvarighed for pauser:"
+
+#~ msgid "Find your tournament ..."
+#~ msgstr "Find din turnering ..."
+
+#~ msgid "Games"
+#~ msgstr "Sæt"
+
+#, fuzzy
+#~| msgid "Group"
+#~ msgid "Groups"
+#~ msgstr "Gruppe"
+
+#~ msgid "Enter score"
+#~ msgstr "Skriv resultat"
+
+#~ msgid "Total score"
+#~ msgstr "Resultat"
+
+#~ msgid "Send scores"
+#~ msgstr "Send resultat"
+
+#~ msgid "Save as new system"
+#~ msgstr "Gem som nyt system"
+
+#~ msgid "Save system"
+#~ msgstr "Gem system"
+
+#~ msgid "Custom Officials"
+#~ msgstr "Udpegede officials"
+
+#~ msgid "Participating teams"
+#~ msgstr "Deltagende hold"
+
+#~ msgid "Round results"
+#~ msgstr "Runderesultater"
+
+#~ msgid "Game results"
+#~ msgstr "Kampresultater"
+
+#~ msgid "Most matchpoints"
+#~ msgstr "Flest point"
+
+#~ msgid "Most won matches"
+#~ msgstr "Flest vundne kampe"
+
+#~ msgid "Most match points away"
+#~ msgstr "Flest point ude"
+
+#~ msgid "Best score (goals/games/sets) away"
+#~ msgstr "Bedste score (mål/sæt) ude"
+
+#~ msgid "Most points away"
+#~ msgstr "Flest point ude"
+
+#~ msgid "Most match points in mutual matches"
+#~ msgstr "Flest point i indbyrdes kampe"
+
+#~ msgid "Best score in mutual matches (goals/games/sets)"
+#~ msgstr "Bedste score i indbyrdes kampe (mål/sæt)"
+
+#~ msgid "Best score in mutual matches (points)"
+#~ msgstr "Bedste boldscore i indbyrdes kampe"
+
+#~ msgid "Best score difference (goals/games/sets)"
+#~ msgstr "Bedste mål/sæt-difference"
+
+#~ msgid "Best score difference (points)"
+#~ msgstr "Bedste boldscoredifference"
+
+#~ msgid "Best score (most goals/games/sets scored)"
+#~ msgstr "Bedste score (flest mål/sæt)"
+
+#~ msgid "Best score (most points scored)"
+#~ msgstr "Bedste boldscore"
+
+#~ msgid "Points"
+#~ msgstr "Point"
+
+#~ msgid "Sets/goals"
+#~ msgstr "Sæt/mål"
+
+#~ msgid "Set points Won"
+#~ msgstr "Bolde vundet"
+
+#~ msgid "Set points Lost"
+#~ msgstr "Bolde tabt"
+
+#~ msgid "Won"
+#~ msgstr "Vundet"
+
+#~ msgid "Draw"
+#~ msgstr "Uafgjort"
+
+#~ msgid "Lost"
+#~ msgstr "Tabt"
+
+#~ msgid "Won Home"
+#~ msgstr "Vundet hjemme"
+
+#~ msgid "Draw Home"
+#~ msgstr "Uafgjort hjemme"
+
+#~ msgid "Lost Home"
+#~ msgstr "Tabt hjemme"
+
+#~ msgid "Won Away"
+#~ msgstr "Vundet ude"
+
+#~ msgid "Draw Away"
+#~ msgstr "Uafgjort ude"
+
+#~ msgid "Lost Away"
+#~ msgstr "Tabt ude"
+
+#~ msgid "Points Home"
+#~ msgstr "Point hjemme"
+
+#~ msgid "Points Away"
+#~ msgstr "Point ude"
+
+#~ msgid "Sets/Goals Won Home"
+#~ msgstr "Sæt/mål hjemme"
+
+#~ msgid "Sets/Goals Lost Home"
+#~ msgstr "Sæt/mål tabt hjemme"
+
+#~ msgid "Sets/Goals Won Away"
+#~ msgstr "Sæt/mål vundet ude"
+
+#~ msgid "Sets/Goals Lost Away"
+#~ msgstr "Sæt/mål tabt ude"
+
+#~ msgid "Sets points Won Home"
+#~ msgstr "Bolde vundet hjemme"
+
+#~ msgid "Sets points Lost Home"
+#~ msgstr "Bolde tabt hjemme"
+
+#~ msgid "Sets points Won Away"
+#~ msgstr "Bolde vundet ude"
+
+#~ msgid "Sets points Lost Away"
+#~ msgstr "Bolde tabt ude"
+
+#~ msgid "Games are reset"
+#~ msgstr "Kampene er nulstillet"
+
+#~ msgid "(You can paste a list of team names (CTRL+V))"
+#~ msgstr "(Du kan indsætte (paste) en liste af holdnavne (CTRL+V))"
+
+#~ msgid "Build from scratch"
+#~ msgstr "Byg fra bunden"
+
+#~ msgid "Build your own tournament system"
+#~ msgstr "Lav din egen turnering"
+
+#~ msgid "Change system"
+#~ msgstr "Ændr system"
+
+#~ msgid "Save matches?"
+#~ msgstr "Gem kampresultater?"
+
+#~ msgid ""
+#~ "Some matches have been played. Do you want to keep the results when the "
+#~ "new system has been chosen?"
+#~ msgstr ""
+#~ "Nogle kampe er allerede afgjort. Vil du have genindsat resultaterne når "
+#~ "det nye system er valgt?"
+
+#~ msgid "Cancel"
+#~ msgstr "Fortryd"
+
+#~ msgid "Your own system"
+#~ msgstr "Dit eget system"
+
+#~ msgid "Standard system"
+#~ msgstr "Standardsystem"
+
+#~ msgid "%d matches"
+#~ msgstr "%d kampe"
+
+#~ msgid "See"
+#~ msgstr "Se"
+
+#~ msgid "Use this system"
+#~ msgstr "Brug dette system"
+
+#~ msgid ""
+#~ "Not able to find an official for the game at field %1$s, slot number "
+#~ "%2$d<br>"
+#~ msgstr ""
+#~ "Kunne ikke finde en official til kampen på bane %1$s, slot nummer %2$d<br>"
+
+#~ msgid "The suggested Unique Link is already in use. Try another one."
+#~ msgstr "Det ønskede link er allerede i brug. Prøv et andet."
+
+#~ msgid "Start"
+#~ msgstr "Starttid"
+
+#~ msgid "Game Length"
+#~ msgstr "Kampvarighed"
+
+#~ msgid "Different lengths"
+#~ msgstr "Forskellige varigheder"
+
+#~ msgid "Tournament Day"
+#~ msgstr "Spilledag"
+
+#~ msgid "Field"
+#~ msgstr "Bane"
+
+#~ msgid "Field %d"
+#~ msgstr "Bane %d"
+
+#~ msgid ""
+#~ "Not enough slots available. This is an unrecoverable program error. "
+#~ "Please write an e-mail to jeppe@bundsgaard.net."
+#~ msgstr ""
+#~ "Der er ikke nok pladser til rådighed til kampene. Dette er en "
+#~ "programfejl. Kontakt venligst jeppe@bundsgaard.net og beskriv hvad du "
+#~ "gjorde før fejlen opstod."
+
+#~ msgid ""
+#~ "%1$s is starting earlier than the main field, %2$s. This will not work. "
+#~ "Please put %1$s on top."
+#~ msgstr ""
+#~ "%1$s starter tidligere end hovedbanen, %2$s. Det fungerer ikke. Put "
+#~ "venligst %1$s øverst."
+
+#~ msgid ""
+#~ "One or more fields in %s will be changed to comply with the main fields' "
+#~ "time schedule"
+#~ msgstr ""
+#~ "En eller flere baner i %s vil blive ændret for at være i overensstemmelse "
+#~ "med hovedbanens tidsskema"
+
+#~ msgid ""
+#~ "To avoid overlapping games, %1$d games will be put in the pool in %2$s"
+#~ msgstr ""
+#~ "For at undgå overlappende kampe bliver %1$d kampe lagt i poolen i %2$s"
+
+#~ msgid "Please confirm the changes by clicking Save once again"
+#~ msgstr "Godkend venligst ændringerne ved at klikke på Gem én gang mere"
+
+#~ msgid "Add system"
+#~ msgstr "Tilføj system"
+
+#~ msgid "Sports"
+#~ msgstr "Sportsgrene"
+
+#~ msgid "Image"
+#~ msgstr "Billede"
+
+#~ msgid "Create Sport"
+#~ msgstr "Opret sport"
+
+#~ msgid "Month"
+#~ msgstr "Måned"
+
+#~ msgid "Day"
+#~ msgstr "Dag"
+
+#~ msgid "Events"
+#~ msgstr "Stævner"
+
+#~ msgid "Referers"
+#~ msgstr "Henvisere"
+
+#~ msgid "Previous results"
+#~ msgstr "Foregående resultater"
+
+#~ msgid "Next results"
+#~ msgstr "Næste resultater"
+
+#~ msgid "Unique visitors"
+#~ msgstr "Unikke besøgende"
+
+#~ msgid "Match Distribution"
+#~ msgstr "Kampfordeling"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatisk"
+
+#~ msgid "Manual"
+#~ msgstr "Manuel"
+
+#~ msgid "Pool"
+#~ msgstr "Pool"
+
+#~ msgid "Add Tournament Day"
+#~ msgstr "Tilføj kampdag"
+
+#~ msgid "Set officials"
+#~ msgstr "Fordel officials"
+
+#~ msgid "Reset officials"
+#~ msgstr "Nulstil officials"
+
+#~ msgid ""
+#~ "Save as template in order to use this composition of the tournament in a "
+#~ "later tournament (including fields, field settings, distribution of "
+#~ "matches and officials)"
+#~ msgstr ""
+#~ "Gem som skabelon så du kan bruge denne turneringskomposition i en senere "
+#~ "turnering (inklusive baner, baneindstillinger, fordeling af kampe og "
+#~ "official)"
+
+#~ msgid "Copy composition from template"
+#~ msgstr "Kopier turneringskomposition"
+
+#~ msgid "Field Settings"
+#~ msgstr "Baneindstillinger"
+
+#~ msgid "Number of slots"
+#~ msgstr "Antal tidsrum"
+
+#~ msgid "-1 for no limit"
+#~ msgstr "-1 for ingen grænser"
+
+#~ msgid "Custom Time Slots"
+#~ msgstr "Tilpasset tidsskema"
+
+#~ msgid "Save changes"
+#~ msgstr "Gem ændringer"
+
+#~ msgid "Tournament Day Name"
+#~ msgstr "Kampdagsnavn"
+
+#~ msgid "Date"
+#~ msgstr "Dato"
+
+#~ msgid "Edit Officials"
+#~ msgstr "Rediger officials"
+
+#~ msgid "When distributing officials automatically"
+#~ msgstr "Når officials fordeles automatisk"
+
+#~ msgid "Use teams as officials"
+#~ msgstr "Brug holdene som officials"
+
+#~ msgid "Use Custom Officials"
+#~ msgstr "Brug oprettede officials"
+
+#~ msgid "(You can paste a list of officials (CTRL+V))"
+#~ msgstr "(Du kan indsætte (paste) en liste af officials (CTRL+V))"
+
+#~ msgid "Save Composition Template"
+#~ msgstr "Gem kompositionsskabelon"
+
+#~ msgid "Replace Existing Template"
+#~ msgstr "Erstat eksisterende skabelon"
+
+#~ msgid "Template Title"
+#~ msgstr "Skabelontitel"
+
+#~ msgid "Save template"
+#~ msgstr "Gem skabelon"
+
+#~ msgid "Event Info Page"
+#~ msgstr "Stævneinfoside"
+
+#~ msgid "Tournament Info Page"
+#~ msgstr "Turneringsinfoside"
+
+#~ msgid ""
+#~ "The user will have instant access to your organization, and lose "
+#~ "connection to already created events and tournaments. They will be "
+#~ "reestablished when the user is removed from the organization."
+#~ msgstr ""
+#~ "Brugeren får øjeblikkelig adgang til din organisation og mister derved "
+#~ "forbindelsen til allere oprettede stævner og turneringer De genetableres "
+#~ "når brugeren fjernes fra organisationen."
+
+#~ msgid "Follow our %s {name} at "
+#~ msgstr "Følg vores %s {name} på "
+
+#~ msgid "Send e-mail"
+#~ msgstr "Send e-mail"
+
+#~ msgid "Copy link"
+#~ msgstr "Kopier link"
+
+#~ msgid "Unique link for your tournament"
+#~ msgstr "Unikt link til din turnering"
+
+#~ msgid "Test"
+#~ msgstr "Test"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Overview"
+#~ msgstr "Kampoversigt"
+
+#~ msgid "Matches"
+#~ msgstr "Kampe"
+
+#~ msgid "Group Members"
+#~ msgstr "Puljedeltagere"
+
+#~ msgid "Standings"
+#~ msgstr "Stillinger"
+
+#~ msgid "Live Score"
+#~ msgstr "Live score"
+
+#~ msgid "Print all scoresheets"
+#~ msgstr "Udskriv alle kampskemaer"
+
+#~ msgid "Match no."
+#~ msgstr "Kamp nr."
+
+#~ msgid "Away"
+#~ msgstr "Ude"
+
+#~ msgid "Set Score"
+#~ msgstr "Sætscore"
+
+#~ msgid "Select a tournament to see the standings"
+#~ msgstr "Vælg en turnering for at se stillingerne"
+
+#~ msgid "Tournament"
+#~ msgstr "Turnering"
+
+#~ msgid "Score"
+#~ msgstr "Stilling"
+
+#~ msgid "Ongoing Game"
+#~ msgstr "Igangværende sæt"
+
+#~ msgid "No active games at this moment."
+#~ msgstr "Ingen igangværende kampe."
+
+#~ msgid "Sport"
+#~ msgstr "Sport"
+
+#~ msgid "Loading Tournaments ..."
+#~ msgstr "Henter turneringer ..."
+
+#~ msgid "Share this Stavekontrolden event ..."
+#~ msgstr "Del dette Stavekontrolden-stævne ..."
+
+#~ msgid "event"
+#~ msgstr "stævne"
+
+#~ msgid "Enter password"
+#~ msgstr "Skriv kodeord"
+
+#~ msgid "Edit!"
+#~ msgstr "Rediger!"
+
+#~ msgid "Rember me"
+#~ msgstr "Husk mig"
+
+#~ msgid "Reset scores"
+#~ msgstr "Nulstil resultater"
+
+#~ msgid "Notify me!"
+#~ msgstr "Hold mig opdateret!"
+
+#~ msgid "Minutes before the match"
+#~ msgstr "Minutter før kampen"
+
+#~ msgid "About the result"
+#~ msgstr "Om resultatet"
+
+#~ msgid "Send"
+#~ msgstr "Send"
+
+#~ msgid "Print"
+#~ msgstr "Udskriv"
+
+#~ msgid "Print Scoresheets"
+#~ msgstr "Udskriv kampskemaer"
+
+#~ msgid "Print Game List"
+#~ msgstr "Udskriv kampliste"
+
+#~ msgid "Print groups of matches"
+#~ msgstr "Udskriv grupper"
+
+#~ msgid "Finished matches are not included."
+#~ msgstr "Afsluttede kampe inkluderes ikke i udskrivningen."
+
+#~ msgid "Matches where all teams and officials are known, and not printed yet"
+#~ msgstr "Kampe hvor alle hold og officials er kendte og endnu ikke udskrevet"
+
+#~ msgid "Print Unprinted"
+#~ msgstr "Udskriv ikke udskrevne"
+
+#~ msgid ""
+#~ "Matches where all teams and officials are known, including already printed"
+#~ msgstr ""
+#~ "Kampe hvor alle hold og officials er kendte, inklusive allerede udskrevne"
+
+#~ msgid "Print Ready"
+#~ msgstr "Udskriv klar til kamp"
+
+#~ msgid "All matches, including matches with unknown participants"
+#~ msgstr "Alle kampe, inklusive kampe med ukendte deltagere"
+
+#~ msgid "Print All"
+#~ msgstr "Udskriv alle"
+
+#~ msgid "Or select the matches you want to print"
+#~ msgstr "Eller vælg de kampe du vil udskrive"
+
+#~ msgid "Games ready to be played"
+#~ msgstr "Kampe klar til at blive spillet"
+
+#~ msgid "Games with unknown participants"
+#~ msgstr "Kampe med ukendte deltagere"
+
+#~ msgid "Games already played"
+#~ msgstr "Afgjorte kampe"
+
+#~ msgid "Print Selected"
+#~ msgstr "Udskriv valgte"
+
+#~ msgid "My Events"
+#~ msgstr "Mine stævner"
+
+#~ msgid "Show Upcoming Events"
+#~ msgstr "Vis kommende stævner"
+
+#~ msgid "Show Past Events"
+#~ msgstr "Vis afsluttede stævner"
+
+#~ msgid ""
+#~ "Events are always accessible using a shared link. Setting this makes it "
+#~ "visible to the public"
+#~ msgstr ""
+#~ "Stævner kan altid ses hvis man har det delte link. Klik på øjet for at "
+#~ "gøre stævnet synlig for alle"
+
+#~ msgid "Visible"
+#~ msgstr "Synlig"
+
+#~ msgid "Info Page"
+#~ msgstr "Infoside"
+
+#~ msgid "Event Settings"
+#~ msgstr "Stævneindstillinger"
+
+#~ msgid "Unique Link"
+#~ msgstr "Unikt link"
+
+#~ msgid "End Date"
+#~ msgstr "Slutdato"
+
+#~ msgid "Number of teams"
+#~ msgstr "Antal hold"
+
+#~ msgid "Number of matches"
+#~ msgstr "Antal kampe"
+
+#~ msgid "Fields"
+#~ msgstr "Baner"
+
+#~ msgid "Match program"
+#~ msgstr "Kampprogram"
+
+#~ msgid "Create an event by clicking above"
+#~ msgstr "Opret et stævne ved at klikke ovenfor"
+
+#~ msgid "Event Name"
+#~ msgstr "Stævnenavn"
+
+#~ msgid "Event Dates"
+#~ msgstr "Stævnedatoer"
+
+#~ msgid "Event Description"
+#~ msgstr "Stævnebekrivelse"
+
+#~ msgid "Event Sports"
+#~ msgstr "Stævnets sportsgren"
+
+#~ msgid "Event Unique Link"
+#~ msgstr "Unikt link til stævne"
+
+#~ msgid "Unique link"
+#~ msgstr "Unikt link"
+
+#~ msgid "Add tournaments to your event from the tournament list"
+#~ msgstr "Tilføj turneringer til stævnet i oversigten over dine turneringer"
+
+#~ msgid "Edit Event Fields"
+#~ msgstr "Rediger stævnebaner"
+
+#~ msgid "Stop Editing Field Names"
+#~ msgstr "Afslut redigering af banenavne"
+
+#~ msgid "Confirm save changes"
+#~ msgstr "Accepter gem ændringer"
+
+#~ msgid "Delete Event?"
+#~ msgstr "Slet stævne?"
+
+#~ msgid ""
+#~ "Do you really want to delete this event? It will NOT delete the "
+#~ "tournaments. It can NOT be undone!"
+#~ msgstr ""
+#~ "Vil du virkelig slette dette stævne? Det vil IKKE slette turneringerne "
+#~ "der hører til stævnet. Det kan IKKE fortrydes!"
+
+#~ msgid "Share Event"
+#~ msgstr "Del stævne"
+
+#~ msgid "Wait while the scoresheet(s) are being prepared"
+#~ msgstr "Vent mens kampskemaet/-erne bliver klargjort"
+
+#~ msgid "Close page"
+#~ msgstr "Luk siden"
+
+#~ msgid "Search for tournament or event ..."
+#~ msgstr "Søg efter turnering eller stævne"
+
+#~ msgid "Enter some letters"
+#~ msgstr "Skriv nogle bogstaver"
+
+#~ msgid "Upcoming Events"
+#~ msgstr "Kommende stævner"
+
+#~ msgid "Loading Events ..."
+#~ msgstr "Henter stævner ..."
+
+#~ msgid "Past Events"
+#~ msgstr "Afsluttede stævner"
+
+#~ msgid "Upcoming Tournaments"
+#~ msgstr "Kommende turneringer"
+
+#~ msgid "Part of Event"
+#~ msgstr "Del af stævne"
+
+#~ msgid "Past Tournaments"
+#~ msgstr "Afsluttede turneringer"
+
+#~ msgid "Move ALL matches to pool"
+#~ msgstr "Flyt ALLE kampe til poolen"
+
+#~ msgid "Auto-distribute the remaining matches"
+#~ msgstr "Fordel de resterende kampe automatisk"
+
+#~ msgid "Reset"
+#~ msgstr "Nulstil"
+
+#~ msgid "Reset saved games"
+#~ msgstr "Nulstil gemte indstillinger"
+
+#~ msgid ""
+#~ "You can paste (CTRL+V) a list of tournament names, short names and/or "
+#~ "field names."
+#~ msgstr ""
+#~ "Du kan paste (CTRL+V) en liste med turneringsnavne, korte navne og/eller "
+#~ "banenavne."
+
+#~ msgid "Field Names (divided by semicolon (;))"
+#~ msgstr "Banenavne (adskilt med semikolon (;))"
+
+#~ msgid "Optional."
+#~ msgstr "Valgfri."
+
+#~ msgid "Add a clone of this tournamet"
+#~ msgstr "Opret en klon af denne turnering"
+
+#~ msgid ""
+#~ "Tournaments in a group can be accessed and shared from the tournament "
+#~ "list."
+#~ msgstr ""
+#~ "Turneringer i en gruppe kan tilgås og deles fra turneringsoversigten."
+
+#~ msgid "View"
+#~ msgstr "Se"
+
+#~ msgid "View tournament"
+#~ msgstr "Se turnering"
+
+#~ msgid "View tournament in new window"
+#~ msgstr "Se turneringen i et nyt vindue"
+
+#~ msgid "tournament"
+#~ msgstr "turnering"
+
+#~ msgid "Match Program"
+#~ msgstr "Kampprogram"
+
+#~ msgid "Share this Stavekontrolden tournament ..."
+#~ msgstr "Del denne Stavekontrolden-turnering ..."
+
+#~ msgid "Edit Most Recent Tournament"
+#~ msgstr "Rediger senest oprettede turnering"
+
+#~ msgid "My Tournaments"
+#~ msgstr "Mine turneringer"
+
+#~ msgid "Create a New Tournament"
+#~ msgstr "Opret en ny turnering"
+
+#~ msgid "Tournaments in event"
+#~ msgstr "Turneringer i stævne"
+
+#~ msgid "Show all tournaments"
+#~ msgstr "Vis alle turneringer"
+
+#~ msgid ""
+#~ "Tournaments are always accessible using a shared link. Setting this makes "
+#~ "it visible to the public"
+#~ msgstr ""
+#~ "Turneringer kan altid ses hvis man har det delte link. Klik på øjet for "
+#~ "at gøre turneringen synlig for alle"
+
+#~ msgid "Last change"
+#~ msgstr "Senest ændret"
+
+#~ msgid "Create a tournament by clicking above"
+#~ msgstr "Opret en ny turnering ved at klikke ovenfor"
+
+#~ msgid "Delete Tournament?"
+#~ msgstr "Slet turnering?"
+
+#~ msgid "Do you really want to delete this tournament? It can NOT be undone!"
+#~ msgstr "Vil du virkelig slette denne turnering? Det kan IKKE fortrydes!"
+
+#~ msgid "Share Tournament"
+#~ msgstr "Del turnering"
+
+#~ msgid "Game Over. Next"
+#~ msgstr "Afslut sættet og gå til næste"
+
+#~ msgid "Match Over. Save results"
+#~ msgstr "Afslut kamp og gem resultatet"
+
+#~ msgid ""
+#~ "Stavekontrolden is perfect for administration of all kinds of sports "
+#~ "events, competetions and tournaments."
+#~ msgstr ""
+#~ "Laturna er perfekt til administration af alle slags sportsbegivenheder, "
+#~ "stævner, turneringer osv."
+
+#~ msgid ""
+#~ "Stavekontrolden is and will always be free to use for single tournaments. "
+#~ "Click <a href=\"?backend=1\">Admin</a>, create an account and begin!"
+#~ msgstr ""
+#~ "Laturna vil altid være gratis at bruge til enkeltstående turneringer. "
+#~ "Klik <a href=\"?backend=1\">Admin</a>, opret en konto og begynd!"
+
+#~ msgid "Professional use"
+#~ msgstr "Professionel brug"
+
+#~ msgid ""
+#~ "If you want to organize an event consisting of several tournaments, it is "
+#~ "free while Stavekontrolden is in Beta mode. If you want to organize "
+#~ "several events, and give Stavekontrolden your own feel and look, please "
+#~ "contact us to get a quote."
+#~ msgstr ""
+#~ "Hvis du vil organisere et stævne som består af flere turneringer, er det "
+#~ "gratis så længe Stavekontrolden er i betaversion. Hvis du vil organisere "
+#~ "flere stævner, og give Stavekontrolden dit eget udtryk, samt have adgang "
+#~ "til support, så kontakt os for en pris."
+
+#~ msgid ""
+#~ "Questions, ideas, comments, bugs ... ? Contact <a href=\"mailto:"
+#~ "jeppe@bundsgaard.net\">Jeppe Bundsgaard</a>."
+#~ msgstr ""
+#~ "Spørgsmål, ideer, kommentarer, fejl ... ? Kontakt <a href=\"mailto:"
+#~ "jeppe@bundsgaard.net\">Jeppe Bundsgaard</a>."
+
+#~ msgid "Easy to get started"
+#~ msgstr "Let at komme i gang"
+
+#~ msgid "Click <a href=\"?backend=1\">Admin</a>, create an account and begin!"
+#~ msgstr "Klik <a href=\"?backend=1\">Admin</a>, opret en konto og begynd!"
+
+#~ msgid "Create a tournament in 5 easy steps"
+#~ msgstr "Opret en ny turnering i fem lette trin"
+
+#~ msgid ""
+#~ "1) Select the <b>sport</b>, 2) give the tournament a <b>name</b>, 3) set "
+#~ "<b>number of teams</b>, 4) write or paste the <b>names of the teams</b>, "
+#~ "5) select the <b>tournament system</b>. <b>And you are good to go!</b>"
+#~ msgstr ""
+#~ "1) Vælg <b>sport</b>, 2) giv torneringen et <b>navn</b>, 3) angiv "
+#~ "<b>antal hold</b>, 4) skriv eller indklip <b>navnene på de deltagende "
+#~ "hold</b>, 5) vælg <b>turneringssystem</b>. <b>Og du er klar til kamp!</b>"
+
+#~ msgid "Create an event"
+#~ msgstr "Opret et stævne"
+
+#~ msgid ""
+#~ "If your are administering more tournaments in an event, create an event."
+#~ msgstr "Hvis du står for flere turneringer i et stævne, opret et stævne."
+
+#~ msgid "Create an organization"
+#~ msgstr "Opret en organisation"
+
+#~ msgid ""
+#~ "If your are administering a row of events, apply for an organization."
+#~ msgstr "Hvis du står for flere stævner, så ansøg om at få en organisation."
+
+#~ msgid "Free to use!"
+#~ msgstr "Gratis at bruge!"
+
+#~ msgid ""
+#~ "Stavekontrolden is and will always be free to use for single tournaments."
+#~ msgstr ""
+#~ "Laturna vil altid være gratis at bruge til enkeltstående turneringer."
+
+#~ msgid "Standard Settings for %s"
+#~ msgstr "Standardindstillinger for %s"
+
+#~ msgid "New result in %s!"
+#~ msgstr "Nyt resultat i %s!"
+
+#~ msgid "Group done in %s!"
+#~ msgstr "Puljen er slut om %s!"
+
+#~ msgid "Round done in %s!"
+#~ msgstr "Runden er afsluttet om %s!"
+
+#~ msgid "Game about to begin %s!"
+#~ msgstr "Kampen starter %s!"
+
+#~ msgid "Error: No organization, event or tournament with that name"
+#~ msgstr ""
+#~ "Fejl: Der er ikke nogen turnering, stævne eller organisation med det navn"
+
+#~ msgid "Your session has timed out. Please log in again"
+#~ msgstr "Din session er udløbet. Log ind igen"
+
+#~ msgid "The data is not correct..."
+#~ msgstr "Data er ikke korrekt..."
+
+#~ msgid "Sunday"
+#~ msgstr "Søndag"
+
+#~ msgid "Monday"
+#~ msgstr "Mandag"
+
+#~ msgid "Tuesday"
+#~ msgstr "Tirsdag"
+
+#~ msgid "Wednesday"
+#~ msgstr "Onsdag"
+
+#~ msgid "Thursday"
+#~ msgstr "Torsdag"
+
+#~ msgid "Friday"
+#~ msgstr "Fredag"
+
+#~ msgid "Saturday"
+#~ msgstr "Lørdag"
+
+#~ msgid "Group %s is done."
+#~ msgstr "Puljen %s er afsluttet."
+
+#~ msgid "Round %s is done."
+#~ msgstr "Runden %s er afsluttet."
+
+#~ msgid "Match between %1$s and %2$s is beginning at %3$s"
+#~ msgstr "Kampen mellem %1$s og %2$s starter kl. %3$s"
+
+#~ msgid "Match about to begin in %s!"
+#~ msgstr "Kampen starter om %s!"
+
+#~ msgid "Sorry, something went wrong while getting the data ... "
+#~ msgstr "Beklager, der gik noget galt ved indhentning af data ... "
+
+#~ msgid "Winner %s"
+#~ msgstr "Vinder %s"
+
+#~ msgid "Loser %s"
+#~ msgstr "Taber %s"
+
+#~ msgid "No %d, %s"
+#~ msgstr "Nummer %d, %s"
+
+#~ msgid "No tournament or event found"
+#~ msgstr "Ingen turnering eller stævne fundet"
+
+#~ msgid "Welcome to the Stavekontrolden experience!"
+#~ msgstr "Velkommen til Stavekontrolden!"
+
+#~ msgid "Scoresheet.pdf"
+#~ msgstr "Kampskema.pdf"
+
+#~ msgid "You haven't set a password in the event settings menu"
+#~ msgstr "Du har ikke oprettet et kodeord i stævneindstillingerne"
+
+#~ msgid "You haven't set a password in the settings menu"
+#~ msgstr "Du har ikke oprettet et kodeord i Indstillinger"
+
+#~ msgid "You don't have the permisions to set the results of this match"
+#~ msgstr "Du har ikke rettighederne til at skrive resultaterne for denne kamp"
+
+#~ msgid "The link has expired"
+#~ msgstr "Linket er udløbet"
+
+#~ msgid "Please ask for a new link at the login page."
+#~ msgstr "Bed venligst om et nyt link på login-siden."
+
+#~ msgid "New Field"
+#~ msgstr "Ny bane"
+
+#~ msgid "Sets/Goals Draw Home"
+#~ msgstr "Sæt/mål uafgjort hjemme"
+
+#~ msgid "Sets/Goals Draw Away"
+#~ msgstr "Sæt/mål uafgjort ude"
+
+#~ msgid "Sets points Draw Home"
+#~ msgstr "Bolde uafgjort hjemme"
+
+#~ msgid "Sets points Draw Away"
+#~ msgstr "Bolde uafgjort ude"
+
+#~ msgid "Custom officials"
+#~ msgstr "Opret officials"
+
+#~ msgid "Go to Tournaments"
+#~ msgstr "Vis turneringer"
+
+#~ msgid "Password for score input"
+#~ msgstr "Kodeord for scoreinput"
+
+#~ msgid "Export all data"
+#~ msgstr "Eksporter al data"
+
+#~ msgid "Go to Events"
+#~ msgstr "Vis stævner"
+
+#~ msgid "Active Tournaments"
+#~ msgstr "Aktive turneringer"
+
+#~ msgid "Set Playing"
+#~ msgstr "Igangværende sæt"
+
+#~ msgid "No  %s %s"
+#~ msgstr "Nr. %s %s"

@@ -1,0 +1,267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-13 22:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: js/basesystembuild.js:141
+msgid "Number "
+msgstr ""
+
+#: js/basesystembuild.js:174
+msgid "Number of teams in tournament?"
+msgstr ""
+
+#: backend/edit.php:44
+msgid "Cannot add team names before number of teams is set"
+msgstr ""
+
+#: backend/edit.php:45
+msgid "No tournament system options before number of teams is set"
+msgstr ""
+
+#: backend/edit.php:66
+msgid "When tournament system is chosen, the games will be ready here"
+msgstr ""
+
+#: backend/edit.php:86
+msgid "When you have chosen a sport, you can see and change the settings ... "
+msgstr ""
+
+#: backend/edit.php:90
+msgid "Tournament Name"
+msgstr ""
+
+#: backend/edit.php:90
+msgid "Tournament name"
+msgstr ""
+
+#: backend/edit.php:90
+msgid "Enter tournament name"
+msgstr ""
+
+#: backend/edit.php:90
+msgid "Tournament short name"
+msgstr ""
+
+#: backend/edit.php:90
+msgid "Short name"
+msgstr ""
+
+#: backend/edit.php:91
+msgid "Number of Teams"
+msgstr ""
+
+#: backend/edit.php:91
+msgid "Number of teams participating in the tournament"
+msgstr ""
+
+#: backend/edit.php:92
+msgid "Team Names"
+msgstr ""
+
+#: backend/edit.php:93
+msgid "Tournament System"
+msgstr ""
+
+#: backend/edit.php:94
+msgid "Time and Place"
+msgstr ""
+
+#: backend/edit.php:95
+msgid "Settings"
+msgstr ""
+
+#: backend/edit.php:96 templates/show.php:24
+msgid "Share"
+msgstr ""
+
+#: header.php:38 header.php:63 templates/menu.php:4 templates/contact.php:4
+#: header.php:38 header.php:63
+msgid "let the games begin"
+msgstr ""
+
+#: header.php:72 header.php:72
+msgid "Home"
+msgstr ""
+
+#: header.php:75 header.php:75
+msgid "Create your own tournament"
+msgstr ""
+
+#: header.php:78 header.php:78
+msgid "Contact"
+msgstr ""
+
+#: header.php:82 header.php:82
+msgid "Log out"
+msgstr ""
+
+#: templates/settings.php:4
+msgid "Passwords"
+msgstr ""
+
+#: templates/settings.php:5
+msgid "Sets and points"
+msgstr ""
+
+#: templates/settings.php:6
+msgid "Tiebreaker rules for League tables"
+msgstr ""
+
+#: templates/settings.php:7
+msgid "Standard durations"
+msgstr ""
+
+#: templates/settings.php:12
+msgid "When inputting scores"
+msgstr ""
+
+#: templates/settings.php:15 templates/settings.php:20
+msgid "Master password"
+msgstr ""
+
+#: templates/settings.php:17
+msgid "Master password and password for each team"
+msgstr ""
+
+#: templates/settings.php:40
+msgid "Max number of sets:"
+msgstr ""
+
+#: templates/settings.php:54
+msgid "Points when won:"
+msgstr ""
+
+#: templates/settings.php:59
+msgid "Points when draw:"
+msgstr ""
+
+#: templates/settings.php:64
+msgid "Custom points function:"
+msgstr ""
+
+#: templates/settings.php:74
+msgid "Order of tiebreaker criteria"
+msgstr ""
+
+#: templates/settings.php:84
+msgid "Un-used tiebreaker criteria"
+msgstr ""
+
+#: templates/settings.php:98
+msgid "(Changes only take effect on new fields, not existing)"
+msgstr ""
+
+#: templates/settings.php:102
+msgid "Standard game duration:"
+msgstr ""
+
+#: templates/settings.php:111
+msgid "Standard break duration:"
+msgstr ""
+
+#: templates/menu.php:5 templates/contact.php:5
+msgid "Stavekontrolden is in alpha version. Use it at your own risk."
+msgstr ""
+
+#: templates/menu.php:11
+msgid "Find your tournament ..."
+msgstr ""
+
+#: templates/menu.php:25
+msgid "Log in or Sign up!"
+msgstr ""
+
+#: templates/menu.php:29 templates/menu.php:30
+msgid "Email address"
+msgstr ""
+
+#: templates/menu.php:31 templates/menu.php:32
+msgid "Password"
+msgstr ""
+
+#: templates/menu.php:35
+msgid "Remember me"
+msgstr ""
+
+#: templates/menu.php:38
+msgid "Sign up"
+msgstr ""
+
+#: templates/menu.php:39
+msgid "Log in"
+msgstr ""
+
+#: templates/show.php:15
+msgid "Games"
+msgstr ""
+
+#: templates/show.php:18
+msgid "League tables"
+msgstr ""
+
+#: templates/show.php:21
+msgid "Groups"
+msgstr ""
+
+#: templates/show.php:57
+msgid "Edit scores"
+msgstr ""
+
+#: templates/show.php:74
+msgid "Enter score"
+msgstr ""
+
+#: templates/show.php:108
+msgid "Total score"
+msgstr ""
+
+#: templates/show.php:118
+msgid "Send scores"
+msgstr ""
+
+#: templates/show.php:119
+msgid "Close"
+msgstr ""
+
+#: templates/contact.php:6
+msgid ""
+"Please help us improve Stavekontrolden to become the number one tournament "
+"administration system on the web."
+msgstr ""
+
+#: templates/contact.php:6
+msgid ""
+"Found a bug? Ideas for improvements? Want to use Stavekontrolden for an important "
+"event? Just want to say hi?"
+msgstr ""
+
+#: templates/contact.php:6
+msgid "Contact the lead developer:"
+msgstr ""
+
+#: test.php:3 test.php:3
+msgid "Create new system"
+msgstr ""
+
+#: test.php:3 test.php:3
+msgid "Save as new system"
+msgstr ""
+
+#: test.php:3 test.php:3
+msgid "Save system"
+msgstr ""

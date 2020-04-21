@@ -1,0 +1,184 @@
+/************************/
+/* Body Colors and Size */
+/************************/
+body {
+  padding-top: 0rem;
+  padding-bottom: 1.5rem;
+  background-color: #FFFFFF;
+  color:#000;
+}
+
+/*********************************/
+/* Header & Text Colors and Size */
+/*********************************/
+
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p, div {
+}
+
+/**********/
+/* Site Header */
+/**********/
+.site-header {
+	background-color:#00aff0;
+	margin:0px;
+}
+.basesystem-logo {
+	background-color:#FFFFFF;
+	padding:10px;
+}
+.basesystem {
+	color:white;
+	font-size:16pt;
+	float:right;
+}
+.basesystem-slogan {
+	color:white;
+	font-size:12pt;
+}
+.menulink {
+/*	color:#FFFFFF;
+	font-size:1em;*/
+	margin-left:20px;
+}
+.logindiv {
+ 	background-color:transparent;
+	border:none;
+}
+.menuform {
+	max-width:25rem;
+}
+.frontpage
+{
+	
+}
+
+/**********/
+/* Footer */
+/**********/
+.site-footer {
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+  background-color: #f5f5f5;
+}
+.footer-link {
+	color: #777;
+}
+
+/**************/
+/* Front Page */
+/**************/
+.frontpage {
+	
+}
+.orgname {
+	
+}
+.orgslogan {
+	
+}
+/*****************/
+/* Tables */
+/*****************/
+.table {
+	color:#212529;
+}
+.table-hover tbody tr:hover td {
+    background: #e3f2fd;
+    color:#222;
+}
+.table td {
+    min-width: 100px;
+    max-width: 300px;
+}
+.gameListTable {
+	
+}
+
+/***************/
+/* Table Cards */
+/***************/
+.table-card {
+    background-color:transparent;
+}
+.table-card-header {
+    padding-top:1em;
+    padding-bottom:.2em;
+    background-color:#DDD;
+    color:#212529;
+}
+.table-card-body {
+   
+}
+
+
+/******************/
+/* Navigation Bar */
+/******************/
+
+.navbar {
+}
+.navbar-nav {
+}
+.navbar>.nav-item {
+}
+.nav-bar>.nav-link {
+}
+.navbar-brand {
+}
+
+/******************/
+/* Navigation tabs */
+/******************/
+.nav-tabs {
+}
+.nav-tabs>.nav-item {
+	background-color:#FFF
+}
+.nav-tabs>.nav-item .active {
+	background-color:#CCC
+	
+}
+.nav-tabs.nav-link {
+}
+
+/******************/
+/* Pagination     */
+/******************/
+.gotofield {
+}
+.gotofield active {
+	
+}
+
+
+/*************/
+/* Icons     */
+/*************/
+.icon-link {
+	color:#555555;
+}
+
+/*********************/
+/* Form Elements     */
+/*********************/
+select.wordfilter option {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+input.wordfilter {
+  max-width: 100px;
+}

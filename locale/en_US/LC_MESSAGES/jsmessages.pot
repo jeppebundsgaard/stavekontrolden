@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-13 23:52+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: js/basesystembuild.js:1
+msgid "Round Robin"
+msgstr ""
+
+#: js/basesystembuild.js:1
+msgid "Cup"
+msgstr ""
+
+#: js/basesystembuild.js:1
+msgid "Skips this round"
+msgstr ""
+
+#: js/basesystembuild.js:2
+msgid "Best teams together"
+msgstr ""
+
+#: js/basesystembuild.js:2
+msgid "Distribute boustrophedon, like you plow"
+msgstr ""
+
+#: js/basesystembuild.js:2
+msgid ""
+"Cross over: Best team against next-to-lowest placed team. Next-best team "
+"against lowest placed team etc."
+msgstr ""
+
+#: js/basesystembuild.js:2
+msgid "Distribute from left to right"
+msgstr ""
+
+#: js/basesystembuild.js:2
+msgid "Divide in the middle, then from left to right"
+msgstr ""
+
+#: js/basesystembuild.js:3
+msgid "One mutual match"
+msgstr ""
+
+#: js/basesystembuild.js:6
+msgid "{0} mutual match(es)"
+msgstr ""
+
+#: js/basesystembuild.js:110
+msgid "No team available"
+msgstr ""
+
+#: js/basesystembuild.js:124
+msgid "Teams in round"
+msgstr ""
+
+#: js/basesystembuild.js:124
+msgid "Teams reordered."
+msgstr ""
+
+#: js/basesystembuild.js:124
+msgid "Reset"
+msgstr ""
+
+#: js/basesystembuild.js:126
+msgid "{0} teams in round"
+msgstr ""
+
+#: js/basesystembuild.js:161
+msgid "{0} matches in group"
+msgstr ""
+
+#: js/basesystembuild.js:162 js/basesystembuild.js:175
+msgid "{0} teams weighted before equal distribution"
+msgstr ""
+
+#: js/basesystembuild.js:163
+msgid "teams"
+msgstr ""
+
+#: js/basesystembuild.js:167 js/basesystembuild.js:174
+msgid ""
+"Matches between teams that have met each other in an earlier round, are not "
+"replayed. The result from the first match is re-used in this round."
+msgstr ""
+
+#: js/basesystembuild.js:167
+msgid "Don't replay matches"
+msgstr ""
+
+#: js/basesystembuild.js:174
+msgid "Matches not replayed"
+msgstr ""
+
+#: js/basesystembuild.js:176
+msgid "{0} teams"
+msgstr ""
+
+#: js/basesystembuild.js:186
+msgid "teams advance from this group."
+msgstr ""
+
+#: js/basesystembuild.js:189
+msgid "{0} teams advance from this group."
+msgstr ""
+
+#: js/basesystembuild.js:270
+msgid "Winner"
+msgstr ""
+
+#: js/basesystembuild.js:270
+msgid "Loser"
+msgstr ""
+
+#: js/basesystembuild.js:270 js/basesystemadmin.js:1324
+msgid "Number {0}"
+msgstr ""
+
+#: js/basesystembuild.js:334
+msgid "Number of teams in tournament?"
+msgstr ""
+
+#: js/basesystembuild.js:343
+msgid "Tournament for {0} teams"
+msgstr ""
+
+#: js/basesystembuild.js:344
+msgid "Tournament description"
+msgstr ""
+
+#: js/basesystembuild.js:347
+msgid "Group Stage "
+msgstr ""
+
+#: js/basesystembuild.js:353
+msgid "Group A"
+msgstr ""
+
+#: js/basesystembuild.js:387 js/basesystembuild.js:827
+msgid "Sorry, there was a problem!"
+msgstr ""
+
+#: js/basesystembuild.js:395
+msgid " matches in tournament"
+msgstr ""
+
+#: js/basesystembuild.js:439
+msgid "Stage {0}"
+msgstr ""
+
+#: js/basesystembuild.js:444
+msgid "Group 1"
+msgstr ""
+
+#: js/basesystembuild.js:470 js/basesystembuild.js:472
+msgid "New"
+msgstr ""
+
+#: js/basesystembuild.js:765
+msgid ""
+"Are you sure you don't want to use the Best teams together-distribution? "
+"When calculating the next round or final table the first team in each group "
+"is considered better than the second team of all other groups. Don't you "
+"want the teams in the first group to be considered best? If so, use Best "
+"teams together-distribution."
+msgstr ""
+
+#: js/basesystembuild.js:802 js/basesystemadmin.js:1537
+msgid "{0} teams not used. Reduce number of advancing teams."
+msgstr ""
+
+#: js/basesystembuild.js:803 js/basesystemadmin.js:1538
+msgid "{0} too many teams used. Reduce number of teams in rounds."
+msgstr ""
+
+#: js/basesystembuild.js:820
+msgid "Successfully saved the system, id {0}"
+msgstr ""
+
+#: js/basesystembuild.js:865
+msgid "You can only exchange teams from the same round"
+msgstr ""
+
+#: js/basesystembuild.js:871
+msgid ""
+"Best teams are put together in this round. This means that teams in the "
+"first group is considered best when calculating next round or the final "
+"table. Please consider this when exchanging teams in this round."
+msgstr ""
+
+#: js/basesystem.js:80
+msgid ""
+"Stavekontrolden uses cookies to ensure you get the best experience on our website. "
+"We don't track you!"
+msgstr ""
+
+#: js/basesystem.js:81
+msgid "Got it"
+msgstr ""
+
+#: js/basesystem.js:82
+msgid "Decline"
+msgstr ""
+
+#: js/basesystem.js:83
+msgid "Learn more"
+msgstr ""
+
+#: js/basesystem.js:363 js/basesystem.js:380 js/basesystem.js:405 js/basesystem.js:512
+#: js/basesystem.js:666 js/basesystemadmin.js:2213 js/basesystemadmin.js:2954
+msgid "There was a problem. Are you connected to the Internet?"
+msgstr ""
+
+#: js/basesystem.js:492
+msgid "Input Live Score"
+msgstr ""
+
+#: js/basesystem.js:529 js/basesystem.js:550
+msgid "Enter Result"
+msgstr ""
+
+#: js/basesystem.js:529 js/basesystem.js:550
+msgid "Live Score"
+msgstr ""
+
+#: js/basesystem.js:533 js/basesystem.js:556
+msgid "Print Scoresheet"
+msgstr ""
+
+#: js/basesystem.js:674
+msgid "Are you ready for the next set?"
+msgstr ""
+
+#: js/basesystem.js:700
+msgid "Do you want to save the results of this match?"
+msgstr ""
+
+#: js/basesystem.js:755
+msgid "No games selected or ready for print"
+msgstr ""
+
+#: js/basesystem.js:929
+msgid ""
+"Un-successful! You need to give Stavekontrolden permission to send you "
+"notifications. You can give this permission in your browser settings, look "
+"for notifications under privacy settings."
+msgstr ""
+
+#: js/basesystem.js:977
+msgid "Do you really want to continue? Then press the send button again."
+msgstr ""
+
+#: js/basesystem.js:1066
+msgid "Please write your e-mail address and click again."
+msgstr ""
+
+#: js/basesystem.js:1073
+msgid ""
+"An e-mail with instructions has been sent to you. If it's not there in a few "
+"minutes, look in your spam folder."
+msgstr ""
+
+#: js/basesystem.js:1161
+msgid ""
+"Not all games are given a place and time. Please ask the tournament owner to "
+"distribute them from the pool."
+msgstr ""
+
+#: js/basesystem.js:1182
+msgid "The matches aren't made visible yet."
+msgstr ""
+
+#: js/basesystem.js:1238
+msgid "Navigate fields"
+msgstr ""
+
+#: js/basesystem.js:1241
+msgid "First"
+msgstr ""
+
+#: js/basesystem.js:1250
+msgid "Last"
+msgstr ""
+
+#: js/basesystem.js:1395
+msgid "No games played yet."
+msgstr ""
+
+#: js/basesystem.js:1434
+msgid "Final result"
+msgstr ""
+
+#: js/basesystem.js:1434 js/basesystem.js:1452
+msgid "Number"
+msgstr ""
+
+#: js/basesystem.js:1434 js/basesystem.js:1452
+msgid "Team"
+msgstr ""
+
+#: js/basesystem.js:1434
+msgid "Seeding Points"
+msgstr ""
+
+#: js/basesystem.js:1443
+msgid "Intermediate results"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Games"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Points"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Sets"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Goals"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points Won"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points Lost"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Won"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Draw"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Lost"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Won Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Draw Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Lost Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Won Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Draw Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Lost Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Points Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Points Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Sets Won Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Goals Won Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Sets Lost Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Goals Lost Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Sets Won Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Goals Won Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Sets Lost Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Goals Lost Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points Won Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points Lost Home"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points Won Away"
+msgstr ""
+
+#: js/basesystem.js:1452
+msgid "Set points Lost Away"
+msgstr ""
+
+#: js/basesystem.js:1502 js/basesystemadmin.js:2232
+msgid "Tournament Day {0}"
+msgstr ""
+
+#: js/basesystem.js:1625
+msgid "There are no upcoming tournaments"
+msgstr ""
+
+#: js/basesystem.js:1627
+msgid "There are no past tournaments"
+msgstr ""
+
+#: js/basesystem.js:1629
+msgid "There are no tournaments in the event"
+msgstr ""
+
+#: js/basesystem.js:1640
+msgid "There are no upcoming events"
+msgstr ""
+
+#: js/basesystem.js:1642
+msgid "There are no past events"
+msgstr ""
+
+#: js/basesystem.js:1667
+msgid "The tournament isn't visible to the public yet."
+msgstr ""
+
+#: js/basesystemadmin.js:383
+msgid "This function isn't implemented yet."
+msgstr ""
+
+#: js/basesystemadmin.js:642
+msgid "You exchanged a game with a game that needs to be finished!"
+msgstr ""
+
+#: js/basesystemadmin.js:659 js/basesystemadmin.js:665
+msgid "Previous rounds not finished yet!"
+msgstr ""
+
+#: js/basesystemadmin.js:1017
+msgid ""
+"You need to empty the last field at this tournament day. Or switch to "
+"automatic mode."
+msgstr ""
+
+#: js/basesystemadmin.js:1251
+msgid ""
+"This tournament hasn't been created yet. Are you connected to the Internet?"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Sunday"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Monday"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Tuesday"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Wednesday"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Thursday"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Friday"
+msgstr ""
+
+#: js/basesystemadmin.js:1856
+msgid "Saturday"
+msgstr ""
+
+#: js/basesystemadmin.js:1878
+msgid "Add field"
+msgstr ""
+
+#: js/basesystemadmin.js:1879
+msgid "Remove field"
+msgstr ""
+
+#: js/basesystemadmin.js:1891
+msgid "Add Tournament Day"
+msgstr ""
+
+#: js/basesystemadmin.js:1922 js/basesystemadmin.js:2238
+msgid "Field {0}"
+msgstr ""
+
+#: js/basesystemadmin.js:2168
+msgid "Un-changed"
+msgstr ""
+
+#: js/basesystemadmin.js:2374
+msgid "Click the button to create a tournament"
+msgstr ""
+
+#: js/basesystemadmin.js:2378
+msgid "Click the button to create an event"
+msgstr ""
+
+#: js/basesystemadmin.js:2447
+msgid "Cut free from group. Cannot be undone!"
+msgstr ""
+
+#: js/basesystemadmin.js:2548
+msgid "Preparing CSS-editor"
+msgstr ""
+
+#: js/basesystemadmin.js:2658
+msgid "There are unsaved changes. Are you sure you want to leave?"
+msgstr ""

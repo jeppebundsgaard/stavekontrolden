@@ -1,0 +1,8 @@
+{
+    "require": {
+        "components/jquery": "^3.4",
+        "components/font-awesome": "^5",
+        "twbs/bootstrap": "^4.3",
+        "phpmailer/phpmailer": "^6.0"
+    }
+}

@@ -1,0 +1,519 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-20 17:16+0200\n"
+"PO-Revision-Date: 2020-04-20 17:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: js/basesystem.js:36
+msgid ""
+"Stavekontrolden uses cookies to ensure you get the best experience on our "
+"website. We don't track you!"
+msgstr ""
+"Stavekontrolden bruger cookies til at sikre at du får den bedste oplevelse "
+"på vores website. Vi sporer dig ikke!"
+
+#: js/basesystem.js:37
+msgid "Got it"
+msgstr "Okay, forstået"
+
+#: js/basesystem.js:38
+msgid "Decline"
+msgstr "Afvis"
+
+#: js/basesystem.js:39
+msgid "Learn more"
+msgstr "Læs mere"
+
+#: js/basesystem.js:88 js/basesystem.js:105 js/basesystem.js:131
+#: js/basesystemadmin.js:926
+msgid "There was a problem. Are you connected to the Internet?"
+msgstr "Der opstod en fejl. Er du forbundet til internettet?"
+
+#: js/basesystem.js:159
+msgid "Please write your e-mail address and click again."
+msgstr "Skriv venligst din e-mailadresse og klik igen."
+
+#: js/basesystem.js:166
+msgid ""
+"An e-mail with instructions has been sent to you. If it's not there in a few "
+"minutes, look in your spam folder."
+msgstr ""
+"Vi har sendt dig en e-mail med instruktioner. Hvis der går mere end nogle få "
+"minutter uden at du har modtaget den, så kig i din spammappe."
+
+#: js/basesystemadminadmin.js:38
+msgid "Do you want to set a new, random password for this user?"
+msgstr "Vil du oprette et nyt, tilfældigt kodeord for denne bruger?"
+
+#: js/basesystemadminadmin.js:43
+msgid "New password: {0}"
+msgstr "Nyt kodeord: {0}"
+
+#: js/basesystemadmin.js:428
+msgid ""
+"Are you sure you want to delete this category and everything dependent on it "
+"(except words)?"
+msgstr ""
+"Er du sikker på at du vil slette denne kategori og alt hvad der afhænger af "
+"den (på nær ord)?"
+
+#: js/basesystemadmin.js:670
+msgid "Preparing CSS-editor"
+msgstr "Forbereder CSS-editoren"
+
+#: js/basesystemadmin.js:829
+msgid "There are unsaved changes. Are you sure you want to leave?"
+msgstr "Der er ikke-gemte ændringer. Er du sikker på at du vil forlade siden?"
+
+#~ msgid "Sat"
+#~ msgstr "Lør"
+
+#~ msgid "Sun"
+#~ msgstr "Søn"
+
+#~ msgid "Mon"
+#~ msgstr "Man"
+
+#~ msgid "Tue"
+#~ msgstr "Tir"
+
+#~ msgid "Wed"
+#~ msgstr "Ons"
+
+#~ msgid "Thu"
+#~ msgstr "Tor"
+
+#~ msgid "Fri"
+#~ msgstr "Fre"
+
+#~ msgid "Round Robin"
+#~ msgstr "Puljekampe"
+
+#~ msgid "Cup"
+#~ msgstr "Cup"
+
+#~ msgid "Skips this round"
+#~ msgstr "Står over i denne runde"
+
+#~ msgid "Best teams together"
+#~ msgstr "Bedste hold sammen"
+
+#~ msgid "Distribute boustrophedon, like you plow"
+#~ msgstr "Fordel bustrofedon, som man pløjer"
+
+#~ msgid ""
+#~ "Cross over: Best team against next-to-lowest placed team. Next-best team "
+#~ "against lowest placed team etc."
+#~ msgstr ""
+#~ "Kryds-over: Bedste hold mod næst-dårligste hold. Næst-bedste hold mod det "
+#~ "dårligst placerede hold osv."
+
+#~ msgid "Distribute from left to right"
+#~ msgstr "Fordel fra venstre mod højre"
+
+#~ msgid "Divide in the middle, then from left to right"
+#~ msgstr "Del i midten, så fra venstre mod højre"
+
+#~ msgid "One mutual match"
+#~ msgstr "En gensidig kamp"
+
+#~ msgid "{0} mutual match(es)"
+#~ msgstr "{0} gensidig(e) kamp(e)"
+
+#~ msgid "No team available"
+#~ msgstr "Ingen hold til rådighed"
+
+#~ msgid "Teams in round"
+#~ msgstr "Hold i runden"
+
+#~ msgid "Teams reordered."
+#~ msgstr "Holdene ombyttet."
+
+#~ msgid "Reset"
+#~ msgstr "Nulstil"
+
+#~ msgid "{0} teams in round"
+#~ msgstr "{0} hold i runden"
+
+#~ msgid "{0} matches in group"
+#~ msgstr "{0} kampe i puljen"
+
+#~ msgid "{0} teams weighted before equal distribution"
+#~ msgstr "{0} hold vægtes før lige fordeling"
+
+#~ msgid "teams"
+#~ msgstr "hold"
+
+#~ msgid ""
+#~ "Matches between teams that have met each other in an earlier round, are "
+#~ "not replayed. The result from the first match is re-used in this round."
+#~ msgstr ""
+#~ "Kampe mellem hold som er mødtes tidligere i en foregående runde, spilles "
+#~ "ikke igen. Resultatet fra den første kamp genbruges i denne runde."
+
+#~ msgid "Don't replay matches"
+#~ msgstr "Gentag ikke kampe fra puljespillet"
+
+#~ msgid "Matches not replayed"
+#~ msgstr "Kampe spilles ikke både ude og hjemme"
+
+#~ msgid "{0} teams"
+#~ msgstr "{0} hold"
+
+#~ msgid "teams advance from this group."
+#~ msgstr "hold går videre fra denne pulje."
+
+#~ msgid "{0} teams advance from this group."
+#~ msgstr "{0} hold går videre fra denne pulje."
+
+#~ msgid "Winner"
+#~ msgstr "Vinder"
+
+#~ msgid "Loser"
+#~ msgstr "Taber"
+
+#~ msgid "Number {0}"
+#~ msgstr "Nummer {0}"
+
+#~ msgid "Number of teams in tournament?"
+#~ msgstr "Antal hold i turneringen?"
+
+#~ msgid "Tournament for {0} teams"
+#~ msgstr "Turnering for {0} hold"
+
+#~ msgid "Tournament description"
+#~ msgstr "Turneringsbeskrivelse"
+
+#~ msgid "Group Stage "
+#~ msgstr "Puljespil "
+
+#~ msgid "Group A"
+#~ msgstr "Pulje A"
+
+#~ msgid "Sorry, there was a problem!"
+#~ msgstr "Beklager, der var et problem!"
+
+#~ msgid " matches in tournament"
+#~ msgstr " kampe i turneringen"
+
+#~ msgid "Stage {0}"
+#~ msgstr "{0}. runde"
+
+#~ msgid "Group 1"
+#~ msgstr "Pulje 1"
+
+#~ msgid "New"
+#~ msgstr "Ny"
+
+#~ msgid ""
+#~ "Are you sure you don't want to use the Best teams together-distribution? "
+#~ "When calculating the next round or final table the first team in each "
+#~ "group is considered better than the second team of all other groups. "
+#~ "Don't you want the teams in the first group to be considered best? If so, "
+#~ "use Best teams together-distribution."
+#~ msgstr ""
+#~ "Er du sikker på at du ikke vil bruge \"Bedste hold sammen\"-fordelingen? "
+#~ "Når næste runde eller den endelige stilling beregnes, betragtes det "
+#~ "første hold i hver gruppe som bedre end det andet hold i alle andre "
+#~ "grupper. Vil du ikke have at de første hold i den første gruppe betragtes "
+#~ "som bedst? Hvis du vil det, så brug \"Bedste hold sammen\"-fordelingen."
+
+#~ msgid "{0} teams not used. Reduce number of advancing teams."
+#~ msgstr "{0} hold er ikke brugt. Reducer antallet af videregående hold."
+
+#~ msgid "{0} too many teams used. Reduce number of teams in rounds."
+#~ msgstr "{0} for mange hold er brugt. Reducer antallet af hold i runderne."
+
+#~ msgid "Successfully saved the system, id {0}"
+#~ msgstr "Systemet blev gemt, id {0}"
+
+#~ msgid "You can only exchange teams from the same round"
+#~ msgstr "Du kan kun ombytte hold fra samme runde"
+
+#~ msgid ""
+#~ "Best teams are put together in this round. This means that teams in the "
+#~ "first group is considered best when calculating next round or the final "
+#~ "table. Please consider this when exchanging teams in this round."
+#~ msgstr ""
+#~ "De bedste hold er i samme gruppe i denne runde. Dette betyder at hold i "
+#~ "den første gruppe betragtes som bedst, når den næste runde eller den "
+#~ "endelige stilling beregnes. Tænk over det, når hold byttes rundt i denne "
+#~ "runde."
+
+#~ msgid "Input Live Score"
+#~ msgstr "Input Live Score"
+
+#~ msgid "Enter Result"
+#~ msgstr "Skriv resultat"
+
+#~ msgid "Live Score"
+#~ msgstr "Live Score"
+
+#~ msgid "Print Scoresheet"
+#~ msgstr "Udskriv kampskema"
+
+#~ msgid "Are you ready for the next set?"
+#~ msgstr "Ar du klar til det næste sæt?"
+
+#~ msgid "No games selected or ready for print"
+#~ msgstr "Ingen kampe valgt eller klar til print"
+
+#~ msgid ""
+#~ "Un-successful! You need to give Stavekontrolden permission to send you "
+#~ "notifications. You can give this permission in your browser settings, "
+#~ "look for notifications under privacy settings."
+#~ msgstr ""
+#~ "Det lykkedes ikke! Du skal give Stavekontrolden tilladelse til at sende "
+#~ "dig notifikationer. Du kan give denne tilladelse i dine "
+#~ "browserindstillinger. Kig efter notifikationer/beskeder under "
+#~ "privatlivsindstillinger."
+
+#~ msgid "Do you really want to continue? Then press the send button again."
+#~ msgstr "Vil du virkelig fortsætte? Så tryk på knappen igen."
+
+#~ msgid "The matches aren't made visible yet."
+#~ msgstr "Kampene er ikke synlige endnu."
+
+#~ msgid ""
+#~ "Not all games are given a place and time. Please ask the tournament owner "
+#~ "to distribute them from the pool."
+#~ msgstr ""
+#~ "Ikke alle kampe har fået tildelt tid og sted. Bed venligst "
+#~ "turneringsejeren om at fordele kampene fra poolen."
+
+#~ msgid "Navigate fields"
+#~ msgstr "Naviger mellem baner"
+
+#~ msgid "First"
+#~ msgstr "Første"
+
+#~ msgid "Last"
+#~ msgstr "Sidste"
+
+#~ msgid "No games played yet."
+#~ msgstr "Ingen kampe spillet endnu."
+
+#~ msgid "Final result"
+#~ msgstr "Slutstilling"
+
+#~ msgid "Number"
+#~ msgstr "Placering"
+
+#~ msgid "Team"
+#~ msgstr "Hold"
+
+#~ msgid "Seeding Points"
+#~ msgstr "Seedningspoint"
+
+#~ msgid "Intermediate results"
+#~ msgstr "Delstillinger"
+
+#~ msgid "Games"
+#~ msgstr "Kampe"
+
+#~ msgid "Points"
+#~ msgstr "Point"
+
+#~ msgid "Sets"
+#~ msgstr "Sæt"
+
+#~ msgid "Goals"
+#~ msgstr "Mål"
+
+#~ msgid "Set points"
+#~ msgstr "Bolde"
+
+#~ msgid "Set points Won"
+#~ msgstr "Bolde vundet"
+
+#~ msgid "Set points Lost"
+#~ msgstr "Bolde tabt"
+
+#~ msgid "Won"
+#~ msgstr "Vundet"
+
+#~ msgid "Draw"
+#~ msgstr "Uafgjort"
+
+#~ msgid "Lost"
+#~ msgstr "Tabt"
+
+#~ msgid "Won Home"
+#~ msgstr "Vundet hjemme"
+
+#~ msgid "Draw Home"
+#~ msgstr "Uafgjort hjemme"
+
+#~ msgid "Lost Home"
+#~ msgstr "Tabt hjemme"
+
+#~ msgid "Won Away"
+#~ msgstr "Vundet ude"
+
+#~ msgid "Draw Away"
+#~ msgstr "Uafgjort ude"
+
+#~ msgid "Lost Away"
+#~ msgstr "Tabt ude"
+
+#~ msgid "Points Home"
+#~ msgstr "Point hjemme"
+
+#~ msgid "Points Away"
+#~ msgstr "Point ude"
+
+#~ msgid "Sets Won Home"
+#~ msgstr "Sæt vundet hjemme"
+
+#~ msgid "Goals Won Home"
+#~ msgstr "Mål vundet hjemme"
+
+#~ msgid "Sets Lost Home"
+#~ msgstr "Sæt tabt hjemme"
+
+#~ msgid "Goals Lost Home"
+#~ msgstr "Mål tabt hjemme"
+
+#~ msgid "Sets Won Away"
+#~ msgstr "Sæt vundet ude"
+
+#~ msgid "Goals Won Away"
+#~ msgstr "Mål vundet ude"
+
+#~ msgid "Sets Lost Away"
+#~ msgstr "Sæt tabt ude"
+
+#~ msgid "Goals Lost Away"
+#~ msgstr "Mål tabt ude"
+
+#~ msgid "Set points Won Home"
+#~ msgstr "Bolde vundet hjemme"
+
+#~ msgid "Set points Lost Home"
+#~ msgstr "Bolde tabt hjemme"
+
+#~ msgid "Set points Won Away"
+#~ msgstr "Bolde vundet ude"
+
+#~ msgid "Set points Lost Away"
+#~ msgstr "Bolde tabt ude"
+
+#~ msgid "Tournament Day {0}"
+#~ msgstr "Spilledag {0}"
+
+#~ msgid "There are no upcoming tournaments"
+#~ msgstr "Der er ikke nogen kommende turneringer"
+
+#~ msgid "There are no past tournaments"
+#~ msgstr "Der er ikke nogen afsluttede turneringer"
+
+#~ msgid "There are no tournaments in the event"
+#~ msgstr "Der er ikke nogen turneringer i dette stævne"
+
+#~ msgid "There are no upcoming events"
+#~ msgstr "Der er ikke nogen kommende stævner"
+
+#~ msgid "There are no past events"
+#~ msgstr "Der er ikke nogen afsluttede stævner"
+
+#~ msgid "The tournament isn't visible to the public yet."
+#~ msgstr "Turneringen er ikke offentligt tilgængelig endnu."
+
+#~ msgid "This function isn't implemented yet."
+#~ msgstr "Denne funktion er ikke implementeret endnu."
+
+#~ msgid "You exchanged a game with a game that needs to be finished!"
+#~ msgstr "Du udskiftede kampen med en kamp som skal være afsluttet!"
+
+#~ msgid "Previous rounds not finished yet!"
+#~ msgstr "Den foregående runde er ikke afsluttet endnu!"
+
+#~ msgid ""
+#~ "You need to empty the last field at this tournament day. Or switch to "
+#~ "automatic mode."
+#~ msgstr ""
+#~ "Du skal tømme den sidste bane på denne spilledag. Eller skifte til "
+#~ "automatisk kampfordeling."
+
+#~ msgid ""
+#~ "This tournament hasn't been created yet. Are you connected to the "
+#~ "Internet?"
+#~ msgstr ""
+#~ "Denne turnering er ikke oprettet endnu. Er du forbundet til internettet?"
+
+#~ msgid "Sunday"
+#~ msgstr "Søndag"
+
+#~ msgid "Monday"
+#~ msgstr "Mandag"
+
+#~ msgid "Tuesday"
+#~ msgstr "Tirsdag"
+
+#~ msgid "Wednesday"
+#~ msgstr "Onsdag"
+
+#~ msgid "Thursday"
+#~ msgstr "Torsdag"
+
+#~ msgid "Friday"
+#~ msgstr "Fredag"
+
+#~ msgid "Saturday"
+#~ msgstr "Lørdag"
+
+#~ msgid "Add field"
+#~ msgstr "Tilføj bane"
+
+#~ msgid "Remove field"
+#~ msgstr "Fjern bane"
+
+#~ msgid "Add Tournament Day"
+#~ msgstr "Tilføj spilledag"
+
+#~ msgid "Field {0}"
+#~ msgstr "Bane {0}"
+
+#~ msgid "Un-changed"
+#~ msgstr "Uændret"
+
+#~ msgid "Click the button to create a tournament"
+#~ msgstr "Klik på knappen for at oprette en turnering"
+
+#~ msgid "Click the button to create an event"
+#~ msgstr "Klik på knappen for at oprette et stævne"
+
+#~ msgid "Cut free from group. Cannot be undone!"
+#~ msgstr "Klip ud af gruppen. Kan ikke omgøres!"
+
+#~ msgid "New Field"
+#~ msgstr "Ny bane"
+
+#~ msgid "Sets/goals"
+#~ msgstr "Sæt/mål"
+
+#~ msgid "Sets/Goals Draw Home"
+#~ msgstr "Sæt/mål uafgjort hjemme"
+
+#~ msgid "Sets/Goals Draw Away"
+#~ msgstr "Sæt/mål uafgjort ude"
+
+#~ msgid "Sets points Draw Home"
+#~ msgstr "Bolde vundet ude"
+
+#~ msgid "Sets points Draw Away"
+#~ msgstr "Bolde uafgjort ude"
