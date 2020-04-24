@@ -21,24 +21,29 @@ function whenLoaded_words() {
 		cachenegsearch=[]
 	}
 	$("#showdetails").click(function() {get_template("words",{showdetails:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
+	$("#showlog").click(function() {get_template("words",{showlog:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
 	$(".wordsave").click(wordsave)
-	clearmodal()
+	onModalHide()
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
+	$("#newword").click(editNewword)
 
 }
-function whenLoaded_wordclasses() {
-	page="wordclasses"
+function whenLoaded_wordclass() {
+	page="wordclass"
 	getrows()	
 	filters()
 	$(".associateaffixclass").change(associateaffixclass)
+	$(".newaffixclass").click(newaffixclass)
+	$(".newaffixrule").click(newaffixrule)
 	$(".wordclasssave").click(wordclasssave)
 	$(".affixclasssave").click(affixclasssave)
 	$(".affixrulesave").click(affixrulesave)
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 
-	clearmodal()
+	onModalHide()
+	$(".newwordclass").click(editNew)
 }
 function whenLoaded_fugeelement() {
 	page="fugeelement"
@@ -51,12 +56,13 @@ function whenLoaded_fugeelement() {
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 
-	clearmodal()
+	onModalHide()
+	$("#newfugeelement").click(editNew)
 
 }
 
-function whenLoaded_affixclasses() {
-	page="affixclasses"
+function whenLoaded_affixclass() {
+	page="affixclass"
 	getrows()	
 	filters()
 	
@@ -65,17 +71,19 @@ function whenLoaded_affixclasses() {
 	$(".affixrulesave").click(affixrulesave)
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
-	clearmodal()
+	onModalHide()
+	$(".newaffixclass").click(newaffixclass)
+	$(".newaffixrule").click(newaffixrule)
 }
-function whenLoaded_affixrules() {
-	page="affixrules"
+function whenLoaded_affixrule() {
+	page="affixrule"
 	getrows()	
 	filters()
 	$(".associateaffixclass").change(associateaffixclass)
 	$("#doeditaffixclass").click(doeditaffixclass)
 	
 	$(".affixrulesave").click(affixrulesave)
-	clearmodal()
+	onModalHide()
 }
 function whenLoaded_morphdescr() {
 	page="singlevalue"
@@ -148,16 +156,18 @@ function associateaffixclass() {
 	$(".editaffixclass").unbind("click").click(viewAffixclass)
 	$(this).val(0)
 }
-function clearmodal() {
-	$('.modal').on('hidden.bs.modal', function (e) {
-		$(this).find(".editwd").collapse("hide")
-		$(this).find(".addwd").collapse("show")
-		$(this).find(".associaterow").collapse("show")
-		$(this).find(".newword").val("")
-		$(this).find(".newword").prop('disabled', false);
-		$(this).find(".affixpool").html("")
-	})
-	
+function onModalHide() {
+		$('.modal').on('hidden.bs.modal', clearmodal)
+}
+function clearmodal(th) {
+	if(typeof(th.type)!="undefined") th=$(this)
+	$(th).find(".editwd").collapse("hide")
+	$(th).find(".addwd").collapse("show")
+	$(th).find(".wordsave").collapse("show")
+	$(th).find(".associaterow").collapse("show")
+	$(th).find(".newword").val("")
+	$(th).find(".newword").prop('disabled', false);
+	$(th).find(".affixpool").html("")
 }
 function promptsave() {
 	send("promptsave","afterprompt",{table:singlevalue,val:$("#promptname").val(),next:next},"backend")
@@ -169,7 +179,7 @@ function afterprompt() {
 function showNext(t) {
 	var nextprev=(t).hasClass("nextsave")?1:($(t).hasClass("prevsave")?-1:0)
 	var next=($("#nextbutton").data("next")+$("#prevbutton").data("next"))/2
-	if(nextprev==0) return {nextprev:0,nextsingle:-1,next:next};
+	if(nextprev==0) return {nextprev:0,newsave:$(t).hasClass("newsave"),nextsingle:-1,next:next};
 	var numshow=Number($(t).closest(".modal-content").find("[name=numshow]").val())+nextprev
 	var limit=$("#limit").val()
 	if(numshow<0 || numshow>=limit) {
@@ -182,63 +192,83 @@ function showNext(t) {
 	return {nextprev:nextprev,nextsingle:numshow,next:next}
 }
 function wordsave() {
-	var nn=showNext($(this))
-	send("saveword","afterwordsave",{word:$("#wordform .newword").serialize(),nextsingle:nn.nextsingle,next:nn.next,nextprev:nn.nextprev},"backend")
+	var andThen=showNext($(this))
+	send("saveword","afterwordsave",{word:$("#wordform .newword").serialize(),andThen:andThen},"backend")
 }
 function afterwordsave(json) {
 	if(!json.warning) {
-		if(json.nextsingle<0) $("#wordmodal").modal('hide')
-		getrows(Number(json.next),json.nextsingle,json.nextprev)
+		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#wordmodal").modal('hide')
+		getrows(json.andThen)
 	}
 }
 function wordclasssave() {
-	var nn=showNext($(this))
+	var andThen=showNext($(this))
 	var affixclasses=$(".wcpool.affixpool .editaffixclass").map(function() {return $(this).data("affixclassid")}).get()
-	send("savewordclass","afterwordclasssave",{wordclass:$("#wordclassform .newword").serialize(),affixclasses:affixclasses,next:nn.next,nextprev:nn.nextprev,nextsingle:nn.nextsingle},"backend")
+	send("savewordclass","afterwordclasssave",{wordclass:$("#wordclassform .newword").serialize(),affixclasses:affixclasses,andThen:andThen},"backend")
 }
 function fugeelementsave() {
-	var nn=showNext($(this))
+	var andThen=showNext($(this))
 	var affixclasses=$(".fepool.affixpool .editaffixclass").map(function() {return $(this).data("affixclassid")}).get()
-	send("savefugeelement","afterfugeelementsave",{fugeelement:$("#fugeelementform .newword").serialize(),affixclasses:affixclasses,next:nn.next,nextprev:nn.nextprev,nextsingle:nn.nextsingle},"backend")
+	send("savefugeelement","afterfugeelementsave",{fugeelement:$("#fugeelementform .newword").serialize(),affixclasses:affixclasses,andThen:andThen},"backend")
 }
 function affixclasssave() {
-	var nn=showNext($(this))
+	var andThen=showNext($(this))
 	var affixrules=$(".acpool.affixpool .editaffixrule").map(function() {return $(this).data("affixruleid")}).get()
-	send("saveaffixclass","afteraffixclasssave",{affixclass:$("#affixclassform .newword").serialize(),affixrules:affixrules,next:nn.next,nextprev:nn.nextprev,nextsingle:nn.nextsingle},"backend")
+	send("saveaffixclass","afteraffixclasssave",{affixclass:$("#affixclassform .newword").serialize(),affixrules:affixrules,andThen:andThen},"backend")
 }
 function affixrulesave() {
-	var nn=showNext($(this))
+	var andThen=showNext($(this))
 	var affixclasses=$(".arpool.affixpool .editaffixclass").map(function() {return $(this).data("affixclassid")}).get()
-	send("saveaffixrule","afteraffixrulesave",{affixrule:$("#affixruleform .newword").serialize(),affixclasses:affixclasses,next:nn.next,nextprev:nn.nextprev,nextsingle:nn.nextsingle},"backend")
+	send("saveaffixrule","afteraffixrulesave",{affixrule:$("#affixruleform .newword").serialize(),affixclasses:affixclasses,andThen:andThen},"backend")
 }
 function afterwordclasssave(json) {
 	if(!json.warning) {
-		if(json.nextsingle<0) $("#wordclassmodal").modal('hide')
-		getrows(Number(json.next),json.nextsingle,json.nextprev)
+		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#wordclassmodal").modal('hide')
+		if(page=="wordclasses")
+			getrows(json.andThen)
 	}
 }
 function afterfugeelementsave(json) {
 	if(!json.warning) {
-		if(json.nextsingle<0) $("#fugeelementmodal").modal('hide')
-		getrows(Number(json.next),json.nextsingle,json.nextprev)
+		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#fugeelementmodal").modal('hide')
+		//if(page=="fugeelement")
+			getrows(json.andThen)
 	}
 }
 function afteraffixclasssave(json) {
+	console.log(json)
 	if(!json.warning) {
-		if(json.nextsingle<0) $("#affixclassmodal").modal('hide')
-		getrows(Number(json.next),json.nextsingle,json.nextprev)
+		if(page!="affixclasses") {
+			if(json.newaffixclass=="true") { // A new class created from wordclassmodal
+				var aff=$('<button class="editaffixclass btn btn-sm btn-light" data-affixclassid="'+json.affixclassid+'">'+json.description+'</button>');
+				var del=$('<i class="fas fa-backspace text-danger deleteaffix">').click(deleteaffix)
+				$(".wcpool.affixpool").append(aff).append(del).append($(" "))
+			} else $(".editaffixclass").each(function() {if($(this).data("affixclassid")==json.affixclassid) $(this).text(json.description) })
+		} 
+		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#affixclassmodal").modal('hide')
+		else {
+			$("#affixclassform  .newword:not(.dontreset)").val("")
+			$(".acpool.affixpool").html("")
+		}
+		if(page=="affixclasses" || !$("#wordclassmodal").hasClass("show"))
+			getrows(json.andThen)
 	}
 }
 function afteraffixrulesave(json) {
+	
 	if(!json.warning) {
-		if(json.affixruleid) { // A new rule created from affixclassmodal
+		if(json.newaffixrule=="true") { // A new rule created from affixclassmodal
 			var aff=$('<button class="editaffixrule btn btn-sm btn-light" data-affixruleid="'+json.affixruleid+'">'+json.description+'</button>');
 			var del=$('<i class="fas fa-backspace text-danger deleteaffix">').click(deleteaffix)
 			$(".acpool.affixpool").append(aff).append(del).append($(" "))
-		} else {
-			getrows(Number(json.next),json.nextsingle,json.nextprev)
+		} else $(".editaffixrule").each(function() {if($(this).data("affixruleid")==json.affixruleid) $(this).text(json.description) })
+		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#affixrulemodal").modal('hide')
+		else {
+			$("#affixruleform .newword:not(.dontreset)").val("")
+			$(".arpool.affixpool").html("")
 		}
-		if(json.nextsingle<0) $("#wordclassmodal").modal('hide')
+		if(page=="affixrules")
+			getrows(json.andThen)
 	}
 }
 function filters() {
@@ -251,8 +281,17 @@ function filters() {
 	$("#filtersetting").change(getrows)
 	$("#limit").change(getrows)
 
+	$("th:first-child").prepend('<i class="fas fa-sort-down changesort"></i> ')
+	$("th:not(:first-child)").prepend('<i class="fas fa-sort changesort"></i> ')
+	$(".changesort").click(function() {
+		$(".changesort").not($(this)).removeClass("fa-sort-up fa-sort-down").addClass("fa-sort")
+		var sort=($(this).hasClass("fa-sort-down")?"fa-sort-up":"fa-sort-down")
+		$(this).removeClass("fa-sort fa-sort-up fa-sort-down").addClass(sort)
+		getrows()
+	})
+
 	$(".nextrows").click(function() {
-		getrows($(this).data("next"))
+		getrows({next:$(this).data("next")})
 		var button=$(this).attr("id")
 		updatebuttons(button)
 	})
@@ -373,6 +412,8 @@ function wordupdate(th) {
 		send(page+"update","doNothing",{id:id,col:col,val:val,singlevalue:singlevalue},"backend")
 }
 function populateTable(json) {
+	if(json.andThen==null) json.andThen={}
+	var editfunction="placeholder"
 	var t=""
 	var editable=[2,3,4,5,6,7,10,11,12]
 	for(var i=0;i<json.rows.length;i++) {
@@ -380,7 +421,7 @@ function populateTable(json) {
 		for(var j=1;j<json.rows[i].length;j++) {
 			t+='<td'+(page=="words" && editable.indexOf(j)>-1?' class="editable"':'')+'>'+(j==1 && page!="singlevalue"?'<strong>':'')+'<span class="val">'+(json.rows[i][j]==null?'':json.rows[i][j])+'</span>'+(j==1 && page!="singlevalue"?'</strong>':'')+"</td>"
 		}
-		if(page!="words") t+='<td><i class="far fa-trash-alt text-danger deletecategory"></i></td>'
+		if(page!="words") t+='<td class="delcol"><i class="far fa-trash-alt text-danger deletecategory"></i></td>'
 	}	t+="</tr>"
 	$("#tablebody").html(t)
 	switch(page) {
@@ -389,8 +430,9 @@ function populateTable(json) {
 			editfunction="editWord"
 			$(".viewWordclass").click(viewWordclass)
 			$("#tablebody .editable").click(changeWord)
+			$("#tablebody>tr>:nth-child(6), #tablebody>tr>:nth-child(7)").addClass("text-center")
 			break
-		case "wordclasses":
+		case "wordclass":
 			editfunction="editWordclass"
 			$(".editaffixclass").click(viewAffixclass)
 			break
@@ -398,11 +440,11 @@ function populateTable(json) {
 			editfunction="editFugeelement"
 			$(".editaffixclass").click(viewAffixclass)
 			break
-		case "affixclasses":
+		case "affixclass":
 			editfunction="editAffixclass"
 			$(".editaffixrule").click(viewAffixrule)
 			break
-		case "affixrules":
+		case "affixrule":
 			editfunction="editAffixrule"
 			$(".editaffixclass").click(viewAffixclass)
 			break
@@ -411,6 +453,11 @@ function populateTable(json) {
 			break
 
 	}
+	var form="#"+page+"form";
+	if(json.andThen.newsave=="true") { 
+		clearmodal($(form))
+		editNewword()
+	}
 	$("#"+page+"form [name=numshow]").data("numshow",json.numshow)
 	if(page!="words") $(".deletecategory").click(deletecategory)
 	if(page!="singlevalue")
@@ -418,7 +465,7 @@ function populateTable(json) {
 	if(json.numrows!=null) $("#numrows").html(json.numrows)
 	if(typeof(json.single)!="undefined") {
 		if(json.reducenext) {
-			var numshowObj=$("#"+editfunction.replace("edit","").toLowerCase()+"form [name=numshow]")
+			var numshowObj=$(form+" [name=numshow]")
 			$(numshowObj).val(Number($(numshowObj).val())-1)
 		}
 		window[editfunction+"Modal"](json);
@@ -444,7 +491,6 @@ function editWordclass() {
 }
 
 function editWordclassModal(json) {
-	
 	var wc=json.single
 	$("#wordclassid").val(wc.id)
 	populateModal(wc,"wordclass")
@@ -460,10 +506,12 @@ function editWordclassModal(json) {
 		$(".deleteaffix").click(deleteaffix)
 	}
 	$("#wordclassmodal").find(".addwd").collapse("hide")
+	$(".newsave").collapse("hide")
+
 	$("#wordclassmodal").modal("show")
 }
 function editFugeelementModal(json) {
-	$("#tablebody>tr:nth-child("+(Number(json.nextsingle)+1)+")>td:first-child").click() //nth-child is 1-based
+	$("#tablebody>tr:nth-child("+(Number(json.andThen.nextsingle)+1)+")>td:first-child").click() //nth-child is 1-based
 }
 function editFugeelement() {
 	$("#fugeelementid").val($(this).parent().data("id"))
@@ -486,6 +534,14 @@ function editWord() {
 	updateNumshow($(this),"wordform")
 	send("singleWord","editWordModal",{id:id},"backend")
 }
+function editNewword() {
+	$("#wordform [name=wordstatus]").val(2)
+	$("#wordform [name=apostroph]").val(0)
+	$("#wordmodal .prevsave,#wordmodal .nextsave").collapse("hide")
+}
+function editNew(e) {
+	$("#"+$(e.target).data("targetmodal")).find(".prevsave,.nextsave").collapse("hide")
+}
 function updateNumshow(o,form) {
 	var numshowObj=$("#"+form+" [name=numshow]")
 	$(numshowObj).val($(numshowObj).data("numshow")+$(o).closest("tr").index())
@@ -502,6 +558,7 @@ function editWordModal(json) {
 	} else $(".wordstatusbeforeelem").collapse("hide")
 	$("#wordmodal").find(".editwd").collapse("show")
 	$("#wordmodal").find(".addwd").collapse("hide")
+	$(".newsave").collapse("hide")
 	$("#wordmodal").modal("show")
 }
 function populateModal(vars,t) {
@@ -533,7 +590,8 @@ function editAffixclassModal(json) {
 		$("#affixclassform .newword").prop('disabled', true);
 	} else deleteableAffixClass()
 	$("#affixclassmodal").find(".addwd").collapse("hide")
-	$("#newaffixrule").click(newaffixrule)
+	
+	$(".newsave").collapse("hide")
 	$("#affixclassmodal").insertAfter("#affixrulemodal")
 	$("#affixclassmodal").modal("show")
 }
@@ -541,17 +599,32 @@ function deleteableAffixClass() {
 	$(".acpool.affixpool .editaffixrule").after('<i class="fas fa-backspace text-danger deleteaffix">')
 	$(".deleteaffix").unbind("click").click(deleteaffix)
 }
-function newaffixrule() {
+function newaffixrule(e) {
+	if($("#affixclassform [name=affixclassid]").val()=="") {
+		send("saveaffixclass","editNewAffixrule",{affixclass:$("#affixclassform .newword").serialize(),andThen:{}},"backend")
+	} else {
+		editNewAffixrule()
+	}
+	editNew(e)
+}
+function editNewAffixrule(json) {
+	if(json!=null) {
+		$("#affixclassform [name=affixclassid]").val(json.affixclassid)
+	}
 	$("#affixruleform [name=affixclassid]").val($("#affixclassform [name=affixclassid]").val())
 	$("#affixruleform [name=c_description]").val($("#affixclassform [name=description]").val())
-
-	$("#affixrulemodal").insertAfter("#affixclassmodal")
-	$("#affixrulemodal").modal("show")
+	$("#affixruleform [name=newaffixrule]").val("true")
+	$("#affixrulemodal").modal("show").insertAfter("#affixclassmodal")
+}
+function newaffixclass(e) {
+	$("#affixclassform [name=newaffixclass]").val("true")
+	$("#affixclassmodal").modal("show").insertAfter("#affixrulemodal")
+	editNew(e)
 }
 function doeditaffixclass() {
-	$("#affixclassmodal").find(".editwd").collapse("show")
-	$("#affixclassmodal").find(".viewwd").collapse("hide")
-	$(".associateclassrow").collapse("show")
+	$("#affixclassmodal .editwd").collapse("show")
+	$("#affixclassmodal .viewwd").collapse("hide")
+	$("#affixclassmodal .closesave").collapse("show")
 	$("#affixclassform .newword").prop('disabled', false);
 	
 	deleteableAffixClass()
@@ -578,6 +651,7 @@ function editAffixruleModal(json) {
 		$(".associaterulerow").collapse("hide")
 		$("#affixruleform .newword").prop('disabled', true);
 	} else deleteableAffixRule()
+	$(".associaterulerow.newsave").collapse("hide")
 	$("#affixrulemodal").find(".addwd").collapse("hide")
 	$("#affixrulemodal").insertAfter("#affixclassmodal")
 	$("#affixrulemodal").modal("show")
@@ -587,19 +661,24 @@ function deleteableAffixRule() {
 	$(".deleteaffix").unbind("click").click(deleteaffix)
 }
 function doeditaffixrule() {
-	$("#affixrulemodal").find(".editwd").collapse("show")
-	$("#affixrulemodal").find(".viewwd").collapse("hide")
-	$(".associaterulerow").collapse("show")
+	$("#affixrulemodal .editwd").collapse("show")
+	$("#affixrulemodal .viewwd").collapse("hide")
+	$("#affixrulemodal .closesave").collapse("show")
 	$("#affixruleform .newword").prop('disabled', false);
 	deleteableAffixRule()
 }
-function getrows(nextwords,nextsingle,nextprev) {
-	var nextbutton=(typeof(nextwords)=="number")
+function getrows(andThen) {
+	if(typeof(andThen)=="undefined") andThen={}
+	else if(typeof(andThen.next)=="undefined") andThen={}
+	var nextbutton=(typeof(andThen.next)=="number")
 	if(!nextbutton) {
 		$("#prevbutton").data("next",-1)
 		$("#nextbutton").data("next",1)
 	}
-	send("get_"+page,"populateTable",{where:$(".wordfilter").serialize(),filtersetting:$("#filtersetting").val(),negsearch:$(".negsearch").map(function() {return $(this).hasClass("show")}).get(),next:(nextbutton?nextwords:0),nextsingle:nextsingle,nextprev:nextprev,numrows:$("#numrows").text(),limit:($(this).attr("id")=="limit"?$(this).val():0),singlevalue:singlevalue},"backend")
+	var order={}
+	if(typeof($(".changesort"))!="undefined")
+		order=$(".changesort").map(function(){return ($(this).hasClass("fa-sort-down")?"ASC":($(this).hasClass("fa-sort-up")?"DESC":""))}).get()
+	send("get_"+page,"populateTable",{where:$(".wordfilter").serialize(),filtersetting:$("#filtersetting").val(),order:order,negsearch:$(".negsearch").map(function() {return $(this).hasClass("show")}).get(),andThen:andThen,numrows:$("#numrows").text(),limit:($(this).attr("id")=="limit"?$(this).val():0),singlevalue:singlevalue},"backend")
 }
 function showMyOrg() {
 	get_template("myOrganization",{contentdiv:"contentdiv"},"initOrg");
@@ -722,13 +801,13 @@ function newpage() {
 }
 function pagetitleedit() {
 	var oldtitle=$(this).text()
-	console.log(oldtitle)
+// 	console.log(oldtitle)
 	var pagetitle=window.prompt("New Page title",oldtitle.trim())
 	
 	if(pagetitle!=null && pagetitle!="") send("changepagetitle","editPages",{pagetitle:pagetitle.trim(),oldtitle:oldtitle},"backend")
 }
 function editPages(json) {
-	console.log(json)
+// 	console.log(json)
 	get_template("orgpages",{contentdiv:"orgcontentdiv"},"orgpagesready")
 }
 jQuery.cachedScript = function( url, options ) {

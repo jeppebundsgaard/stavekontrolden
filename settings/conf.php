@@ -19,15 +19,16 @@ $GLOBALS=array(
 session_start(array('cookie_lifetime' => 60*60*24*365)); //Let Stavekontrolden remember me one more year ...);
 // ini_set("display_errors","true");
 if(!$relative) $relative="./";
-$settingsdir=$relative."settings/";
-$templatesdir=$relative."templates/";
-$frontenddir=$relative."frontend/";
-$functionsdir=$relative."functions/";
-$backenddir=$relative."backend/";
-$imgdir=$relative."img/";
-$jsdir=$relative."js/";
-$pagesdir=$relative."pages/";
-
-include_once($functionsdir."database.php");
-include_once($functionsdir."setlang.php");
+$systemdirs=array(
+	"settings"=>$relative."settings/",
+	"templates"=>$relative."templates/",
+	"frontend"=>$relative."frontend/",
+	"functions"=>$relative."functions/",
+	"backend"=>$relative."backend/",
+	"img"=>$relative."img/",
+	"js"=>$relative."js/",
+	"pages"=>$relative."pages/"
+);
+include_once($systemdirs["functions"]."database.php");
+include_once($systemdirs["functions"]."setlang.php");
 list($locale,$lang)=set_lang($relative);

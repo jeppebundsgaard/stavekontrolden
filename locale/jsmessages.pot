@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-20 21:25+0200\n"
+"POT-Creation-Date: 2020-04-25 00:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: js/basesystem.js:36
+#: js/basesystem.js:38
 msgid ""
 "Stavekontrolden uses cookies to ensure you get the best experience on our "
 "website. We don't track you!"
 msgstr ""
 
-#: js/basesystem.js:37
+#: js/basesystem.js:39
 msgid "Got it"
 msgstr ""
 
-#: js/basesystem.js:38
+#: js/basesystem.js:40
 msgid "Decline"
 msgstr ""
 
-#: js/basesystem.js:39
+#: js/basesystem.js:41
 msgid "Learn more"
 msgstr ""
 
-#: js/basesystem.js:88 js/basesystem.js:105 js/basesystem.js:131
-#: js/basesystemadmin.js:926
+#: js/basesystem.js:92 js/basesystem.js:109 js/basesystem.js:135
+#: js/basesystemadmin.js:1010
 msgid "There was a problem. Are you connected to the Internet?"
 msgstr ""
 
-#: js/basesystem.js:159
+#: js/basesystem.js:163
 msgid "Please write your e-mail address and click again."
 msgstr ""
 
-#: js/basesystem.js:166
+#: js/basesystem.js:170
 msgid ""
 "An e-mail with instructions has been sent to you. If it's not there in a few "
 "minutes, look in your spam folder."
@@ -58,16 +58,16 @@ msgstr ""
 msgid "New password: {0}"
 msgstr ""
 
-#: js/basesystemadmin.js:428
+#: js/basesystemadmin.js:475
 msgid ""
 "Are you sure you want to delete this category and everything dependent on it "
 "(except words)?"
 msgstr ""
 
-#: js/basesystemadmin.js:670
+#: js/basesystemadmin.js:749
 msgid "Preparing CSS-editor"
 msgstr ""
 
-#: js/basesystemadmin.js:829
+#: js/basesystemadmin.js:911
 msgid "There are unsaved changes. Are you sure you want to leave?"
 msgstr ""

@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $c=array();
 parse_str($_POST["word"], $c);
@@ -25,7 +25,7 @@ else {
 		for($i=0;$i<count($c);$i++) {
 			if($r[$cols[$i]]==0 and !$unescaped[$cols[$i]]) $unescaped[$cols[$i]]=0;
 			$res["log"].="-$cols[$i]:".$r[$cols[$i]]."!=".$unescaped[$cols[$i]]."-";
-			$log.=($r[$cols[$i]]!=$unescaped[$cols[$i]]?$cols[$i]." => ".$unescaped[$cols[$i]].".\\n":"");
+			$log.=($r[$cols[$i]]!=$unescaped[$cols[$i]]?$cols[$i]." => ".$unescaped[$cols[$i]].".\n":"");
 		}
 		if($log) { #Changes made
 		$res["log"].="#Changes made";
@@ -40,8 +40,6 @@ else {
 		VALUES ("'.$c["word"].'", "'.$c["wordclass"].'", 2, "'.$_SESSION["username"].'", "'.$_SESSION["username"].'", "'.$c["misspellings"].'", "'.$c["word_definition"].'", "'.$c["comments"].'", "'.$c["technical_term"].'", "'.$c["fugeelementid"].'", "'.$c["strong_declension"].'", "'.$c["apostroph"].'", "'.date("Y-m-d H:i:s").": ".$_SESSION["username"].": "._(sprintf("%s created",$c["word"])).'")';
 		$result=$mysqli->query($q);
 	}
-	$res["nextsingle"]=$_POST["nextsingle"];
-	$res["next"]=$_POST["next"];
-	$res["nextprev"]=$_POST["nextprev"];
+	$res["andThen"]=$_POST["andThen"];
 }
 echo json_encode($res);

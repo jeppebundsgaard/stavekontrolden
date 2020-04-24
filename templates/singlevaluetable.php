@@ -12,13 +12,14 @@
 			</div>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 	<div class="row">
 		<div class="col">
 			<table id="wordtable" class="table table-sm table-hover table-striped">
 				<thead id="wordhead">
 					<tr class="table-info">
 					<th scope="col"><?= $colname;?><br><input class="wordfilter form-control form-control-sm" type="text" name="singlevalue" value="<?= $filters["singlevalue"];?>"></th>
+					<th scope="col" class="delcol"><?= _('Delete');?></th>
 					</tr>
 				</thead>
 				<tbody class="table-striped " id="tablebody">
@@ -26,7 +27,7 @@
 			</table>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 
 </div>
 <div class="modal fade " id="promptmodal" tabindex="-1" role="dialog" aria-labelledby="promptmodal" aria-hidden="true">
@@ -34,7 +35,7 @@
     <div class="modal-content">
 		<div class="modal-header">
 			<h5 class="modal-title"><?=$colname;?></h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>

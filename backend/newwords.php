@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $c=explode("\n",$_POST["newwords"]);
 $numc=count($c);

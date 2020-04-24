@@ -4,57 +4,58 @@ var isTest=false;
 var settings
 var dateformat='DD/MM/YYYY'
 var slasheddateformat=dateformat.replace(/[^YMD]+/g,"/").split("/")
+var isAdmin=false
 // console.log(language)
 //if(typeof(language)=="undefined") var language="da_DK"
 $.getJSON( "./locale/"+language+"/LC_MESSAGES/jsmessages.json", function( jsonlang ) {
 _.setTranslation(jsonlang)
 // console.log(jsonlang)
-})
-var isAdmin=false
-$(function(){
-	window.cookieconsent.initialise({
-		"palette": {
-			"popup": {
-			"background": "#eb6c44",
-			"text": "#ffffff"
+	$(function(){
+		window.cookieconsent.initialise({
+			"palette": {
+				"popup": {
+				"background": "#eb6c44",
+				"text": "#ffffff"
+				},
+				"button": {
+				"background": "#f5d948"
+				}
 			},
-			"button": {
-			"background": "#f5d948"
+			"type": "info",
+	// 		"location": false,
+	// 		"animateRevokable": false,
+	// 		"revokeBtn": '<div class="{{classes}} cc-revoke '+(showconsent?'':'cc-invisible')+'">'+_("Change Cookie Choice")+'</div>',
+			"cookie.name":'cookieconsent_status',
+			"cookie.path":'/',
+			"cookie.domain":window.location.hostname,
+			"cookie.expiryDays": 365,
+			"cookie.secure":true,
+	// 		"dismissOnScroll":false,
+			"dismissOnTimeout":30000,
+			"dismissOnWindowClick":true,
+	// 		"autoOpen":true,
+			"content": {
+				"message": _("Stavekontrolden uses cookies to ensure you get the best experience on our website. We don't track you!"),
+				"dismiss": _("Got it"),
+				"deny": _("Decline"),
+				"link": _("Learn more"),
+				"href": "./?cookies=1"
 			}
-		},
-		"type": "info",
-// 		"location": false,
-// 		"animateRevokable": false,
-// 		"revokeBtn": '<div class="{{classes}} cc-revoke '+(showconsent?'':'cc-invisible')+'">'+_("Change Cookie Choice")+'</div>',
-		"cookie.name":'cookieconsent_status',
-		"cookie.path":'/',
-		"cookie.domain":window.location.hostname,
-		"cookie.expiryDays": 365,
-		"cookie.secure":true,
-// 		"dismissOnScroll":false,
- 		"dismissOnTimeout":30000,
- 		"dismissOnWindowClick":true,
-// 		"autoOpen":true,
-		"content": {
-			"message": _("Stavekontrolden uses cookies to ensure you get the best experience on our website. We don't track you!"),
-			"dismiss": _("Got it"),
-			"deny": _("Decline"),
-			"link": _("Learn more"),
-			"href": "./?cookies=1"
-		}
-	});
-	$(".openloginform").click(openloginform);
-	$(".loginform").submit(login);
-	$("#applyforsignup").click(applyforuser);
-	$("#signup").click(login);
-	$("#updatepassword").click(updatepassword);
-	$("#forgotpassword").click(forgotpassword);
-	//How many should be shown at this viewport size?
-	if(typeof(warning)!="undefined") showWarning(warning);
-	$(".newLang").click(function() {var search=window.location.search; window.location.replace((search?search+"&":"?")+"setlang="+$(this).attr("src").replace(".png","").split("/")[2])});
+		});
+		$(".openloginform").click(openloginform);
+		$(".loginform").submit(login);
+		$("#applyforsignup").click(applyforuser);
+		$("#signup").click(login);
+		$("#updatepassword").click(updatepassword);
+		$("#forgotpassword").click(forgotpassword);
+		//How many should be shown at this viewport size?
+		if(typeof(warning)!="undefined") showWarning(warning);
+		$(".newLang").click(function() {var search=window.location.search; window.location.replace((search?search+"&":"?")+"setlang="+$(this).attr("src").replace(".png","").split("/")[2])});
 
-// $('#carouselCreateCaptions').on('slide.bs.carousel',function(e) {console.log(e)})
+	// $('#carouselCreateCaptions').on('slide.bs.carousel',function(e) {console.log(e)})
+	});
 });
+
 function applyforuser() {
 	$("#inputEmail").attr("type","email")
 	$("#inputEmail").attr("placeholder",($("#signuplabel").text()))

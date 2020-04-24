@@ -1,5 +1,5 @@
 <?php
-include($backenddir."affixoptions.php");
+include($systemdirs["backend"]."affixoptions.php");
 
 ?>
 <div class="container-fluid">
@@ -12,11 +12,11 @@ include($backenddir."affixoptions.php");
 ?>
 		<div class="col-sm">
 			<div class="form-group">
-				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#affixmodal"><?= _("New Affix Class");?></button>
+				<button class="btn btn-small btn-light float-right newaffixclass" data-targetmodal="affixclassmodal"><?= _("New Affix Class");?></button>
 			</div>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 	<div class="row">
 		<div class="col">
 			<table id="wordtable" class="table table-sm table-hover table-striped">
@@ -26,6 +26,7 @@ include($backenddir."affixoptions.php");
 					<th scope="col"><?= _('Type');?><br><select class="wordfilter custom-select custom-select-sm" name="c_affixclass"><option></option><?=$affixclassoptions;?></select></th>
 					<th scope="col"><?= _('Crossproduct');?><br><select class="wordfilter custom-select custom-select-sm" name="c_crossproduct"><option></option><?=$crossproductoptions;?></select></th>
 					<th scope="col"><?= _('Corresponding Affix Rules');?><br><input class="wordfilter form-control form-control-sm" type="text" name="r_description"  value="<?= $filters["affixrule"];?>"></th>
+					<th scope="col" class="delcol"><?= _('Delete');?></th>
 					</tr>
 				</thead>
 				<tbody class="table-striped " id="tablebody">
@@ -33,7 +34,7 @@ include($backenddir."affixoptions.php");
 			</table>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 </div>
 
 <?php include($templatedir."affixmodal.php");

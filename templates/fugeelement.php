@@ -4,7 +4,7 @@ $result=$mysqli->query($q);
 $affixoptions='';
 while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'.$r["description"].'</option>';
 
-include($backenddir."affixoptions.php");
+include($systemdirs["backend"]."affixoptions.php");
 
 ?>
 <div class="container-fluid">
@@ -17,11 +17,11 @@ include($backenddir."affixoptions.php");
 ?>
 		<div class="col-sm">
 			<div class="form-group float-right">
-				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#fugeelementmodal"><?= _("New Fuge Element");?></button>
+				<button class="btn btn-small btn-light float-right" id="newfugeelement" data-toggle="modal" data-target="#fugeelementmodal"><?= _("New Fuge Element");?></button>
 			</div>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 	<div class="row">
 		<div class="col">
 			<table id="fugeelementtable" class="table table-sm table-hover table-striped">
@@ -29,6 +29,7 @@ include($backenddir."affixoptions.php");
 					<tr class="table-info">
 					<th scope="col"><?= _('Fuge Element');?><br><input class="wordfilter form-control form-control-sm" type="text" name="fugeelement" value="<?= $filters["fugeelement"];?>"></th>
 					<th scope="col"><?= _('Corresponding Affix Classes');?><br><input class="wordfilter form-control form-control-sm" type="text" name="description"  value="<?= $filters["affixclass"];?>"></th>
+					<th scope="col" class="delcol"><?= _('Delete');?></th>
 					</tr>
 				</thead>
 				<tbody class="table-striped " id="tablebody">
@@ -36,7 +37,7 @@ include($backenddir."affixoptions.php");
 			</table>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 
 </div>
 
@@ -46,7 +47,7 @@ include($backenddir."affixoptions.php");
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Fuge Element");?></span><span class="addwd collapse show"><?=_("Add Fuge Element");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
@@ -82,7 +83,7 @@ include($backenddir."affixoptions.php");
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Close");?></button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button>
 				<button type="button" class="btn btn-info fugeelementsave prevsave"><?=_("Previous");?></button>
 				<button type="button" class="btn btn-primary fugeelementsave"><?=_("Save");?></button>
 				<button type="button" class="btn btn-info fugeelementsave nextsave"><?=_("Next");?></button>

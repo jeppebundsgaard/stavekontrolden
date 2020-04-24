@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-20 21:25+0200\n"
-"PO-Revision-Date: 2020-04-21 00:48+0200\n"
+"POT-Creation-Date: 2020-04-25 00:01+0200\n"
+"PO-Revision-Date: 2020-04-25 00:01+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da_DK\n"
@@ -22,11 +22,7 @@ msgstr ""
 msgid "Not saved! You need to provide both a word and a word class."
 msgstr "Ikke gemt. Du skal angive både et ord og en ordklasse."
 
-#: backend/get_affixclasses.php:68
-msgid "No more affix classes"
-msgstr "Ikke flere affiksklasser"
-
-#: backend/get_words.php:48
+#: backend/get_words.php:51
 msgid "No more words"
 msgstr "Ikke flere ord"
 
@@ -46,13 +42,13 @@ msgstr ""
 "Det lykkedes ikke at invitere brugeren. Der findes måske allerede en bruger "
 "med den e-mailadresse ..."
 
+#: backend/get_affixrule.php:70
+msgid "No more affix rules"
+msgstr "Ikke flere affiksregler"
+
 #: backend/newwords.php:12
 msgid "Uploaded by user"
 msgstr "Uploadet af bruger"
-
-#: backend/get_affixrules.php:67
-msgid "No more affix rules"
-msgstr "Ikke flere affiksregler"
 
 #: backend/savefugeelement.php:17 backend/savewordclass.php:17
 msgid "Not saved! You need to provide the name of the word class."
@@ -70,6 +66,10 @@ msgstr "Nej"
 msgid "Not saved! You need to provide a description of the affix class."
 msgstr "Ikke gemt. Du skal angive et navn på affiksklassen."
 
+#: backend/get_wordclass.php:70 backend/get_fugeelement.php:70
+msgid "No more word classes"
+msgstr "Ikke flere ordklasser"
+
 #: backend/uploadwords.php:18
 #, php-format
 msgid "The file was not one of the allowed types (%s)"
@@ -83,9 +83,13 @@ msgstr "Der skete en fejl under uploadningen af ukendte årsager"
 msgid "Not saved! You need to provide a description of the affix rule."
 msgstr "Ikke gemt. Du skal angive en beskrivelse af affiksklassen."
 
-#: backend/get_singlevalue.php:36
+#: backend/get_singlevalue.php:38
 msgid "No more values"
 msgstr "Ikke flere værdier"
+
+#: backend/get_affixclass.php:73
+msgid "No more affix classes"
+msgstr "Ikke flere affiksklasser"
 
 #: backend/saveCSS.php:7
 msgid "Something went wrong while saving. Please try again."
@@ -99,10 +103,6 @@ msgstr "Affiksfilen udarbjdet"
 #: backend/hunspell.php:15
 msgid "No word given to analyze."
 msgstr "Der var ikke noget ord at analysere."
-
-#: backend/get_fugeelement.php:67 backend/get_wordclasses.php:67
-msgid "No more word classes"
-msgstr "Ikke flere ordklasser"
 
 #: templates/technical_term.php:2
 msgid "<span id=\"numrows\">0</span> Technical Term Categories"
@@ -152,21 +152,44 @@ msgstr "Afslut"
 msgid "Word Class to Affix Class"
 msgstr "Ordklasse til affiksklasse"
 
-#: templates/singlevaluetable.php:49 templates/fugeelement.php:86
-#: templates/words.php:177 templates/affixmodal.php:49
-#: templates/affixmodal.php:101 templates/affixmodal.php:183
+#: templates/wordclass.php:9
+msgid "<span id=\"numrows\">0</span> Word classes"
+msgstr "<span id=\"numrows\">0</span> ordklasser"
+
+#: templates/wordclass.php:16
+msgid "New Word Class"
+msgstr "Ny ordklasse"
+
+#: templates/wordclass.php:26 templates/words.php:68 templates/words.php:121
+#: templates/affixmodal.php:20
+msgid "Word Class"
+msgstr "Ordklasse"
+
+#: templates/wordclass.php:27 templates/fugeelement.php:66
+#: templates/affixmodal.php:28 templates/affixmodal.php:176
+msgid "Associated Affix Classes"
+msgstr "Tilknyttede affiksklasser"
+
+#: templates/wordclass.php:28 templates/singlevaluetable.php:22
+#: templates/editpage.php:52 templates/fugeelement.php:32
+#: templates/affixrule.php:31 templates/orgpages.php:28
+#: templates/affixclass.php:29
+msgid "Delete"
+msgstr "Slet"
+
+#: templates/singlevaluetable.php:50 templates/fugeelement.php:87
+#: templates/words.php:186 templates/affixmodal.php:52
+#: templates/affixmodal.php:109 templates/affixmodal.php:198
 msgid "Previous"
 msgstr "Forrige"
 
-#: templates/singlevaluetable.php:50 templates/fugeelement.php:87
-#: templates/words.php:178 templates/affixmodal.php:50
-#: templates/affixmodal.php:102 templates/affixmodal.php:184
+#: templates/singlevaluetable.php:51 templates/fugeelement.php:88
 msgid "Save"
 msgstr "Gem"
 
-#: templates/singlevaluetable.php:51 templates/fugeelement.php:88
-#: templates/words.php:179 templates/affixmodal.php:51
-#: templates/affixmodal.php:103 templates/affixmodal.php:185
+#: templates/singlevaluetable.php:52 templates/fugeelement.php:89
+#: templates/words.php:188 templates/affixmodal.php:54
+#: templates/affixmodal.php:111 templates/affixmodal.php:200
 msgid "Next"
 msgstr "Næste"
 
@@ -186,7 +209,7 @@ msgstr "Startdefinition"
 msgid "Spellchecker development"
 msgstr "Stavekontroludvikling"
 
-#: templates/contact.php:6 templates/login.php:6
+#: templates/contact.php:6
 msgid "Stavekontrolden is beta software. Use it at your own risk."
 msgstr "Stavekontrolden er i betaversion. Brug den på eget ansvar."
 
@@ -274,21 +297,17 @@ msgstr "Vis fra"
 msgid "Hide from"
 msgstr "Skjul fra"
 
-#: templates/editpage.php:52 templates/orgpages.php:28
-msgid "Delete"
-msgstr "Slet"
-
 #: templates/editpage.php:57
 msgid "Add header"
 msgstr "Tilføj hoved"
 
+#: templates/login.php:6
+msgid "The hunspell companion."
+msgstr "Grafisk brugerflade til Hunspell"
+
 #: templates/login.php:12
 msgid "Session timed out. Log in again"
 msgstr "Din session er udløbet. Log ind igen"
-
-#: templates/login.php:12
-msgid "Log in or Sign up!"
-msgstr "Log ind eller opret en bruger!"
 
 #: templates/login.php:13
 msgid "Give us your e-mail and a password"
@@ -315,7 +334,7 @@ msgstr "Husk mig"
 msgid "Sign up"
 msgstr "Opret en bruger"
 
-#: templates/login.php:26 header.php:73
+#: templates/login.php:26 header.php:71 footer.php:32
 msgid "Log in"
 msgstr "Log ind"
 
@@ -327,26 +346,27 @@ msgstr "Har du glemt dit kodeord? Klik her for at vælge et nyt."
 msgid "Users in the organization"
 msgstr "Brugere i organisationen"
 
-#: templates/orgusers.php:24 templates/orgusers.php:46 templates/myUser.php:22
+#: templates/orgusers.php:24 templates/orgusers.php:46
+#: templates/systemusers.php:25 templates/myUser.php:22
 msgid "Username"
 msgstr "Brugernavn"
 
 #: templates/orgusers.php:25 templates/orgusers.php:48
-#: templates/systemusers.php:25 templates/myUser.php:26
+#: templates/systemusers.php:26 templates/myUser.php:26
 msgid "E-mail"
 msgstr "E-mail"
 
-#: templates/orgusers.php:26 templates/systemusers.php:27
+#: templates/orgusers.php:26 templates/systemusers.php:28
 msgid "Permissions"
 msgstr "Tilladelser"
 
-#: templates/orgusers.php:27 templates/systemusers.php:28
-#: templates/words.php:78
+#: templates/orgusers.php:27 templates/systemusers.php:29
+#: templates/words.php:79
 msgid "Last Change"
 msgstr "Senest ændret"
 
 #: templates/orgusers.php:28 templates/orgusers.php:34
-#: templates/systemusers.php:29 templates/systemusers.php:35
+#: templates/systemusers.php:30 templates/systemusers.php:36
 #: templates/organizations.php:25 templates/organizations.php:31
 msgid "Remove"
 msgstr "Fjern"
@@ -387,43 +407,37 @@ msgstr "<span id=\"numrows\">0</span> Fugeelementer"
 msgid "New Fuge Element"
 msgstr "Nyt fugeelement"
 
-#: templates/fugeelement.php:30 templates/fugeelement.php:57
-#: templates/words.php:68
+#: templates/fugeelement.php:30 templates/fugeelement.php:58
+#: templates/words.php:71
 msgid "Fuge Element"
 msgstr "Fugeelement"
 
-#: templates/fugeelement.php:31 templates/affixrules.php:30
-#: templates/wordclasses.php:27
+#: templates/fugeelement.php:31 templates/affixrule.php:30
 msgid "Corresponding Affix Classes"
 msgstr "Tilknyttede affiksklasser"
 
-#: templates/fugeelement.php:48
+#: templates/fugeelement.php:49
 msgid "Edit Fuge Element"
 msgstr "Rediger fugeelement"
 
-#: templates/fugeelement.php:48
+#: templates/fugeelement.php:49
 msgid "Add Fuge Element"
 msgstr "Tilføj fugeelement"
 
-#: templates/fugeelement.php:65 templates/affixmodal.php:28
-#: templates/affixmodal.php:164
-msgid "Associated Affix Classes"
-msgstr "Tilknyttede affiksklasser"
-
-#: templates/fugeelement.php:71 templates/affixmodal.php:34
-#: templates/affixmodal.php:170
+#: templates/fugeelement.php:72 templates/affixmodal.php:34
+#: templates/affixmodal.php:182
 msgid "Select Affix Class"
 msgstr "Vælg affiksklasse"
 
-#: templates/fugeelement.php:74 templates/affixmodal.php:37
+#: templates/fugeelement.php:75 templates/affixmodal.php:37
 msgid "Create New Affix Class"
 msgstr "Opret en ny affiksklasse"
 
-#: templates/fugeelement.php:85 templates/words.php:176
-#: templates/affixmodal.php:48 templates/affixmodal.php:100
-#: templates/affixmodal.php:182
-msgid "Close"
-msgstr "Luk"
+#: templates/fugeelement.php:86 templates/words.php:182
+#: templates/affixmodal.php:48 templates/affixmodal.php:105
+#: templates/affixmodal.php:194
+msgid "Cancel"
+msgstr "Fortryd"
 
 #: templates/systemusers.php:19
 msgid "Stavekontrolden Users"
@@ -433,38 +447,13 @@ msgstr "Stavekontrolden-brugere"
 msgid "User-id"
 msgstr "Bruger-id"
 
-#: templates/systemusers.php:26
+#: templates/systemusers.php:27
 msgid "Organization"
 msgstr "Organisation"
 
-#: templates/systemusers.php:35
+#: templates/systemusers.php:36
 msgid "New password"
 msgstr "Nyt kodeord"
-
-#: templates/affixclasses.php:8
-msgid "<span id=\"numrows\">0</span> Affix Classes"
-msgstr "<span id=\"numrows\">0</span> affiksklasser"
-
-#: templates/affixclasses.php:15
-msgid "New Affix Class"
-msgstr "Ny affiksklasse"
-
-#: templates/affixclasses.php:25 templates/affixrules.php:23
-#: templates/affixmodal.php:72 templates/affixmodal.php:123
-msgid "Description"
-msgstr "Beskrivelse"
-
-#: templates/affixclasses.php:26
-msgid "Type"
-msgstr "Type"
-
-#: templates/affixclasses.php:27 templates/affixmodal.php:78
-msgid "Crossproduct"
-msgstr "Crossproduct"
-
-#: templates/affixclasses.php:28
-msgid "Corresponding Affix Rules"
-msgstr "Tilhørende affiksregler"
 
 #: templates/cookies.php:5
 msgid "We don't track you!"
@@ -500,33 +489,29 @@ msgstr ""
 msgid "Creating Dictionary & Affix-file"
 msgstr "Udarbejder ordliste- og affiks-filer"
 
-#: templates/affixrules.php:8
-msgid "<span id=\"numrows\">0</span> Affix Rules"
-msgstr "<span id=\"numrows\">0</span> affiksregler"
+#: templates/filtersettings.php:4
+msgid "Show"
+msgstr "Vis"
 
-#: templates/affixrules.php:24 templates/affixmodal.php:131
-msgid "Parent Affix Class"
-msgstr "Overordnet affiksklasse"
+#: templates/filtersettings.php:8
+msgid "In word"
+msgstr "I ord"
 
-#: templates/affixrules.php:25 templates/affixmodal.php:138
-msgid "Affix"
-msgstr "Affiks"
+#: templates/filtersettings.php:8
+msgid "Beginning of word"
+msgstr "Begyndelsen af ord"
 
-#: templates/affixrules.php:26
-msgid "Strip characters"
-msgstr "Fjern bogstaver"
+#: templates/filtersettings.php:8
+msgid "End of word"
+msgstr "Slutningen af ord"
 
-#: templates/affixrules.php:27 templates/affixmodal.php:146
-msgid "Condition"
-msgstr "Betingelse"
+#: templates/filtersettings.php:8
+msgid "Strict"
+msgstr "Hele strengen"
 
-#: templates/affixrules.php:28 templates/affixmodal.php:150
-msgid "Replacement"
-msgstr "Erstatning"
-
-#: templates/affixrules.php:29
-msgid "Morphological description"
-msgstr "Morfologisk beskrivelse"
+#: templates/filtersettings.php:18
+msgid "Search"
+msgstr "Søg"
 
 #: templates/morphdescr.php:2
 msgid "<span id=\"numrows\">0</span> Morphological Descriptions"
@@ -537,27 +522,35 @@ msgid "New Morphological Description"
 msgstr "Ny morfologisk beskrivelse"
 
 #: templates/morphdescr.php:4 templates/adminmenu.php:14
-#: templates/affixmodal.php:156
+#: templates/affixmodal.php:168
 msgid "Morphological Description"
 msgstr "Morfologisk beskrivelse"
 
-#: templates/words.php:39
+#: templates/words.php:38
 msgid "<span id=\"numrows\">0</span> Words"
 msgstr "<span id=\"numrows\">0</span> ord"
 
-#: templates/words.php:46
+#: templates/words.php:45
 msgid "Hide details"
 msgstr "Skjul detaljer"
 
-#: templates/words.php:46
+#: templates/words.php:45
 msgid "Show details"
 msgstr "Vis detaljer"
 
-#: templates/words.php:47
+#: templates/words.php:46
+msgid "Hide log"
+msgstr "Skjul revisionshistorik"
+
+#: templates/words.php:46
+msgid "Show log"
+msgstr "Vis revisionshistorik"
+
+#: templates/words.php:50
 msgid "New Word"
 msgstr "Nyt ord"
 
-#: templates/words.php:54
+#: templates/words.php:57
 msgid ""
 "Click on the word to edit all values. Click on a value to edit directly. Use "
 "Shift+Arrows or TAB to move between values. Cancel with Esc key."
@@ -566,78 +559,87 @@ msgstr ""
 "direkte. Brug Skift+Pile eller TAB for at flytte rundt mellem værdierne. "
 "Fortryd med Esc-tasten."
 
-#: templates/words.php:63 templates/words.php:104
+#: templates/words.php:66 templates/words.php:108
 msgid "Word"
 msgstr "Ord"
 
-#: templates/words.php:64 templates/words.php:110
+#: templates/words.php:67 templates/words.php:114
 msgid "Status"
 msgstr "Status"
 
-#: templates/words.php:65 templates/words.php:117 templates/wordclasses.php:26
-#: templates/affixmodal.php:20
-msgid "Word Class"
-msgstr "Ordklasse"
-
-#: templates/words.php:66 templates/words.php:121
+#: templates/words.php:69 templates/words.php:127
 msgid "Strong Declension"
 msgstr "Stærk bøjning"
 
-#: templates/words.php:67 templates/words.php:125
+#: templates/words.php:70 templates/words.php:131
 msgid "Misspellings"
 msgstr "Typiske stavefejl"
 
-#: templates/words.php:69 templates/words.php:135
+#: templates/words.php:72 templates/words.php:141
 msgid "Apostroph"
 msgstr "Apostrof"
 
-#: templates/words.php:69 templates/words.php:136
+#: templates/words.php:72 templates/words.php:142
 msgid "With"
 msgstr "Med"
 
-#: templates/words.php:69 templates/words.php:136
+#: templates/words.php:72 templates/words.php:142
 msgid "Without"
 msgstr "Uden"
 
-#: templates/words.php:71 templates/words.php:164
+#: templates/words.php:74 templates/words.php:170
 msgid "Contributor"
 msgstr "Bidrager"
 
-#: templates/words.php:72 templates/words.php:168
+#: templates/words.php:75 templates/words.php:174
 msgid "Last User"
 msgstr "Seneste bruger"
 
-#: templates/words.php:73 templates/words.php:145
+#: templates/words.php:76 templates/words.php:151
 msgid "Word Definition"
 msgstr "Ordforklaring"
 
-#: templates/words.php:74 templates/words.php:154
+#: templates/words.php:77 templates/words.php:160
 msgid "Comments"
 msgstr "Kommentarer"
 
-#: templates/words.php:75 templates/words.php:139
+#: templates/words.php:78 templates/words.php:145
 msgid "Technical Term"
 msgstr "Fagterm"
 
-#: templates/words.php:76 templates/words.php:149
-msgid "Alternatives"
-msgstr "Alternativer"
-
-#: templates/words.php:77 templates/words.php:160
+#: templates/words.php:82 templates/words.php:166
 msgid "Log"
 msgstr "Revisionshistorik"
 
-#: templates/words.php:95
+#: templates/words.php:99
 msgid "Edit Word"
 msgstr "Rediger ord"
 
-#: templates/words.php:95
+#: templates/words.php:99
 msgid "Add Word"
 msgstr "Tilføj ord"
 
-#: templates/words.php:131
+#: templates/words.php:137
 msgid "Fugelement"
 msgstr "Fugeelement"
+
+#: templates/words.php:155
+msgid "Alternatives"
+msgstr "Alternativer"
+
+#: templates/words.php:185 templates/affixmodal.php:51
+#: templates/affixmodal.php:108 templates/affixmodal.php:197
+msgid "Save and"
+msgstr "Gem og"
+
+#: templates/words.php:187 templates/affixmodal.php:53
+#: templates/affixmodal.php:110 templates/affixmodal.php:199
+msgid "Close"
+msgstr "Luk"
+
+#: templates/words.php:189
+msgid "New word"
+msgstr "Nyt ord"
 
 #: templates/myOrganization.php:18
 msgid "Stylesheet"
@@ -652,7 +654,7 @@ msgstr "Opret/rediger sider"
 msgid "Users"
 msgstr "Brugere"
 
-#: templates/dictionaries.php:4 header.php:52
+#: templates/dictionaries.php:4
 msgid "Dictionaries"
 msgstr "Ordlister"
 
@@ -687,6 +689,39 @@ msgstr "Ny statusværdi"
 #: templates/wordstatus.php:4
 msgid "Status Value"
 msgstr "Statusværdi"
+
+#: templates/affixrule.php:8
+msgid "<span id=\"numrows\">0</span> Affix Rules"
+msgstr "<span id=\"numrows\">0</span> affiksregler"
+
+#: templates/affixrule.php:23 templates/affixclass.php:25
+#: templates/affixmodal.php:78 templates/affixmodal.php:134
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: templates/affixrule.php:24 templates/affixmodal.php:143
+msgid "Parent Affix Class"
+msgstr "Overordnet affiksklasse"
+
+#: templates/affixrule.php:25 templates/affixmodal.php:150
+msgid "Affix"
+msgstr "Affiks"
+
+#: templates/affixrule.php:26
+msgid "Strip characters"
+msgstr "Fjern bogstaver"
+
+#: templates/affixrule.php:27 templates/affixmodal.php:158
+msgid "Condition"
+msgstr "Betingelse"
+
+#: templates/affixrule.php:28 templates/affixmodal.php:162
+msgid "Replacement"
+msgstr "Erstatning"
+
+#: templates/affixrule.php:29
+msgid "Morphological description"
+msgstr "Morfologisk beskrivelse"
 
 #: templates/newpass.php:5
 msgid "The link has expired. We can send you a new one."
@@ -786,7 +821,7 @@ msgstr "Send til videre bearbejdning"
 msgid "Organizations"
 msgstr "Organisationer"
 
-#: templates/mySystem.php:28 header.php:82
+#: templates/mySystem.php:28 header.php:80
 msgid "My Stavekontrolden"
 msgstr "Mit Stavekontrolden"
 
@@ -870,14 +905,6 @@ msgstr "Rediger"
 msgid "Move"
 msgstr "Flyt"
 
-#: templates/wordclasses.php:9
-msgid "<span id=\"numrows\">0</span> Word classes"
-msgstr "<span id=\"numrows\">0</span> ordklasser"
-
-#: templates/wordclasses.php:16
-msgid "New Word Class"
-msgstr "Ny ordklasse"
-
 #: templates/unaccepted_word.php:2
 msgid "<span id=\"numrows\">0</span> Unaccepted Words"
 msgstr "<span id=\"numrows\">0</span> uaccepterede ord"
@@ -890,7 +917,7 @@ msgstr "Nyt uaccepteret ord"
 msgid "Unaccepted Word"
 msgstr "Uaccepteret ord"
 
-#: templates/orgsettings.php:14
+#: templates/orgsettings.php:13
 msgid "Standard Settings"
 msgstr "Standardindstillinger"
 
@@ -917,6 +944,26 @@ msgstr "Analyser!"
 #: templates/hunspell.php:24
 msgid "Result"
 msgstr "Resultat"
+
+#: templates/affixclass.php:8
+msgid "<span id=\"numrows\">0</span> Affix Classes"
+msgstr "<span id=\"numrows\">0</span> affiksklasser"
+
+#: templates/affixclass.php:15 templates/affixmodal.php:112
+msgid "New Affix Class"
+msgstr "Ny affiksklasse"
+
+#: templates/affixclass.php:26
+msgid "Type"
+msgstr "Type"
+
+#: templates/affixclass.php:27 templates/affixmodal.php:85
+msgid "Crossproduct"
+msgstr "Crossproduct"
+
+#: templates/affixclass.php:28
+msgid "Corresponding Affix Rules"
+msgstr "Tilhørende affiksregler"
 
 #: templates/myUser.php:15
 msgid "User Data"
@@ -966,89 +1013,77 @@ msgstr "Se ordklasse"
 msgid "Add Word Class"
 msgstr "Tilføj ordklasse"
 
-#: templates/affixmodal.php:63
+#: templates/affixmodal.php:55
+msgid "New Wordclass"
+msgstr "Ny ordklasse"
+
+#: templates/affixmodal.php:69
 msgid "Edit Affix Class"
 msgstr "Rediger affiksklasse"
 
-#: templates/affixmodal.php:63
+#: templates/affixmodal.php:69
 msgid "View Affix Class"
 msgstr "Se affiksklasse"
 
-#: templates/affixmodal.php:63
+#: templates/affixmodal.php:69
 msgid "Add Affix Class"
 msgstr "Tilføj affiksklasse"
 
-#: templates/affixmodal.php:74
+#: templates/affixmodal.php:80
 msgid "Affix Class"
 msgstr "Affiksklasse"
 
-#: templates/affixmodal.php:84
+#: templates/affixmodal.php:91
 msgid "Associated Affix Rules"
-msgstr "Tilknyttede affiksklasser"
+msgstr "Tilknyttede affiksregler"
 
-#: templates/affixmodal.php:89
+#: templates/affixmodal.php:94
 msgid "Create New Affix Rule"
 msgstr "Opret en ny affiksregel"
 
-#: templates/affixmodal.php:114
+#: templates/affixmodal.php:125
 msgid "Edit Affix Rule"
 msgstr "Rediger affiksregel"
 
-#: templates/affixmodal.php:114
+#: templates/affixmodal.php:125
 msgid "View Affix Rule"
 msgstr "Se affiksregel"
 
-#: templates/affixmodal.php:114
+#: templates/affixmodal.php:125
 msgid "Add Affix Rule"
 msgstr "Tilføj affiksregel"
 
-#: templates/affixmodal.php:142
+#: templates/affixmodal.php:154
 msgid "Strip Characters"
 msgstr "Fjern bogstaver"
+
+#: templates/affixmodal.php:201
+msgid "New Affix Rule"
+msgstr "Ny affiksregel"
 
 #: templates/editCSS.php:15
 msgid "Use changes"
 msgstr "Anvend ændringer"
 
-#: header.php:49
+#: header.php:47
 msgid "Frontpage"
 msgstr "Forside"
 
-#: header.php:77
+#: header.php:50
+msgid "Download"
+msgstr "Download"
+
+#: header.php:75
 msgid "My Organization"
 msgstr "Min organisation"
 
-#: header.php:87
+#: header.php:85
 msgid "My User"
 msgstr "Min bruger"
 
 #: index.php:34
 msgid "Error: No organization with that name"
 msgstr "Fejl: Der er ikke nogen organisation med det navn"
-
-#: functions/filtersettings.php:4
-msgid "Show"
-msgstr "Vis"
-
-#: functions/filtersettings.php:8
-msgid "In word"
-msgstr "I ord"
-
-#: functions/filtersettings.php:8
-msgid "Beginning of word"
-msgstr "Begyndelsen af ord"
-
-#: functions/filtersettings.php:8
-msgid "End of word"
-msgstr "Slutningen af ord"
-
-#: functions/filtersettings.php:8
-msgid "Strict"
-msgstr "Hele strengen"
-
-#: functions/filtersettings.php:18
-msgid "Search"
-msgstr "Søg"
 
 #: frontend/login.php:6
 msgid "Not a valid e-mail address"
@@ -1094,29 +1129,34 @@ msgstr ""
 "link for at oprette et nyt kodeord:</p><p><a href=\"%2$s\">%2$s</a></p><p>Vi "
 "ses på Stavekontrolden.dk!</p>"
 
-#: footer.php:19 footer.php:31
+#: footer.php:19 footer.php:30
 msgid "Cookies"
 msgstr "Cookies"
 
-#: footer.php:20 footer.php:32
+#: footer.php:20 footer.php:31
 msgid "Contact"
 msgstr "Kontakt"
 
-#: footer.php:21 footer.php:33
-msgid "Admin"
-msgstr "Admin"
-
-#: footer.php:26
+#: footer.php:25
 msgid "Log out"
 msgstr "Log ud"
 
-#: footer.php:41
+#: footer.php:40
 msgid "Tournament Managed by basesystem"
 msgstr "Turnering administreret med Stavekontrolden"
 
-#: footer.php:71
+#: footer.php:70
 msgid "Login"
 msgstr "Log ind"
+
+#~ msgid "New Affixrule"
+#~ msgstr "Ny affiksregel"
+
+#~ msgid "Log in or Sign up!"
+#~ msgstr "Log ind eller opret en bruger!"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
 
 #~ msgid "This is a page"
 #~ msgstr "Dette er en side"
@@ -1649,9 +1689,6 @@ msgstr "Log ind"
 #~ "Nogle kampe er allerede afgjort. Vil du have genindsat resultaterne når "
 #~ "det nye system er valgt?"
 
-#~ msgid "Cancel"
-#~ msgstr "Fortryd"
-
 #~ msgid "Your own system"
 #~ msgstr "Dit eget system"
 
@@ -1801,9 +1838,6 @@ msgstr "Log ind"
 
 #~ msgid "Custom Time Slots"
 #~ msgstr "Tilpasset tidsskema"
-
-#~ msgid "Save changes"
-#~ msgstr "Gem ændringer"
 
 #~ msgid "Tournament Day Name"
 #~ msgstr "Kampdagsnavn"

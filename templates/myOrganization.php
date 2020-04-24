@@ -1,7 +1,7 @@
 <?php
 	$relative="../";
 	include_once($relative."/settings/conf.php");
-	include_once($backenddir."checklogin.php");
+	include_once($systemdirs["backend"]."checklogin.php");
 ?>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

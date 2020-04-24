@@ -1,9 +1,10 @@
 <?php
  $relative="../";
 include_once($relative."/settings/conf.php");
-// include_once($backenddir."checklogin.php");
+// include_once($systemdirs["backend"]."checklogin.php");
 // if(!$_SESSION["user_id"]) exit;
 if($_POST["showdetails"]=="true") $_SESSION["showdetails"]=!$_SESSION["showdetails"];
+if($_POST["showlog"]=="true") $_SESSION["showlog"]=!$_SESSION["showlog"];
 
 $filters=array();
 parse_str($_POST["filters"], $filters);
@@ -28,7 +29,7 @@ $result=$mysqli->query($q);
 $technical_termoptions='';
 while($r=$result->fetch_assoc()) $technical_termoptions.='<option value="'.$r["id"].'" '.($filters["technical_term"]==$r["id"]?"selected":"").'>'.$r["technical_term"].'</option>';
 
-include($backenddir."affixoptions.php");
+include($systemdirs["backend"]."affixoptions.php");
 
 ?>
 <div class="container-fluid">
@@ -42,11 +43,15 @@ include($backenddir."affixoptions.php");
 		<div class="col-sm">
 			<div class="form-group">
 				<button class="btn btn-small btn-light float-right" id="showdetails"><?= ($_SESSION["showdetails"]?_("Hide details"):_("Show details"));?></button>&nbsp;
-				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#wordmodal"><?= _("New Word");?></button>
+				<button class="btn btn-small btn-light float-right" id="showlog"><?= ($_SESSION["showlog"]?_("Hide log"):_("Show log"));?></button>&nbsp;
 			</div>
 		</div>
+		<div class="col-sm">
+				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#wordmodal"><?= _("New Word");?></button>
+		</div>
+
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 	<div class="row">
 		<div class="col">
 			<small class="form-text text-muted"><?=_("Click on the word to edit all values. Click on a value to edit directly. Use Shift+Arrows or TAB to move between values. Cancel with Esc key.");?></small>
@@ -71,9 +76,10 @@ include($backenddir."affixoptions.php");
 					<th scope="col"><?= _('Word Definition');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word_definition" value="<?= $filters["word_definition"];?>"></th>
 					<th scope="col"><?= _('Comments');?><br><input class="wordfilter form-control form-control-sm" type="text" name="comments" value="<?= $filters["comments"];?>"></th>
 					<th scope="col"><?= _('Technical Term');?><br><select class="wordfilter custom-select custom-select-sm" name="technical_term"><option></option><?= $technical_termoptions;?></select></th>
-					<!--<th scope="col"><?= _('Alternatives');?><br><input class="wordfilter form-control form-control-sm" type="text" name="alternatives" value="<?= $filters["alternatives"];?>"></th>-->
-					<th scope="col"><?= _('Log');?><br><input class="wordfilter form-control form-control-sm" type="text" name="log" value="<?= $filters["log"];?>"></th>
 					<th scope="col"><?= _('Last Change');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastchange"  value="<?= $filters["lastchange"];?>"></th>
+					<?php } ?>
+					<?php if($_SESSION["showlog"]) { ?>
+					<th scope="col"><?= _('Log');?><br><input class="wordfilter form-control form-control-sm" type="text" name="log" value="<?= $filters["log"];?>"></th>
 					<?php } ?>
 					</tr>
 				</thead>
@@ -82,7 +88,7 @@ include($backenddir."affixoptions.php");
 			</table>
 		</div>
 	</div>
-	<?php include($templatesdir."navigation.php");?>
+	<?php include($systemdirs["templates"]."navigation.php");?>
 </div>
 
 <!-- Modal -->
@@ -91,7 +97,7 @@ include($backenddir."affixoptions.php");
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Word");?></span><span class="addwd collapse show"><?=_("Add Word");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
@@ -158,7 +164,7 @@ include($backenddir."affixoptions.php");
 					<div class="form-row">
 						<div class="col-6">
 							<label for="log" class="col-form-label"><?= _('Log');?></label>
-							<textarea class="newword form-control form-control-sm"  disabled="disabled" name="log"></textarea>
+							<textarea class="form-control form-control-sm"  disabled="disabled" name="log"></textarea>
 						</div>
 						<div class="col">
 							<label for="contributor" class="col-form-label"><?= _('Contributor');?></label>
@@ -173,10 +179,16 @@ include($backenddir."affixoptions.php");
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Close");?></button>
-				<button type="button" class="btn btn-info wordsave prevsave"><?=_("Previous");?></button>
-				<button type="button" class="btn btn-primary wordsave" id="wordsave"><?=_("Save");?></button>
-				<button type="button" class="btn btn-info wordsave nextsave"><?=_("Next");?></button>
+				<div class="col float-left"><button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button></div>
+				<div class="col ">
+					<span class="float-right">
+						<small class="text-muted"><?= _("Save and");?></small>
+						<button type="button" class="btn btn-info wordsave prevsave collapse show"><?=_("Previous");?></button>
+						<button type="button" class="btn btn-primary wordsave" id="wordsave"><?=_("Close");?></button>
+						<button type="button" class="btn btn-info wordsave nextsave collapse show"><?=_("Next");?></button>
+						<button type="button" class="btn btn-info wordsave newsave collapse show"><?=_("New word");?></button>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>

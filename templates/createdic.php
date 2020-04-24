@@ -6,8 +6,8 @@
 	</div>
 	<div class="row d-flex justify-content-center mt-4">
 		<div class="col text-center">
-		<?php include($backenddir."createaffixfile.php");?>
-		<?php include($backenddir."createdicfile.php");?>
+		<?php include($systemdirs["backend"]."createaffixfile.php");?>
+		<?php include($systemdirs["backend"]."createdicfile.php");?>
 		</div>
 	</div>
 	<div class="row d-flex justify-content-center mt-2">

@@ -7,9 +7,9 @@
 		<?php if(checkpermissions("wordedit","affix","admin")) {?> 
 			<li class="nav-item " id="words"><a class="nav-link adminmenulink" data-page="words" href="#"><?= _('Process Words');?></a></li>
 		<?php } if(checkpermissions("affix","admin")) {?> 
-			<li class="nav-item " id="wordclasses"><a class="nav-link adminmenulink" data-page="wordclasses" href="#"><?= _('Word Classes');?></a></li>
-			<li class="nav-item " id="affixclasses"><a class="nav-link adminmenulink" data-page="affixclasses" href="#"><?= _('Affix Classes');?></a></li>
-			<li class="nav-item " id="affixrules"><a class="nav-link adminmenulink" data-page="affixrules" href="#"><?= _('Affix Rules');?></a></li>
+			<li class="nav-item " id="wordclass"><a class="nav-link adminmenulink" data-page="wordclass" href="#"><?= _('Word Classes');?></a></li>
+			<li class="nav-item " id="affixclass"><a class="nav-link adminmenulink" data-page="affixclass" href="#"><?= _('Affix Classes');?></a></li>
+			<li class="nav-item " id="affixrule"><a class="nav-link adminmenulink" data-page="affixrule" href="#"><?= _('Affix Rules');?></a></li>
 			<li class="nav-item " id="fugeelement"><a class="nav-link adminmenulink" data-page="fugeelement" href="#"><?= _('Fuge Elements');?></a></li>
 			<li class="nav-item " id="morphdescr"><a class="nav-link adminmenulink" data-page="morphdescr" href="#"><?= _('Morphological Description');?></a></li>
 			<li class="nav-item " id="start_definitions"><a class="nav-link adminmenulink" data-page="start_definitions" href="#"><?= _('Start Definitions');?></a></li>

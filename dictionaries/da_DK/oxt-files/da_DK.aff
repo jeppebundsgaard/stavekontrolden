@@ -2,7 +2,9 @@
 COMPOUNDMIN 1
 COMPOUNDWORDMAX 2
 WORDCHARS -.
-#Stavekontrolden version 2.5.13
+Testing
+Testing
+#Stavekontrolden version 2.5.15
 #Denne fil er en del af Stavekontrolden - et softwareprodukt, der gør det muligt at stavekontrollere på dansk.
 
 #Copyright (C) 2020 Foreningen for frit tilgængelige sprogværktøjer
@@ -25,7 +27,6 @@ WORDCHARS -.
 #MA  02110-1301  USA
 
 #You should have received a copy of the Mozilla Public License along with this library; if not, visit http://www.mozilla.org/MPL/MPL-1.1.html
-
 SET UTF-8
 TRY esrntliadkogmufbvphæøyjåcSMAKBHTLzRNEGéJVFDCwPIxOZ'.UWqØYÅüXQöèóáúðëÆíÖäÜÁàôïêÞÓÿîçãÒÍ.
 FLAG num
@@ -477,14 +478,14 @@ SFX 25 0 es/35 s	+GENITIV
 #Adjektiv, d erstatter t med komparation
 SFX 26 Y 4
 SFX 26 0 e/35 .	+PLUR_BEK
-SFX 26 0 s/35 [^s]	+GENITIV
+SFX 26 0 e/35 [^s]	+GENITIV
 SFX 26 0 '/35 s	+GENITIV
 SFX 26 0 es/35 .	+GENITIV
 
 #Adjektiv, d erstatter t uden komparation b
-PFX 27 N 2
-PFX 27 0 s/33,36,37,36 .
-PFX 27 0 s/34,36,37 .
+SFX 27 N 2
+SFX 27 0 s/33,36,37,36 .
+SFX 27 0 s/34,36,37 .
 
 #Adjektiv, ender på -ende
 SFX 28 Y 2
@@ -592,7 +593,7 @@ SFX 41 0 w/10,46,4,36 w	+KONSONANT_FORDOBLING
 SFX 41 0 x/10,46,4,36 x	+KONSONANT_FORDOBLING
 SFX 41 0 z/10,46,4,36 z	+KONSONANT_FORDOBLING
 
-#Adjektiv, d erstatter t med komparation, -est
+#Adjektiv, d erstatter t med komparation, -est oog hestefoder
 SFX 42 Y 1
 SFX 42 0 t/12,35 [^t]	+BESTEMT_ENTAL
 
@@ -1196,3 +1197,89 @@ SFX 68 0 åer å	+SUPERLATIV_PLURALIS
 
 #dumm
 sfx 70
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+
+#Adjektiv, d erstatter t uden komparation b
+PFX 81 N 1
+PFX 81  uyt 	+PRÆSENS_PART
+
+#Apostrof NeedAffix
+
+#Adjektiv, dobbeltkonsonant b
+
+#hej
+
+#Hejsa
+
+#Hejsa
+SFX 86 Y 2
+SFX 86  's/23 	+PRÆSENS_PART
+SFX 86 d a/26 	+BESTEMT_ENTAL
+
+#Min affixklsse til Min ordklassen
+SFX 87 Y 2
+SFX 87  's/41 	+PLUR_UBEK
+SFX 87  't/41 	+PLUR_BEK
+
+#nyac2
+
+#hejsa
+FULLSTRIP 89
+
+#dfg
+ 90
+
+#trt
+
+#xgg
+ 92
+
+#oiu
+ 93
+
+#iuy
+ 94
+
+#lkj
+
+#kjh
+
+#jkh
+PFX 97 N 3
+PFX 97  kjh 	+PLUR_UBEK
+PFX 97  sdf/41 	+PLUR_UBEK
+PFX 97  sdf/41 	+PLUR_UBEK
+
+#kjh
+SFX 98  2
+SFX 98 kjh kjh 
+SFX 98 kjh kjh 
+
+#kjh
+PFX 99  1
+PFX 99  kjh 	+PRÆSENS_PART
+
+#uyt
+CIRCUMFIX 100
+
+#ytr
+FULLSTRIP 101

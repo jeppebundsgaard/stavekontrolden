@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
@@ -12,32 +12,35 @@ $wheres=array();
 $f=$_POST["filtersetting"];
 $_SESSION["filtersetting"]=$f;
 parse_str($_POST["where"], $wheres);
+$n=0;
 foreach($wheres as $k=>$w) {
 	if($w!="") 
 		$where.=' AND '.implode(".`",explode("_",$k)).'`'.(is_numeric($w)?"=".$w:' LIKE "'.(in_array($f,array("inword","endword"))?"%":"").''.$w.''.(in_array($f,array("inword","beginword"))?"%":"").'"');
+	if($_POST["order"][$n]) $custorder=str_replace("_",".",$k);
+	$n++;
 }
 $where=" WHERE r.lang='".$_SESSION["lang"]."' ".$where;
-$order=" ORDER BY  c.`description`, r.`description`"; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$order=" ORDER BY  ".($custorder?$custorder:"r.`description`")." "; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$orderdir=implode("",$_POST["order"]);
 
 $baseq=" from affixrule r left join affixclass c on r.`affixclassid`=c.`id` left join affixrule_to_affixclass rc on r.`id`=rc.`affixruleid` left join affixclass c1 on rc.`affixclassid`=c1.`id` left join morphdescr m on m.id=r.morphdescrid ";
 
-$orderdesc=" ORDER BY  c.`description`";
-if($_POST["next"]<0) {
-// // 	$last1="SELECT * FROM (";
-// //     $last2=") sub ";
-    $orderdesc.=" DESC";
-    $_POST["next"]+=1;
+#$orderdesc=" ORDER BY  c.`description`";
+if($_POST["andThen"]["next"]<0) {
+	$reverseorder=array(""=>"DESC","ASC"=>"DESC","DESC"=>"ASC")[$orderdir];
+	$orderdir=$reverseorder;
+    $_POST["andThen"]["next"]+=1;
 }
-elseif(!$_POST["next"]){
+elseif(!$_POST["andThen"]["next"]){
 	$q="SELECT count(*) as numrows ".$baseq.$where;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
 }
-$res["numshow"]=abs($_POST["next"])*$show;
-$limit=" LIMIT ".abs($_POST["next"])*$show.",".$show;
+$res["numshow"]=abs($_POST["andThen"]["next"])*$show;
+$limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
-$q=$last1."select distinct(r.id)".$baseq.$where.$orderdesc.$limit.$last2;
+$q=$last1."select distinct(r.id)".$baseq.$where.$order.$orderdir.$limit.$last2;
 $res["log"]=$q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
@@ -65,15 +68,15 @@ if(!empty($rall)) {
 	}
 }
 else $res["rows"]=array(1=>array(_("No more affix rules")));
-// print_r($_POST,true);
-if(isset($_POST["nextsingle"])) {
-	if($_POST["nextprev"]==1 and $res["numrows"]<$_POST["numrows"]) {
-		$_POST["nextsingle"]--;
+// print_r($_POST["andThen"],true);
+if(isset($_POST["andThen"]["nextsingle"])) {
+	if($_POST["andThen"]["nextprev"]==1 and $res["numrows"]<$_POST["numrows"]) {
+		$_POST["andThen"]["nextsingle"]--;
 		$res["reducenext"]=true;
 	}
-	if($_POST["nextsingle"]>=0) { //A next single has been requested
+	if($_POST["andThen"]["nextsingle"]>=0) { //A next single has been requested
 		//Has a word been removed from the list, don't go forward
-		$_POST["id"]=$res["rows"][$_POST["nextsingle"]][0];
+		$_POST["id"]=$res["rows"][$_POST["andThen"]["nextsingle"]][0];
 		include("singleAffixrule.php");
 		exit;
 	}

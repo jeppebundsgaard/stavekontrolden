@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $c=array();
 parse_str($_POST["fugeelement"], $c);
@@ -58,10 +58,7 @@ else {
 		$result=$mysqli->query($q);
 		$res["log"].=$q;
 	}
-	$res["nextsingle"]=$_POST["nextsingle"];
-	$res["next"]=$_POST["next"];
-	$res["nextprev"]=$_POST["nextprev"];
-
+	$res["andThen"]=$_POST["andThen"];
 
 }
 echo json_encode($res);

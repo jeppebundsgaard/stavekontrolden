@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
@@ -12,30 +12,33 @@ $wheres=array();
 $f=$_POST["filtersetting"];
 $_SESSION["filtersetting"]=$f;
 parse_str($_POST["where"], $wheres);
+$n=0;
 foreach($wheres as $k=>$w) {
 	if($w!="")
 		$where.=' AND `'.$k.'` LIKE "'.(in_array($f,array("inword","endword"))?"%":"").''.$w.''.(in_array($f,array("inword","beginword"))?"%":"").'"';
+	if($_POST["order"][$n]) $order=$k." ".$_POST["order"][$n];
+	$n++;
 }
 $where=" WHERE f.lang='".$_SESSION["lang"]."' ".$where;
-$order=" ORDER BY  `fugeelement`, a.`description`"; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$order=" ORDER BY  ".($order?$order:"`fugeelement`, a.`description`"); #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
 
 $baseq=" from fugeelement f left join fugeelement_to_affixclass fa on f.`id`=fa.`fugeelementid` left join affixclass a on fa.`affixclassid`=a.`id` ";
 
 $orderdesc=" ORDER BY  `fugeelement`";
-if($_POST["next"]<0) {
+if($_POST["andThen"]["next"]<0) {
 // // 	$last1="SELECT * FROM (";
 // //     $last2=") sub ";
     $orderdesc.=" DESC";
-    $_POST["next"]+=1;
+    $_POST["andThen"]["next"]+=1;
 }
-elseif(!$_POST["next"]){
+elseif(!$_POST["andThen"]["next"]){
 	$q="SELECT count(*) as numrows ".$baseq.$where;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
 }
-$res["numshow"]=abs($_POST["next"])*$show;
-$limit=" LIMIT ".abs($_POST["next"])*$show.",".$show;
+$res["numshow"]=abs($_POST["andThen"]["next"])*$show;
+$limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
 $q=$last1."select distinct(f.id)".$baseq.$where.$orderdesc.$limit.$last2;
 #$res["log"]=$q;
@@ -65,8 +68,8 @@ if(!empty($rall)) {
 	}
 }
 else $res["rows"]=array(1=>array(_("No more word classes")));
-$res["nextsingle"]=$_POST["nextsingle"];
-if($_POST["nextsingle"])
+$res["andThen"]=$_POST["andThen"];
+if($_POST["andThen"]["nextsingle"])
 	$res["single"]=true;
 #print_r($res["rows"],true).
 #file_put_contents("/home/stavekontrolden.dk/www/stavekontrolden/rows.txt",print_r($res,true));

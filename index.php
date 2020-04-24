@@ -24,8 +24,8 @@ if($_POST["logout"] or !$_COOKIE["rememberMe"]) { //If rememberme not set, the b
 $user_id=$_SESSION["user_id"];
 if($_GET["istest"]) $_SESSION["isTest"]=true;
 
-include($functionsdir."database.php");
-include_once($functionsdir."templatefunctions.php");
+include($systemdirs["functions"]."database.php");
+include_once($systemdirs["functions"]."templatefunctions.php");
 
 if($_GET["o"]) {
 	$o=$_GET["o"];

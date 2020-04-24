@@ -33,7 +33,7 @@
 				<img src="img/kontrold-logo.png">
 			</a>
 		</div>
-		<div class="colbasesystem text-center align-middle">
+		<div class="col basesystem text-center align-middle">
 			<span class="d-none d-lg-block small"></span><span class="d-block" id="basesystemHeader"></span>
 		</div>
 		<div class="col d-lg-none">
@@ -50,7 +50,7 @@
 						<a class="nav-link menulink" href="./?dictionaries=1"><?= _('Download');?></a>
 					</li>
 					<?php 
-					$orgpagesdir=$pagesdir."org/".($GLOBALS["langtoorg"][$_SESSION["locale"]]+0)."/";
+					$orgpagesdir=$systemdirs["pages"]."org/".($GLOBALS["langtoorg"][$_SESSION["locale"]]+0)."/";
 					if(file_exists($orgpagesdir)) {
 						if ($handle = opendir($orgpagesdir)) {
 							while (false !== ($e = readdir($handle))) {

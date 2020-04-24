@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
@@ -12,30 +12,33 @@ $wheres=array();
 $f=$_POST["filtersetting"];
 $_SESSION["filtersetting"]=$f;
 parse_str($_POST["where"], $wheres);
+$n=0;
 foreach($wheres as $k=>$w) {
 	if($w!="")
 		$where.=' AND `'.$k.'` LIKE "'.(in_array($f,array("inword","endword"))?"%":"").''.$w.''.(in_array($f,array("inword","beginword"))?"%":"").'"';
+	if($_POST["order"][$n]) $order=$k." ".$_POST["order"][$n];
+	$n++;
 }
 $where=" WHERE w.lang='".$_SESSION["lang"]."' ".$where;
-$order=" ORDER BY  `wordclass`, a.`description`"; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$order=" ORDER BY ".($order?$order:" `wordclass`, a.`description`"); #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
 
 $baseq=" from wordclass w left join wordclass_to_affixclass wa on w.`id`=wa.`wordclassid` left join affixclass a on wa.`affixclassid`=a.`id` ";
 
 $orderdesc=" ORDER BY  `wordclass`";
-if($_POST["next"]<0) {
+if($_POST["andThen"]["next"]<0) {
 // // 	$last1="SELECT * FROM (";
 // //     $last2=") sub ";
     $orderdesc.=" DESC";
-    $_POST["next"]+=1;
+    $_POST["andThen"]["next"]+=1;
 }
-elseif(!$_POST["next"]){
-	$q="SELECT count(*) as numrows ".$baseq.$where;
+elseif(!$_POST["andThen"]["next"]){
+	$q="SELECT count(distinct(w.id)) as numrows ".$baseq.$where;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
 }
-$res["numshow"]=abs($_POST["next"])*$show;
-$limit=" LIMIT ".abs($_POST["next"])*$show.",".$show;
+$res["numshow"]=abs($_POST["andThen"]["next"])*$show;
+$limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
 $q=$last1."select distinct(w.id)".$baseq.$where.$orderdesc.$limit.$last2;
 #$res["log"]=$q;
@@ -66,17 +69,18 @@ if(!empty($rall)) {
 }
 else $res["rows"]=array(1=>array(_("No more word classes")));
 #$res["log"].=print_r($res["rows"],true);
-#$res["log"].=print_r($_POST["nextsingle"],true);
-if(isset($_POST["nextsingle"])) {
-	if($_POST["nextprev"]==1 and $res["numrows"]<$_POST["numrows"]) {
-		$_POST["nextsingle"]--;
+$res["log"].=print_r($_POST,true);
+$res["andThen"]=$_POST["andThen"];
+if($_POST["andThen"]["nextsingle"]>-1) {
+	if($_POST["andThen"]["nextprev"]==1 and $res["numrows"]<$_POST["numrows"]) {
+		$_POST["andThen"]["nextsingle"]--;
 		$res["reducenext"]=true;
 	}
-	if($_POST["nextsingle"]>=0) { //A next single has been requested
+	if($_POST["andThen"]["nextsingle"]>=0) { //A next single has been requested
 		//Has a word been removed from the list, don't go forward
-		$_POST["id"]=$res["rows"][$_POST["nextsingle"]][0];
+		$_POST["id"]=$res["rows"][$_POST["andThen"]["nextsingle"]][0];
 		include("singleWordclass.php");
 		exit;
 	}
 } 
-else echo json_encode($res);
+echo json_encode($res);

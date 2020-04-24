@@ -99,8 +99,13 @@ p, div {
     color:#222;
 }
 .table td {
-    min-width: 100px;
+    min-width: 50px;
     max-width: 300px;
+}
+.delcol {
+	width:50px;
+	float:right;
+
 }
 .gameListTable {
 	
@@ -186,3 +191,4 @@ p>img {
 	padding:20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+

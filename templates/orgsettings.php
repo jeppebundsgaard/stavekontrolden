@@ -1,9 +1,8 @@
 <?php
-	global $backenddir;
 	$relative="../";
 	include_once($relative."/settings/conf.php");
-	include_once($GLOBALS["backenddir"]."checklogin.php");
-	include_once($functionsdir."templatefunctions.php");
+	include_once($systemdirs["backenddir"]."checklogin.php");
+	include_once($systemdirs["functions"]."templatefunctions.php");
 	
 	$q="select settings from organizations where org_id=".$_SESSION["user_id"];
 	$result=$mysqli->query($q);

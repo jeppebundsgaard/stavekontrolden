@@ -1,7 +1,7 @@
 <?php
 $relative="../";
 include_once($relative."/settings/conf.php");
-include_once($backenddir."checklogin.php");
+include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $c=array();
 parse_str($_POST["affixclass"], $c);
@@ -12,7 +12,7 @@ foreach($c as $i=>$v) {
 		$c[$i]=$mysqli->real_escape_string($c[$i]);
 }
 $oldaff=(empty($_POST["affixrules"])?array():$_POST["affixrules"]);
-$res["log"]="";
+$res["log"].=print_r($c,true);
 if(!$c["description"]) {
 	$res["warning"]=_("Not saved! You need to provide a description of the affix class.");
 }
@@ -42,13 +42,14 @@ else {
 	//Status set to 2 when word created
 		$q='insert into affixclass (`lang`,`affixclass`,`crossproduct`,`description`) values ("'.$_SESSION["lang"].'","'.$c["affixclass"].'","'.$c["crossproduct"].'","'.$c["description"].'")'; 
 
-// 		$res["log"]=$q;
+ 		$res["log"].=$q;
 		$result=$mysqli->query($q);
 		$c["affixclassid"]=$mysqli->insert_id;
 		$insert=$oldaff;
 	}
-	$res["nextsingle"]=$_POST["nextsingle"];
-	$res["next"]=$_POST["next"];
-	$res["nextprev"]=$_POST["nextprev"];
+	$res["andThen"]=$_POST["andThen"];
+	$res["newaffixclass"]=$c["newaffixclass"];
+	$res["affixclassid"]=$c["affixclassid"];
+	$res["description"]=$c["description"];
 }
 echo json_encode($res);

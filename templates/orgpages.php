@@ -1,7 +1,7 @@
 <?php
 	$relative="../";
 	include_once($relative."/settings/conf.php");
-// 	include_once($backenddir."checklogin.php");
+// 	include_once($systemdirs["backend"]."checklogin.php");
 	
 
 ?>
@@ -30,7 +30,7 @@
 				</thead>
 				<tbody class="table-striped " id="tablebody">
 				<?php
-					$orgpagesdir=$pagesdir."org/".$_SESSION["user_id"];
+					$orgpagesdir=$systemdirs["pages"]."org/".$_SESSION["user_id"];
 					if(!file_exists($orgpagesdir)) mkdir($orgpagesdir);
 					else {
 						if ($handle = opendir($orgpagesdir)) {

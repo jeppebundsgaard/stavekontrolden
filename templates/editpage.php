@@ -1,6 +1,6 @@
 <?php
-	include_once($backenddir."checklogin.php");
-	global $pagesdir;
+	include_once($systemdirs["backend"]."checklogin.php");
+	global $dirs;
 // 	print_r($_POST);
 	$is=$_POST["id"];
 	if($id==0) $id=$_SESSION["user_id"]; //This is for organizations...
@@ -9,7 +9,7 @@
 		$pagename=$_POST["pagetitle"];
 	} 
 	else $pagename=array("frontpage"=>_("Front Page"),"org"=>_("Organization Info Page"),"header"=>_("Site Header"),"user"=>_("User Page"))[$_POST["pagetype"]];
-	$pagecontent=(file_exists($pagesdir.$_POST["pagetype"]."/".$id.".html")?file_get_contents($pagesdir.$_POST["pagetype"]."/".$id.".html"):"");
+	$pagecontent=(file_exists($systemdirs["pages"].$_POST["pagetype"]."/".$id.".html")?file_get_contents($systemdirs["pages"].$_POST["pagetype"]."/".$id.".html"):"");
 	if($_POST["newpage"] and $pagecontent) {$res["warning"]=_("Page already exists"); exit;}
 
  	$res=array("pagetype"=>$_POST["pagetype"],"id"=>$id);

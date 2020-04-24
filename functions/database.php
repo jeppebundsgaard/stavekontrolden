@@ -3,7 +3,7 @@ if(!$mysqli) {
 # .htdatabase has the following form: 
 # localhost,user,password,database
 
-	$database=trim(file_get_contents($settingsdir.".htdatabase"));
+	$database=trim(file_get_contents($systemdirs["settings"].".htdatabase"));
 	$db=explode(",",$database);
 	// print_r($db);
 	$mysqli = new mysqli($db[0],$db[1],$db[2],$db[3]);
