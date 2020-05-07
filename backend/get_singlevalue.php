@@ -28,6 +28,12 @@ if($_POST["next"]<0) {
 	$orderdir=$reverseorder;
     $_POST["next"]+=1;
 }
+elseif(!$_POST["andThen"]["next"]) {
+	$q="SELECT count(distinct(id)) as numrows ".$baseq;
+	$result=$mysqli->query($q);
+	if(!$result) $res["log"].=mysqlerror($q); 
+	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
+}
 $res["numshow"]=abs($_POST["next"])*$show;
 $limit=" LIMIT ".abs($_POST["next"])*$show.",".$show;
 $q='select '.$cols.$baseq.$order.$orderdir.$limit;

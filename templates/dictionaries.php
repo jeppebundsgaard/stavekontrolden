@@ -24,7 +24,7 @@
 							if ($e != "." && $e != ".." && is_dir($dicdir.$e) and file_exists($dicdir.$e."/".$e.".oxt")) {
 								$f=$dicdir.$e."/".$e;
 							?>
-								<tr><td><?= $e;?></td><td><a href="<?= $f.".oxt";?>" download="download"><?= $e.".oxt";?></a></td><td><a href="<?= $f.".aff";?>" download><?= $e.".aff";?></a></td></td><td><a href="<?= $f.".dic";?>" download="download"><?= $e.".dic";?></a></td></td><tr>
+								<tr><td><?= $e;?></td><td><a href="<?= $f.".oxt?v=".date("YmdHis");?>" download="<?= $e.".oxt";?>"><?= $e.".oxt";?></a></td><td><a href="<?= $f.".aff?v=".date("YmdHis");?>" download="<?= $e.".aff";?>"><?= $e.".aff";?></a></td></td><td><a href="<?= $f.".dic?v=".date("YmdHis");?>" download="<?= $e.".dic";?>"><?= $e.".dic";?></a></td></td><tr>
 							<?php
 							}
 						}

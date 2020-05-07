@@ -7,7 +7,7 @@ $version=implode(".",$version);
 file_put_contents($versionfile,$version);
 echo "<p>"._(sprintf("Version %s",$version))."</p>";
 
-$q="select * from start_definitions where lang='".$_SESSION["lang"]."'";
+$q="select * from start_definitions where lang='".$_SESSION["lang"]."' order by start_definitions";
 $result=$mysqli->query($q);
 
 if(!$result) $res["log"].=mysqlerror($q); 
@@ -72,6 +72,6 @@ while($r=$result->fetch_assoc())
 $aff=str_replace("\r\n","\n",$aff);
 file_put_contents($dictionarydir.$_SESSION["lang"].".aff",$aff);	
 
-echo '<p><a class="" href="'.str_replace("../","",$dictionarydir).'da_DK.aff" target="_blank">'._("Affix File Created")."</a></p>";
+echo '<p><a class="" href="'.str_replace("../","",$dictionarydir).'da_DK.aff?v='.date("YmdHis").'" target="_blank">'._("Affix File Created")."</a></p>";
 
 

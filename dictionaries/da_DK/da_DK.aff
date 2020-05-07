@@ -4,9 +4,8 @@ COMPOUNDWORDMAX 2
 WORDCHARS -.
 Testing
 Testing
-#Stavekontrolden version 2.5.15
+#Stavekontrolden version 2.5.16
 #Denne fil er en del af Stavekontrolden - et softwareprodukt, der gør det muligt at stavekontrollere på dansk.
-
 #Copyright (C) 2020 Foreningen for frit tilgængelige sprogværktøjer
 #Website: http://www.stavekontrolden.dk
 #E-mail: info@stavekontrolden.dk
@@ -145,7 +144,7 @@ REP ds c
 REP ^u in #ueffektiv -> ineffektiv
 REP ^in u #inkorrekte -> ukorrekt
 REP ^ind u #indkorrekte -> ukorrekt
-REP je æ #kjekke -> kække
+REP je æ #kjekke -> kække 
 REP le ti #stalestikkerne -> statistikkerne
 REP ^op efter #opfølgeren -> efterfølgeren
 REP ede$ te #låsede -> låste
@@ -595,7 +594,7 @@ SFX 41 0 z/10,46,4,36 z	+KONSONANT_FORDOBLING
 
 #Adjektiv, d erstatter t med komparation, -est oog hestefoder
 SFX 42 Y 1
-SFX 42 0 t/12,35 [^t]	+BESTEMT_ENTAL
+SFX 42 0 t/12,35,43,92 [^t]	+BESTEMT_ENTAL
 
 #Adjektiv, dobbeltkonsonant, -est
 PFX 43 Y 1
@@ -1217,10 +1216,6 @@ sfx 70
 #Adjektiv, d erstatter t uden komparation b
 
 #Adjektiv, d erstatter t uden komparation b
-
-#Adjektiv, d erstatter t uden komparation b
-PFX 81 N 1
-PFX 81  uyt 	+PRÆSENS_PART
 
 #Apostrof NeedAffix
 

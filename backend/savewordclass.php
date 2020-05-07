@@ -58,9 +58,10 @@ else {
 		$result=$mysqli->query($q);
 		$res["log"].=$q;
 	}
-	if($_POST["next"]!=0) {
-		$res["numshow"]=$c["numshow"]+$_POST["next"];
-	}
+// 	if($_POST["next"]!=0) {
+// 		$res["numshow"]=$c["numshow"]+$_POST["next"];
+// 	}
 	$res["andThen"]=$_POST["andThen"];
+
 }
 echo json_encode($res);

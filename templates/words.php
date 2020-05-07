@@ -40,14 +40,14 @@ include($systemdirs["backend"]."affixoptions.php");
 <?php 
 	include($templatedir."filtersettings.php");
 ?>
-		<div class="col-sm">
+		<div class="col-2-sm">
 			<div class="form-group">
 				<button class="btn btn-small btn-light float-right" id="showdetails"><?= ($_SESSION["showdetails"]?_("Hide details"):_("Show details"));?></button>&nbsp;
 				<button class="btn btn-small btn-light float-right" id="showlog"><?= ($_SESSION["showlog"]?_("Hide log"):_("Show log"));?></button>&nbsp;
 			</div>
 		</div>
 		<div class="col-sm">
-				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#wordmodal"><?= _("New Word");?></button>
+				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#wordsmodal"><?= _("New Word");?></button>
 		</div>
 
 	</div>
@@ -92,8 +92,8 @@ include($systemdirs["backend"]."affixoptions.php");
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="wordmodal" tabindex="-1" role="dialog" aria-labelledby="wordmodal" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+<div class="modal fade" id="wordsmodal" tabindex="-1" role="dialog" aria-labelledby="wordsmodal" aria-hidden="true" data-backdrop="static">
+	<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Word");?></span><span class="addwd collapse show"><?=_("Add Word");?></span></h5>
@@ -102,13 +102,13 @@ include($systemdirs["backend"]."affixoptions.php");
 				</button>
 			</div>
 			<div class="modal-body">
-				<div id="wordform">
+				<div id="wordsform">
 					<div class="form-row">
 						<div class="col">
 							<label for="word" class="col-form-label"><strong><?= _('Word');?></strong></label>
 							<input class="newword form-control form-control-sm" type="text" name="word">
 							<input class="newword" type="hidden" name="wordid" id="wordid">
-							<input class="newword" type="hidden" name="numshow" data-numshow="0">
+							<input class="newword dontreset" type="hidden" name="numshow" data-numshow="0">
 						</div>
 						<div class="col">
 							<label for="wordstatus" class="col-form-label"><?= _('Status');?></label>
@@ -164,15 +164,15 @@ include($systemdirs["backend"]."affixoptions.php");
 					<div class="form-row">
 						<div class="col-6">
 							<label for="log" class="col-form-label"><?= _('Log');?></label>
-							<textarea class="form-control form-control-sm"  disabled="disabled" name="log"></textarea>
+							<textarea class="form-control form-control-sm disabled-words"  disabled="disabled" name="log"></textarea>
 						</div>
 						<div class="col">
 							<label for="contributor" class="col-form-label"><?= _('Contributor');?></label>
-							<input class="form-control form-control-sm" type="text" disabled="disabled" name="contributor"></textarea>
+							<input class="form-control form-control-sm disabled-words" type="text" disabled="disabled" name="contributor"></textarea>
 						</div>
 						<div class="col">
 							<label for="lastuser" class="col-form-label"><?= _('Last User');?></label>
-							<input class="form-control form-control-sm" type="text" disabled="disabled" name="lastuser"></textarea>
+							<input class="form-control form-control-sm disabled-words" type="text" disabled="disabled" name="lastuser"></textarea>
 						</div>
 					</div>
 

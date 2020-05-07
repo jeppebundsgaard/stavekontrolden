@@ -9,6 +9,7 @@ function initAction() {
 	$("#showMyOrg").click(showMyOrg);
 	$("#showMyUser").click(showMyUser);
 	$(".adminmenulink").click(function() {get_template($(this).data("page"),{},"whenLoaded_"+$(this).data("page"))}); 
+	
 }
 function whenLoaded_words() {
 	page="words"
@@ -23,7 +24,7 @@ function whenLoaded_words() {
 	$("#showdetails").click(function() {get_template("words",{showdetails:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
 	$("#showlog").click(function() {get_template("words",{showlog:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
 	$(".wordsave").click(wordsave)
-	onModalHide()
+	modalSetup()
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 	$("#newword").click(editNewword)
@@ -42,7 +43,7 @@ function whenLoaded_wordclass() {
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 
-	onModalHide()
+	modalSetup()
 	$(".newwordclass").click(editNew)
 }
 function whenLoaded_fugeelement() {
@@ -56,7 +57,7 @@ function whenLoaded_fugeelement() {
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 
-	onModalHide()
+	modalSetup()
 	$("#newfugeelement").click(editNew)
 
 }
@@ -71,7 +72,7 @@ function whenLoaded_affixclass() {
 	$(".affixrulesave").click(affixrulesave)
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
-	onModalHide()
+	modalSetup()
 	$(".newaffixclass").click(newaffixclass)
 	$(".newaffixrule").click(newaffixrule)
 }
@@ -83,7 +84,7 @@ function whenLoaded_affixrule() {
 	$("#doeditaffixclass").click(doeditaffixclass)
 	
 	$(".affixrulesave").click(affixrulesave)
-	onModalHide()
+	modalSetup()
 }
 function whenLoaded_morphdescr() {
 	page="singlevalue"
@@ -156,8 +157,9 @@ function associateaffixclass() {
 	$(".editaffixclass").unbind("click").click(viewAffixclass)
 	$(this).val(0)
 }
-function onModalHide() {
-		$('.modal').on('hidden.bs.modal', clearmodal)
+function modalSetup() {
+	$('.modal-header').mousedown(modal_draggable);
+	$('.modal').on('hidden.bs.modal', clearmodal)
 }
 function clearmodal(th) {
 	if(typeof(th.type)!="undefined") th=$(this)
@@ -166,6 +168,7 @@ function clearmodal(th) {
 	$(th).find(".wordsave").collapse("show")
 	$(th).find(".associaterow").collapse("show")
 	$(th).find(".newword").val("")
+	$(th).find(".disabled-words").val("")
 	$(th).find(".newword").prop('disabled', false);
 	$(th).find(".affixpool").html("")
 }
@@ -193,13 +196,7 @@ function showNext(t) {
 }
 function wordsave() {
 	var andThen=showNext($(this))
-	send("saveword","afterwordsave",{word:$("#wordform .newword").serialize(),andThen:andThen},"backend")
-}
-function afterwordsave(json) {
-	if(!json.warning) {
-		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#wordmodal").modal('hide')
-		getrows(json.andThen)
-	}
+	send("saveword","afterwordsave",{word:$("#wordsform .newword").serialize(),andThen:andThen},"backend")
 }
 function wordclasssave() {
 	var andThen=showNext($(this))
@@ -221,10 +218,21 @@ function affixrulesave() {
 	var affixclasses=$(".arpool.affixpool .editaffixclass").map(function() {return $(this).data("affixclassid")}).get()
 	send("saveaffixrule","afteraffixrulesave",{affixrule:$("#affixruleform .newword").serialize(),affixclasses:affixclasses,andThen:andThen},"backend")
 }
+function afterwordsave(json) {
+	if(!json.warning) {
+		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#wordsmodal").modal('hide')
+		else {
+			$("#wordsform .newword:not(.dontreset)").val("")
+			
+		}
+
+		getrows(json.andThen)
+	}
+}
 function afterwordclasssave(json) {
 	if(!json.warning) {
 		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#wordclassmodal").modal('hide')
-		if(page=="wordclasses")
+		if(page=="wordclass")
 			getrows(json.andThen)
 	}
 }
@@ -232,13 +240,12 @@ function afterfugeelementsave(json) {
 	if(!json.warning) {
 		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#fugeelementmodal").modal('hide')
 		//if(page=="fugeelement")
-			getrows(json.andThen)
+		getrows(json.andThen)
 	}
 }
 function afteraffixclasssave(json) {
-	console.log(json)
 	if(!json.warning) {
-		if(page!="affixclasses") {
+		if(page!="affixclass") {
 			if(json.newaffixclass=="true") { // A new class created from wordclassmodal
 				var aff=$('<button class="editaffixclass btn btn-sm btn-light" data-affixclassid="'+json.affixclassid+'">'+json.description+'</button>');
 				var del=$('<i class="fas fa-backspace text-danger deleteaffix">').click(deleteaffix)
@@ -250,7 +257,7 @@ function afteraffixclasssave(json) {
 			$("#affixclassform  .newword:not(.dontreset)").val("")
 			$(".acpool.affixpool").html("")
 		}
-		if(page=="affixclasses" || !$("#wordclassmodal").hasClass("show"))
+		if(page=="affixclass" || !$("#wordclassmodal").hasClass("show"))
 			getrows(json.andThen)
 	}
 }
@@ -267,7 +274,7 @@ function afteraffixrulesave(json) {
 			$("#affixruleform .newword:not(.dontreset)").val("")
 			$(".arpool.affixpool").html("")
 		}
-		if(page=="affixrules")
+		if(page=="affixrule")
 			getrows(json.andThen)
 	}
 }
@@ -323,7 +330,7 @@ function changeWord(th) {
 	if(page=="singlevalue" && singlevalue=="start_definitions" || name=="comments" || name=="misspellings" || name=="strong_declension") {
 		elem=$('<textarea class="form-control wordupdate" rows="'+(page=="singlevalue"?20:3)+'" name="'+(page=="singlevalue"?"singlevalue":name)+'"></textarea>')
 	} 
-	var val=th.children(".val").text()
+	var val=th.children(".val").html().replace(/<br>/g,"\n").replace(/&gt;/g,">").replace(/&lt;/g,"<")
 	if($(elem).prop("tagName")=="SELECT") {
 		if(val!="")
 			$(elem).children().filter(":contains("+val+")").attr("selected","selected")
@@ -337,7 +344,6 @@ function changeWord(th) {
 	th.unbind("click")
 }
 function wordkey(e) {
-//	console.log(e.key)
 	switch(e.key) {
 		case "Escape":
 			resetedit($(this))
@@ -390,9 +396,8 @@ function wordkey(e) {
 	}
 }
 function resetedit(th) {
-//	console.log(th)
 	if(typeof(th.type)!="undefined") th=$(th.target)
-	th.parent().html(th.parent().data("val")).parent().click(changeWord)
+	th.parent().html(th.parent().data("val").replace(/\n/g,"<br>")).parent().click(changeWord)
 }
 function wordupdate(th) {
 	if(typeof(th.type)!="undefined") th=$(this)
@@ -407,7 +412,7 @@ function wordupdate(th) {
 	}
 	var span=th.parent()
 	var oldval=span.data("val")
-	span.html(txt).parent().click(changeWord)
+	span.html(txt.replace(/\n/g,"<br>")).parent().click(changeWord)
 	if(txt!=oldval)
 		send(page+"update","doNothing",{id:id,col:col,val:val,singlevalue:singlevalue},"backend")
 }
@@ -419,7 +424,7 @@ function populateTable(json) {
 	for(var i=0;i<json.rows.length;i++) {
 		t+='<tr data-id="'+json.rows[i][0]+'">'
 		for(var j=1;j<json.rows[i].length;j++) {
-			t+='<td'+(page=="words" && editable.indexOf(j)>-1?' class="editable"':'')+'>'+(j==1 && page!="singlevalue"?'<strong>':'')+'<span class="val">'+(json.rows[i][j]==null?'':json.rows[i][j])+'</span>'+(j==1 && page!="singlevalue"?'</strong>':'')+"</td>"
+			t+='<td'+(page=="words" && editable.indexOf(j)>-1?' class="editable"':'')+'>'+(j==1 && page!="singlevalue"?'<strong>':'')+'<span class="val">'+(json.rows[i][j]==null?'':json.rows[i][j].replace(/\n/g,"<br>"))+'</span>'+(j==1 && page!="singlevalue"?'</strong>':'')+"</td>"
 		}
 		if(page!="words") t+='<td class="delcol"><i class="far fa-trash-alt text-danger deletecategory"></i></td>'
 	}	t+="</tr>"
@@ -458,13 +463,13 @@ function populateTable(json) {
 		clearmodal($(form))
 		editNewword()
 	}
-	$("#"+page+"form [name=numshow]").data("numshow",json.numshow)
+// 	$(form+" [name=numshow]").data("numshow",json.numshow)
 	if(page!="words") $(".deletecategory").click(deletecategory)
 	if(page!="singlevalue")
 		$("#tablebody>tr>td:first-child").click(window[editfunction])
 	if(json.numrows!=null) $("#numrows").html(json.numrows)
 	if(typeof(json.single)!="undefined") {
-		if(json.reducenext) {
+		if(typeof(json.reducenext)!="undefined") {
 			var numshowObj=$(form+" [name=numshow]")
 			$(numshowObj).val(Number($(numshowObj).val())-1)
 		}
@@ -531,13 +536,14 @@ function deleteaffix(){
 }
 function editWord() {
 	var id=$(this).parent().data("id")
-	updateNumshow($(this),"wordform")
+	updateNumshow($(this),"wordsform")
 	send("singleWord","editWordModal",{id:id},"backend")
 }
 function editNewword() {
-	$("#wordform [name=wordstatus]").val(2)
-	$("#wordform [name=apostroph]").val(0)
-	$("#wordmodal .prevsave,#wordmodal .nextsave").collapse("hide")
+	$("#wordsform [name=wordstatus]").val(2)
+	$("#wordsform [name=wordstatus]").attr("disabled","disabled")
+	$("#wordsform [name=apostroph]").val(0)
+	$("#wordsmodal .prevsave,#wordsmodal .nextsave").collapse("hide")
 }
 function editNew(e) {
 	$("#"+$(e.target).data("targetmodal")).find(".prevsave,.nextsave").collapse("hide")
@@ -549,21 +555,23 @@ function updateNumshow(o,form) {
 function editWordModal(json) {
 	var w=json.single
 	$("#wordid").val(w.id)
-	populateModal(w,"word")
-	var wordstatus=$("#wordform [name=wordstatus]")
+	populateModal(w,"words")
+	var wordstatus=$("#wordsform [name=wordstatus]")
 	if(wordstatus.children("option:selected").index()>1) 	{
-		$("#wordform .wordstatusbefore").val(wordstatus.children("option:selected").text())
-		$("#wordform .wordstatusbeforeelem").collapse("show")
+		$("#wordsform .wordstatusbefore").val(wordstatus.children("option:selected").text())
+		$("#wordsform .wordstatusbeforeelem").collapse("show")
 		wordstatus.val(Number(wordstatus.val())+1)
 	} else $(".wordstatusbeforeelem").collapse("hide")
-	$("#wordmodal").find(".editwd").collapse("show")
-	$("#wordmodal").find(".addwd").collapse("hide")
+	$("#wordsmodal").find(".editwd").collapse("show")
+	$("#wordsmodal").find(".addwd").collapse("hide")
 	$(".newsave").collapse("hide")
-	$("#wordmodal").modal("show")
+	$("#wordsmodal").modal("show")
 }
 function populateModal(vars,t) {
 	for(let [k,v] of Object.entries(vars)) {
-		$("#"+t+"form"+" [name="+k+"]").val(v)
+		var elem=$("#"+t+"form"+" [name="+k+"]")
+		if(elem.hasClass("custom-select")) elem.html(elem.html()) // hack to make bootstrap aware that this select has a new selected. Without it, arrow down will show the first option's value, not the next from the one selected now.
+		elem.val(v)
 	}
 }
 function editAffixclass() {
@@ -622,9 +630,13 @@ function newaffixclass(e) {
 	editNew(e)
 }
 function doeditaffixclass() {
+	
+
+	$("#affixclassmodal .newaffixrulerow").collapse("show")
 	$("#affixclassmodal .editwd").collapse("show")
 	$("#affixclassmodal .viewwd").collapse("hide")
 	$("#affixclassmodal .closesave").collapse("show")
+	$("#affixclassmodal .saveand").collapse("show")
 	$("#affixclassform .newword").prop('disabled', false);
 	
 	deleteableAffixClass()
@@ -665,6 +677,7 @@ function doeditaffixrule() {
 	$("#affixrulemodal .viewwd").collapse("hide")
 	$("#affixrulemodal .closesave").collapse("show")
 	$("#affixruleform .newword").prop('disabled', false);
+	$("#affixruleform .associateaffixclasstorule").collapse("show")
 	deleteableAffixRule()
 }
 function getrows(andThen) {
@@ -801,13 +814,11 @@ function newpage() {
 }
 function pagetitleedit() {
 	var oldtitle=$(this).text()
-// 	console.log(oldtitle)
 	var pagetitle=window.prompt("New Page title",oldtitle.trim())
 	
 	if(pagetitle!=null && pagetitle!="") send("changepagetitle","editPages",{pagetitle:pagetitle.trim(),oldtitle:oldtitle},"backend")
 }
 function editPages(json) {
-// 	console.log(json)
 	get_template("orgpages",{contentdiv:"orgcontentdiv"},"orgpagesready")
 }
 jQuery.cachedScript = function( url, options ) {
@@ -919,7 +930,6 @@ function editpageready(json) {
 }
 function pageeditsave(json,quill,finish) {
 	var pagecontent=quill.root.innerHTML
-// 	console.log(json.pagetype)
 	if(json.pagetype=="header") {
 		var activeheader=$("#headernum").children(":selected").val()
 		headers[2][activeheader]=pagecontent
@@ -927,7 +937,6 @@ function pageeditsave(json,quill,finish) {
 		for(i in headers[1]) {
 			pagecontent+='<div class="'+headers[1][i]+'">'+headers[2][i]+'</div>'
 		}
-// 		console.log(pagecontent)
 	}
 	send("savepagecont",(finish?"finish":"pagesaved"),{id:json.id,pagetype:json.pagetype,pagecontent:pagecontent},"backend");
 }
@@ -975,7 +984,7 @@ function uploadwords() {
 	var form_data = new FormData();
 	form_data.append('wordfile', file_data);
 	$("#nownewwords").collapse("hide")
-	$("#uploaddone").collapse("hide")
+	$(".uploaddone").collapse("hide")
 	$('#thanks').collapse('hide');
 	
  	$('.uploadinfo').collapse('show').on('shown.bs.collapse', function() {
@@ -999,7 +1008,8 @@ function uploadwords() {
 							$('.uploadinfo').collapse('hide');
 							if(json.newwords.length>0) {
 								$('#newwords').val(json.newwords.sort().filter(function (value, index, self) { return self.indexOf(value) === index;}).join("\n"));
-								$('#uploaddone').collapse('show')
+								$('.uploaddone').collapse('show')
+								$('.uploadfile').collapse('hide')
 							} else {
 								$('#nownewwords').collapse('show')
 							}
@@ -1019,6 +1029,28 @@ function wordstodatabase() {
 	send("newwords","thankforwords",{newwords:$('#newwords').val()},"backend")
 }
 function thankforwords() {
-	$('#uploaddone').collapse('hide')
+	$('.uploaddone').collapse('hide')
+	$('.uploadfile').collapse('show')
 	$('#thanks').collapse('show');
+}
+function modal_draggable(e){
+    window.modal_dragging = {};
+    modal_dragging.pageX0 = e.pageX;
+    modal_dragging.pageY0 = e.pageY;
+    modal_dragging.elem = $(this).closest(".modal");
+    modal_dragging.offset0 = $(this).closest(".modal").offset();
+    function handle_dragging(e){
+        var left = modal_dragging.offset0.left + (e.pageX - modal_dragging.pageX0);
+        var top = modal_dragging.offset0.top + (e.pageY - modal_dragging.pageY0);
+        $(modal_dragging.elem)
+        .offset({top: top, left: left});
+    }
+    function handle_mouseup(e){
+        $('body')
+        .off('mousemove', handle_dragging)
+        .off('mouseup', handle_mouseup);
+    }
+    $('body')
+    .on('mouseup', handle_mouseup)
+    .on('mousemove', handle_dragging);
 }

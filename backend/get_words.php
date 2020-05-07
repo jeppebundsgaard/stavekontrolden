@@ -41,6 +41,7 @@ else {
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
 }
+$res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 #$res["numshow"]=($_POST["numshow"]?$_POST["numshow"]:abs($_POST["next"])*$show);
 $limit=" LIMIT ".(abs($_POST["andThen"]["next"])*$show).",".$show;
 $q=$last1.'select '.implode(",",$cols).$baseq.$order.$limit.$last2;
@@ -50,8 +51,9 @@ if(!$result) $res["log"].=mysqlerror($q);
 else $res["rows"]=$result->fetch_all();
 if(empty($res["rows"])) $res["rows"]=array(1=>array(_("No more words")));
 
-$res["log"].=$q;
+// $res["log"].=$q;
 $res["andThen"]=$_POST["andThen"];
+// $res["log"].=$res["numshow"];
 if($_POST["andThen"]["nextsingle"]>-1) {
 	if($_POST["andThen"]["nextprev"]==1 and $res["numrows"]<$_POST["numrows"]) {
 		$_POST["andThen"]["nextsingle"]--;

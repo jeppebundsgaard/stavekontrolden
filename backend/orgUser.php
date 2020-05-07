@@ -2,8 +2,8 @@
 $relative="../";
 include_once($relative."/settings/conf.php");
 include_once($GLOBALS["backenddir"]."checklogin.php");
-if($_POST["org_id"] and $_SESSION["user_id"]!=1) exit;
-$org_id=($_POST["org_id"]?$_POST["org_id"]:$_SESSION["user_id"]);
+if(!$_POST["org_id"] or !$_SESSION["user_id"]) exit;
+$org_id=($_SESSION["user_id"]);
 
 $update=$_POST["update"];
 $res=array();

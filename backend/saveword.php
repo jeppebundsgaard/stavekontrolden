@@ -28,7 +28,7 @@ else {
 			$log.=($r[$cols[$i]]!=$unescaped[$cols[$i]]?$cols[$i]." => ".$unescaped[$cols[$i]].".\n":"");
 		}
 		if($log) { #Changes made
-		$res["log"].="#Changes made";
+// 		$res["log"].="#Changes made";
 			$q='update words set `word`="'.$c["word"].'", `wordclass`="'.$c["wordclass"].'", `wordstatus`="'.$c["wordstatus"].'", `lastuser`="'.$_SESSION["username"].'", `misspellings`="'.$c["misspellings"].'",`word_definition`="'.$c["word_definition"].'", `comments`="'.$c["comments"].'", `technical_term`="'.$c["technical_term"].'", `fugeelementid`="'.$c["fugeelementid"].'", `strong_declension`="'.$c["strong_declension"].'", `apostroph`="'.$c["apostroph"].'", `log`=CONCAT("'.date("Y-m-d H:i:s").": ".$_SESSION["username"].': '.$mysqli->real_escape_string($log).'",`log`) where lang="'.$_SESSION["lang"].'" and id='.$c["wordid"];
 			#$res["log"].=$q;
 			$result=$mysqli->query($q);
@@ -41,5 +41,6 @@ else {
 		$result=$mysqli->query($q);
 	}
 	$res["andThen"]=$_POST["andThen"];
+// 		$res["log"].=print_r($res["andThen"],true);
 }
 echo json_encode($res);

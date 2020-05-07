@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-25 00:01+0200\n"
+"POT-Creation-Date: 2020-04-25 00:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -720,69 +720,83 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: templates/uploadwords.php:4 templates/adminmenu.php:23
-msgid "Give us your words"
-msgstr ""
-
-#: templates/uploadwords.php:11
-msgid "Choose the file to upload"
-msgstr ""
-
-#: templates/uploadwords.php:12
-msgid "Uploading ..."
-msgstr ""
-
-#: templates/uploadwords.php:20
+#: templates/uploadwords.php:4
 msgid "Thank you so much!"
 msgstr ""
 
-#: templates/uploadwords.php:21
+#: templates/uploadwords.php:5
 msgid ""
 "We will start processing the words. If you want to be part of that work, "
 "please get in contact!"
 msgstr ""
 
-#: templates/uploadwords.php:28
+#: templates/uploadwords.php:10
 msgid "We had all the words"
 msgstr ""
 
-#: templates/uploadwords.php:29
+#: templates/uploadwords.php:11
 msgid ""
 "Thank you for taking the time to upload your words. We didn't find any words "
 "not in our dictionary already. You can download the latest version of the "
 "spellchecker on the Dictionary page."
 msgstr ""
 
-#: templates/uploadwords.php:36
+#: templates/uploadwords.php:16 templates/adminmenu.php:23
+msgid "Give us your words"
+msgstr ""
+
+#: templates/uploadwords.php:17
+msgid ""
+"Upload document or text files (.odt, .txt), markup files (.html, .sgml\", ."
+"xml), or typesetting files (.tex, .latex, .nroff, .troff)"
+msgstr ""
+
+#: templates/uploadwords.php:18
+msgid ""
+"It is okay if the document includes words already in the dictionary; they "
+"will be filtered out.<br>It is also okay if the document includes words that "
+"you don't think should be included. You will get the opportunity to edit the "
+"words after upload."
+msgstr ""
+
+#: templates/uploadwords.php:25
+msgid "Choose the file to upload"
+msgstr ""
+
+#: templates/uploadwords.php:26
+msgid "Uploading ..."
+msgstr ""
+
+#: templates/uploadwords.php:34
 msgid "Prepare for inclusion"
 msgstr ""
 
-#: templates/uploadwords.php:37
+#: templates/uploadwords.php:35
 msgid ""
 "Please help us by editing the words before final inclusion into the database."
 msgstr ""
 
-#: templates/uploadwords.php:39
+#: templates/uploadwords.php:37
 msgid "Change all uppercase words which are not names, to lowercase."
 msgstr ""
 
-#: templates/uploadwords.php:40
+#: templates/uploadwords.php:38
 msgid "Reduce all words to their basic form (stem)"
 msgstr ""
 
-#: templates/uploadwords.php:41
+#: templates/uploadwords.php:39
 msgid ""
 "Remove doublets, and other words you don't think should be included in the "
 "database."
 msgstr ""
 
-#: templates/uploadwords.php:42
+#: templates/uploadwords.php:40
 msgid ""
 "When you think, you are done, hit the <i>'Send to further processing'</i> "
 "button."
 msgstr ""
 
-#: templates/uploadwords.php:51
+#: templates/uploadwords.php:49
 msgid "Send to further processing"
 msgstr ""
 

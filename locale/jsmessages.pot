@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-25 00:01+0200\n"
+"POT-Creation-Date: 2020-04-25 00:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid "Learn more"
 msgstr ""
 
 #: js/basesystem.js:92 js/basesystem.js:109 js/basesystem.js:135
-#: js/basesystemadmin.js:1010
+#: js/basesystemadmin.js:1011
 msgid "There was a problem. Are you connected to the Internet?"
 msgstr ""
 
