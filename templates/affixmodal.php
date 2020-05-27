@@ -8,7 +8,7 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 	<div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Word Class");?></span><span class="viewwd collapse"><?=_("View Word Class");?></span><span class="addwd collapse show"><?=_("Add Word Class");?></span></h5>
+				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Word Class");?></span><span class="viewwd collapse"><?=_("View Word Class").(checkpermissions("affix","admin")?'&nbsp;<i class="fas fa-edit" id="doeditwordclass"></i>':'');?></span><span class="addwd collapse show"><?=_("Add Word Class");?></span></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>

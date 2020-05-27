@@ -62,14 +62,12 @@ include($systemdirs["backend"]."affixoptions.php");
 			<table id="wordtable" class="table table-sm table-hover table-striped">
 				<thead id="wordhead">
 					<tr class="table-info">
-					<!-- `word`, `wordclass`, `status`, `alternatives`, `lastuser`, `contributor`, `word_definition`, `comments`, `technical_term`, `fugeelementid`, `strong_declension`, `apostroph`, `log`,  `lastchange` -->
 					<th scope="col"><?= _('Word');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word" value="<?= $filters["word"];?>"></th>
 					<th scope="col"><?= _('Status');?><br><select class="wordfilter custom-select custom-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></th>
 					<th scope="col"><?= _('Word Class');?><br><select class="wordfilter custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select></th>
 					<th scope="col"><?= _('Strong Declension');?><br><input class="wordfilter form-control form-control-sm" type="text" name="strong_declension"  value="<?= $filters["strong_declension"];?>"></th>
 					<th scope="col"><?= _('Misspellings');?><br><input class="wordfilter form-control form-control-sm" type="text" name="misspellings"  value="<?= $filters["misspellings"];?>"></th>
 					<th scope="col"><?= _('Fuge Element');?><br><select class="wordfilter custom-select custom-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select></th>
-					<th scope="col"><?= _('Apostroph');?><br><select class="wordfilter custom-select custom-select-sm" name="apostroph"><option></option><option value=1><?=_("With");?></option><option value=0><?=_("Without");?></option></select></th></th>
 					<?php if($_SESSION["showdetails"]) { ?>
 					<th scope="col"><?= _('Contributor');?><br><input class="wordfilter form-control form-control-sm" type="text" name="contributor"  value="<?= $filters["contributor"];?>"></th>
 					<th scope="col"><?= _('Last User');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastuser"  value="<?= $filters["lastuser"];?>"></th>
@@ -136,10 +134,6 @@ include($systemdirs["backend"]."affixoptions.php");
 						<div class="col">
 							<label for="fugeelementid" class="col-form-label"><?= _('Fugelement');?></label>
 							<select class="newword custom-select custom-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select>
-						</div>
-						<div class="col">
-							<label for="apostroph" class="col-form-label"><?= _('Apostroph');?></label>
-							<select class="newword custom-select custom-select-sm" name="apostroph"><option></option><option value=1><?=_("With");?></option><option value=0><?=_("Without");?></option></select>
 						</div>
 						<div class="col">
 							<label for="technical_term" class="col-form-label"><?= _('Technical Term');?></label>

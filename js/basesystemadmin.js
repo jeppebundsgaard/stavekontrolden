@@ -25,6 +25,13 @@ function whenLoaded_words() {
 	$("#showlog").click(function() {get_template("words",{showlog:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
 	$(".wordsave").click(wordsave)
 	modalSetup()
+	$(".associateaffixclass").change(associateaffixclass)
+	$(".newaffixclass").click(newaffixclass)
+	$(".newaffixrule").click(newaffixrule)
+	$(".wordclasssave").click(wordclasssave)
+	$(".affixclasssave").click(affixclasssave)
+	$(".affixrulesave").click(affixrulesave)
+	$("#doeditwordclass").click(doeditwordclass)
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 	$("#newword").click(editNewword)
@@ -494,7 +501,16 @@ function editWordclass() {
 	updateNumshow($(this),"wordclassform")
 	send("singleWordclass","editWordclassModal",{id:id},"backend")
 }
+function doeditwordclass() {
+	$("#wordclassmodal .editwd").collapse("show")
+	$("#wordclassmodal .viewwd").collapse("hide")
+	$("#wordclassmodal .closesave").collapse("show")
+	$("#wordclassform .newword").prop('disabled', false);
+	$(".wcedit").collapse("show")
+	$(".wcpool.affixpool .editaffixclass").after('<i class="fas fa-backspace text-danger deleteaffix">')
+	$(".deleteaffix").click(deleteaffix)
 
+}
 function editWordclassModal(json) {
 	var wc=json.single
 	$("#wordclassid").val(wc.id)
@@ -542,7 +558,6 @@ function editWord() {
 function editNewword() {
 	$("#wordsform [name=wordstatus]").val(2)
 	$("#wordsform [name=wordstatus]").attr("disabled","disabled")
-	$("#wordsform [name=apostroph]").val(0)
 	$("#wordsmodal .prevsave,#wordsmodal .nextsave").collapse("hide")
 }
 function editNew(e) {

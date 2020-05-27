@@ -10,9 +10,6 @@ console.log(language)
 $.getJSON( "./locale/"+language+"/LC_MESSAGES/jsmessages.json", function( jsonlang ) {
 _.setTranslation(jsonlang)
 // console.log(jsonlang)
-})
-var isAdmin=false
-$(function(){
 	window.cookieconsent.initialise({
 		"palette": {
 			"popup": {
@@ -44,6 +41,10 @@ $(function(){
 			"href": "./?cookies=1"
 		}
 	});
+})
+var isAdmin=false
+$(function(){
+	
 	$(".openloginform").click(openloginform);
 	$(".loginform").submit(login);
 	$("#applyforsignup").click(applyforuser);

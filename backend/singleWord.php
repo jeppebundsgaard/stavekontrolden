@@ -5,7 +5,7 @@ include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 
 #$res=array();
-$cols='`id`,`word`,`wordstatus`,`wordclass`,`strong_declension`,`misspellings`,`fugeelementid`,`apostroph`,`word_definition`,`comments`,`technical_term`,`log`,`contributor`,`lastuser` ';
+$cols='`id`,`word`,`wordstatus`,`wordclass`,`strong_declension`,`misspellings`,`fugeelementid`,`word_definition`,`comments`,`technical_term`,`log`,`contributor`,`lastuser` ';
 
 $q='select '.$cols.' from words where id='.$_POST["id"];
 
