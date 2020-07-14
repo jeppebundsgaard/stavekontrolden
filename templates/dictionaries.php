@@ -22,9 +22,11 @@
 					if ($handle = opendir($dicdir)) {
 						while (false !== ($e = readdir($handle))) {
 							if ($e != "." && $e != ".." && is_dir($dicdir.$e) and file_exists($dicdir.$e."/".$e.".oxt")) {
+								$version=file_get_contents($dicdir.$e."/version.txt");
 								$f=$dicdir.$e."/".$e;
+								$vf=$dicdir.$e."/".$e."-".$version;
 							?>
-								<tr><td><?= $e;?></td><td><a href="<?= $f.".oxt?v=".date("YmdHis");?>" download="<?= $e.".oxt";?>"><?= $e.".oxt";?></a></td><td><a href="<?= $f.".aff?v=".date("YmdHis");?>" download="<?= $e.".aff";?>"><?= $e.".aff";?></a></td></td><td><a href="<?= $f.".dic?v=".date("YmdHis");?>" download="<?= $e.".dic";?>"><?= $e.".dic";?></a></td></td><tr>
+								<tr><td><?= $e;?></td><td><a href="<?= $vf.".oxt";?>" ><?= $e.".oxt";?></a></td><td><a href="<?= $vf.".aff";?>" ><?= $e.".aff";?></a></td></td><td><a href="<?= $vf.".dic";?>"><?= $e.".dic";?></a></td></td><tr>
 							<?php
 							}
 						}

@@ -1,9 +1,14 @@
 <?php
 $dictionarydir=$relative."dictionaries/".$_SESSION["lang"]."/";
 $versionfile=$dictionarydir."version.txt";
-$version=explode(".",file_get_contents($versionfile));
-$version[2]+=1; # Microversion increased by 1
-$version=implode(".",$version);
+
+$oldversion=file_get_contents($versionfile);
+unlink($dictionarydir.$_SESSION["lang"].'-'.$oldversion.'.oxt');
+unlink($dictionarydir.$_SESSION["lang"].'-'.$oldversion.'.dic');
+unlink($dictionarydir.$_SESSION["lang"].'-'.$oldversion.'.aff');
+$versionarr=explode(".",$oldversion);
+$versionarr[2]=sprintf("%03d",$versionarr[2]+1); # Microversion increased by 1
+$version=implode(".",$versionarr);
 file_put_contents($versionfile,$version);
 echo "<p>"._(sprintf("Version %s",$version))."</p>";
 
@@ -70,8 +75,8 @@ while($r=$result->fetch_assoc())
 	else $aff.="\n".$affixclass." ".$affixclassid;
 }
 $aff=str_replace("\r\n","\n",$aff);
-file_put_contents($dictionarydir.$_SESSION["lang"].".aff",$aff);	
+file_put_contents($dictionarydir.$_SESSION["lang"]."-".$version.".aff",$aff);	
 
-echo '<p><a class="" href="'.str_replace("../","",$dictionarydir).'da_DK.aff?v='.date("YmdHis").'" target="_blank">'._("Affix File Created")."</a></p>";
+echo '<p><a class="" href="'.str_replace("../","",$dictionarydir).'da_DK-'.$version.'.aff" target="_blank">'._("Affix File Created")."</a></p>";
 
 
