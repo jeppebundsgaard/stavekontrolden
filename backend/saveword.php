@@ -22,7 +22,7 @@ else {
 		$result=$mysqli->query($q);
 		$r=$result->fetch_assoc();
 		$log="";
-		for($i=0;$i<count($c);$i++) {
+		for($i=0;$i<count($cols);$i++) {
 			if($r[$cols[$i]]==0 and !$unescaped[$cols[$i]]) $unescaped[$cols[$i]]=0;
 			$res["log"].="-$cols[$i]:".$r[$cols[$i]]."!=".$unescaped[$cols[$i]]."-";
 			$log.=($r[$cols[$i]]!=$unescaped[$cols[$i]]?$cols[$i]." => ".$unescaped[$cols[$i]].".\n":"");
