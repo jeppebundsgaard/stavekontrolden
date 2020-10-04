@@ -11,7 +11,7 @@ if(!$mysqli) {
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 		exit;
 	}
-	$mysqli->set_charset("utf8");
+#	$mysqli->set_charset("utf8");
 
 	function mysqlerror($q) {
 		return "\nError in query: ".$q;

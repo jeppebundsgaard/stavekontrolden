@@ -1,4 +1,4 @@
-87987 # Produced By Stavekontrolden.dk
+87985 # Produced By Stavekontrolden.dk
 aabbcc
 aabbccdd
 abc/12,42
@@ -13,11 +13,9 @@ abekat/12,42
 åbent
 åbent->hej
 ABONNENTER
-Hejsa
 ABONNENTER
 ABONNENTER
-ad
-ad hoc
+"ad hoc"
 adelade/26,12,42,102 ph:jsjd
 hejsa/26,12,42
 Advare/59,12,49
@@ -317,7 +315,7 @@ estrade/12,13,4
 estragon/12,13,4,32
 estragoneddike/12,13,4
 ét/12
-et cetera
+"et cetera"
 et-/33,37
 eta/12,6,13,32
 etablere/3,22,23
@@ -7728,7 +7726,7 @@ frelste/8
 frelstes/8
 frelsthed/12
 frem
-frem for
+"frem for"
 frem-/33,37
 fremad
 fremadbøjet/12,42
@@ -15346,7 +15344,7 @@ happenings/12
 happeningens/12
 happenings'/12
 happeningenes/12
-happy end/44
+"happy end"/44
 haps/7,4,12
 haps
 hapse/3,22,23
@@ -17515,7 +17513,6 @@ hobbydrivhus/6,12,7
 hobe/3,22,23,32
 hoben/44
 hobevis
-hoc
 hockey/44,32
 hockeyspiller/7,4,12,32
 Hodgkin/11
@@ -22057,7 +22054,7 @@ inseminere/3,22,23
 inseminering/12,13,4
 inseminør/12,13,4
 inserat/12,6,13
-inside information/12
+"inside information"/12
 insideinformation/12
 insideinformations/12
 insideinformationen/12
@@ -38787,7 +38784,7 @@ misvisende/44,44,8,8
 mitose/12,13,4
 mitra/12,13,4
 mitte/12,13,4
-mixed double/44
+"mixed double"/44
 mixture/12,4,46
 mjaven/44
 mjød/12
@@ -46224,7 +46221,7 @@ orbodemål/12,46,6
 ord/12,46,6,32
 Ord/12,42,67
 Stærk/12,42
-Ord 2/12,42,67
+"Ord 2"/12,42,67
 Stærk/12,42
 ordbillede/12,6,13
 ordblind/25,12,49
@@ -82542,6 +82539,7 @@ wadi/12,13,4
 yoghurt/12,13,4,32
 afskedstagen/8
 amatørartig/8
+amatørartigt/8
 barrak/8
 barraks/8
 billed/8

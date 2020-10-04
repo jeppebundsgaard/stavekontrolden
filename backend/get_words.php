@@ -22,7 +22,7 @@ foreach($wheres as $k=>$w) {
 	if($_POST["order"][$n]) $order=$k." ".$_POST["order"][$n];
 	$n++;
 }
-$where=" WHERE w.lang='".$_SESSION["lang"]."'".(($wheres["wordstatus"]!="" and $_POST["negsearch"][1]=="false")?"":" AND w.`wordstatus`>0")." ".$where;
+$where=" WHERE w.lang='".$_SESSION["lang"]."'".(($wheres["wordstatus"]!="" and $_POST["negsearch"][1]=="false")?"":" AND w.`wordstatus`>0")." ".$where.($_POST["strictsearch"]=="true"?" collate ".$GLOBALS["collation"][$_SESSION["locale"]]:"");
 $order=" ORDER BY ".($order?$order:"`word`");
 // $res["log"].=print_r($wheres,true);
 

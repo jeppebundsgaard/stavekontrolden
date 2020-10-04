@@ -62,7 +62,7 @@ include($systemdirs["backend"]."affixoptions.php");
 			<table id="wordtable" class="table table-sm table-hover table-striped">
 				<thead id="wordhead">
 					<tr class="table-info">
-					<th scope="col"><?= _('Word');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word" value="<?= $filters["word"];?>"></th>
+					<th scope="col"><?= _('Word');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word" id="wordsearch" value="<?= $filters["word"];?>"></th>
 					<th scope="col"><?= _('Status');?><br><select class="wordfilter custom-select custom-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></th>
 					<th scope="col"><?= _('Word Class');?><br><select class="wordfilter custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select></th>
 					<th scope="col"><?= _('Strong Declension');?><br><input class="wordfilter form-control form-control-sm" type="text" name="strong_declension"  value="<?= $filters["strong_declension"];?>"></th>

@@ -9,8 +9,8 @@ $GLOBALS=array(
 				"ALFABET"=>"a:z,æ,ø,å"),
 "hunspell"=>"/usr/bin/hunspell",
 "nowordclassid"=>24,
-"langtoorg"=>array("da_DK"=>1)
-					
+"langtoorg"=>array("da_DK"=>1, "en_US"=>2),
+"collation"=>array("da_DK"=>"utf8mb4_danish_ci", "en_US"=>"utf8mb4_unicode_ci")
 );
 
 //////////////////////////////

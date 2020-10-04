@@ -3,7 +3,7 @@
 		<div class="container">
 			<h1 class="display-4">Stavekontrolden</h1>
 			<h3>&#8211; <?= _('Spellchecker development');?> ...</h3>
-			<p class="lead"><?= _('Stavekontrolden is beta software. Use it at your own risk.');?> </p>
+			<p class="lead"><?= _('Stavekontrolden is free and open software. Find the source at <a href="https://github.com/jeppebundsgaard/stavekontrolden/">GitHub</a>. Use it at your own risk.');?> </p>
 			<p><?= _('Please help us improve Stavekontrolden to become the number system on the web.')?> </p><p><?= _('Found a bug? Ideas for improvements? Want to use Stavekontrolden for your language?')?></p><p><?= _('Contact the lead developer:')?> <a href="mailto:jeppe@bundsgaard.net">Admin</a>, <i class="fas fa-phone-square"></i> +45 3119 2607.</p>
 		</div>
 	</div>

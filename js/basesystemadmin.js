@@ -180,7 +180,7 @@ function clearmodal(th) {
 	$(th).find(".affixpool").html("")
 }
 function promptsave() {
-	send("promptsave","afterprompt",{table:singlevalue,val:$("#promptname").val(),next:next},"backend")
+	send("promptsave","afterprompt",{table:singlevalue,val:$("#promptname").val()},"backend")
 }
 function afterprompt() {
 	getrows()
@@ -287,6 +287,11 @@ function afteraffixrulesave(json) {
 }
 function filters() {
 	$(".wordfilter").wrap('<div class="input-group">').before('<div class="input-group-prepend"><div class="input-group-text posnegsearch"><i class="fas fa-equals fa-xs collapse show "></i><i class="fas fa-not-equal fa-xs collapse negsearch"></i></div></div>')
+	$("#wordsearch").after('<div class="input-group-append"><div class="input-group-text strictsearch" title="'+_("Accent search")+'"><i class="fas fa-language"></i></div></div>')
+	$(".strictsearch").click(function() {
+		$(this).toggleClass("disabled")
+		if($(this).parent().next().val()!="") getrows()
+	})
 	$(".posnegsearch").click(function() {
 		$(this).children().toggleClass("show")
 		if($(this).parent().next().val()!="") getrows()
@@ -305,27 +310,49 @@ function filters() {
 	})
 
 	$(".nextrows").click(function() {
-		getrows({next:$(this).data("next")})
-		var button=$(this).attr("id")
-		updatebuttons(button)
+		if(!$(this).hasClass("disabled")) {
+			var next=$(this).data("next")
+			if(next==-1) next=Math.floor(Number($("#numrows").text())/Number($("#limit").val()))
+			getrows({next:next})
+			var button=$(this).data("buttontype")
+			updatebuttons(button)
+		}
 	})
 }
 function updatebuttons(button) {
 	switch(button) {
 		case "firstbutton":
-			$("#prevbutton").data("next",-1)
-			$("#nextbutton").data("next",1)
+			$(".prevbutton").data("next",-1)
+			$(".nextbutton").data("next",1)
 			break;
 		case "lastbutton":
-			$("#prevbutton").data("next",-2)
-			$("#nextbutton").data("next",0)
+			var last=Math.floor(Number($("#numrows").text())/Number($("#limit").val()))
+			$(".prevbutton").data("next",last-1)
+			$(".nextbutton").data("next",last+1)
 			break;
 		case "prevbutton":
 		case "nextbutton":
 			var add=(button=="prevbutton"?-1:1); 
-			$("#prevbutton").data("next",$("#prevbutton").data("next")+add)
-			$("#nextbutton").data("next",$("#nextbutton").data("next")+add)
+			$(".prevbutton").data("next",$(".prevbutton").data("next")+add)
+			$(".nextbutton").data("next",$(".nextbutton").data("next")+add)
 			break;
+	}
+	disablebuttons()
+}
+function disablebuttons() {
+	if($("#prevbutton").data("next")<0) {
+		$(".prevbutton").addClass("disabled") 
+		$(".firstbutton").addClass("disabled") 
+	} else {
+		$(".prevbutton").removeClass("disabled")
+		$(".firstbutton").removeClass("disabled")
+	}
+	if($("#nextbutton").data("next")>Math.floor(Number($("#numrows").text())/Number($("#limit").val()))) {
+		$(".nextbutton").addClass("disabled") 
+		$(".lastbutton").addClass("disabled") 
+	} else {
+		$(".nextbutton").removeClass("disabled")
+		$(".lastbutton").removeClass("disabled")
 	}
 }
 function changeWord(th) {
@@ -482,11 +509,12 @@ function populateTable(json) {
 		}
 		window[editfunction+"Modal"](json);
 	}
+	disablebuttons()
 }
 function deletecategory() {
 	if(window.confirm(_('Are you sure you want to delete this category and everything dependent on it (except words)?'))) {
 		var id=$(this).closest("tr").data("id")
-		send("deletecategory","getrows",{table:page,id:id},"backend")
+		send("deletecategory","getrows",{table:(page=="singlevalue"?singlevalue:page),id:id},"backend")
 	}
 }
 function viewWordclass(e) {
@@ -706,7 +734,7 @@ function getrows(andThen) {
 	var order={}
 	if(typeof($(".changesort"))!="undefined")
 		order=$(".changesort").map(function(){return ($(this).hasClass("fa-sort-down")?"ASC":($(this).hasClass("fa-sort-up")?"DESC":""))}).get()
-	send("get_"+page,"populateTable",{where:$(".wordfilter").serialize(),filtersetting:$("#filtersetting").val(),order:order,negsearch:$(".negsearch").map(function() {return $(this).hasClass("show")}).get(),andThen:andThen,numrows:$("#numrows").text(),limit:($(this).attr("id")=="limit"?$(this).val():0),singlevalue:singlevalue},"backend")
+	send("get_"+page,"populateTable",{where:$(".wordfilter").serialize(),filtersetting:$("#filtersetting").val(),strictsearch:$(".strictsearch").hasClass("disabled"),order:order,negsearch:$(".negsearch").map(function() {return $(this).hasClass("show")}).get(),andThen:andThen,numrows:$("#numrows").text(),limit:($(this).attr("id")=="limit"?$(this).val():0),singlevalue:singlevalue},"backend")
 }
 function showMyOrg() {
 	get_template("myOrganization",{contentdiv:"contentdiv"},"initOrg");

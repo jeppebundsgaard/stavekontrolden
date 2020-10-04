@@ -19,8 +19,9 @@ foreach($wheres as $k=>$w) {
 	if($_POST["order"][$n]) $custorder=str_replace("_",".",$k);
 	$n++;
 }
+$custorder=($custorder?$custorder:"r.`description`");
 $where=" WHERE r.lang='".$_SESSION["lang"]."' ".$where;
-$order=" ORDER BY  ".($custorder?$custorder:"r.`description`")." "; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$order=" ORDER BY  ".$custorder." "; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
 $orderdir=implode("",$_POST["order"]);
 
 $baseq=" from affixrule r left join affixclass c on r.`affixclassid`=c.`id` left join affixrule_to_affixclass rc on r.`id`=rc.`affixruleid` left join affixclass c1 on rc.`affixclassid`=c1.`id` left join morphdescr m on m.id=r.morphdescrid ";
@@ -40,13 +41,14 @@ elseif(!$_POST["andThen"]["next"]){
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 $limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
-$q=$last1."select distinct(r.id)".$baseq.$where.$order.$orderdir.$limit.$last2;
+$q=$last1."select distinct(r.id),".$custorder.$baseq.$where.$order.$orderdir.$limit.$last2;
 $res["log"]=$q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
 else $rall=$result->fetch_all();
 if(!empty($rall)) {
-	$ids=call_user_func_array('array_merge',$rall);
+	$ids=array();
+	foreach($rall as $one) $ids[]=$one[0];
 
 	$q='select '.$cols.$baseq.' where r.id in ('.implode(",",$ids).') '.$order;
 

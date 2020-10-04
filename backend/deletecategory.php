@@ -7,6 +7,7 @@ if(!$_SESSION["user_id"]) exit;
 $res=array();
 
 $q='delete from '.$_POST["table"].' where id='.$_POST["id"];
+#$res["log"].=($q); 
 
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 

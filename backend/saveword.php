@@ -23,14 +23,14 @@ else {
 		$r=$result->fetch_assoc();
 		$log="";
 		for($i=0;$i<count($cols);$i++) {
-			if($r[$cols[$i]]==0 and !$unescaped[$cols[$i]]) $unescaped[$cols[$i]]=0;
+			if(is_numeric($r[$cols[$i]]) and $r[$cols[$i]]==0 and !$unescaped[$cols[$i]]) $unescaped[$cols[$i]]=0;
 			$res["log"].="-$cols[$i]:".$r[$cols[$i]]."!=".$unescaped[$cols[$i]]."-";
 			$log.=($r[$cols[$i]]!=$unescaped[$cols[$i]]?$cols[$i]." => ".$unescaped[$cols[$i]].".\n":"");
 		}
 		if($log) { #Changes made
 // 		$res["log"].="#Changes made";
-			$q='update words set `word`="'.$c["word"].'", `wordclass`="'.$c["wordclass"].'", `wordstatus`="'.$c["wordstatus"].'", `lastuser`="'.$_SESSION["username"].'", `misspellings`="'.$c["misspellings"].'",`word_definition`="'.$c["word_definition"].'", `comments`="'.$c["comments"].'", `technical_term`="'.$c["technical_term"].'", `fugeelementid`="'.$c["fugeelementid"].'", `strong_declension`="'.$c["strong_declension"].'", `log`=CONCAT("'.date("Y-m-d H:i:s").": ".$_SESSION["username"].': '.$mysqli->real_escape_string($log).'",`log`) where lang="'.$_SESSION["lang"].'" and id='.$c["wordid"];
-			#$res["log"].=$q;
+			$q='update words set `word`="'.$c["word"].'", `wordclass`="'.$c["wordclass"].'", `wordstatus`="'.$c["wordstatus"].'", `lastuser`="'.$_SESSION["username"].'", `misspellings`="'.$c["misspellings"].'",`word_definition`="'.$c["word_definition"].'", `comments`="'.$c["comments"].'", `technical_term`="'.($c["technical_term"]?$c["technical_term"]:0).'", `fugeelementid`="'.($c["fugeelementid"]?$c["fugeelementid"]:0).'", `strong_declension`="'.$c["strong_declension"].'", `log`=CONCAT("'.date("Y-m-d H:i:s").": ".$_SESSION["username"].': '.$mysqli->real_escape_string($log).'",`log`) where lang="'.$_SESSION["lang"].'" and id='.$c["wordid"];
+			$res["log"].=$q;
 			$result=$mysqli->query($q);
 		}
 	}

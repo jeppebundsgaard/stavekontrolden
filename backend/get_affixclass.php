@@ -20,8 +20,9 @@ foreach($wheres as $k=>$w) {
 	$n++;
 
 }
+$custorder=($custorder?$custorder:"c.`description`");
 $where=" WHERE c.lang='".$_SESSION["lang"]."' ".$where;
-$order=" ORDER BY  ".($custorder?$custorder:"c.`description`")." "; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$order=" ORDER BY  ".$custorder." "; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
 $orderdir=implode("",$_POST["order"]);
 
 #$baseq=" from affixclass c left join affixrule_to_affixclass cr on c.`id`=cr.`affixclassid` left join affixrule r on cr.`affixruleid`=r.`id` ";
@@ -41,17 +42,19 @@ elseif(!$_POST["andThen"]["next"]) {
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 $limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
-$q=$last1."select distinct(c.id)".$baseq.$where.$order.$orderdir.$limit.$last2;
+$q=$last1."select distinct(c.id),".$custorder.$baseq.$where.$order.$orderdir.$limit.$last2;
 	$res["log"]=$q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
 else 
 	$rall=$result->fetch_all();
 if(!empty($rall)) {
-	$ids=call_user_func_array('array_merge',$rall);
+	$ids=array();
+	foreach($rall as $one) $ids[]=$one[0];
+#	$ids=call_user_func_array(function($x) {return $x[0];},$rall);
 
 	$q='select '.$cols.$baseq.' where c.id in ('.implode(",",$ids).') '.$order." ".$orderdir;
-#$res["log"]=$q;
+#$res["log"]=print_r($rall,true);
 
 	$result=$mysqli->query($q);
 	$res["rows"]=array();

@@ -19,8 +19,9 @@ foreach($wheres as $k=>$w) {
 	if($_POST["order"][$n]) $order=$k." ".$_POST["order"][$n];
 	$n++;
 }
+$custorder=($order?$order:"`fugeelement`, a.`description`");
 $where=" WHERE f.lang='".$_SESSION["lang"]."' ".$where;
-$order=" ORDER BY  ".($order?$order:"`fugeelement`, a.`description`"); #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
+$order=" ORDER BY  ".$custorder; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
 
 $baseq=" from fugeelement f left join fugeelement_to_affixclass fa on f.`id`=fa.`fugeelementid` left join affixclass a on fa.`affixclassid`=a.`id` ";
 
@@ -40,13 +41,14 @@ elseif(!$_POST["andThen"]["next"]){
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 $limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
-$q=$last1."select distinct(f.id)".$baseq.$where.$orderdesc.$limit.$last2;
+$q=$last1."select distinct(f.id),".$custorder.$baseq.$where.$orderdesc.$limit.$last2;
 #$res["log"]=$q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
 else $rall=$result->fetch_all();
 if(!empty($rall)) {
-	$ids=call_user_func_array('array_merge',$rall);
+	$ids=array();
+	foreach($rall as $one) $ids[]=$one[0];
 
 	$q='select '.$cols.$baseq.' where f.id in ('.implode(",",$ids).') '.$order;
 
