@@ -1,2 +1,4 @@
 .htdatabase
-
+*.oxt
+*.dic
+*.aff
