@@ -29,6 +29,7 @@ $result=$mysqli->query($q);
 $technical_termoptions='';
 while($r=$result->fetch_assoc()) $technical_termoptions.='<option value="'.$r["id"].'" '.($filters["technical_term"]==$r["id"]?"selected":"").'>'.$r["technical_term"].'</option>';
 
+$omitsuggestion_options='<option value="1">'._("Yes").'</option><option value="0">'._("No").'</option>';
 include($systemdirs["backend"]."affixoptions.php");
 
 ?>
@@ -74,6 +75,7 @@ include($systemdirs["backend"]."affixoptions.php");
 					<th scope="col"><?= _('Word Definition');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word_definition" value="<?= $filters["word_definition"];?>"></th>
 					<th scope="col"><?= _('Comments');?><br><input class="wordfilter form-control form-control-sm" type="text" name="comments" value="<?= $filters["comments"];?>"></th>
 					<th scope="col"><?= _('Technical Term');?><br><select class="wordfilter custom-select custom-select-sm" name="technical_term"><option></option><?= $technical_termoptions;?></select></th>
+					<th scope="col"><?= _('Omit Suggestion');?><br><select class="wordfilter custom-select custom-select-sm" name="omitsuggestion"><option></option><?= $omitsuggestion_options;?></select></th>
 					<th scope="col"><?= _('Last Change');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastchange"  value="<?= $filters["lastchange"];?>"></th>
 					<?php } ?>
 					<?php if($_SESSION["showlog"]) { ?>
@@ -153,6 +155,14 @@ include($systemdirs["backend"]."affixoptions.php");
 						<div class="col">
 							<label for="comments" class="col-form-label"><?= _('Comments');?></label>
 							<textarea class="newword form-control form-control-sm" type="text" name="comments"></textarea>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col">
+							<div class="form-check">
+								<input type="checkbox" class="newword form-check-input" name="omitsuggestion" value="1"> 
+								<label for="omitsuggestion" class="col-form-check-label"><?= _('Omit this word from suggestions');?></label>
+							</div>
 						</div>
 					</div>
 					<div class="form-row">

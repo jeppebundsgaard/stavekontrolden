@@ -14,6 +14,9 @@
 			<li class="nav-item">
 						<a class="nav-link editorg" id="editMasterData"><?= _('Master Data');?></a>
 			</li>
+			<li class="nav-item">
+						<a class="nav-link editorg" id="editVersion"><?= _('Version');?></a>
+			</li>
 			<!--<li class="nav-item">
 						<a class="nav-link editorg" id="editStyles"><?= _('Stylesheet');?></a>
 			</li>-->

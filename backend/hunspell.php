@@ -7,8 +7,10 @@ $res=array();
 $res["log"].=print_r($_POST,true);
 $w=$_POST["word"];
 if($w) {
-	$dicfile=pathinfo($_SERVER['SCRIPT_FILENAME'])["dirname"]."/../dictionaries/".$_SESSION["lang"]."/".$_SESSION["lang"];
-	$cmd="/bin/echo \"".addslashes($w)."\" | ".$GLOBALS["hunspell"]." -i UTF-8 ".($_POST["spellcheck"]=="spellcheck"?"":"-m")." -d '".$dicfile."'";
+	$dictionarydir=pathinfo($_SERVER['SCRIPT_FILENAME'])["dirname"]."/../dictionaries/".$_SESSION["lang"]."/";
+	$version=file_get_contents($dictionarydir."version.txt");
+
+	$cmd="/bin/echo \"".addslashes($w)."\" | ".$GLOBALS["hunspell"]." -i UTF-8 ".($_POST["spellcheck"]=="spellcheck"?"":"-m")." -d '".$dictionarydir.$_SESSION["lang"]."-".$version."'";
 	$res["log"].=$cmd;
 	exec($cmd,$analysisresult , $retval);
 	$res["analysisresult"]=$analysisresult;

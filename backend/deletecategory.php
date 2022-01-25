@@ -11,4 +11,11 @@ $q='delete from '.$_POST["table"].' where id='.$_POST["id"];
 
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
+
+if($_POST["table"]=="wordclass") {
+	$q='update words set wordclass=0 where wordclass='.$_POST["id"];
+	$result=$mysqli->query($q);
+	if(!$result) $res["log"].=mysqlerror($q); 
+}
+
 echo json_encode($res);

@@ -230,6 +230,7 @@ CREATE TABLE `words` (
   `technical_term` int(10) UNSIGNED NOT NULL,
   `fugeelementid` int(10) UNSIGNED NOT NULL,
   `strong_declension` varchar(500) NOT NULL,
+  `omitsuggestion` tinyint(1) DEFAULT '0',
   `apostroph` tinyint(1) NOT NULL DEFAULT '0',
   `misspellings` varchar(255) NOT NULL,
   `log` mediumtext NOT NULL,

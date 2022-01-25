@@ -8,7 +8,7 @@ if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
 $show=($_SESSION["limit"]?$_SESSION["limit"]:25);
 
 $cols=array('w.`id`','`word`', 's.`wordstatus`', 'wc.`wordclass`', '`strong_declension`', '`misspellings`', 'f.`fugeelement`');
-if($_SESSION["showdetails"]) $cols=array_merge($cols, array('`contributor`', '`lastuser`', '`word_definition`', '`comments`', 't.`technical_term`', '`lastchange`'));
+if($_SESSION["showdetails"]) $cols=array_merge($cols, array('`contributor`', '`lastuser`', '`word_definition`', '`comments`', 't.`technical_term`', '`omitsuggestion`', '`lastchange`'));
 if($_SESSION["showlog"]) $cols=array_merge($cols, array('REPLACE(`log`,"\n","<br>")'));
 $wheres=array();
 $f=$_POST["filtersetting"];

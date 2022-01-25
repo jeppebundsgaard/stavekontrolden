@@ -174,7 +174,7 @@ function clearmodal(th) {
 	$(th).find(".addwd").collapse("show")
 	$(th).find(".wordsave").collapse("show")
 	$(th).find(".associaterow").collapse("show")
-	$(th).find(".newword").val("")
+	$(th).find(".newword[type!='checkbox']").val("")
 	$(th).find(".disabled-words").val("")
 	$(th).find(".newword").prop('disabled', false);
 	$(th).find(".affixpool").html("")
@@ -203,6 +203,7 @@ function showNext(t) {
 }
 function wordsave() {
 	var andThen=showNext($(this))
+	console.log($("#wordsform .newword").serialize())
 	send("saveword","afterwordsave",{word:$("#wordsform .newword").serialize(),andThen:andThen},"backend")
 }
 function wordclasssave() {
@@ -229,7 +230,7 @@ function afterwordsave(json) {
 	if(!json.warning) {
 		if(json.andThen.nextsingle<0 && json.andThen.newsave!="true") $("#wordsmodal").modal('hide')
 		else {
-			$("#wordsform .newword:not(.dontreset)").val("")
+			$("#wordsform .newword:not(.dontreset)[type!='checkbox']").val("")
 			
 		}
 
@@ -614,7 +615,8 @@ function populateModal(vars,t) {
 	for(let [k,v] of Object.entries(vars)) {
 		var elem=$("#"+t+"form"+" [name="+k+"]")
 		if(elem.hasClass("custom-select")) elem.html(elem.html()) // hack to make bootstrap aware that this select has a new selected. Without it, arrow down will show the first option's value, not the next from the one selected now.
-		elem.val(v)
+		if(elem.attr("type")=="checkbox") elem.prop("checked",v>0?true:false) 
+		else elem.val(v)
 	}
 }
 function editAffixclass() {
@@ -749,7 +751,6 @@ function editUserData() {
 
 function initOrg() {
 	$(".editorg").click(editorg)
-	$("#resetgames").click(function() {send('resetgames',"doNothing",{},"backend")});
 }
 function initCSS() {
 // 	return;
@@ -811,6 +812,9 @@ function editorg() {
 		case "editMasterData":
 			get_template("orgmasterdata",{contentdiv:"orgcontentdiv"},"editMasterData")
 		break
+		case "editVersion":
+			get_template("version",{contentdiv:"orgcontentdiv"},"editVersion")
+		break;
 		case "editOrgUsers":
 			editOrgUsersIni()
 		break
@@ -825,9 +829,9 @@ function editOrgUsersIni() {
 }
 function editOrgUsers() {
  	$(".changePermissions").click(function() {if($(this).children().length==0) send("systemUserPermissions","selectUserPermissions",{user:$(this).data("user")},"backend")})
-	$("#invite").click(function() {send("orgUser","editOrgUsersIni",{invite:$("#email").val(),inviteuser:$("username").val()},"backend")})
+	$("#invite").click(function() {send("orgUser","editOrgUsersIni",{invite:$("#email").val(),inviteuser:$("#username").val()},"backend")})
 	$(".remove").click(function() {send("orgUser","editOrgUsersIni",{remove:$(this).data("user")},"backend")})
-	$("#create").click(function() {send("orgUser","editOrgUsersIni",{create:$("#email").val(),user:$("username").val(),password:md5($("#password").val())},"backend")})
+	$("#create").click(function() {send("orgUser","editOrgUsersIni",{create:$("#email").val(),user:$("#username").val(),password:md5($("#password").val())},"backend")})
 	
 }
 function selectUserPermissions(json) {
@@ -844,6 +848,10 @@ function doChangePermissions() {
 
 function editMasterData() {
 	$(".orginput").change(function() {send("orgsettingsupdate","doNothing",{orgvar:$(this).attr("id"),orgval:$(this).val()},"backend")});
+	$("#finish").click(finish)
+}
+function editVersion() {
+	$(".versioninput").change(function() {send("versionupdate","doNothing",{version:$(this).val()},"backend")});
 	$("#finish").click(finish)
 }
 function orgpagesready() {

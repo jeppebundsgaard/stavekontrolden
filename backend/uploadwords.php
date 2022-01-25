@@ -22,8 +22,10 @@ else
 
 #$res["log"].=$tmp_name;
 if($tmp_name and !$res["warning"]) {
-	$dicfile=pathinfo($_SERVER['SCRIPT_FILENAME'])["dirname"]."/../dictionaries/".$_SESSION["lang"]."/".$_SESSION["lang"];
-	$cmd=$GLOBALS["hunspell"]." -l -i UTF-8 -d '".$dicfile."' ".$filetypeflag[$filetype]." '".$tmp_name."'";
+	$dictionarydir=pathinfo($_SERVER['SCRIPT_FILENAME'])["dirname"]."/../dictionaries/".$_SESSION["lang"]."/";
+	$version=file_get_contents($dictionarydir."version.txt");
+
+	$cmd=$GLOBALS["hunspell"]." -l -i UTF-8 -d '".$dictionarydir.$_SESSION["lang"]."-".$version."' ".$filetypeflag[$filetype]." '".$tmp_name."'";
 	$res["log"].=$cmd;
 	exec($cmd,$newwords , $retval);
 	$res["newwords"]=$newwords;

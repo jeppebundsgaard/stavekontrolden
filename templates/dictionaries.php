@@ -14,6 +14,7 @@
 					<th scope="col"><?= _('OpenOffice/LibreOffice Extension');?></th>
 					<th scope="col"><?= _('Affix file');?></th>
 					<th scope="col"><?= _('Dictionary file');?></th>
+					<th scope="col"><?= _('Database tables');?></th>
 					</tr>
 				</thead>
 				<tbody class="table-striped " id="tablebody">
@@ -26,7 +27,7 @@
 								$f=$dicdir.$e."/".$e;
 								$vf=$dicdir.$e."/".$e."-".$version;
 							?>
-								<tr><td><?= $e;?></td><td><a href="<?= $vf.".oxt";?>" ><?= $e.".oxt";?></a></td><td><a href="<?= $vf.".aff";?>" ><?= $e.".aff";?></a></td></td><td><a href="<?= $vf.".dic";?>"><?= $e.".dic";?></a></td></td><tr>
+								<tr><td><?= $e;?></td><td><a href="<?= $vf.".oxt";?>" ><?= $e.".oxt";?></a></td><td><a href="<?= $vf.".aff";?>" ><?= $e.".aff";?></a></td></td><td><a href="<?= $vf.".dic";?>"><?= $e.".dic";?></a></td><td><a target="_blank" href="<?= $dicdir.$e."/tables";?>"><?= $e." database";?></a></td><tr>
 							<?php
 							}
 						}
