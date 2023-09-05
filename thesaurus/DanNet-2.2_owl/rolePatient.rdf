@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<rdf:Description rdf:about="&dn;synset-2421"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-14692"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16469"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16473"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16479"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16481"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16485"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16486"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16487"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16488"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16492"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16494"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16495"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16497"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16498"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16499"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16501"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16502"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16505"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16506"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16509"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16514"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16520"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16526"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16528"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16532"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16537"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16547"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16548"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16549"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16552"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16555"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16556"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16564"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16571"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16572"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16573"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16576"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16580"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16581"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16596"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16605"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16607"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16608"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16613"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16614"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16616"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16623"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16631"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16639"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-22141"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37941"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38653"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39768"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39944"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40044"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40045"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40046"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40047"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40048"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40049"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40050"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40051"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40052"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40053"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40054"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40055"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40056"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40057"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40058"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40059"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40060"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40061"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40062"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40142"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41261"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-42211"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-42403"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47386"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47519"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47676"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48863"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50238"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50240"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50241"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50243"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50244"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50245"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50246"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50247"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50248"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50249"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50250"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50251"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50252"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50253"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50254"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50255"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50256"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50257"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50258"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50259"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58639"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61196"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62855"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62936"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62943"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63100"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64945"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64951"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64955"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64959"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64961"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64963"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64966"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65654"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67613"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68312"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69632"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70290"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70291"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70292"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70293"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70294"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70295"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-72335"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73432"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-74493"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-74684"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-74693"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77887"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16554"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16466"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16489"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16544"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16579"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16622"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61192"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61193"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61194"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61195"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61197"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61198"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61199"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16588"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16527"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16563"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16477"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16529"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16530"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16546"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16632"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16503"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16590"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16593"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16600"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16465"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16470"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16472"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16476"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16484"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16493"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16500"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16513"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16519"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16523"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16551"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16553"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16557"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16561"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16562"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16567"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16570"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16583"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16585"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16586"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16594"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16603"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16606"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16610"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16611"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16612"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16615"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16618"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16624"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16626"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16629"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16633"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60930"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60931"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60932"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60933"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60934"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60935"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60936"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65049"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16480"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16482"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16558"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16568"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16636"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39945"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39948"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39949"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39950"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53618"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60937"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60938"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60939"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60940"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60941"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60942"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60943"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60944"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16627"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16474"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16604"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48950"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16574"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16511"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16517"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16475"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16543"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16640"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16641"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16642"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16644"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16645"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16646"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16647"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16649"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16650"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16651"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16652"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16653"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16655"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16656"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16657"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16658"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16659"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16661"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16664"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16665"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16667"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16668"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69170"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48666"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48978"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65296"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66782"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66783"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66784"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66785"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66787"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66788"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66789"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37493"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41242"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41251"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41256"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41260"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41265"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41278"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47381"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53599"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53601"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53602"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53604"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53605"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53606"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53610"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53612"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53613"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53616"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53620"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67654"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39767"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39943"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48743"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64952"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64954"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67888"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-42209"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-42210"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58032"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58033"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58034"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58035"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64953"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60193"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63564"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64962"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58626"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62846"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62847"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62848"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62849"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62850"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62851"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62852"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62853"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62854"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62856"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62857"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67612"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69633"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69634"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69635"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-72437"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-75106"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-72334"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12714"><dn_schema:rolePatient rdf:resource="&dn;synset-29435" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34438"><dn_schema:rolePatient rdf:resource="&dn;synset-20721" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2374"><dn_schema:rolePatient rdf:resource="&dn;synset-2377" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2375"><dn_schema:rolePatient rdf:resource="&dn;synset-2377" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2420"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2431"><dn_schema:rolePatient rdf:resource="&dn;synset-44354" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5836"><dn_schema:rolePatient rdf:resource="&dn;synset-15848" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5838"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5840"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6164"><dn_schema:rolePatient rdf:resource="&dn;synset-44354" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6226"><dn_schema:rolePatient rdf:resource="&dn;synset-48688" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6439"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6494"><dn_schema:rolePatient rdf:resource="&dn;synset-25146" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6609"><dn_schema:rolePatient rdf:resource="&dn;synset-44775" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6670"><dn_schema:rolePatient rdf:resource="&dn;synset-48556" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6744"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6765"><dn_schema:rolePatient rdf:resource="&dn;synset-2405" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6799"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6844"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6851"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7018"><dn_schema:rolePatient rdf:resource="&dn;synset-48959" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7240"><dn_schema:rolePatient rdf:resource="&dn;synset-46848" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7279"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7342"><dn_schema:rolePatient rdf:resource="&dn;synset-43763" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7397"><dn_schema:rolePatient rdf:resource="&dn;synset-48679" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12977"><dn_schema:rolePatient rdf:resource="&dn;synset-44773" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13254"><dn_schema:rolePatient rdf:resource="&dn;synset-44354" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13269"><dn_schema:rolePatient rdf:resource="&dn;synset-13996" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13330"><dn_schema:rolePatient rdf:resource="&dn;synset-46969" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13345"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13358"><dn_schema:rolePatient rdf:resource="&dn;synset-30838" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13360"><dn_schema:rolePatient rdf:resource="&dn;synset-48217" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13485"><dn_schema:rolePatient rdf:resource="&dn;synset-48408" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18632"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18633"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18635"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18677"><dn_schema:rolePatient rdf:resource="&dn;synset-47809" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18699"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18705"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18957"><dn_schema:rolePatient rdf:resource="&dn;synset-48196" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19031"><dn_schema:rolePatient rdf:resource="&dn;synset-44354" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19280"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19281"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19282"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<owl:NegativeObjectPropertyAssertion><rdf:subject rdf:resource="&dn;synset-19302"/><rdf:predicate rdf:resource="&dn_schema;rolePatient"/><rdf:object rdf:resource="&dn;synset-42960"/></owl:NegativeObjectPropertyAssertion>
+<rdf:Description rdf:about="&dn;synset-19388"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19418"><dn_schema:rolePatient rdf:resource="&dn;synset-48677" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19450"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20374"><dn_schema:rolePatient rdf:resource="&dn;synset-15436" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20603"><dn_schema:rolePatient rdf:resource="&dn;synset-48821" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20613"><dn_schema:rolePatient rdf:resource="&dn;synset-48959" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-22284"><dn_schema:rolePatient rdf:resource="&dn;synset-42986" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47653"><dn_schema:rolePatient rdf:resource="&dn;synset-68311" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65671"><dn_schema:rolePatient rdf:resource="&dn;synset-2210" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65692"><dn_schema:rolePatient rdf:resource="&dn;synset-1435" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65693"><dn_schema:rolePatient rdf:resource="&dn;synset-4311" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66199"><dn_schema:rolePatient rdf:resource="&dn;synset-45116" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66214"><dn_schema:rolePatient rdf:resource="&dn;synset-66666" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66655"><dn_schema:rolePatient rdf:resource="&dn;synset-48461" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66776"><dn_schema:rolePatient rdf:resource="&dn;synset-34407" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16478"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16545"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16531"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16468"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16508"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16533"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16541"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16560"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16601"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-25860"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-25861"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16491"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16542"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16619"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16638"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16566"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16595"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16483"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16504"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16587"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16507"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16534"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16535"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16539"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16540"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16550"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16589"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16609"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16617"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64957"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64958"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-74637"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-74636"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39946"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48955"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16597"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16643"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16648"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16654"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16662"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16666"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64942"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64947"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64948"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64949"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64950"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16660"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37494"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37495"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37496"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37498"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37499"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37500"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37501"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37502"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37503"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37504"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37505"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37506"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37507"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37508"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37509"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37510"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37512"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37513"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58347"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69138"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69139"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69140"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53617"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39769"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39770"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60194"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12096"><dn_schema:rolePatient rdf:resource="&dn;synset-32872" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67553"><dn_schema:rolePatient rdf:resource="&dn;synset-2377" /><!-- Inherited from synset with id 2374 ({arving_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73148"><dn_schema:rolePatient rdf:resource="&dn;synset-2377" /><!-- Inherited from synset with id 2374 ({arving_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66286"><dn_schema:rolePatient rdf:resource="&dn;synset-1997" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13478"><dn_schema:rolePatient rdf:resource="&dn;synset-30908" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66840"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /><!-- Inherited from synset with id 6844 ({klient_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66240"><dn_schema:rolePatient rdf:resource="&dn;synset-2144" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2417"><dn_schema:rolePatient rdf:resource="&dn;synset-2418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16637"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16512"><dn_schema:rolePatient rdf:resource="&dn;synset-47675" /><!-- Inherited from synset with id 2421 ({affektion_2; lidelse_2; sygdom_1; syge_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38734"><dn_schema:rolePatient rdf:resource="&dn;synset-5654" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29797"><dn_schema:rolePatient rdf:resource="&dn;synset-47819" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65966"><dn_schema:rolePatient rdf:resource="&dn;synset-2144" /><!-- Inherited from synset with id 66240 ({motorkører_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66004"><dn_schema:rolePatient rdf:resource="&dn;synset-2144" /><!-- Inherited from synset with id 66240 ({motorkører_1}) --> </rdf:Description>
+</rdf:RDF>

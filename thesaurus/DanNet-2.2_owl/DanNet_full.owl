@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<owl:Ontology rdf:about="">
+  <owl:versionInfo>DanNet ver. 2.2</owl:versionInfo>
+  <rdfs:comment>This is an rdf/owl representation of DanNet represented in an extension of the W3C specifications for wordnets (cf. http://www.w3.org/TR/wordnet-rdf/).</rdfs:comment>
+</owl:Ontology>
+  <owl:Ontology>
+
+
+    <owl:imports rdf:resource="dn_full_spec.rdfs"/>
+    <owl:imports rdf:resource="synsets.rdf"/>
+    <owl:imports rdf:resource="dummies.rdf"/>
+    <owl:imports rdf:resource="glossary.rdf"/>
+    <owl:imports rdf:resource="words.rdf"/>
+    <owl:imports rdf:resource="ontological_types.rdf"/>
+    <owl:imports rdf:resource="wordsenses.rdf"/>
+    <owl:imports rdf:resource="register.rdf"/>
+    <owl:imports rdf:resource="part_of_speech.rdf"/>
+    <owl:imports rdf:resource="synset_attributes.rdf"/>
+    <!-- <owl:imports rdf:resource="hyponymOf_taxonomic.rdf"/> -->
+    
+    <owl:imports rdf:resource="involvedAgent.rdf"/>
+    <owl:imports rdf:resource="domain.rdf"/>
+    <owl:imports rdf:resource="madeofHolonymOf.rdf"/>
+    <owl:imports rdf:resource="nearSynonymOf.rdf"/>
+    <owl:imports rdf:resource="involvedInstrument.rdf"/>
+    <owl:imports rdf:resource="madeBy.rdf"/>
+    <owl:imports rdf:resource="usedForObject.rdf"/>
+    <owl:imports rdf:resource="concerns.rdf"/>
+    <owl:imports rdf:resource="memberHolonymOf.rdf"/>
+    <owl:imports rdf:resource="madeofMeronymOf.rdf"/>
+    <owl:imports rdf:resource="locationMeronymOf.rdf"/>
+    <owl:imports rdf:resource="memberMeronymOf.rdf"/>
+    <owl:imports rdf:resource="eqHypernymOf.rdf"/>
+    <owl:imports rdf:resource="eqSynonymOf.rdf"/>
+    <owl:imports rdf:resource="roleAgent.rdf"/>
+    <owl:imports rdf:resource="usedForQualifiedBy.rdf"/>
+    <owl:imports rdf:resource="eqHyponymOf.rdf"/>
+    <owl:imports rdf:resource="hyponymOf.rdf"/>
+    <owl:imports rdf:resource="partMeronymOf.rdf"/>
+    <owl:imports rdf:resource="partHolonymOf.rdf"/>
+    <owl:imports rdf:resource="nearAntonymOf.rdf"/>
+    <owl:imports rdf:resource="hypernymOf.rdf"/>
+    <owl:imports rdf:resource="usedFor.rdf"/>
+    <owl:imports rdf:resource="instanceOf.rdf"/>
+    <owl:imports rdf:resource="meronymOf.rdf"/>
+    <owl:imports rdf:resource="rolePatient.rdf"/>
+    <owl:imports rdf:resource="involvedPatient.rdf"/>
+    <owl:imports rdf:resource="locationHolonymOf.rdf"/>
+    <owl:imports rdf:resource="xposNearSynonymOf.rdf"/>
+  </owl:Ontology>
+</rdf:RDF>

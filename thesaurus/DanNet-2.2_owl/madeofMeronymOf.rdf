@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<rdf:Description rdf:about="&dn;synset-2888"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-37857" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16388"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-34596" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16388"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-5483" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5489"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-5488" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2735"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10342" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2707"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10905" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-32278"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-47483" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59770"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10735" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1453"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1453"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1467"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-13676" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1467"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-47109" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1468"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-47754" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1471"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-13751" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1475"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1453" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1475"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1462" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1477"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-128" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1477"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1422" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1481"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-12536" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1481"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1478" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1481"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1583" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1488"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-32215" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1491"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-47750" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13739"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34522"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-2041" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34525"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-2041" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-3037"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3036" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29551"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10905" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59775"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10735" /><!-- Inherited from synset with id 59770 ({armbind_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1575"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1575"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1576"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1576"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1577"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1577"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1578"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1494" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1578"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1578"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1579"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1579"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47750"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47750"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49298"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49298"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67614"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10119" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67614"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10465" /><!-- Inherited from synset with id 1453 ({sodavand_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1472"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1494" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1545"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-352" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39611"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-400" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-354"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35073"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35074"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35076"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35077"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35078"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35079"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35080"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-55635"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-55636"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-55651"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17531"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-21270" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-131"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34992"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-14034"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10461" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29538"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10905" /><!-- Inherited from synset with id 29551 ({krone,1_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29540"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-34594" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29545"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10905" /><!-- Inherited from synset with id 29551 ({krone,1_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47605"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-10905" /><!-- Inherited from synset with id 29551 ({krone,1_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66970"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-352" /><!-- Inherited from synset with id 1545 ({vodka_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67935"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-189"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-206"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1418"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35301"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35302"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64910"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64912"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62118"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-32297" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-547"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-17543" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34949"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-21213" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-24000"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-24002"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-248"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-424"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2228"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35412"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35414"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39167"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-55463"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-55465"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67950"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-213"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64908"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64909"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1420"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-135" /><!-- Inherited from synset with id 131 ({mel_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-278"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-38153" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53425"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-47039" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53426"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-39170" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53427"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-1032" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53428"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-66969" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53429"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-35301" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-56772"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-21213" /><!-- Inherited from synset with id 34949 ({snørebånd_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23983"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23986"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23988"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23998"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35319"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35320"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35321"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35322"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35323"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35324"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35325"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-35326"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-264"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23997"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20696"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-44016"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-44017"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-44019"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-44020"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39164"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39165"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39166"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23984"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23985"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23987"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23989"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23990"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23991"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23992"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23993"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23994"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23995"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23996"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-23999"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-24001"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66535"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66536"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66537"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66538"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39168"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39169"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39171"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39172"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-18046" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47083"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-357" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47224"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-44018"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-335"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39170"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62617"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66963"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66959"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66960"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66958"><dn_schema:madeofMeronymOf rdf:resource="&dn;synset-3265" /><!-- Inherited from synset with id 34992 ({mælkeprodukt_1}) --> </rdf:Description>
+</rdf:RDF>

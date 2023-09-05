@@ -7,6 +7,17 @@ $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
 $show=($_SESSION["limit"]?$_SESSION["limit"]:25);
 
+if($_POST["andThen"]["next"]<0) {
+	$_POST["andThen"]["next"]=floor(($_POST["numrows"]-1)/$show);
+	$_POST["andThen"]["nextsingle"]=$_POST["numrows"]%$show-1;
+	$res["updatebutton"]="lastbutton";
+} else if($_POST["andThen"]["next"] and ($_POST["andThen"]["next"]*$show-1+$_POST["andThen"]["nextsingle"])>=($_POST["numrows"]-1)) {
+	$_POST["andThen"]["next"]=0;
+	$_POST["andThen"]["nextsingle"]=0;	
+	$res["updatebutton"]="firstbutton";
+} 
+
+
 $cols='f.`id`, f.`fugeelement`, fa.`affixclassid`, a.`description`';
 $wheres=array();
 $f=$_POST["filtersetting"];
@@ -26,22 +37,23 @@ $order=" ORDER BY  ".$custorder; #" ORDER BY ".($_POST["order"]?$_POST["order"]:
 $baseq=" from fugeelement f left join fugeelement_to_affixclass fa on f.`id`=fa.`fugeelementid` left join affixclass a on fa.`affixclassid`=a.`id` ";
 
 $orderdesc=" ORDER BY  `fugeelement`";
-if($_POST["andThen"]["next"]<0) {
-// // 	$last1="SELECT * FROM (";
-// //     $last2=") sub ";
-    $orderdesc.=" DESC";
-    $_POST["andThen"]["next"]+=1;
-}
-elseif(!$_POST["andThen"]["next"]){
+// if($_POST["andThen"]["next"]<0) {
+// // // 	$last1="SELECT * FROM (";
+// // //     $last2=") sub ";
+//     $orderdesc.=" DESC";
+//     $_POST["andThen"]["next"]+=1;
+// }
+// elseif(!$_POST["andThen"]["next"]){
 	$q="SELECT count(*) as numrows ".$baseq.$where;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
-}
+// }
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 $limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
-$q=$last1."select distinct(f.id),".$custorder.$baseq.$where.$orderdesc.$limit.$last2;
+$q=$last1."select distinct(f.id) ".$baseq.$where.$orderdesc.$limit.$last2;
+// echo $q;
 #$res["log"]=$q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
@@ -51,7 +63,7 @@ if(!empty($rall)) {
 	foreach($rall as $one) $ids[]=$one[0];
 
 	$q='select '.$cols.$baseq.' where f.id in ('.implode(",",$ids).') '.$order;
-
+$res["log"].=$q;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else {

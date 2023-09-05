@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<rdf:Description rdf:about="&dn;synset-77975"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-46388"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-46838"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 77975 ({vække_3_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1835"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-15560"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-28280"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52682"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-45753"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /><!-- Inherited from synset with id 46388 ({føre,2_7; styre,2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-46387"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /><!-- Inherited from synset with id 46388 ({føre,2_7; styre,2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47385"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /><!-- Inherited from synset with id 46388 ({føre,2_7; styre,2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47583"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /><!-- Inherited from synset with id 46388 ({føre,2_7; styre,2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48275"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /><!-- Inherited from synset with id 46388 ({føre,2_7; styre,2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77870"><dn_schema:involvedPatient rdf:resource="&dn;synset-4272" /><!-- Inherited from synset with id 46388 ({føre,2_7; styre,2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18581"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39293"><dn_schema:involvedPatient rdf:resource="&dn;synset-47774" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39294"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39295"><dn_schema:involvedPatient rdf:resource="&dn;synset-2210" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39296"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39297"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39298"><dn_schema:involvedPatient rdf:resource="&dn;synset-3838" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39298"><dn_schema:involvedPatient rdf:resource="&dn;synset-40781" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39299"><dn_schema:involvedPatient rdf:resource="&dn;synset-47873" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39300"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39301"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39302"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39303"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39304"><dn_schema:involvedPatient rdf:resource="&dn;synset-4327" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39309"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39310"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39311"><dn_schema:involvedPatient rdf:resource="&dn;synset-4359" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11019"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11019"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-25189"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-57491"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-57492"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-57493"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59121"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59980"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59982"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59983"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59984"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59985"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59986"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77848"><dn_schema:involvedPatient rdf:resource="&dn;synset-7286" /><!-- Inherited from synset with id 1835 ({gave_1; present_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-28405"><dn_schema:involvedPatient rdf:resource="&dn;synset-1966" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-25201"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7762"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7814"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17015"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39651"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39652"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39653"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39655"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-39656"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2502"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58393"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36731"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47872"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49244"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49431"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52683"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52684"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52686"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52687"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52693"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52699"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52703"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52704"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52705"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52707"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52708"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52710"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52711"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-53210"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-57885"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63097"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-75118"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-46100"><dn_schema:involvedPatient rdf:resource="&dn;synset-27121" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18607"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41546"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41547"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41550"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41551"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41553"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41779"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41780"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41781"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41784"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41785"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41786"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41787"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41788"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41789"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41790"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41791"><dn_schema:involvedPatient rdf:resource="&dn;synset-6506" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41792"><dn_schema:involvedPatient rdf:resource="&dn;synset-6506" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41793"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41794"><dn_schema:involvedPatient rdf:resource="&dn;synset-6506" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-41794"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58970"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58971"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58972"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58973"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58974"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58975"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-26410"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-26411"><dn_schema:involvedPatient rdf:resource="&dn;synset-2210" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-10996"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34887"><dn_schema:involvedPatient rdf:resource="&dn;synset-2355" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17606"><dn_schema:involvedPatient rdf:resource="&dn;synset-2210" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58833"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58401"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58402"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58403"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59060"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60409"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68679"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68681"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16688"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16694"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16726"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16750"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16790"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16820"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16845"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16850"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16867"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16891"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16895"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16936"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16944"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16947"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16992"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16996"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17007"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47937"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48561"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51545"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51546"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51548"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51549"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51558"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51565"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51569"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51572"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51577"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51578"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58419"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59059"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59061"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77916"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58399"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58400"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58396"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58397"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58398"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16680"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16703"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16725"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16796"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16874"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16882"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16887"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16902"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16913"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16956"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16969"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16991"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17000"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-51575"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58404"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58405"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58406"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58407"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58410"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-59993"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73212"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73213"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77925"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69220"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73053"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73054"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73055"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73056"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73057"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-42215"><dn_schema:involvedPatient rdf:resource="&dn;synset-6879" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65491"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65492"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65493"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65494"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65495"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65496"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65497"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65498"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-74225"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-73209"><dn_schema:involvedPatient rdf:resource="&dn;synset-47599" /><!-- Inherited from synset with id 52682 ({nummer_2; optræden_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58945"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58947"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58948"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58949"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58954"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69320"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48693"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60833"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48782"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48783"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58956"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58957"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58942"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58942"><dn_schema:involvedPatient rdf:resource="&dn;synset-6506" /><!-- Inherited from synset with id 41794 ({færdselstavle_1; vejskilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58944"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58944"><dn_schema:involvedPatient rdf:resource="&dn;synset-6506" /><!-- Inherited from synset with id 41794 ({færdselstavle_1; vejskilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58946"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58946"><dn_schema:involvedPatient rdf:resource="&dn;synset-6506" /><!-- Inherited from synset with id 41794 ({færdselstavle_1; vejskilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-14562"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-14562"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12588"><dn_schema:involvedPatient rdf:resource="&dn;synset-1846" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12658"><dn_schema:involvedPatient rdf:resource="&dn;synset-10500" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12658"><dn_schema:involvedPatient rdf:resource="&dn;synset-1846" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34439"><dn_schema:involvedPatient rdf:resource="&dn;synset-20721" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11003"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11008"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11015"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11017"><dn_schema:involvedPatient rdf:resource="&dn;synset-6432" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11023"><dn_schema:involvedPatient rdf:resource="&dn;synset-47960" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11027"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11031"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11032"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11043"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11050"><dn_schema:involvedPatient rdf:resource="&dn;synset-37418" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-25209"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34269"><dn_schema:involvedPatient rdf:resource="&dn;synset-5442" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34273"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34276"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34278"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-34890"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38148"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38731"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40758"><dn_schema:involvedPatient rdf:resource="&dn;synset-39732" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40763"><dn_schema:involvedPatient rdf:resource="&dn;synset-6051" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40764"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40767"><dn_schema:involvedPatient rdf:resource="&dn;synset-6637" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40771"><dn_schema:involvedPatient rdf:resource="&dn;synset-7242" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40773"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40775"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58826"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58829"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58831"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61770"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70427"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70430"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70435"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70440"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-70443"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37455"><dn_schema:involvedPatient rdf:resource="&dn;synset-6496" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37455"><dn_schema:involvedPatient rdf:resource="&dn;synset-6864" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-37458"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16941"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67035"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16670"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16770"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40897"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40898"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60653"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16841"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16968"><dn_schema:involvedPatient rdf:resource="&dn;synset-38423" /><!-- Inherited from synset with id 28280 ({tryksag_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18895"><dn_schema:involvedPatient rdf:resource="&dn;synset-2250" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38429"><dn_schema:involvedPatient rdf:resource="&dn;synset-7250" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4855"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67900"><dn_schema:involvedPatient rdf:resource="&dn;synset-47652" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60194"><dn_schema:involvedPatient rdf:resource="&dn;synset-1529" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-56332"><dn_schema:involvedPatient rdf:resource="&dn;synset-47354" /><!-- Inherited from synset with id 18581 ({skilt_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64933"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64933"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64934"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64934"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64935"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64935"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64936"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64936"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64937"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64937"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64938"><dn_schema:involvedPatient rdf:resource="&dn;synset-236" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64938"><dn_schema:involvedPatient rdf:resource="&dn;synset-7729" /><!-- Inherited from synset with id 14562 ({ble_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11007"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40765"><dn_schema:involvedPatient rdf:resource="&dn;synset-7365" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48186"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48725"><dn_schema:involvedPatient rdf:resource="&dn;synset-32228" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38146"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38147"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-56234"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58847"><dn_schema:involvedPatient rdf:resource="&dn;synset-2119" /><!-- Inherited from synset with id 10996 ({bevis_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40760"><dn_schema:involvedPatient rdf:resource="&dn;synset-6051" /><!-- Inherited from synset with id 40763 ({eksamensbevis_1; eksamenspapir_1; afgangsbevis_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40769"><dn_schema:involvedPatient rdf:resource="&dn;synset-7448" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40772"><dn_schema:involvedPatient rdf:resource="&dn;synset-6051" /><!-- Inherited from synset with id 40763 ({eksamensbevis_1; eksamenspapir_1; afgangsbevis_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40777"><dn_schema:involvedPatient rdf:resource="&dn;synset-6051" /><!-- Inherited from synset with id 40763 ({eksamensbevis_1; eksamenspapir_1; afgangsbevis_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67303"><dn_schema:involvedPatient rdf:resource="&dn;synset-6051" /><!-- Inherited from synset with id 40763 ({eksamensbevis_1; eksamenspapir_1; afgangsbevis_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66952"><dn_schema:involvedPatient rdf:resource="&dn;synset-38818" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4666"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4725"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4772"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4991"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5767"><dn_schema:involvedPatient rdf:resource="&dn;synset-6372" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17072"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17415"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17463"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18620"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20779"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20780"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20791"><dn_schema:involvedPatient rdf:resource="&dn;synset-47961" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36234"><dn_schema:involvedPatient rdf:resource="&dn;synset-2336" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36238"><dn_schema:involvedPatient rdf:resource="&dn;synset-2336" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36238"><dn_schema:involvedPatient rdf:resource="&dn;synset-47653" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36238"><dn_schema:involvedPatient rdf:resource="&dn;synset-6634" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36254"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47663"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47734"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50038"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66951"><dn_schema:involvedPatient rdf:resource="&dn;synset-38818" /><!-- Inherited from synset with id 66952 ({presseattaché_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4856"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5309"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20768"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20775"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-21276"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63356"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63360"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63365"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63366"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63367"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63368"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63404"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47649"><dn_schema:involvedPatient rdf:resource="&dn;synset-47541" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47655"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47656"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47659"><dn_schema:involvedPatient rdf:resource="&dn;synset-32228" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47660"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47662"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17398"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17414"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17424"><dn_schema:involvedPatient rdf:resource="&dn;synset-47541" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17442"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17446"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17450"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17456"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17461"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17464"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17465"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17466"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17467"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-17468"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47654"><dn_schema:involvedPatient rdf:resource="&dn;synset-47541" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47658"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61827"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61828"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61829"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61830"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61831"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63425"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5106"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5119"><dn_schema:involvedPatient rdf:resource="&dn;synset-5906" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5271"><dn_schema:involvedPatient rdf:resource="&dn;synset-47962" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47661"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69373"><dn_schema:involvedPatient rdf:resource="&dn;synset-241" /><!-- Inherited from synset with id 4855 ({behandlingssted_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47657"><dn_schema:involvedPatient rdf:resource="&dn;synset-47541" /><!-- Inherited from synset with id 47649 ({fødeklinik_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-16260"><dn_schema:involvedPatient rdf:resource="&dn;synset-5906" /><!-- Inherited from synset with id 5119 ({salon_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47979"><dn_schema:involvedPatient rdf:resource="&dn;synset-5906" /><!-- Inherited from synset with id 5119 ({salon_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7508"><dn_schema:involvedPatient rdf:resource="&dn;synset-47962" /><!-- Inherited from synset with id 5271 ({bordel_1; glædeshus_1; massageklinik_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61832"><dn_schema:involvedPatient rdf:resource="&dn;synset-47962" /><!-- Inherited from synset with id 5271 ({bordel_1; glædeshus_1; massageklinik_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47989"><dn_schema:involvedPatient rdf:resource="&dn;synset-4444" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47990"><dn_schema:involvedPatient rdf:resource="&dn;synset-2250" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64721"><dn_schema:involvedPatient rdf:resource="&dn;synset-2250" /><!-- Inherited from synset with id 47990 ({damefrisør_1}) --> </rdf:Description>
+</rdf:RDF>

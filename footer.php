@@ -37,30 +37,30 @@
 <footer class="d-none d-print-block">
 	<div class="row h-100">
 		<div class="col d-flex align-content-end">
-			<span class="text-muted mt-5 mx-auto"><?= _("Tournament Managed by basesystem");?></span>
+			<span class="text-muted mt-5 mx-auto"><?= _("Tournament Managed by stavekontrolden");?></span>
 		</div>
 	</div>
 </footer>
 
-<div class="alert alert-warning" id="basesystemWarning" style="position: fixed;width:30%;z-index:1051;top:50%;left:50%;margin-left:-15%;text-align:center;display:none; " role="alert">
+<div class="alert alert-warning" id="stavekontroldenWarning" style="position: fixed;width:30%;z-index:1051;top:50%;left:50%;margin-left:-15%;text-align:center;display:none; " role="alert">
 	<button type="button" class="close" id="closew" aria-label="Close" >
 		<span aria-hidden="true">&times;</span>
 	</button>
-	<span id="basesystemWarningTxt">
+	<span id="stavekontroldenWarningTxt">
 	</span>
 </div>
-<div class="alert alert-success" id="basesystemMessage" style="position: fixed;width:30%;z-index:1051;top:50%;left:50%;margin-left:-15%;text-align:center;display:none; " role="alert">
+<div class="alert alert-success" id="stavekontroldenMessage" style="position: fixed;width:30%;z-index:1051;top:50%;left:50%;margin-left:-15%;text-align:center;display:none; " role="alert">
 	<button type="button" class="close" id="closem" aria-label="Close">
 		<span aria-hidden="true">&times;</span>
 	</button>
-	<span id="basesystemMessageTxt">
+	<span id="stavekontroldenMessageTxt">
 	</span>
 </div>
-<div class="alert alert-danger fixed-bottom w-100" id="basesystemError" style="position: fixed;z-index:1051;text-align:center;display:none; margin-bottom:0px;padding-x:30px;" role="alert">
+<div class="alert alert-danger fixed-bottom w-100" id="stavekontroldenError" style="position: fixed;z-index:1051;text-align:center;display:none; margin-bottom:0px;padding-x:30px;" role="alert">
 	<button type="button" class="close" id="closee" aria-label="Close" >
 		<span aria-hidden="true">&times;</span>
 	</button>
-	<span id="basesystemErrorTxt">
+	<span id="stavekontroldenErrorTxt">
 	</span>
 </div>
 <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="loginmodal" aria-hidden="true">
@@ -75,7 +75,7 @@
 		</div>
 	</div>
 </div>
-<i id="basesystemWait" class="fad fa-spinner fa-spin d-none" style="font-size:50px;position: fixed; top: 50%;  left: 50%;"></i>
+<i id="stavekontroldenWait" class="fad fa-spinner fa-spin d-none" style="font-size:50px;position: fixed; top: 50%;  left: 50%;"></i>
     <!-- Bootstrap core JavaScript
     ================================================== -->
 
@@ -91,13 +91,13 @@
 <!-- <script src="./locale/<?= $locale;?>/LC_MESSAGES/jsmessages.js"></script> -->
 
 <script>var language="<?=$locale;?>"</script>
-<script src="./js/basesystem.js?v=<?=$v;?>"></script>
+<script src="./js/stavekontrolden.js?v=<?=$v;?>"></script>
 <?php 
 $v="0.0.2";
-if($_SESSION["user_id"]) echo('<script src="./js/basesystemadmin.js?v='.$v.'"></script>');
+if($_SESSION["user_id"]) echo('<script src="./js/stavekontroldenadmin.js?v='.$v.'"></script>');
 ?>
 	<?php if($_SESSION["orgMember"] and $_SESSION["user_id"]==1) {?> 
-		<script src="./js/basesystemadminadmin.js?v=<?=$v;?>"></script>
+		<script src="./js/stavekontroldenadminadmin.js?v=<?=$v;?>"></script>
 	<?php }?>
   </body>
 </html>

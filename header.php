@@ -17,8 +17,8 @@
 	<link rel="stylesheet" href="./vendor/components/font-awesome/css/all.min.css">
 
 	<!-- styles for Stavekontrolden -->
-    <link rel="stylesheet" href="./css/basesystem.css" id="basesystemstyles">
-    <link rel="stylesheet" href="./css/basesystemadmin.css">
+    <link rel="stylesheet" href="./css/stavekontrolden.css" id="stavekontroldenstyles">
+    <link rel="stylesheet" href="./css/stavekontroldenadmin.css">
     
     
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
@@ -29,12 +29,12 @@
 	<!-- Header --><!-- add? fixed-top -->
 	<nav class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top site-header d-print-none">
 		<div class="col-3 ">
-			<a class="navbar-brand rounded-circle basesystem-logo align-middle" href="/" aria-label="basesystem">
+			<a class="navbar-brand rounded-circle stavekontrolden-logo align-middle" href="/" aria-label="stavekontrolden">
 				<img src="img/kontrold-logo.png">
 			</a>
 		</div>
-		<div class="col basesystem text-center align-middle">
-			<span class="d-none d-lg-block small"></span><span class="d-block" id="basesystemHeader"></span>
+		<div class="col stavekontrolden text-center align-middle">
+			<span class="d-none d-lg-block small"></span><span class="d-block" id="stavekontroldenHeader"></span>
 		</div>
 		<div class="col d-lg-none">
 			<button class="navbar-toggler float-right " type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">

@@ -7,7 +7,7 @@ $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
 $show=($_SESSION["limit"]?$_SESSION["limit"]:25);
 
-$cols=array('w.`id`','`word`', 's.`wordstatus`', 'wc.`wordclass`', '`strong_declension`', '`misspellings`', 'f.`fugeelement`');
+$cols=array('w.`id`','`word`', 's.`wordstatus`', 'wc.`wordclass`', '`strong_declension`', '`misspellings`', 'f.`fugeelement`'); #,'"Synonyms"'
 if($_SESSION["showdetails"]) $cols=array_merge($cols, array('`contributor`', '`lastuser`', '`word_definition`', '`comments`', 't.`technical_term`', '`omitsuggestion`', '`lastchange`'));
 if($_SESSION["showlog"]) $cols=array_merge($cols, array('REPLACE(`log`,"\n","<br>")'));
 $wheres=array();
@@ -15,7 +15,21 @@ $f=$_POST["filtersetting"];
 $_SESSION["filtersetting"]=$f;
 parse_str($_POST["where"], $wheres);
 $n=0;
-#$res["log"].=print_r($_POST,true);
+// $res["log"].=print_r($_POST,true);
+// $res["log"].=($_POST["andThen"]["next"]*$show-1+$_POST["andThen"]["nextsingle"]).">=".($_POST["numrows"]-1);
+if($_POST["andThen"]["next"]<0) {
+	// $last1="SELECT * FROM (";
+    // $last2=") sub ".$order;
+    // $order=str_replace(" word ASC"," word DESC",$order);
+    // $_POST["next"]+=1;
+	$_POST["andThen"]["next"]=floor(($_POST["numrows"]-1)/$show);
+	$_POST["andThen"]["nextsingle"]=$_POST["numrows"]%$show-1;
+	$res["updatebutton"]="lastbutton";
+} else if($_POST["andThen"]["next"] and ($_POST["andThen"]["next"]*$show-1+$_POST["andThen"]["nextsingle"])>=($_POST["numrows"]-1)) {
+	$_POST["andThen"]["next"]=0;
+	$_POST["andThen"]["nextsingle"]=0;	
+	$res["updatebutton"]="firstbutton";
+} 
 foreach($wheres as $k=>$w) {
 	if($w!="")
 		$where.=' AND w.`'.$k.'`'.(is_numeric($w)?($_POST["negsearch"][$n]=="true"?'!':'').'='.$w:($_POST["negsearch"][$n]=="true"?' NOT':'').' LIKE "'.(in_array($f,array("inword","endword"))?"%":"").''.$w.''.(in_array($f,array("inword","beginword"))?"%":"").'"');
@@ -30,27 +44,36 @@ $baseq=" from words w left join wordclass wc on w.wordclass=wc.id left join word
 
 
 if($_POST["andThen"]["next"]<0) {
-	$last1="SELECT * FROM (";
-    $last2=") sub ".$order;
-    $order.=" DESC";
-    $_POST["next"]+=1;
+	// $last1="SELECT * FROM (";
+    // $last2=") sub ".$order;
+    // $order=str_replace(" word ASC"," word DESC",$order);
+    // $_POST["next"]+=1;
+	// $_POST["andThen"]["nextsingle"]=$_POST["numrows"];
 }
-else {
+// else {
 	$q="SELECT count(*) as numrows ".$baseq;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
-}
+// }
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 #$res["numshow"]=($_POST["numshow"]?$_POST["numshow"]:abs($_POST["next"])*$show);
 $limit=" LIMIT ".(abs($_POST["andThen"]["next"])*$show).",".$show;
 $q=$last1.'select '.implode(",",$cols).$baseq.$order.$limit.$last2;
+ // echo $q; 
 
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
 else $res["rows"]=$result->fetch_all();
 if(empty($res["rows"])) $res["rows"]=array(1=>array(_("No more words")));
-
+else { 
+	if($_SESSION["showdetails"]) {
+		$dbcols = array_flip(array_map(function($m) {return $m->name;},$result->fetch_fields()));
+		foreach($res["rows"] as $k=>$i) { 
+		   $res["rows"][$k][$dbcols["omitsuggestion"]]=($i[$dbcols["omitsuggestion"]]?"x":"");
+		} 
+	}
+}
 // $res["log"].=$q;
 $res["andThen"]=$_POST["andThen"];
 // $res["log"].=$res["numshow"];

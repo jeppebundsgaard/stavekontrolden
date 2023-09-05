@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<rdf:Description rdf:about="&dn;synset-32425"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52270"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63234"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63235"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63236"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63237"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63238"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63239"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63240"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63241"><wn20schema:meronymOf rdf:resource="&dn;synset-3520" /><!-- Inherited from synset with id 32425 ({okse,1_1_2; oksekød_1}) --> </rdf:Description>
+</rdf:RDF>

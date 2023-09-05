@@ -7,8 +7,8 @@ if(!$mysqli) {
 	$db=explode(",",$database);
 	// print_r($db);
 	$mysqli = new mysqli($db[0],$db[1],$db[2],$db[3]);
-	if (mysqli_connect_errno($mysqli)) {
-		echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	if ($mysqli->connect_error) {
+		echo "Failed to connect to MySQL: " . $mysqli->connect_error;
 		exit;
 	}
 #	$mysqli->set_charset("utf8");

@@ -18,7 +18,7 @@ foreach($wheres as $k=>$w) {
 }
 $where=" WHERE lang='".$_SESSION["lang"]."' ".$where;
 $order=" ORDER BY `".$_POST["singlevalue"]."` ";
-$orderdir=implode("",$_POST["order"]);
+$orderdir=$_POST["order"]?implode("",$_POST["order"]):"";
 
 $baseq=" from ".$_POST["singlevalue"]." ".$where;
 

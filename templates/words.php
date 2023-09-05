@@ -69,6 +69,7 @@ include($systemdirs["backend"]."affixoptions.php");
 					<th scope="col"><?= _('Strong Declension');?><br><input class="wordfilter form-control form-control-sm" type="text" name="strong_declension"  value="<?= $filters["strong_declension"];?>"></th>
 					<th scope="col"><?= _('Misspellings');?><br><input class="wordfilter form-control form-control-sm" type="text" name="misspellings"  value="<?= $filters["misspellings"];?>"></th>
 					<th scope="col"><?= _('Fuge Element');?><br><select class="wordfilter custom-select custom-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select></th>
+					<th scope="col"><?= _('Synonyms');?><br><input class="wordfilter form-control form-control-sm" name="synonyms" value="<?=$filters["synonyms"];?>"></th>
 					<?php if($_SESSION["showdetails"]) { ?>
 					<th scope="col"><?= _('Contributor');?><br><input class="wordfilter form-control form-control-sm" type="text" name="contributor"  value="<?= $filters["contributor"];?>"></th>
 					<th scope="col"><?= _('Last User');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastuser"  value="<?= $filters["lastuser"];?>"></th>
@@ -160,7 +161,7 @@ include($systemdirs["backend"]."affixoptions.php");
 					<div class="form-row">
 						<div class="col">
 							<div class="form-check">
-								<input type="checkbox" class="newword form-check-input" name="omitsuggestion" value="1"> 
+								<input type="checkbox" class="newword form-check-input" name="omitsuggestion" id="omitsuggestion" value="1"> 
 								<label for="omitsuggestion" class="col-form-check-label"><?= _('Omit this word from suggestions');?></label>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 <?php
 // Base URL
-$GLOBALS=array(
+$globals=array(
 "baseurl"=>"stavekontrolden.dk",
 // Letter Classes for replacement in affix rules
 "letterclasses"=>array(
@@ -12,7 +12,9 @@ $GLOBALS=array(
 "langtoorg"=>array("da_DK"=>1, "en_US"=>2),
 "collation"=>array("da_DK"=>"utf8mb4_danish_ci", "en_US"=>"utf8mb4_unicode_ci")
 );
-
+foreach ($globals as $key => $value) {
+    $GLOBALS[$key] = $value;
+}
 //////////////////////////////
 // Leave these as they are ...
 //////////////////////////////

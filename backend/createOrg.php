@@ -21,7 +21,7 @@ $res["log"].=$q;
 	$q='insert into organizations (`orgname`,`lang`,`orgslogan` ,`orgurl`,`settings`) VALUES ("'.$_POST["orgname"].'","'.$_POST["orglang"].'","'.$_POST["orgslogan"].'","'.$_POST["orgurl"].'","{}")';
 	$result=$mysqli->query($q);
 	$org_id=$mysqli->insert_id;
-	copy("../css/basesystem.css","../css/custom/org".$org_id.".css");
+	copy("../css/stavekontrolden.css","../css/custom/org".$org_id.".css");
 }
 if($_POST["removeorg"]) {
 	$q='delete from organizations where org_id='.$_POST["removeorg"];

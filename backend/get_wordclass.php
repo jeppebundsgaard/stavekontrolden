@@ -7,6 +7,17 @@ $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
 $show=($_SESSION["limit"]?$_SESSION["limit"]:25);
 
+if($_POST["andThen"]["next"]<0) {
+	$_POST["andThen"]["next"]=floor(($_POST["numrows"]-1)/$show);
+	$_POST["andThen"]["nextsingle"]=$_POST["numrows"]%$show-1;
+	$res["updatebutton"]="lastbutton";
+} else if($_POST["andThen"]["next"] and ($_POST["andThen"]["next"]*$show-1+$_POST["andThen"]["nextsingle"])>=($_POST["numrows"]-1)) {
+	$_POST["andThen"]["next"]=0;
+	$_POST["andThen"]["nextsingle"]=0;	
+	$res["updatebutton"]="firstbutton";
+} 
+
+
 $cols='w.`id`, w.`wordclass`, wa.`affixclassid`, a.`description`';
 $wheres=array();
 $f=$_POST["filtersetting"];
@@ -25,23 +36,24 @@ $order=" ORDER BY ".($order?$order:" `wordclass`, a.`description`"); #" ORDER BY
 $baseq=" from wordclass w left join wordclass_to_affixclass wa on w.`id`=wa.`wordclassid` left join affixclass a on wa.`affixclassid`=a.`id` ";
 
 $orderdesc=" ORDER BY  `wordclass`";
-if($_POST["andThen"]["next"]<0) {
-// // 	$last1="SELECT * FROM (";
-// //     $last2=") sub ";
-    $orderdesc.=" DESC";
-    $_POST["andThen"]["next"]+=1;
-}
-elseif(!$_POST["andThen"]["next"]){
+// if($_POST["andThen"]["next"]<0) {
+// // // 	$last1="SELECT * FROM (";
+// // //     $last2=") sub ";
+//     $orderdesc.=" DESC";
+//     $_POST["andThen"]["next"]+=1;
+// }
+// elseif(!$_POST["andThen"]["next"]){
 	$q="SELECT count(distinct(w.id)) as numrows ".$baseq.$where;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
-}
+// }
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 $limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
 $q=$last1."select distinct(w.id),wordclass".$baseq.$where.$orderdesc.$limit.$last2;
 #$res["log"]=$q;
+// echo $q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
 else $rall=$result->fetch_all();

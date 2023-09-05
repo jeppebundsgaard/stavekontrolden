@@ -5,7 +5,7 @@ include_once($systemdirs["backend"]."checklogin.php");
 if(!$_SESSION["user_id"]) exit;
 $c=array();
 parse_str($_POST["word"], $c);
-$res["log"].=print_r($c,true);
+// $res["log"].=print_r($c,true);
 $unescaped=$c;
 $numc=count($c);
 foreach($c as $i=>$v) {
@@ -43,7 +43,7 @@ else {
 		$result=$mysqli->query($q);
 // 			$res["log"].=$q;
 	}
-	$res["log"].=$q;
+	// $res["log"].=$q;
 	$res["andThen"]=$_POST["andThen"];
 // 		$res["log"].=print_r($res["andThen"],true);
 }

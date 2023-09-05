@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+
+  <owl:Ontology>
+    <owl:imports rdf:resource="w3c_wordnet_spec.rdfs"/>
+  </owl:Ontology>
+  
+  <owl:AnnotationProperty rdf:about="&dn_schema;dannetName">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:domain rdf:resource="&owl;ObjectProperty"/>
+  </owl:AnnotationProperty>
+  
+  <rdf:Property rdf:about="&dn_schema;ontologicalType" />
+  <rdf:Property rdf:about="&dn_schema;connotation" />
+  <rdf:Property rdf:about="&dn_schema;sex" />
+  <rdf:Property rdf:about="&dn_schema;register" />
+  <rdf:Property rdf:about="&dn_schema;partOfSpeech" />
+  
+  <owl:DatatypeProperty rdf:about="&dn_schema;ontologicalType">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment
+    >DanNet specific property: It specifies an ontological type for a synset. The datatype and structure of this property may change in the future.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;Synset"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+  </owl:DatatypeProperty>
+
+  <!-- TODO: Should be enumerations -->
+  <owl:DatatypeProperty rdf:about="&dn_schema;connotation">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment
+    >It specifies the connotation for a synset.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;Synset"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+  </owl:DatatypeProperty>
+    
+  <owl:DatatypeProperty rdf:about="&dn_schema;register">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment
+    >It specifies the register (e.g. 'slang') for a word sense.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&dn_schema;partOfSpeech">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment
+    >It specifies the part-of-speech (e.g. 'noun') for a word sense.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="&dn_schema;concerns"/>
+<owl:ObjectProperty rdf:about="&dn_schema;concerns"><dn_schema:dannetName>concerns</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;domain"/>
+<owl:ObjectProperty rdf:about="&dn_schema;domain"><dn_schema:dannetName>domain</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;eqHyponymOf"/>
+<owl:ObjectProperty rdf:about="&dn_schema;eqHyponymOf"><dn_schema:dannetName>eq_has_hyperonym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;eqHypernymOf"/>
+<owl:ObjectProperty rdf:about="&dn_schema;eqHypernymOf"><dn_schema:dannetName>eq_has_hyponym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;eqSynonymOf"/>
+<owl:ObjectProperty rdf:about="&dn_schema;eqSynonymOf"><dn_schema:dannetName>eq_has_synonym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;usedForQualifiedBy"/>
+<owl:ObjectProperty rdf:about="&dn_schema;usedForQualifiedBy"><dn_schema:dannetName>fpo_qual</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;meronymOf"><dn_schema:dannetName>has_holonym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;locationMeronymOf">
+  <owl:inverseOf rdf:resource="&dn_schema;locationHolonymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;meronymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;locationMeronymOf"><dn_schema:dannetName>has_holo_location</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;madeofMeronymOf">
+  <owl:inverseOf rdf:resource="&dn_schema;madeofHolonymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;meronymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;madeofMeronymOf"><dn_schema:dannetName>has_holo_madeof</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;memberMeronymOf"><dn_schema:dannetName>has_holo_member</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;partMeronymOf"><dn_schema:dannetName>has_holo_part</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;hyponymOf"><dn_schema:dannetName>has_hyperonym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;hypernymOf"><dn_schema:dannetName>has_hyponym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;holonymOf"><dn_schema:dannetName>has_meronym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;locationHolonymOf">
+  <owl:inverseOf rdf:resource="&dn_schema;locationMeronymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;holonymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;locationHolonymOf"><dn_schema:dannetName>has_mero_location</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;madeofHolonymOf">
+  <owl:inverseOf rdf:resource="&dn_schema;madeofMeronymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;holonymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;madeofHolonymOf"><dn_schema:dannetName>has_mero_madeof</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;memberHolonymOf"><dn_schema:dannetName>has_mero_member</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;partHolonymOf"><dn_schema:dannetName>has_mero_part</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;involvedAgent"/>
+<owl:ObjectProperty rdf:about="&dn_schema;involvedAgent"><dn_schema:dannetName>involved_agent</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;involvedInstrument"/>
+<owl:ObjectProperty rdf:about="&dn_schema;involvedInstrument"><dn_schema:dannetName>involved_instrument</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;involvedPatient"/>
+<owl:ObjectProperty rdf:about="&dn_schema;involvedPatient"><dn_schema:dannetName>involved_patient</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;madeBy"/>
+<owl:ObjectProperty rdf:about="&dn_schema;madeBy"><dn_schema:dannetName>made_by</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;nearAntonymOf"/>
+<owl:ObjectProperty rdf:about="&dn_schema;nearAntonymOf"><dn_schema:dannetName>near_antonym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;nearSynonymOf"/>
+<owl:ObjectProperty rdf:about="&dn_schema;nearSynonymOf"><dn_schema:dannetName>near_synonym</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;roleAgent"/>
+<owl:ObjectProperty rdf:about="&dn_schema;roleAgent"><dn_schema:dannetName>role_agent</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;rolePatient"/>
+<owl:ObjectProperty rdf:about="&dn_schema;rolePatient"><dn_schema:dannetName>role_patient</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;usedFor"/>
+<owl:ObjectProperty rdf:about="&dn_schema;usedFor"><dn_schema:dannetName>used_for</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;usedForObject"/>
+<owl:ObjectProperty rdf:about="&dn_schema;usedForObject"><dn_schema:dannetName>used_for_object</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;usedForQualifiedBy"/>
+<owl:ObjectProperty rdf:about="&dn_schema;usedForQualifiedBy"><dn_schema:dannetName>used_for_qualby</dn_schema:dannetName></owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&dn_schema;xposNearSynonymOf"/>
+<owl:ObjectProperty rdf:about="&dn_schema;xposNearSynonymOf"><dn_schema:dannetName>xpos_near_synonym</dn_schema:dannetName></owl:ObjectProperty>
+</rdf:RDF>

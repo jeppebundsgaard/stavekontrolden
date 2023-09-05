@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: js/basesystem.js:36
+#: js/stavekontrolden.js:36
 msgid ""
 "Stavekontrolden uses cookies to ensure you get the best experience on our "
 "website. We don't track you!"
@@ -26,28 +26,28 @@ msgstr ""
 "Stavekontrolden bruger cookies til at sikre at du får den bedste oplevelse "
 "på vores website. Vi sporer dig ikke!"
 
-#: js/basesystem.js:37
+#: js/stavekontrolden.js:37
 msgid "Got it"
 msgstr "Okay, forstået"
 
-#: js/basesystem.js:38
+#: js/stavekontrolden.js:38
 msgid "Decline"
 msgstr "Afvis"
 
-#: js/basesystem.js:39
+#: js/stavekontrolden.js:39
 msgid "Learn more"
 msgstr "Læs mere"
 
-#: js/basesystem.js:88 js/basesystem.js:105 js/basesystem.js:131
-#: js/basesystemadmin.js:926
+#: js/stavekontrolden.js:88 js/stavekontrolden.js:105 js/stavekontrolden.js:131
+#: js/stavekontroldenadmin.js:926
 msgid "There was a problem. Are you connected to the Internet?"
 msgstr "Der opstod en fejl. Er du forbundet til internettet?"
 
-#: js/basesystem.js:159
+#: js/stavekontrolden.js:159
 msgid "Please write your e-mail address and click again."
 msgstr "Skriv venligst din e-mailadresse og klik igen."
 
-#: js/basesystem.js:166
+#: js/stavekontrolden.js:166
 msgid ""
 "An e-mail with instructions has been sent to you. If it's not there in a few "
 "minutes, look in your spam folder."
@@ -55,15 +55,15 @@ msgstr ""
 "Vi har sendt dig en e-mail med instruktioner. Hvis der går mere end nogle få "
 "minutter uden at du har modtaget den, så kig i din spammappe."
 
-#: js/basesystemadminadmin.js:38
+#: js/stavekontroldenadminadmin.js:38
 msgid "Do you want to set a new, random password for this user?"
 msgstr "Vil du oprette et nyt, tilfældigt kodeord for denne bruger?"
 
-#: js/basesystemadminadmin.js:43
+#: js/stavekontroldenadminadmin.js:43
 msgid "New password: {0}"
 msgstr "Nyt kodeord: {0}"
 
-#: js/basesystemadmin.js:428
+#: js/stavekontroldenadmin.js:428
 msgid ""
 "Are you sure you want to delete this category and everything dependent on it "
 "(except words)?"
@@ -71,11 +71,11 @@ msgstr ""
 "Er du sikker på at du vil slette denne kategori og alt hvad der afhænger af "
 "den (på nær ord)?"
 
-#: js/basesystemadmin.js:670
+#: js/stavekontroldenadmin.js:670
 msgid "Preparing CSS-editor"
 msgstr "Forbereder CSS-editoren"
 
-#: js/basesystemadmin.js:829
+#: js/stavekontroldenadmin.js:829
 msgid "There are unsaved changes. Are you sure you want to leave?"
 msgstr "Der er ikke-gemte ændringer. Er du sikker på at du vil forlade siden?"
 

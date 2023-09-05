@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<wn20schema:Synset rdf:about="&dn;synset-section%1:06:00::" rdfs:label="{section_0}"><wn20schema:synsetId>section%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-298"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-section%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04397539-n" rdfs:label="{wheel_1}"><wn20schema:synsetId>ENG20-04397539-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-35714"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-04397539-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-03746082-n" rdfs:label="{part_4; portion_2}"><wn20schema:synsetId>ENG20-03746082-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-40863"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-03746082-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04369872-n" rdfs:label="{wall_1}"><wn20schema:synsetId>ENG20-04369872-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-18579"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-04369872-n" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-36741"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-04369872-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-monarchy%1:14:00::" rdfs:label="{monarchy_0}"><wn20schema:synsetId>monarchy%1:14:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-3276"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-monarchy%1:14:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-14340746-n" rdfs:label="{year_3}"><wn20schema:synsetId>ENG20-14340746-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-9529"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-14340746-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-00020333-n" rdfs:label="{psychological feature_1}"><wn20schema:synsetId>ENG20-00020333-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-21697"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-00020333-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-grade%1:07:01::" rdfs:label="{gradient_0}"><wn20schema:synsetId>grade%1:07:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-75064"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-grade%1:07:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-00333470-n" rdfs:label="{stroke_10}"><wn20schema:synsetId>ENG20-00333470-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-22414"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-00333470-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-01851475-v" rdfs:label="{turn_1}"><wn20schema:synsetId>ENG20-01851475-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-29366"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-01851475-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-01350889-v" rdfs:label="{roll out_1; roll_4}"><wn20schema:synsetId>ENG20-01350889-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-47741"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-01350889-v" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-64356"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-01350889-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-missile%1:06:00::" rdfs:label="{missile_0}"><wn20schema:synsetId>missile%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-15641"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-missile%1:06:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1519"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-04397539-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-wreck%1:26:00::" rdfs:label="{wreck_0}"><wn20schema:synsetId>wreck%1:26:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-49019"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-wreck%1:26:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-00405481-v" rdfs:label="{stiffen_2}"><wn20schema:synsetId>ENG20-00405481-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-33136"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-00405481-v" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-43271"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-01851475-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-needle%1:06:00::" rdfs:label="{needle_0}"><wn20schema:synsetId>needle%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-2214"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-needle%1:06:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2216"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-needle%1:06:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-2218"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-needle%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-pass%1:10:03::" rdfs:label="{pass_0}"><wn20schema:synsetId>pass%1:10:03::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-25176"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-pass%1:10:03::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-juice%1:13:00::" rdfs:label="{juice_0}"><wn20schema:synsetId>juice%1:13:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-13724"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-juice%1:13:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-14115898-n" rdfs:label="{oil_1}"><wn20schema:synsetId>ENG20-14115898-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-13744"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-14115898-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-02156874-v" rdfs:label="{transfer_5}"><wn20schema:synsetId>ENG20-02156874-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-31412"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-02156874-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-rocket%1:06:01::" rdfs:label="{rocket_0}"><wn20schema:synsetId>rocket%1:06:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-16334"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-rocket%1:06:01::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38793"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-missile%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-measure%1:06:00::" rdfs:label="{measure_0}"><wn20schema:synsetId>measure%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-26441"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-measure%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-06398747-n" rdfs:label="{printed symbol_1; written symbol_1}"><wn20schema:synsetId>ENG20-06398747-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-8227"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-06398747-n" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7552"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-monarchy%1:14:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-13751"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-juice%1:13:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-slime%1:27:00::" rdfs:label="{slime_0}"><wn20schema:synsetId>slime%1:27:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-39835"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-slime%1:27:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47240"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-measure%1:06:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68610"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-rocket%1:06:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-aircraft%1:06:00::" rdfs:label="{aircraft_0}"><wn20schema:synsetId>aircraft%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-5402"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-aircraft%1:06:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5403"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-aircraft%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-chart%1:06:00::" rdfs:label="{chart_0}"><wn20schema:synsetId>chart%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-25225"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-chart%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-offender%1:18:00::" rdfs:label="{offender_0}"><wn20schema:synsetId>offender%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-6379"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-offender%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-graduate%1:18:00::" rdfs:label="{graduate_0}"><wn20schema:synsetId>graduate%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-6662"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-graduate%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-neighbour%1:18:00::" rdfs:label="{neighbour_0}"><wn20schema:synsetId>neighbour%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7002"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-neighbour%1:18:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7279"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-wreck%1:26:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-researcher%1:18:00::" rdfs:label="{researcher_0}"><wn20schema:synsetId>researcher%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-20029"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-researcher%1:18:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20506"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-neighbour%1:18:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29820"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-player%1:18:01::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-3847"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-researcher%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-sailor%1:18:00::" rdfs:label="{sailor_0}"><wn20schema:synsetId>sailor%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7726"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-sailor%1:18:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6903"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-player%1:18:01::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-31493"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-ENG20-14115898-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-football%1:04:00::" rdfs:label="{football_0}"><wn20schema:synsetId>football%1:04:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-34570"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-football%1:04:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-cousin%1:18:00::" rdfs:label="{cousin_0}"><wn20schema:synsetId>cousin%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-3849"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-cousin%1:18:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4421"><dn_schema:eqHyponymOf rdf:resource="&dn;synset-cousin%1:18:00::" /></rdf:Description>
+</rdf:RDF>

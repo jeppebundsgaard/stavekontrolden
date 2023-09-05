@@ -1,0 +1,154 @@
+.backend
+{
+	background-color:white;
+	color:black;
+}
+.modal-content {
+	color:black;
+}
+.daterangepicker {
+	color:#212529;
+}
+.updateiconinit {
+	position:absolute;
+	
+}
+
+.txtareaasinput {
+	height:40px !important;
+	overflow:hide;	
+}
+
+/* Nested containers have 0 margin */
+.container-fluid .container {
+    padding-left:0;
+    padding-right:0;
+}
+/* Backend menu */
+.actionlink {
+	cursor:pointer;
+}
+.adminmenulink {
+	color:#333;
+/*	font-size:1em;*/
+}
+.admin-navbar {
+	background-color: #e3f2fd;
+}
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+	  width:100%;
+/*     max-width: 46rem; */
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Store tekstbokse i menuer */
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+
+.disabled  {
+	color:#777;
+}
+/* Data Tables */
+.fa-sort,.fa-sort-up,.fa-sort-down {
+	cursor:pointer;
+}
+.fa-eye,.fa-edit, .fa-share-alt, .fa-trash-alt,  {
+	cursor:pointer;
+}
+.fa,.far, .fas,.fal  {
+	cursor:pointer;
+}
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .fixed-bottom-lg {
+    position: fixed;
+    bottom: 0;
+	width:100%;
+  }
+/*  Keep a distance between pagination and footer...  */
+	.disttofooter {
+		bottom:25px;
+		width:100px;
+
+	}
+	
+}
+@media (min-width: 768px) {
+
+  .fixed-bottom-md {
+    position: fixed;
+    bottom: 0;
+	width:100%;
+  }
+/*  Keep a distance between pagination and footer...  */
+	.disttofooter {
+		bottom:25px;
+		width:100px;
+
+	}
+	
+}
+.d-xxl-block {
+	width:2000px;
+}
+@media print {
+  div, td, th, p { 
+    color:#000 !important;
+  }
+  .fa,.far,.fas {
+	  display:none;
+  }
+}
+
+/* INCLUDE in org-css */
+.flag-img {
+	width:20px;
+	height:20px;
+	margin-right: 14px;
+	margin-bottom: 3px;
+}
+.newLang {
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+.createimg {
+	max-height:300px;
+	width:auto;
+	clear:both;
+	margin:auto;
+	margin-top:10px;
+}
+.create-jumbo {
+	height:600px;
+	background-color:#999999;
+}
+.create-carousel-caption {
+	display:block;
+	margin:auto;
+}
+.create-carousel-item {
+	height:450px;
+}
+.table-card-header {
+	cursor:pointer;
+}
+.affixpool {
+	border-width:1pt;
+	border-color:#DDD;
+	border-style:solid;
+	min-height:50px;
+}
+.wordfilter {
+		display:inline-block;
+}
+#tablebody>tr>td:first-child {
+	cursor:pointer;
+}

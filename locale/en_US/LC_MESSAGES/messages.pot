@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: js/basesystembuild.js:141
+#: js/stavekontroldenbuild.js:141
 msgid "Number "
 msgstr ""
 
-#: js/basesystembuild.js:174
+#: js/stavekontroldenbuild.js:174
 msgid "Number of teams in tournament?"
 msgstr ""
 

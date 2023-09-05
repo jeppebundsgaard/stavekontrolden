@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<rdf:Description rdf:about="&dn;synset-58964"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-59603" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1527"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-2000" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-1986"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-6072" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61872"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-3514" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60823"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-59603" /><!-- Inherited from synset with id 58964 ({tastatur_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-40201"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-2000" /><!-- Inherited from synset with id 1527 ({lad,1_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67247"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-2000" /><!-- Inherited from synset with id 1527 ({lad,1_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18389"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-9911" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49085"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-1518" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61866"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-2488" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-10789"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-39353" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18357"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-49520" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18155"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63653"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4952" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-58781"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-6903" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-28229"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-39353" /><!-- Inherited from synset with id 10789 ({tryk_2_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68127"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-68159" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-8299"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18440"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38526"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38527"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-56085"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-62610"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67957"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4952" /><!-- Inherited from synset with id 63653 ({vindmøllepark_1; møllepark_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65087"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-65088" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4634"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-2464" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61865"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-48762" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67052"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-36604" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-8300"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18516"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4752" /><!-- Inherited from synset with id 18155 ({boligområde_1; beboelseskvarter_1; beboelsesområde_1; boligkvarter_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77884"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-49520" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67232"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-12281" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-77936"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-39353" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-50032"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4235" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60501"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-2095" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-60501"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-9681" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-69387"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-4093" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61860"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-7764" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61873"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-7830" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63425"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-63426" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-72649"><dn_schema:locationHolonymOf rdf:resource="&dn;synset-6211" /></rdf:Description>
+</rdf:RDF>

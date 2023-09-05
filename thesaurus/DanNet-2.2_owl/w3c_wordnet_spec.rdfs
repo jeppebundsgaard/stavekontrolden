@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+
+<rdfs:Class rdf:about="&wn20schema;Synset" />  
+<rdfs:Class rdf:about="&wn20schema;AdjectiveSynset" />  
+<rdfs:Class rdf:about="&wn20schema;AdjectiveSatelliteSynset" />  
+<rdfs:Class rdf:about="&wn20schema;AdverbSynset" />  
+<rdfs:Class rdf:about="&wn20schema;NounSynset" />  
+<rdfs:Class rdf:about="&wn20schema;VerbSynset" />  
+<rdfs:Class rdf:about="&wn20schema;Word" />  
+<rdfs:Class rdf:about="&wn20schema;Collocation" />  
+<rdfs:Class rdf:about="&wn20schema;WordSense" />  
+<rdfs:Class rdf:about="&wn20schema;AdjectiveWordSense" />
+<rdfs:Class rdf:about="&wn20schema;AdjectiveSatelliteWordSense" />
+<rdfs:Class rdf:about="&wn20schema;AdverbWordSense" />  
+<rdfs:Class rdf:about="&wn20schema;NounWordSense" />  
+<rdfs:Class rdf:about="&wn20schema;VerbWordSense" />  
+
+<rdf:Property rdf:about="&wn20schema;containsWordSense" />
+<rdf:Property rdf:about="&wn20schema;synsetId" />
+<rdf:Property rdf:about="&wn20schema;gloss" />
+<rdf:Property rdf:about="&wn20schema;lexicalForm" />
+<rdf:Property rdf:about="&wn20schema;word" />
+
+  <!-- Word and Collocation -->
+  <owl:Class rdf:about="&wn20schema;Word">
+    <rdfs:comment
+    >Any word or composed term (collocation) deputed to have a sense in WordNet.
+****For the sake of ontological clarity, here it is assumed that synsets include word senses, in order to partition the logical space of the lexicon (words as forms, which belong to different natural language lexica, words as meanings, which also can be peculiar to different natural languages, but usually exist in several of them, and synsets, which cluster word senses by abstracting out their distributional context.****</rdfs:comment>
+    <owl:disjointWith rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&wn20schema;WordSense"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;sense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+
+  
+  <!-- Synset classes -->
+  <owl:Class rdf:about="&wn20schema;Synset">
+    <owl:disjointWith>
+      <owl:Class rdf:about="&wn20schema;WordSense"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="&wn20schema;Word"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;WordSense"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment
+    >A synonym set; a set of words that are interchangeable in some context.
+
+******************************
+Word and WordSenses are distinguished in this datamodel for two reasons:
+1) WordNet uses the distinction in the database, and several relations are defined for WordSenses rather than for Synsets.
+2) For the sake of ontological clarity, here it is assumed that Synsets include word senses, in order to partition the logical space of the lexicon (words as forms, which belong to different natural language lexica, words as meanings, which also can be peculiar to different natural languages, but usually exist in several of them, and synsets, which cluster word senses by abstracting out their distributional context.
+******************************</rdfs:comment>
+  </owl:Class>
+
+  
+  <owl:Class rdf:about="&wn20schema;AdjectiveSynset">
+    <rdfs:subClassOf rdf:resource="&wn20schema;Synset"/>
+
+    <rdfs:comment
+    >A synset including adjective word senses.</rdfs:comment>
+
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="&wn20schema;AdjectiveWordSense"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;AdjectiveWordSense"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&wn20schema;VerbSynset">
+    <rdfs:comment
+    >A synset including verb word senses.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="&wn20schema;VerbWordSense"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="&wn20schema;Synset"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;VerbWordSense"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&wn20schema;AdverbSynset">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="&wn20schema;AdverbWordSense"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment
+    >A synset including adverb word senses.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&wn20schema;Synset"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&wn20schema;AdverbWordSense"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+<owl:Class rdf:about="&wn20schema;AdjectiveSatelliteSynset">
+    <rdfs:comment
+    >A Synset in an adjective cluster representing a concept that is similar in meaning to the concept represented by its head synset .</rdfs:comment>
+    
+    <rdfs:subClassOf rdf:resource="&wn20schema;AdjectiveSynset"/>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="&wn20schema;AdjectiveSatelliteWordSense"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;AdjectiveSatelliteWordSense"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&wn20schema;NounSynset">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;NounWordSense"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="&wn20schema;Synset"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="&wn20schema;NounWordSense"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment
+    >A synset including noun word senses.</rdfs:comment>
+  </owl:Class>
+  
+  
+  <!-- WordSense classes  -->
+  <owl:Class rdf:about="&wn20schema;WordSense">
+    <rdfs:comment
+    >A meaning of a word in WordNet. Each sense of a word is in a different synset. Each word sense is contained in exactly one synset.
+
+******************************
+Word and WordSenses are distinguished in this datamodel for two reasons:
+1) WordNet uses the distinction in the database, and several relations are defined for WordSenses rather than for Synsets.
+2) For the sake of ontological clarity, here it is assumed that synsets include word senses, in order to partition the logical space of the lexicon (words as forms, which belong to different natural language lexica, words as meanings, which also can be peculiar to different natural languages, but usually exist in several of them, and synsets, which cluster word senses by abstracting out their distributional context.
+******************************</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;word"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;Word"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;word"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="&wn20schema;Word"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  
+  <owl:Class rdf:about="&wn20schema;AdverbWordSense">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="&wn20schema;AdverbSynset"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="&wn20schema;AdverbSynset"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment
+    >A meaning of an adverb word.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
+  <owl:Class rdf:about="&wn20schema;NounWordSense">
+    <rdfs:comment
+    >A meaning of a noun word.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&wn20schema;NounSynset"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&wn20schema;NounSynset"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
+  
+  <owl:Class rdf:about="&wn20schema;VerbWordSense">
+    <rdfs:subClassOf rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="&wn20schema;VerbSynset"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment
+    >A meaning of a verb word.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&wn20schema;VerbSynset"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  
+  <owl:Class rdf:about="&wn20schema;AdjectiveWordSense">
+    <rdfs:subClassOf rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:comment
+    >A sense of an adjective word.</rdfs:comment>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&wn20schema;AdjectiveSynset"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&wn20schema;AdjectiveSynset"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&wn20schema;AdjectiveSatelliteWordSense">
+    <rdfs:subClassOf rdf:resource="&wn20schema;AdjectiveWordSense"/>
+
+    <rdfs:comment
+    >A sense of an adjective satellite word.</rdfs:comment>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&wn20schema;AdjectiveSatelliteSynset"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="&wn20schema;AdjectiveSatelliteSynset"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="&wn20schema;word">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="&wn20schema;sense"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="&wn20schema;Word"/>
+    <rdfs:domain rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:comment
+    >****A relation added here to link word senses and words explicitly (in the WordNet db, it is implicit in the synset record)****</rdfs:comment>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="&wn20schema;sense">
+    <rdfs:range rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:domain rdf:resource="&wn20schema;Word"/>
+    <rdfs:comment
+    >****A relation added here to link words and word senses explicitly (in the WordNet db, it is implicit in the synset record)****</rdfs:comment>
+    <owl:inverseOf rdf:resource="&wn20schema;word"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&wn20schema;containsWordSense">
+    <rdfs:range rdf:resource="&wn20schema;WordSense"/>
+    <rdfs:comment
+    >****A relation added here to link synsets and word senses explicitly (in the WordNet db, it is implicit in the sense tag record)****</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="&wn20schema;inSynset"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="&wn20schema;Synset"/>
+  </owl:ObjectProperty>
+
+
+  <owl:ObjectProperty rdf:about="&wn20schema;inSynset">
+    <owl:inverseOf rdf:resource="&wn20schema;containsWordSense"/>
+    <rdfs:range rdf:resource="&wn20schema;Synset"/>
+    <rdfs:comment
+    >****A relation added here to link word senses and synsets explicitly (in the WordNet db, it is implicit in the sense tag record)****</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;WordSense"/>
+  </owl:ObjectProperty>
+
+
+  <owl:DatatypeProperty rdf:about="&wn20schema;synsetId">
+    <rdfs:domain rdf:resource="&wn20schema;Synset"/>
+    <rdfs:comment
+    >A datatype relation between synsets and their integer identifiers.</rdfs:comment>
+    <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+  </owl:DatatypeProperty>
+
+
+  <owl:DatatypeProperty rdf:about="&wn20schema;gloss">
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:comment
+    >It specifies the gloss for a synset.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;Synset"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="&wn20schema;lexicalForm">
+    <rdfs:comment
+    >A datatype relation between Word and its lexical form.</rdfs:comment>
+    <rdfs:domain rdf:resource="&wn20schema;Word"/>
+    <rdfs:range rdf:resource="&rdfs;Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label" />
+  </owl:DatatypeProperty>
+
+
+  <owl:ObjectProperty rdf:about="&wn20schema;meronymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;holonymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;memberMeronymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;memberHolonymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;meronymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;partMeronymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;partHolonymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;meronymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;hyponymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;hypernymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;hypernymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;hyponymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;holonymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;meronymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;memberHolonymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;memberMeronymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;holonymOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="&wn20schema;partHolonymOf">
+  <owl:inverseOf rdf:resource="&wn20schema;partMeronymOf"/>
+  <rdfs:subPropertyOf rdf:resource="&wn20schema;holonymOf"/>
+</owl:ObjectProperty>
+</rdf:RDF>

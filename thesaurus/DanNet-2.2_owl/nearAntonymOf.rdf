@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<rdf:Description rdf:about="&dn;synset-28904"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-75248" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47821"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-47823" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-47823"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-47821" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49155"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-17345" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-11190"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-2999" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38036"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-47821" /><!-- Inherited from synset with id 47823 ({forsvar_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-57863"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-47821" /><!-- Inherited from synset with id 47823 ({forsvar_2}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-52511"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-17345" /><!-- Inherited from synset with id 49155 ({opposition_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68203"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-54638" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68601"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-68585" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-15664"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-28259" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-15699"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-38906" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-15699"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-38915" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18265"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-18322" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67143"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-67144" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68485"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-46716" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68199"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-68421" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68473"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-68474" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-68476"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-68477" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-29062"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-11676" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-21640"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-8297" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-48786"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-48787" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-42138"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-42135" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61791"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-61790" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63335"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-63334" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4206"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49948"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5975"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-7240"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-5975" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-65693"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-6367" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66289"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-47706" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-67548"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-6619" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-4221"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49509"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49513"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49533"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49538"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49928"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-5396"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-5393" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-3186"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-3205"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-3255"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-6512"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12442"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-12991"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-18844"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-19133"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49099"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66644"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-38733" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66644"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-6947" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38428"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-38431" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49525"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49534"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49536"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49537"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49946"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49947"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49950"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-49951"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-4218" /><!-- Inherited from synset with id 4206 ({båd_2; passagerskib_1; rutebåd_0}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-38695"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-38697" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61057"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61058"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61059"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61060"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61061"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-61062"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-7240" /><!-- Inherited from synset with id 5975 ({ven_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66057"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-38733" /><!-- Inherited from synset with id 66644 ({fodgænger_1}) --> </rdf:Description>
+<rdf:Description rdf:about="&dn;synset-66057"><dn_schema:nearAntonymOf rdf:resource="&dn;synset-6947" /><!-- Inherited from synset with id 66644 ({fodgænger_1}) --> </rdf:Description>
+</rdf:RDF>

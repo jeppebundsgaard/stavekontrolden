@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY rdf        "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs       "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY owl        "http://www.w3.org/2002/07/owl#" >
+<!ENTITY xsd        "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY wn20schema "http://www.w3.org/2006/03/wn/wn20/schema/">
+<!ENTITY dn         "http://www.wordnet.dk/owl/instance/2009/03/instances/">
+<!ENTITY dn_schema  "http://www.wordnet.dk/owl/instance/2009/03/schema/">
+]>
+<rdf:RDF
+                xmlns:owl="&owl;"
+                xmlns:rdf="&rdf;"
+                xmlns:rdfs="&rdfs;"
+                xmlns:dn="&dn;"
+                xmlns:wn20schema="&wn20schema;"
+                xmlns:dn_schema="&dn_schema;">
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-08797461-n" rdfs:label="{part_7; piece_3}"><wn20schema:synsetId>ENG20-08797461-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-298"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-08797461-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-07711285-n" rdfs:label="{squad_2; team_1}"><wn20schema:synsetId>ENG20-07711285-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-5719"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-07711285-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-fixture%1:06:00::" rdfs:label="{fixture_0}"><wn20schema:synsetId>fixture%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-15633"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-fixture%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-organisation%1:14:00::" rdfs:label="{organisation_0}"><wn20schema:synsetId>organisation%1:14:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-17012"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-organisation%1:14:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-pack%1:14:00::" rdfs:label="{pack_0}"><wn20schema:synsetId>pack%1:14:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-38451"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-pack%1:14:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04192033-n" rdfs:label="{supporting structure_1}"><wn20schema:synsetId>ENG20-04192033-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-36605"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-04192033-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-14395655-n" rdfs:label="{quarter_3}"><wn20schema:synsetId>ENG20-14395655-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-39615"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-14395655-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-specimen%1:08:00::" rdfs:label="{specimen_0}"><wn20schema:synsetId>specimen%1:08:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-64353"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-specimen%1:08:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-rule%1:10:02::" rdfs:label="{rule_0}"><wn20schema:synsetId>rule%1:10:02::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-31843"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-rule%1:10:02::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04253102-n" rdfs:label="{thing_3}"><wn20schema:synsetId>ENG20-04253102-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-250"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-04253102-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-05886904-n" rdfs:label="{news article_1; news story_1; newspaper article_1}"><wn20schema:synsetId>ENG20-05886904-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7833"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-05886904-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-manuscript%1:10:00::" rdfs:label="{manuscript_0}"><wn20schema:synsetId>manuscript%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7848"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-manuscript%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-foot%1:08:01::" rdfs:label="{foot_0}"><wn20schema:synsetId>foot%1:08:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-2721"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-foot%1:08:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-leg%1:06:01::" rdfs:label="{leg_0}"><wn20schema:synsetId>leg%1:06:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-279"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-leg%1:06:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-scene%1:10:01::" rdfs:label="{scene_0}"><wn20schema:synsetId>scene%1:10:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-54341"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-scene%1:10:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-07719149-n" rdfs:label="{section_9}"><wn20schema:synsetId>ENG20-07719149-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-41196"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-07719149-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-07803934-n" rdfs:label="{union_7}"><wn20schema:synsetId>ENG20-07803934-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-33541"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-07803934-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-title%1:07:00::" rdfs:label="{title_0}"><wn20schema:synsetId>title%1:07:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-17810"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-title%1:07:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04436965-n" rdfs:label="{trait_1}"><wn20schema:synsetId>ENG20-04436965-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-21666"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-04436965-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-06898314-n" rdfs:label="{roller_2; rolling wave_1; roll_3}"><wn20schema:synsetId>ENG20-06898314-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-37172"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-06898314-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-crash%1:11:00::" rdfs:label="{crash_0}"><wn20schema:synsetId>crash%1:11:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-1506"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-crash%1:11:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-01288977-v" rdfs:label="{unhitch_1}"><wn20schema:synsetId>ENG20-01288977-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-2300"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-01288977-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-orbit%1:15:00::" rdfs:label="{orbit_0}"><wn20schema:synsetId>orbit%1:15:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-37181"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-orbit%1:15:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-05371512-n" rdfs:label="{process_5; unconscious process_1}"><wn20schema:synsetId>ENG20-05371512-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-37066"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-05371512-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-01787680-v" rdfs:label="{travel_5}"><wn20schema:synsetId>ENG20-01787680-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-14004"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-01787680-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-01880248-v" rdfs:label="{rail_6; train_10}"><wn20schema:synsetId>ENG20-01880248-v</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-14004"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-01880248-v" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-eagle%1:10:00::" rdfs:label="{eagle_0}"><wn20schema:synsetId>eagle%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-8594"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-eagle%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-03730240-n" rdfs:label="{painting_1; picture_2}"><wn20schema:synsetId>ENG20-03730240-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-15543"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-03730240-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-human_body%1:08:00::" rdfs:label="{human body_0}"><wn20schema:synsetId>human_body%1:08:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-4202"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-human_body%1:08:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ring%1:06:03::" rdfs:label="{ring_0}"><wn20schema:synsetId>ring%1:06:03::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-18421"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ring%1:06:03::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-parent%1:18:00::" rdfs:label="{parent_0}"><wn20schema:synsetId>parent%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-48734"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-parent%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-roll%1:10:00::" rdfs:label="{roll_0}"><wn20schema:synsetId>roll%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-40472"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-roll%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-institution%1:06:01::" rdfs:label="{institution_0}"><wn20schema:synsetId>institution%1:06:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-5105"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-institution%1:06:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-selection%1:22:00::" rdfs:label="{selection_0}"><wn20schema:synsetId>selection%1:22:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-75093"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-selection%1:22:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04721451-n" rdfs:label="{ring_1}"><wn20schema:synsetId>ENG20-04721451-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-17924"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-04721451-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-06919436-n" rdfs:label="{sound_4}"><wn20schema:synsetId>ENG20-06919436-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-17924"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-06919436-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-drain%2:30:01::" rdfs:label="{drain_0}"><wn20schema:synsetId>drain%2:30:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-32909"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-drain%2:30:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-final%1:10:00::" rdfs:label="{final_0}"><wn20schema:synsetId>final%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-27272"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-final%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-review%1:10:03::" rdfs:label="{review_0}"><wn20schema:synsetId>review%1:10:03::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7814"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-review%1:10:03::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ring%1:06:02::" rdfs:label="{ring_0}"><wn20schema:synsetId>ring%1:06:02::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-15725"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ring%1:06:02::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04410590-n" rdfs:label="{window_2}"><wn20schema:synsetId>ENG20-04410590-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-35625"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-04410590-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-pit%1:17:00::" rdfs:label="{pit_0}"><wn20schema:synsetId>pit%1:17:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-2270"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-pit%1:17:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-13750963-n" rdfs:label="{mixture_1}"><wn20schema:synsetId>ENG20-13750963-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-37820"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-13750963-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-prescription%1:06:00::" rdfs:label="{prescription_0}"><wn20schema:synsetId>prescription%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-835"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-prescription%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-tip%1:10:00::" rdfs:label="{tip_0}"><wn20schema:synsetId>tip%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-67635"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-tip%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-glimpse%1:09:00::" rdfs:label="{glimpse_0}"><wn20schema:synsetId>glimpse%1:09:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-67720"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-glimpse%1:09:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-00608034-n" rdfs:label="{search_5}"><wn20schema:synsetId>ENG20-00608034-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-41703"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-00608034-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-12653348-n" rdfs:label="{register_3}"><wn20schema:synsetId>ENG20-12653348-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7805"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-12653348-n" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-15323"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-03730240-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-publication%1:10:00::" rdfs:label="{publication_0}"><wn20schema:synsetId>publication%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7816"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-publication%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-lane%1:06:00::" rdfs:label="{lane_0}"><wn20schema:synsetId>lane%1:06:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-15824"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-lane%1:06:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-03937560-n" rdfs:label="{right field_1; right_8}"><wn20schema:synsetId>ENG20-03937560-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-21387"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-03937560-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-scholarship%1:21:00::" rdfs:label="{scholarship_0}"><wn20schema:synsetId>scholarship%1:21:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-28888"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-scholarship%1:21:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-00807567-n" rdfs:label="{reaction_2; response_2}"><wn20schema:synsetId>ENG20-00807567-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-33939"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-00807567-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-reader%1:18:02::" rdfs:label="{reader_0}"><wn20schema:synsetId>reader%1:18:02::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-2313"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-reader%1:18:02::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-09023734-n" rdfs:label="{unfortunate person_1; unfortunate_1}"><wn20schema:synsetId>ENG20-09023734-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-5476"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-09023734-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-hand%1:18:00::" rdfs:label="{hand_0}"><wn20schema:synsetId>hand%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-6548"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-hand%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-player%1:18:01::" rdfs:label="{player_0}"><wn20schema:synsetId>player%1:18:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-7406"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-player%1:18:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-survivor%1:18:02::" rdfs:label="{survivor_0}"><wn20schema:synsetId>survivor%1:18:02::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-74477"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-survivor%1:18:02::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-04426900-n" rdfs:label="{wrapper_2; wrapping_1; wrap_3}"><wn20schema:synsetId>ENG20-04426900-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-48965"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-04426900-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-toll%1:21:00::" rdfs:label="{toll_0}"><wn20schema:synsetId>toll%1:21:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-40006"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-toll%1:21:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-formula%1:10:01::" rdfs:label="{formula_0}"><wn20schema:synsetId>formula%1:10:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-57090"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-formula%1:10:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-ENG20-02287120-n" rdfs:label="{odd-toed ungulate_1; perissodactyl mammal_1; perissodactyl_1}"><wn20schema:synsetId>ENG20-02287120-n</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-3422"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-ENG20-02287120-n" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-uncle%1:18:00::" rdfs:label="{uncle_0}"><wn20schema:synsetId>uncle%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-4531"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-uncle%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-owner%1:18:00::" rdfs:label="{owner_0}"><wn20schema:synsetId>owner%1:18:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-6758"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-owner%1:18:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-representative%1:18:01::" rdfs:label="{representative_0}"><wn20schema:synsetId>representative%1:18:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-51086"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-representative%1:18:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-girl%1:18:01::" rdfs:label="{girlfriend_0}"><wn20schema:synsetId>girl%1:18:01::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-5897"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-girl%1:18:01::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-spirit%1:10:00::" rdfs:label="{spirit_0}"><wn20schema:synsetId>spirit%1:10:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-14859"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-spirit%1:10:00::" /></rdf:Description>
+<wn20schema:Synset rdf:about="&dn;synset-monkey%1:05:00::" rdfs:label="{monkey_0}"><wn20schema:synsetId>monkey%1:05:00::</wn20schema:synsetId></wn20schema:Synset>
+<rdf:Description rdf:about="&dn;synset-3295"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-monkey%1:05:00::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-20768"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-institution%1:06:01::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63368"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-institution%1:06:01::" /></rdf:Description>
+<rdf:Description rdf:about="&dn;synset-63404"><dn_schema:eqHypernymOf rdf:resource="&dn;synset-institution%1:06:01::" /></rdf:Description>
+</rdf:RDF>

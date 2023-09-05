@@ -13,16 +13,16 @@
 		<ul class="navbar-nav nav " id="showTab" role="tab-list" >
 
 			<li class="nav-item">
-						<a class="nav-link editbasesystem" id="editOrgs"><?= _('Organizations');?></a>
+						<a class="nav-link editstavekontrolden" id="editOrgs"><?= _('Organizations');?></a>
 			</li>
 			<li class="nav-item">
-						<a class="nav-link editbasesystem" id="editUsers"><?= _('Users');?></a>
+						<a class="nav-link editstavekontrolden" id="editUsers"><?= _('Users');?></a>
 			</li>
 
 		</ul>
 	</div>
 </nav>
-<div id="basesystemcontentdiv" class="container-fluid">
+<div id="stavekontroldencontentdiv" class="container-fluid">
 <div class="row d-flex justify-content-center">
 		<div class="col text-center">
 			<h2><?= _("My Stavekontrolden");?></h2>

@@ -23,7 +23,7 @@ foreach($wheres as $k=>$w) {
 $custorder=($custorder?$custorder:"c.`description`");
 $where=" WHERE c.lang='".$_SESSION["lang"]."' ".$where;
 $order=" ORDER BY  ".$custorder." "; #" ORDER BY ".($_POST["order"]?$_POST["order"]: );
-$orderdir=implode("",$_POST["order"]);
+$orderdir=$_POST["order"]?implode("",$_POST["order"]):"";
 
 #$baseq=" from affixclass c left join affixrule_to_affixclass cr on c.`id`=cr.`affixclassid` left join affixrule r on cr.`affixruleid`=r.`id` ";
 $baseq=" from affixclass c left join affixrule r on r.`affixclassid`=c.`id` ";
