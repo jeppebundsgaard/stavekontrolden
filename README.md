@@ -14,8 +14,15 @@ You are welcome to add your language at https://stavekontrolden.dk.
 - Log in.
 
 ## Share your spell checker with the world
-Many open source programs take their spellchecker from Apache OpenOffice, so make sure to upload it at their extension site, e.g.: https://extensions.openoffice.org/en/project/danish-spellcheck-and-hyphenation-dictionaries. Create a user and upload.
 
-LibreOffice: Create a user at https://extensions.libreoffice.org/admin/extensions/LibreOffice-Extensions-Extension, and upload the oxt-file.
+### OpenOffice, Libreoffice and more
+
+Many open source programs take their spellchecker from Apache OpenOffice, so make sure to upload your dictionary at their extension site, e.g.: https://extensions.openoffice.org/en/project/danish-spellcheck-and-hyphenation-dictionaries. Create a user and upload the .oxt-file.
+
+LibreOffice: Create a user at https://extensions.libreoffice.org/admin/extensions/LibreOffice-Extensions-Extension, and upload the .oxt-file.
 
 To get your spellchecker packed with the next LibreOffice release, write an e-mail to Andras Timar andras.timar at collabora dot com with a link to the latest release, e.g. https://stavekontrolden.dk/dictionaries/da_DK/da_DK-2.8.001.oxt.
+
+### Firefox and Thunderbird
+
+Firefox and Thunderbird uses the .xpi-file packed when creating the dictionary. Upload as an extension both places, e.g. https://addons.thunderbird.net/da/developers/addon/dansk-ordbog/ and https://addons.mozilla.org/da/developers/addon/dansk-ordbog/
