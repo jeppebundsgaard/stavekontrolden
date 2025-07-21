@@ -7,7 +7,8 @@ The system supports the creation of affix classes and affix rules and keeps trac
 You are welcome to add your language at https://stavekontrolden.dk. 
 
 ## Install
-- Copy files to your server. 
+- Copy files to your server.
+- Run php composer.phar install (see https://getcomposer.org/doc/00-intro.md).
 - Change ./settings/conf.php and ./settings/.htdatabase.
 - Create the database and tables from stavekontrolden.sql 
 - Create an admin user and an organization manually
