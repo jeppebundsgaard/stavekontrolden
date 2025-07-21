@@ -25,6 +25,14 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 					</div>
 					<div class="form-row">
 						<div class="col">
+							<div class="form-check">
+								<input class="newword form-check-input" type="checkbox" name="providestem" id="providestem">
+								<label for="providestem" class="col-form-check-label"><strong><?= _('Let user provide stem to words in this word class');?></strong></label>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col">
 							<label class="col-form-label"><strong><?= _('Associated Affix Classes');?></strong></label>
 							
 						</div>

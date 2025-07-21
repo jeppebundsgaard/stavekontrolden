@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.5.0): modal.js
+ * Bootstrap (v4.4.1): modal.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -15,7 +15,7 @@ import Util from './util'
  */
 
 const NAME               = 'modal'
-const VERSION            = '4.5.0'
+const VERSION            = '4.4.1'
 const DATA_KEY           = 'bs.modal'
 const EVENT_KEY          = `.${DATA_KEY}`
 const DATA_API_KEY       = '.data-api'
@@ -36,33 +36,39 @@ const DefaultType = {
   show     : 'boolean'
 }
 
-const EVENT_HIDE              = `hide${EVENT_KEY}`
-const EVENT_HIDE_PREVENTED    = `hidePrevented${EVENT_KEY}`
-const EVENT_HIDDEN            = `hidden${EVENT_KEY}`
-const EVENT_SHOW              = `show${EVENT_KEY}`
-const EVENT_SHOWN             = `shown${EVENT_KEY}`
-const EVENT_FOCUSIN           = `focusin${EVENT_KEY}`
-const EVENT_RESIZE            = `resize${EVENT_KEY}`
-const EVENT_CLICK_DISMISS     = `click.dismiss${EVENT_KEY}`
-const EVENT_KEYDOWN_DISMISS   = `keydown.dismiss${EVENT_KEY}`
-const EVENT_MOUSEUP_DISMISS   = `mouseup.dismiss${EVENT_KEY}`
-const EVENT_MOUSEDOWN_DISMISS = `mousedown.dismiss${EVENT_KEY}`
-const EVENT_CLICK_DATA_API    = `click${EVENT_KEY}${DATA_API_KEY}`
+const Event = {
+  HIDE              : `hide${EVENT_KEY}`,
+  HIDE_PREVENTED    : `hidePrevented${EVENT_KEY}`,
+  HIDDEN            : `hidden${EVENT_KEY}`,
+  SHOW              : `show${EVENT_KEY}`,
+  SHOWN             : `shown${EVENT_KEY}`,
+  FOCUSIN           : `focusin${EVENT_KEY}`,
+  RESIZE            : `resize${EVENT_KEY}`,
+  CLICK_DISMISS     : `click.dismiss${EVENT_KEY}`,
+  KEYDOWN_DISMISS   : `keydown.dismiss${EVENT_KEY}`,
+  MOUSEUP_DISMISS   : `mouseup.dismiss${EVENT_KEY}`,
+  MOUSEDOWN_DISMISS : `mousedown.dismiss${EVENT_KEY}`,
+  CLICK_DATA_API    : `click${EVENT_KEY}${DATA_API_KEY}`
+}
 
-const CLASS_NAME_SCROLLABLE         = 'modal-dialog-scrollable'
-const CLASS_NAME_SCROLLBAR_MEASURER = 'modal-scrollbar-measure'
-const CLASS_NAME_BACKDROP           = 'modal-backdrop'
-const CLASS_NAME_OPEN               = 'modal-open'
-const CLASS_NAME_FADE               = 'fade'
-const CLASS_NAME_SHOW               = 'show'
-const CLASS_NAME_STATIC             = 'modal-static'
+const ClassName = {
+  SCROLLABLE         : 'modal-dialog-scrollable',
+  SCROLLBAR_MEASURER : 'modal-scrollbar-measure',
+  BACKDROP           : 'modal-backdrop',
+  OPEN               : 'modal-open',
+  FADE               : 'fade',
+  SHOW               : 'show',
+  STATIC             : 'modal-static'
+}
 
-const SELECTOR_DIALOG         = '.modal-dialog'
-const SELECTOR_MODAL_BODY     = '.modal-body'
-const SELECTOR_DATA_TOGGLE    = '[data-toggle="modal"]'
-const SELECTOR_DATA_DISMISS   = '[data-dismiss="modal"]'
-const SELECTOR_FIXED_CONTENT  = '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top'
-const SELECTOR_STICKY_CONTENT = '.sticky-top'
+const Selector = {
+  DIALOG         : '.modal-dialog',
+  MODAL_BODY     : '.modal-body',
+  DATA_TOGGLE    : '[data-toggle="modal"]',
+  DATA_DISMISS   : '[data-dismiss="modal"]',
+  FIXED_CONTENT  : '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
+  STICKY_CONTENT : '.sticky-top'
+}
 
 /**
  * ------------------------------------------------------------------------
@@ -74,7 +80,7 @@ class Modal {
   constructor(element, config) {
     this._config              = this._getConfig(config)
     this._element             = element
-    this._dialog              = element.querySelector(SELECTOR_DIALOG)
+    this._dialog              = element.querySelector(Selector.DIALOG)
     this._backdrop            = null
     this._isShown             = false
     this._isBodyOverflowing   = false
@@ -104,11 +110,11 @@ class Modal {
       return
     }
 
-    if ($(this._element).hasClass(CLASS_NAME_FADE)) {
+    if ($(this._element).hasClass(ClassName.FADE)) {
       this._isTransitioning = true
     }
 
-    const showEvent = $.Event(EVENT_SHOW, {
+    const showEvent = $.Event(Event.SHOW, {
       relatedTarget
     })
 
@@ -129,13 +135,13 @@ class Modal {
     this._setResizeEvent()
 
     $(this._element).on(
-      EVENT_CLICK_DISMISS,
-      SELECTOR_DATA_DISMISS,
+      Event.CLICK_DISMISS,
+      Selector.DATA_DISMISS,
       (event) => this.hide(event)
     )
 
-    $(this._dialog).on(EVENT_MOUSEDOWN_DISMISS, () => {
-      $(this._element).one(EVENT_MOUSEUP_DISMISS, (event) => {
+    $(this._dialog).on(Event.MOUSEDOWN_DISMISS, () => {
+      $(this._element).one(Event.MOUSEUP_DISMISS, (event) => {
         if ($(event.target).is(this._element)) {
           this._ignoreBackdropClick = true
         }
@@ -154,7 +160,7 @@ class Modal {
       return
     }
 
-    const hideEvent = $.Event(EVENT_HIDE)
+    const hideEvent = $.Event(Event.HIDE)
 
     $(this._element).trigger(hideEvent)
 
@@ -163,7 +169,7 @@ class Modal {
     }
 
     this._isShown = false
-    const transition = $(this._element).hasClass(CLASS_NAME_FADE)
+    const transition = $(this._element).hasClass(ClassName.FADE)
 
     if (transition) {
       this._isTransitioning = true
@@ -172,12 +178,13 @@ class Modal {
     this._setEscapeEvent()
     this._setResizeEvent()
 
-    $(document).off(EVENT_FOCUSIN)
+    $(document).off(Event.FOCUSIN)
 
-    $(this._element).removeClass(CLASS_NAME_SHOW)
+    $(this._element).removeClass(ClassName.SHOW)
 
-    $(this._element).off(EVENT_CLICK_DISMISS)
-    $(this._dialog).off(EVENT_MOUSEDOWN_DISMISS)
+    $(this._element).off(Event.CLICK_DISMISS)
+    $(this._dialog).off(Event.MOUSEDOWN_DISMISS)
+
 
     if (transition) {
       const transitionDuration  = Util.getTransitionDurationFromElement(this._element)
@@ -195,11 +202,11 @@ class Modal {
       .forEach((htmlElement) => $(htmlElement).off(EVENT_KEY))
 
     /**
-     * `document` has 2 events `EVENT_FOCUSIN` and `EVENT_CLICK_DATA_API`
+     * `document` has 2 events `Event.FOCUSIN` and `Event.CLICK_DATA_API`
      * Do not move `document` in `htmlElements` array
-     * It will remove `EVENT_CLICK_DATA_API` event that should remain
+     * It will remove `Event.CLICK_DATA_API` event that should remain
      */
-    $(document).off(EVENT_FOCUSIN)
+    $(document).off(Event.FOCUSIN)
 
     $.removeData(this._element, DATA_KEY)
 
@@ -231,19 +238,19 @@ class Modal {
 
   _triggerBackdropTransition() {
     if (this._config.backdrop === 'static') {
-      const hideEventPrevented = $.Event(EVENT_HIDE_PREVENTED)
+      const hideEventPrevented = $.Event(Event.HIDE_PREVENTED)
 
       $(this._element).trigger(hideEventPrevented)
       if (hideEventPrevented.defaultPrevented) {
         return
       }
 
-      this._element.classList.add(CLASS_NAME_STATIC)
+      this._element.classList.add(ClassName.STATIC)
 
       const modalTransitionDuration = Util.getTransitionDurationFromElement(this._element)
 
       $(this._element).one(Util.TRANSITION_END, () => {
-        this._element.classList.remove(CLASS_NAME_STATIC)
+        this._element.classList.remove(ClassName.STATIC)
       })
         .emulateTransitionEnd(modalTransitionDuration)
       this._element.focus()
@@ -253,8 +260,8 @@ class Modal {
   }
 
   _showElement(relatedTarget) {
-    const transition = $(this._element).hasClass(CLASS_NAME_FADE)
-    const modalBody = this._dialog ? this._dialog.querySelector(SELECTOR_MODAL_BODY) : null
+    const transition = $(this._element).hasClass(ClassName.FADE)
+    const modalBody = this._dialog ? this._dialog.querySelector(Selector.MODAL_BODY) : null
 
     if (!this._element.parentNode ||
         this._element.parentNode.nodeType !== Node.ELEMENT_NODE) {
@@ -266,7 +273,7 @@ class Modal {
     this._element.removeAttribute('aria-hidden')
     this._element.setAttribute('aria-modal', true)
 
-    if ($(this._dialog).hasClass(CLASS_NAME_SCROLLABLE) && modalBody) {
+    if ($(this._dialog).hasClass(ClassName.SCROLLABLE) && modalBody) {
       modalBody.scrollTop = 0
     } else {
       this._element.scrollTop = 0
@@ -276,13 +283,13 @@ class Modal {
       Util.reflow(this._element)
     }
 
-    $(this._element).addClass(CLASS_NAME_SHOW)
+    $(this._element).addClass(ClassName.SHOW)
 
     if (this._config.focus) {
       this._enforceFocus()
     }
 
-    const shownEvent = $.Event(EVENT_SHOWN, {
+    const shownEvent = $.Event(Event.SHOWN, {
       relatedTarget
     })
 
@@ -307,8 +314,8 @@ class Modal {
 
   _enforceFocus() {
     $(document)
-      .off(EVENT_FOCUSIN) // Guard against infinite focus loop
-      .on(EVENT_FOCUSIN, (event) => {
+      .off(Event.FOCUSIN) // Guard against infinite focus loop
+      .on(Event.FOCUSIN, (event) => {
         if (document !== event.target &&
             this._element !== event.target &&
             $(this._element).has(event.target).length === 0) {
@@ -318,25 +325,22 @@ class Modal {
   }
 
   _setEscapeEvent() {
-    if (this._isShown) {
-      $(this._element).on(EVENT_KEYDOWN_DISMISS, (event) => {
-        if (this._config.keyboard && event.which === ESCAPE_KEYCODE) {
-          event.preventDefault()
-          this.hide()
-        } else if (!this._config.keyboard && event.which === ESCAPE_KEYCODE) {
+    if (this._isShown && this._config.keyboard) {
+      $(this._element).on(Event.KEYDOWN_DISMISS, (event) => {
+        if (event.which === ESCAPE_KEYCODE) {
           this._triggerBackdropTransition()
         }
       })
     } else if (!this._isShown) {
-      $(this._element).off(EVENT_KEYDOWN_DISMISS)
+      $(this._element).off(Event.KEYDOWN_DISMISS)
     }
   }
 
   _setResizeEvent() {
     if (this._isShown) {
-      $(window).on(EVENT_RESIZE, (event) => this.handleUpdate(event))
+      $(window).on(Event.RESIZE, (event) => this.handleUpdate(event))
     } else {
-      $(window).off(EVENT_RESIZE)
+      $(window).off(Event.RESIZE)
     }
   }
 
@@ -346,10 +350,10 @@ class Modal {
     this._element.removeAttribute('aria-modal')
     this._isTransitioning = false
     this._showBackdrop(() => {
-      $(document.body).removeClass(CLASS_NAME_OPEN)
+      $(document.body).removeClass(ClassName.OPEN)
       this._resetAdjustments()
       this._resetScrollbar()
-      $(this._element).trigger(EVENT_HIDDEN)
+      $(this._element).trigger(Event.HIDDEN)
     })
   }
 
@@ -361,12 +365,12 @@ class Modal {
   }
 
   _showBackdrop(callback) {
-    const animate = $(this._element).hasClass(CLASS_NAME_FADE)
-      ? CLASS_NAME_FADE : ''
+    const animate = $(this._element).hasClass(ClassName.FADE)
+      ? ClassName.FADE : ''
 
     if (this._isShown && this._config.backdrop) {
       this._backdrop = document.createElement('div')
-      this._backdrop.className = CLASS_NAME_BACKDROP
+      this._backdrop.className = ClassName.BACKDROP
 
       if (animate) {
         this._backdrop.classList.add(animate)
@@ -374,7 +378,7 @@ class Modal {
 
       $(this._backdrop).appendTo(document.body)
 
-      $(this._element).on(EVENT_CLICK_DISMISS, (event) => {
+      $(this._element).on(Event.CLICK_DISMISS, (event) => {
         if (this._ignoreBackdropClick) {
           this._ignoreBackdropClick = false
           return
@@ -390,7 +394,7 @@ class Modal {
         Util.reflow(this._backdrop)
       }
 
-      $(this._backdrop).addClass(CLASS_NAME_SHOW)
+      $(this._backdrop).addClass(ClassName.SHOW)
 
       if (!callback) {
         return
@@ -407,7 +411,7 @@ class Modal {
         .one(Util.TRANSITION_END, callback)
         .emulateTransitionEnd(backdropTransitionDuration)
     } else if (!this._isShown && this._backdrop) {
-      $(this._backdrop).removeClass(CLASS_NAME_SHOW)
+      $(this._backdrop).removeClass(ClassName.SHOW)
 
       const callbackRemove = () => {
         this._removeBackdrop()
@@ -416,7 +420,7 @@ class Modal {
         }
       }
 
-      if ($(this._element).hasClass(CLASS_NAME_FADE)) {
+      if ($(this._element).hasClass(ClassName.FADE)) {
         const backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop)
 
         $(this._backdrop)
@@ -455,7 +459,7 @@ class Modal {
 
   _checkScrollbar() {
     const rect = document.body.getBoundingClientRect()
-    this._isBodyOverflowing = Math.round(rect.left + rect.right) < window.innerWidth
+    this._isBodyOverflowing = rect.left + rect.right < window.innerWidth
     this._scrollbarWidth = this._getScrollbarWidth()
   }
 
@@ -463,8 +467,8 @@ class Modal {
     if (this._isBodyOverflowing) {
       // Note: DOMNode.style.paddingRight returns the actual value or '' if not set
       //   while $(DOMNode).css('padding-right') returns the calculated value or 0 if not set
-      const fixedContent = [].slice.call(document.querySelectorAll(SELECTOR_FIXED_CONTENT))
-      const stickyContent = [].slice.call(document.querySelectorAll(SELECTOR_STICKY_CONTENT))
+      const fixedContent = [].slice.call(document.querySelectorAll(Selector.FIXED_CONTENT))
+      const stickyContent = [].slice.call(document.querySelectorAll(Selector.STICKY_CONTENT))
 
       // Adjust fixed content padding
       $(fixedContent).each((index, element) => {
@@ -492,12 +496,12 @@ class Modal {
         .css('padding-right', `${parseFloat(calculatedPadding) + this._scrollbarWidth}px`)
     }
 
-    $(document.body).addClass(CLASS_NAME_OPEN)
+    $(document.body).addClass(ClassName.OPEN)
   }
 
   _resetScrollbar() {
     // Restore fixed content padding
-    const fixedContent = [].slice.call(document.querySelectorAll(SELECTOR_FIXED_CONTENT))
+    const fixedContent = [].slice.call(document.querySelectorAll(Selector.FIXED_CONTENT))
     $(fixedContent).each((index, element) => {
       const padding = $(element).data('padding-right')
       $(element).removeData('padding-right')
@@ -505,7 +509,7 @@ class Modal {
     })
 
     // Restore sticky content
-    const elements = [].slice.call(document.querySelectorAll(`${SELECTOR_STICKY_CONTENT}`))
+    const elements = [].slice.call(document.querySelectorAll(`${Selector.STICKY_CONTENT}`))
     $(elements).each((index, element) => {
       const margin = $(element).data('margin-right')
       if (typeof margin !== 'undefined') {
@@ -521,7 +525,7 @@ class Modal {
 
   _getScrollbarWidth() { // thx d.walsh
     const scrollDiv = document.createElement('div')
-    scrollDiv.className = CLASS_NAME_SCROLLBAR_MEASURER
+    scrollDiv.className = ClassName.SCROLLBAR_MEASURER
     document.body.appendChild(scrollDiv)
     const scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth
     document.body.removeChild(scrollDiv)
@@ -562,7 +566,7 @@ class Modal {
  * ------------------------------------------------------------------------
  */
 
-$(document).on(EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
+$(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
   let target
   const selector = Util.getSelectorFromElement(this)
 
@@ -580,13 +584,13 @@ $(document).on(EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
     event.preventDefault()
   }
 
-  const $target = $(target).one(EVENT_SHOW, (showEvent) => {
+  const $target = $(target).one(Event.SHOW, (showEvent) => {
     if (showEvent.isDefaultPrevented()) {
       // Only register focus restorer if modal will actually get shown
       return
     }
 
-    $target.one(EVENT_HIDDEN, () => {
+    $target.one(Event.HIDDEN, () => {
       if ($(this).is(':visible')) {
         this.focus()
       }

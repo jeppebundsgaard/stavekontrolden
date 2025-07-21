@@ -208,6 +208,7 @@ $(function () {
       .bootstrapToast('show')
   })
 
+
   QUnit.test('should close toast when close element with data-dismiss attribute is set', function (assert) {
     assert.expect(2)
     var done = assert.async()

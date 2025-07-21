@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.5.0): tooltip.js
+ * Bootstrap (v4.4.1): tooltip.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -20,7 +20,7 @@ import Util from './util'
  */
 
 const NAME                  = 'tooltip'
-const VERSION               = '4.5.0'
+const VERSION               = '4.4.1'
 const DATA_KEY              = 'bs.tooltip'
 const EVENT_KEY             = `.${DATA_KEY}`
 const JQUERY_NO_CONFLICT    = $.fn[NAME]
@@ -76,8 +76,10 @@ const Default = {
   popperConfig      : null
 }
 
-const HOVER_STATE_SHOW = 'show'
-const HOVER_STATE_OUT  = 'out'
+const HoverState = {
+  SHOW : 'show',
+  OUT  : 'out'
+}
 
 const Event = {
   HIDE       : `hide${EVENT_KEY}`,
@@ -92,16 +94,24 @@ const Event = {
   MOUSELEAVE : `mouseleave${EVENT_KEY}`
 }
 
-const CLASS_NAME_FADE = 'fade'
-const CLASS_NAME_SHOW = 'show'
+const ClassName = {
+  FADE : 'fade',
+  SHOW : 'show'
+}
 
-const SELECTOR_TOOLTIP_INNER = '.tooltip-inner'
-const SELECTOR_ARROW         = '.arrow'
+const Selector = {
+  TOOLTIP       : '.tooltip',
+  TOOLTIP_INNER : '.tooltip-inner',
+  ARROW         : '.arrow'
+}
 
-const TRIGGER_HOVER  = 'hover'
-const TRIGGER_FOCUS  = 'focus'
-const TRIGGER_CLICK  = 'click'
-const TRIGGER_MANUAL = 'manual'
+const Trigger = {
+  HOVER  : 'hover',
+  FOCUS  : 'focus',
+  CLICK  : 'click',
+  MANUAL : 'manual'
+}
+
 
 /**
  * ------------------------------------------------------------------------
@@ -199,7 +209,7 @@ class Tooltip {
         context._leave(null, context)
       }
     } else {
-      if ($(this.getTipElement()).hasClass(CLASS_NAME_SHOW)) {
+      if ($(this.getTipElement()).hasClass(ClassName.SHOW)) {
         this._leave(null, this)
         return
       }
@@ -262,7 +272,7 @@ class Tooltip {
       this.setContent()
 
       if (this.config.animation) {
-        $(tip).addClass(CLASS_NAME_FADE)
+        $(tip).addClass(ClassName.FADE)
       }
 
       const placement  = typeof this.config.placement === 'function'
@@ -283,7 +293,7 @@ class Tooltip {
 
       this._popper = new Popper(this.element, tip, this._getPopperConfig(attachment))
 
-      $(tip).addClass(CLASS_NAME_SHOW)
+      $(tip).addClass(ClassName.SHOW)
 
       // If this is a touch-enabled device we add extra
       // empty mouseover listeners to the body's immediate children;
@@ -302,12 +312,12 @@ class Tooltip {
 
         $(this.element).trigger(this.constructor.Event.SHOWN)
 
-        if (prevHoverState === HOVER_STATE_OUT) {
+        if (prevHoverState === HoverState.OUT) {
           this._leave(null, this)
         }
       }
 
-      if ($(this.tip).hasClass(CLASS_NAME_FADE)) {
+      if ($(this.tip).hasClass(ClassName.FADE)) {
         const transitionDuration = Util.getTransitionDurationFromElement(this.tip)
 
         $(this.tip)
@@ -323,7 +333,7 @@ class Tooltip {
     const tip       = this.getTipElement()
     const hideEvent = $.Event(this.constructor.Event.HIDE)
     const complete = () => {
-      if (this._hoverState !== HOVER_STATE_SHOW && tip.parentNode) {
+      if (this._hoverState !== HoverState.SHOW && tip.parentNode) {
         tip.parentNode.removeChild(tip)
       }
 
@@ -345,7 +355,7 @@ class Tooltip {
       return
     }
 
-    $(tip).removeClass(CLASS_NAME_SHOW)
+    $(tip).removeClass(ClassName.SHOW)
 
     // If this is a touch-enabled device we remove the extra
     // empty mouseover listeners we added for iOS support
@@ -353,11 +363,11 @@ class Tooltip {
       $(document.body).children().off('mouseover', null, $.noop)
     }
 
-    this._activeTrigger[TRIGGER_CLICK] = false
-    this._activeTrigger[TRIGGER_FOCUS] = false
-    this._activeTrigger[TRIGGER_HOVER] = false
+    this._activeTrigger[Trigger.CLICK] = false
+    this._activeTrigger[Trigger.FOCUS] = false
+    this._activeTrigger[Trigger.HOVER] = false
 
-    if ($(this.tip).hasClass(CLASS_NAME_FADE)) {
+    if ($(this.tip).hasClass(ClassName.FADE)) {
       const transitionDuration = Util.getTransitionDurationFromElement(tip)
 
       $(tip)
@@ -393,8 +403,8 @@ class Tooltip {
 
   setContent() {
     const tip = this.getTipElement()
-    this.setElementContent($(tip.querySelectorAll(SELECTOR_TOOLTIP_INNER)), this.getTitle())
-    $(tip).removeClass(`${CLASS_NAME_FADE} ${CLASS_NAME_SHOW}`)
+    this.setElementContent($(tip.querySelectorAll(Selector.TOOLTIP_INNER)), this.getTitle())
+    $(tip).removeClass(`${ClassName.FADE} ${ClassName.SHOW}`)
   }
 
   setElementContent($element, content) {
@@ -445,7 +455,7 @@ class Tooltip {
           behavior: this.config.fallbackPlacement
         },
         arrow: {
-          element: SELECTOR_ARROW
+          element: Selector.ARROW
         },
         preventOverflow: {
           boundariesElement: this.config.boundary
@@ -510,17 +520,25 @@ class Tooltip {
           this.config.selector,
           (event) => this.toggle(event)
         )
-      } else if (trigger !== TRIGGER_MANUAL) {
-        const eventIn = trigger === TRIGGER_HOVER
+      } else if (trigger !== Trigger.MANUAL) {
+        const eventIn = trigger === Trigger.HOVER
           ? this.constructor.Event.MOUSEENTER
           : this.constructor.Event.FOCUSIN
-        const eventOut = trigger === TRIGGER_HOVER
+        const eventOut = trigger === Trigger.HOVER
           ? this.constructor.Event.MOUSELEAVE
           : this.constructor.Event.FOCUSOUT
 
         $(this.element)
-          .on(eventIn, this.config.selector, (event) => this._enter(event))
-          .on(eventOut, this.config.selector, (event) => this._leave(event))
+          .on(
+            eventIn,
+            this.config.selector,
+            (event) => this._enter(event)
+          )
+          .on(
+            eventOut,
+            this.config.selector,
+            (event) => this._leave(event)
+          )
       }
     })
 
@@ -530,7 +548,10 @@ class Tooltip {
       }
     }
 
-    $(this.element).closest('.modal').on('hide.bs.modal', this._hideModalHandler)
+    $(this.element).closest('.modal').on(
+      'hide.bs.modal',
+      this._hideModalHandler
+    )
 
     if (this.config.selector) {
       this.config = {
@@ -570,18 +591,18 @@ class Tooltip {
 
     if (event) {
       context._activeTrigger[
-        event.type === 'focusin' ? TRIGGER_FOCUS : TRIGGER_HOVER
+        event.type === 'focusin' ? Trigger.FOCUS : Trigger.HOVER
       ] = true
     }
 
-    if ($(context.getTipElement()).hasClass(CLASS_NAME_SHOW) || context._hoverState === HOVER_STATE_SHOW) {
-      context._hoverState = HOVER_STATE_SHOW
+    if ($(context.getTipElement()).hasClass(ClassName.SHOW) || context._hoverState === HoverState.SHOW) {
+      context._hoverState = HoverState.SHOW
       return
     }
 
     clearTimeout(context._timeout)
 
-    context._hoverState = HOVER_STATE_SHOW
+    context._hoverState = HoverState.SHOW
 
     if (!context.config.delay || !context.config.delay.show) {
       context.show()
@@ -589,7 +610,7 @@ class Tooltip {
     }
 
     context._timeout = setTimeout(() => {
-      if (context._hoverState === HOVER_STATE_SHOW) {
+      if (context._hoverState === HoverState.SHOW) {
         context.show()
       }
     }, context.config.delay.show)
@@ -609,7 +630,7 @@ class Tooltip {
 
     if (event) {
       context._activeTrigger[
-        event.type === 'focusout' ? TRIGGER_FOCUS : TRIGGER_HOVER
+        event.type === 'focusout' ? Trigger.FOCUS : Trigger.HOVER
       ] = false
     }
 
@@ -619,7 +640,7 @@ class Tooltip {
 
     clearTimeout(context._timeout)
 
-    context._hoverState = HOVER_STATE_OUT
+    context._hoverState = HoverState.OUT
 
     if (!context.config.delay || !context.config.delay.hide) {
       context.hide()
@@ -627,7 +648,7 @@ class Tooltip {
     }
 
     context._timeout = setTimeout(() => {
-      if (context._hoverState === HOVER_STATE_OUT) {
+      if (context._hoverState === HoverState.OUT) {
         context.hide()
       }
     }, context.config.delay.hide)
@@ -710,7 +731,8 @@ class Tooltip {
   }
 
   _handlePopperPlacementChange(popperData) {
-    this.tip = popperData.instance.popper
+    const popperInstance = popperData.instance
+    this.tip = popperInstance.popper
     this._cleanTipClass()
     this.addAttachmentClass(this._getAttachment(popperData.placement))
   }
@@ -723,7 +745,7 @@ class Tooltip {
       return
     }
 
-    $(tip).removeClass(CLASS_NAME_FADE)
+    $(tip).removeClass(ClassName.FADE)
     this.config.animation = false
     this.hide()
     this.show()

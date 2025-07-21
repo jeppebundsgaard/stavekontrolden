@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-27 11:26+0100\n"
+"POT-Creation-Date: 2025-07-21 09:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,29 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: js/stavekontroldenadmin.js:313
+msgid "Accent search"
+msgstr ""
+
+#: js/stavekontroldenadmin.js:552
+msgid ""
+"Are you sure you want to delete this category and everything dependent on it "
+"(except words)?"
+msgstr ""
+
+#: js/stavekontroldenadmin.js:875
+msgid "Preparing CSS-editor"
+msgstr ""
+
+#: js/stavekontroldenadmin.js:1042
+msgid "There are unsaved changes. Are you sure you want to leave?"
+msgstr ""
+
+#: js/stavekontroldenadmin.js:1140 js/stavekontrolden.js:94
+#: js/stavekontrolden.js:111 js/stavekontrolden.js:137
+msgid "There was a problem. Are you connected to the Internet?"
+msgstr ""
 
 #: js/stavekontrolden.js:37
 msgid ""
@@ -35,11 +58,6 @@ msgstr ""
 msgid "Learn more"
 msgstr ""
 
-#: js/stavekontrolden.js:94 js/stavekontrolden.js:111 js/stavekontrolden.js:137
-#: js/stavekontroldenadmin.js:1071
-msgid "There was a problem. Are you connected to the Internet?"
-msgstr ""
-
 #: js/stavekontrolden.js:165
 msgid "Please write your e-mail address and click again."
 msgstr ""
@@ -56,22 +74,4 @@ msgstr ""
 
 #: js/stavekontroldenadminadmin.js:43
 msgid "New password: {0}"
-msgstr ""
-
-#: js/stavekontroldenadmin.js:291
-msgid "Accent search"
-msgstr ""
-
-#: js/stavekontroldenadmin.js:516
-msgid ""
-"Are you sure you want to delete this category and everything dependent on it "
-"(except words)?"
-msgstr ""
-
-#: js/stavekontroldenadmin.js:806
-msgid "Preparing CSS-editor"
-msgstr ""
-
-#: js/stavekontroldenadmin.js:973
-msgid "There are unsaved changes. Are you sure you want to leave?"
 msgstr ""

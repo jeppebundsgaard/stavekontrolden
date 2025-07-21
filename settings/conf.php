@@ -10,7 +10,7 @@ $globals=array(
 "hunspell"=>"/usr/bin/hunspell",
 "nowordclassid"=>24,
 "langtoorg"=>array("da_DK"=>1, "en_US"=>2),
-"collation"=>array("da_DK"=>"utf8mb4_danish_ci", "en_US"=>"utf8mb4_unicode_ci")
+"collation"=>array("da_DK"=>"utf8mb4_da_0900_as_cs", "en_US"=>"utf8mb4_unicode_ci")
 );
 foreach ($globals as $key => $value) {
     $GLOBALS[$key] = $value;

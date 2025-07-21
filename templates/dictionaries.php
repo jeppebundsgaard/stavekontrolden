@@ -12,6 +12,7 @@
 					<tr class="table-info">
 					<th scope="col"><?= _('Language Code');?></th>
 					<th scope="col"><?= _('OpenOffice/LibreOffice Extension');?></th>
+					<th scope="col"><?= _('Thunderbird/Firefox Extension');?></th>
 					<th scope="col"><?= _('Affix file');?></th>
 					<th scope="col"><?= _('Dictionary file');?></th>
 					<th scope="col"><?= _('Database tables');?></th>
@@ -27,7 +28,14 @@
 								$f=$dicdir.$e."/".$e;
 								$vf=$dicdir.$e."/".$e."-".$version;
 							?>
-								<tr><td><?= $e;?></td><td><a href="<?= $vf.".oxt";?>" ><?= $e.".oxt";?></a></td><td><a href="<?= $vf.".aff";?>" ><?= $e.".aff";?></a></td></td><td><a href="<?= $vf.".dic";?>"><?= $e.".dic";?></a></td><td><a target="_blank" href="<?= $dicdir.$e."/tables";?>"><?= $e." database";?></a></td><tr>
+								<tr>
+									<td><?= $e;?></td>
+									<td><a href="<?= $vf.".oxt";?>" ><?= $e.".oxt";?></a></td>
+									<td><a href="<?= $vf.".xpi";?>" ><?= $e.".xpi";?></a></td>
+									<td><a href="<?= $vf.".aff";?>" ><?= $e.".aff";?></a></td>
+									<td><a href="<?= $vf.".dic";?>"><?= $e.".dic";?></a></td>
+									<td><a target="_blank" href="<?= $dicdir.$e."/tables";?>"><?= $e." database";?></a></td>
+								<tr>
 							<?php
 							}
 						}

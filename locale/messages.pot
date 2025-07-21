@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-27 11:26+0100\n"
+"POT-Creation-Date: 2025-07-21 09:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,52 +17,150 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: backend/saveword.php:16
-msgid "Not saved! You need to provide both a word and a word class."
+#: index.php:34 index.php:34
+msgid "Error: No organization with that name"
 msgstr ""
 
-#: backend/get_words.php:52
-msgid "No more words"
+#: functions/filtersettings.php:4 templates/filtersettings.php:4
+msgid "Show"
 msgstr ""
 
-#: backend/systemUser.php:28 backend/createOrg.php:32 backend/orgUser.php:23
+#: functions/filtersettings.php:8 templates/filtersettings.php:8
+msgid "In word"
+msgstr ""
+
+#: functions/filtersettings.php:8 templates/filtersettings.php:8
+msgid "Beginning of word"
+msgstr ""
+
+#: functions/filtersettings.php:8 templates/filtersettings.php:8
+msgid "End of word"
+msgstr ""
+
+#: functions/filtersettings.php:8 templates/filtersettings.php:8
+msgid "Strict"
+msgstr ""
+
+#: functions/filtersettings.php:18 templates/filtersettings.php:18
+msgid "Search"
+msgstr ""
+
+#: frontend/forgotpassword.php:11
+msgid "We couldn't find a  user with that e-mail address."
+msgstr ""
+
+#: frontend/forgotpassword.php:37
+msgid "Stavekontrolden Support"
+msgstr ""
+
+#: frontend/forgotpassword.php:42
+msgid "Create a new password"
+msgstr ""
+
+#: frontend/forgotpassword.php:43
+#, php-format
+msgid ""
+"Hello %1$s,<br>Someone asked for a new password for Stavekontrolden. If it "
+"was not you, please disregard this e-mail.<p>Please click on this link to "
+"create a new password:</p><p><a href=\"%2$s\">%2$s</a></p>"
+msgstr ""
+
+#: frontend/login.php:6
+msgid "Not a valid e-mail address"
+msgstr ""
+
+#: frontend/login.php:14
+msgid "E-mail already registered"
+msgstr ""
+
+#: frontend/login.php:21
+msgid "Welcome to Stavekontrolden!"
+msgstr ""
+
+#: frontend/login.php:53
+msgid "Welcome back to Stavekontrolden!"
+msgstr ""
+
+#: frontend/login.php:55
+msgid "E-mail, username or password was wrong"
+msgstr ""
+
+#: header.php:49 header.php:49
+msgid "Frontpage"
+msgstr ""
+
+#: header.php:52 header.php:52
+msgid "Download"
+msgstr ""
+
+#: header.php:73 footer.php:32 templates/login.php:26 footer.php:32
+#: header.php:73
+msgid "Log in"
+msgstr ""
+
+#: header.php:77 header.php:77
+msgid "My Organization"
+msgstr ""
+
+#: header.php:82 templates/mySystem.php:28 header.php:82
+msgid "My Stavekontrolden"
+msgstr ""
+
+#: header.php:87 header.php:87
+msgid "My User"
+msgstr ""
+
+#: footer.php:19 footer.php:30 footer.php:19 footer.php:30
+msgid "Cookies"
+msgstr ""
+
+#: footer.php:20 footer.php:31 footer.php:20 footer.php:31
+msgid "Contact"
+msgstr ""
+
+#: footer.php:25 footer.php:25
+msgid "Log out"
+msgstr ""
+
+#: footer.php:40 footer.php:40
+msgid "Tournament Managed by stavekontrolden"
+msgstr ""
+
+#: footer.php:70 footer.php:70
+msgid "Login"
+msgstr ""
+
+#: backend/orgUser.php:22 backend/createOrg.php:32 backend/systemUser.php:28
 msgid ""
 "Unable to invite the user. Are you sure a user with that e-mail address "
 "exists?"
 msgstr ""
 
-#: backend/systemUser.php:30 backend/createOrg.php:34 backend/orgUser.php:25
+#: backend/orgUser.php:24 backend/createOrg.php:34 backend/systemUser.php:30
 msgid ""
 "Unable to create the user. A user with that e-mail address might exist "
 "already..."
 msgstr ""
 
-#: backend/get_affixrule.php:72
-msgid "No more affix rules"
+#: backend/orgUser.php:25
+msgid "Wrong command"
 msgstr ""
 
-#: backend/newwords.php:12
-msgid "Uploaded by user"
+#: backend/hunspell.php:17
+msgid "No word given to analyze."
 msgstr ""
 
-#: backend/savefugeelement.php:17 backend/savewordclass.php:17
-msgid "Not saved! You need to provide the name of the word class."
-msgstr ""
-
-#: backend/affixoptions.php:3 templates/words.php:32
-msgid "Yes"
-msgstr ""
-
-#: backend/affixoptions.php:3 templates/words.php:32
-msgid "No"
-msgstr ""
-
-#: backend/saveaffixclass.php:17
-msgid "Not saved! You need to provide a description of the affix class."
-msgstr ""
-
-#: backend/get_wordclass.php:71 backend/get_fugeelement.php:72
+#: backend/get_wordclass.php:83 backend/get_fugeelement.php:84
+#: backend/get_wordclasses.php:70
 msgid "No more word classes"
+msgstr ""
+
+#: backend/createaffixfile.php:80
+msgid "Affix File Created"
+msgstr ""
+
+#: backend/saveword.php:16
+msgid "Not saved! You need to provide both a word and a word class."
 msgstr ""
 
 #: backend/uploadwords.php:18
@@ -74,15 +172,15 @@ msgstr ""
 msgid "The upload went wrong for unknown reasons"
 msgstr ""
 
-#: backend/saveaffixrule.php:17
-msgid "Not saved! You need to provide a description of the affix rule."
+#: backend/get_stems.php:13
+msgid "Use TAB and arrows to select a stem."
 msgstr ""
 
-#: backend/get_singlevalue.php:44
-msgid "No more values"
+#: backend/get_stems.php:20
+msgid "No words found"
 msgstr ""
 
-#: backend/get_affixclass.php:76
+#: backend/get_affixclass.php:76 backend/get_affixclasses.php:73
 msgid "No more affix classes"
 msgstr ""
 
@@ -90,33 +188,85 @@ msgstr ""
 msgid "Something went wrong while saving. Please try again."
 msgstr ""
 
-#: backend/createaffixfile.php:80
-msgid "Affix File Created"
+#: backend/saveaffixclass.php:17
+msgid "Not saved! You need to provide a description of the affix class."
 msgstr ""
 
-#: backend/hunspell.php:17
-msgid "No word given to analyze."
+#: backend/affixoptions.php:3 templates/words.php:32
+msgid "Yes"
 msgstr ""
 
-#: templates/technical_term.php:2
-msgid "<span id=\"numrows\">0</span> Technical Term Categories"
+#: backend/affixoptions.php:3 templates/words.php:32
+msgid "No"
 msgstr ""
 
-#: templates/technical_term.php:3
-msgid "New Technical Term Category"
+#: backend/saveaffixrule.php:17
+msgid "Not saved! You need to provide a description of the affix rule."
 msgstr ""
 
-#: templates/technical_term.php:4
-msgid "Technical Term Category"
+#: backend/get_words.php:75
+msgid "No more words"
+msgstr ""
+
+#: backend/get_singlevalue.php:44
+msgid "No more values"
+msgstr ""
+
+#: backend/savefugeelement.php:17 backend/savewordclass.php:17
+msgid "Not saved! You need to provide the name of the word class."
+msgstr ""
+
+#: backend/get_affixrules.php:70 backend/get_affixrule.php:72
+msgid "No more affix rules"
+msgstr ""
+
+#: backend/newwords.php:12
+msgid "Uploaded by user"
+msgstr ""
+
+#: templates/dictionaries.php:4
+msgid "Dictionaries"
+msgstr ""
+
+#: templates/dictionaries.php:5
+msgid "Produced with Stavekontrolden"
+msgstr ""
+
+#: templates/dictionaries.php:13
+msgid "Language Code"
+msgstr ""
+
+#: templates/dictionaries.php:14
+msgid "OpenOffice/LibreOffice Extension"
+msgstr ""
+
+#: templates/dictionaries.php:15
+msgid "Thunderbird/Firefox Extension"
+msgstr ""
+
+#: templates/dictionaries.php:16
+msgid "Affix file"
+msgstr ""
+
+#: templates/dictionaries.php:17
+msgid "Dictionary file"
+msgstr ""
+
+#: templates/dictionaries.php:18
+msgid "Database tables"
+msgstr ""
+
+#: templates/wordclasstoaffixclass.php:4
+msgid "Word Class to Affix Class"
 msgstr ""
 
 #: templates/orgmasterdata.php:13 templates/myOrganization.php:15
 msgid "Master Data"
 msgstr ""
 
-#: templates/orgmasterdata.php:16 templates/orgusers.php:23
-#: templates/systemusers.php:24 templates/organizations.php:20
-#: templates/organizations.php:43 templates/myUser.php:16
+#: templates/orgmasterdata.php:16 templates/systemusers.php:24
+#: templates/organizations.php:20 templates/organizations.php:43
+#: templates/orgusers.php:23 templates/myUser.php:16
 msgid "Name"
 msgstr ""
 
@@ -137,66 +287,424 @@ msgstr ""
 msgid "This is the direct link to your organization's front page"
 msgstr ""
 
-#: templates/orgmasterdata.php:35 templates/editpage.php:70
-#: templates/version.php:21 templates/myUser.php:47 templates/editCSS.php:14
+#: templates/orgmasterdata.php:35 templates/version.php:21
+#: templates/myUser.php:47 templates/editCSS.php:14 templates/editpage.php:70
 msgid "Finish"
 msgstr ""
 
-#: templates/wordclasstoaffixclass.php:4
-msgid "Word Class to Affix Class"
+#: templates/affixrules.php:8 templates/affixrule.php:8
+msgid "<span id=\"numrows\">0</span> Affix Rules"
 msgstr ""
 
-#: templates/wordclass.php:9
-msgid "<span id=\"numrows\">0</span> Word classes"
+#: templates/affixrules.php:23 templates/affixmodal.php:86
+#: templates/affixmodal.php:142 templates/affixrule.php:23
+#: templates/affixclass.php:25 templates/affixclasses.php:25
+msgid "Description"
 msgstr ""
 
-#: templates/wordclass.php:16
-msgid "New Word Class"
+#: templates/affixrules.php:24 templates/affixmodal.php:151
+#: templates/affixrule.php:24
+msgid "Parent Affix Class"
 msgstr ""
 
-#: templates/wordclass.php:26 templates/words.php:68 templates/words.php:121
-#: templates/affixmodal.php:20
-msgid "Word Class"
+#: templates/affixrules.php:25 templates/affixmodal.php:158
+#: templates/affixrule.php:25
+msgid "Affix"
 msgstr ""
 
-#: templates/wordclass.php:27 templates/fugeelement.php:66
-#: templates/affixmodal.php:28 templates/affixmodal.php:176
-msgid "Associated Affix Classes"
+#: templates/affixrules.php:26 templates/affixrule.php:26
+msgid "Strip characters"
 msgstr ""
 
-#: templates/wordclass.php:28 templates/singlevaluetable.php:22
-#: templates/editpage.php:52 templates/fugeelement.php:32
-#: templates/affixrule.php:31 templates/orgpages.php:28
-#: templates/affixclass.php:29
+#: templates/affixrules.php:27 templates/affixmodal.php:166
+#: templates/affixrule.php:27
+msgid "Condition"
+msgstr ""
+
+#: templates/affixrules.php:28 templates/affixmodal.php:170
+#: templates/affixrule.php:28
+msgid "Replacement"
+msgstr ""
+
+#: templates/affixrules.php:29 templates/affixrule.php:29
+msgid "Morphological description"
+msgstr ""
+
+#: templates/affixrules.php:30 templates/fugeelement.php:31
+#: templates/affixrule.php:30 templates/wordclasses.php:27
+msgid "Corresponding Affix Classes"
+msgstr ""
+
+#: templates/affixrules.php:31 templates/fugeelement.php:32
+#: templates/singlevaluetable.php:22 templates/orgpages.php:28
+#: templates/affixrule.php:31 templates/wordclasses.php:28
+#: templates/affixclass.php:29 templates/affixclasses.php:29
+#: templates/editpage.php:52 templates/wordclass.php:28
 msgid "Delete"
 msgstr ""
 
-#: templates/singlevaluetable.php:50 templates/fugeelement.php:87
-#: templates/words.php:190 templates/affixmodal.php:52
-#: templates/affixmodal.php:109 templates/affixmodal.php:198
+#: templates/affixmodal.php:11
+msgid "Edit Word Class"
+msgstr ""
+
+#: templates/affixmodal.php:11
+msgid "View Word Class"
+msgstr ""
+
+#: templates/affixmodal.php:11
+msgid "Add Word Class"
+msgstr ""
+
+#: templates/affixmodal.php:20 templates/words.php:68 templates/words.php:122
+#: templates/wordclasses.php:26 templates/wordclass.php:26
+msgid "Word Class"
+msgstr ""
+
+#: templates/affixmodal.php:30
+msgid "Let user provide stem to words in this word class"
+msgstr ""
+
+#: templates/affixmodal.php:36 templates/affixmodal.php:184
+#: templates/fugeelement.php:66 templates/wordclass.php:27
+msgid "Associated Affix Classes"
+msgstr ""
+
+#: templates/affixmodal.php:42 templates/affixmodal.php:190
+#: templates/fugeelement.php:72
+msgid "Select Affix Class"
+msgstr ""
+
+#: templates/affixmodal.php:45 templates/fugeelement.php:75
+msgid "Create New Affix Class"
+msgstr ""
+
+#: templates/affixmodal.php:56 templates/affixmodal.php:113
+#: templates/affixmodal.php:202 templates/words.php:194
+#: templates/fugeelement.php:86
+msgid "Cancel"
+msgstr ""
+
+#: templates/affixmodal.php:59 templates/affixmodal.php:116
+#: templates/affixmodal.php:205 templates/words.php:197
+msgid "Save and"
+msgstr ""
+
+#: templates/affixmodal.php:60 templates/affixmodal.php:117
+#: templates/affixmodal.php:206 templates/words.php:198
+#: templates/fugeelement.php:87 templates/singlevaluetable.php:50
 msgid "Previous"
 msgstr ""
 
-#: templates/singlevaluetable.php:51 templates/fugeelement.php:88
-msgid "Save"
+#: templates/affixmodal.php:61 templates/affixmodal.php:118
+#: templates/affixmodal.php:207 templates/words.php:199
+msgid "Close"
 msgstr ""
 
-#: templates/singlevaluetable.php:52 templates/fugeelement.php:89
-#: templates/words.php:192 templates/affixmodal.php:54
-#: templates/affixmodal.php:111 templates/affixmodal.php:200
+#: templates/affixmodal.php:62 templates/affixmodal.php:119
+#: templates/affixmodal.php:208 templates/words.php:200
+#: templates/fugeelement.php:89 templates/singlevaluetable.php:52
 msgid "Next"
 msgstr ""
 
-#: templates/start_definitions.php:2
-msgid "<span id=\"numrows\">0</span> Start Definitions"
+#: templates/affixmodal.php:63
+msgid "New Wordclass"
 msgstr ""
 
-#: templates/start_definitions.php:3
-msgid "New Start Definition"
+#: templates/affixmodal.php:77
+msgid "Edit Affix Class"
 msgstr ""
 
-#: templates/start_definitions.php:4
-msgid "Start Definition"
+#: templates/affixmodal.php:77
+msgid "View Affix Class"
+msgstr ""
+
+#: templates/affixmodal.php:77
+msgid "Add Affix Class"
+msgstr ""
+
+#: templates/affixmodal.php:88
+msgid "Affix Class"
+msgstr ""
+
+#: templates/affixmodal.php:93 templates/affixclass.php:27
+#: templates/affixclasses.php:27
+msgid "Crossproduct"
+msgstr ""
+
+#: templates/affixmodal.php:99
+msgid "Associated Affix Rules"
+msgstr ""
+
+#: templates/affixmodal.php:102
+msgid "Create New Affix Rule"
+msgstr ""
+
+#: templates/affixmodal.php:120 templates/affixclass.php:15
+#: templates/affixclasses.php:15
+msgid "New Affix Class"
+msgstr ""
+
+#: templates/affixmodal.php:133
+msgid "Edit Affix Rule"
+msgstr ""
+
+#: templates/affixmodal.php:133
+msgid "View Affix Rule"
+msgstr ""
+
+#: templates/affixmodal.php:133
+msgid "Add Affix Rule"
+msgstr ""
+
+#: templates/affixmodal.php:162
+msgid "Strip Characters"
+msgstr ""
+
+#: templates/affixmodal.php:176 templates/adminmenu.php:14
+#: templates/morphdescr.php:4
+msgid "Morphological Description"
+msgstr ""
+
+#: templates/affixmodal.php:209
+msgid "New Affix Rule"
+msgstr ""
+
+#: templates/hunspell.php:4
+msgid "Analyze using latest version of the dictionary"
+msgstr ""
+
+#: templates/hunspell.php:9
+msgid "Enter one or more words"
+msgstr ""
+
+#: templates/hunspell.php:13
+msgid "Analyze"
+msgstr ""
+
+#: templates/hunspell.php:17
+msgid "Spellcheck"
+msgstr ""
+
+#: templates/hunspell.php:20
+msgid "Analyze!"
+msgstr ""
+
+#: templates/hunspell.php:24
+msgid "Result"
+msgstr ""
+
+#: templates/words.php:39
+msgid "<span id=\"numrows\">0</span> Words"
+msgstr ""
+
+#: templates/words.php:46
+msgid "Hide details"
+msgstr ""
+
+#: templates/words.php:46
+msgid "Show details"
+msgstr ""
+
+#: templates/words.php:47
+msgid "Hide log"
+msgstr ""
+
+#: templates/words.php:47
+msgid "Show log"
+msgstr ""
+
+#: templates/words.php:51
+msgid "New Word"
+msgstr ""
+
+#: templates/words.php:58
+msgid ""
+"Click on the word to edit all values. Click on a value to edit directly. Use "
+"Shift+Arrows or TAB to move between values. Cancel with Esc key."
+msgstr ""
+
+#: templates/words.php:66 templates/words.php:109
+msgid "Word"
+msgstr ""
+
+#: templates/words.php:67 templates/words.php:115
+msgid "Status"
+msgstr ""
+
+#: templates/words.php:69 templates/words.php:126
+msgid "Stem"
+msgstr ""
+
+#: templates/words.php:70 templates/words.php:135
+msgid "Strong Declension"
+msgstr ""
+
+#: templates/words.php:71 templates/words.php:139
+msgid "Misspellings"
+msgstr ""
+
+#: templates/words.php:72 templates/fugeelement.php:30
+#: templates/fugeelement.php:58
+msgid "Fuge Element"
+msgstr ""
+
+#: templates/words.php:74 templates/words.php:182
+msgid "Contributor"
+msgstr ""
+
+#: templates/words.php:75 templates/words.php:186
+msgid "Last User"
+msgstr ""
+
+#: templates/words.php:76 templates/words.php:155
+msgid "Word Definition"
+msgstr ""
+
+#: templates/words.php:77 templates/words.php:164
+msgid "Comments"
+msgstr ""
+
+#: templates/words.php:78 templates/words.php:149
+msgid "Technical Term"
+msgstr ""
+
+#: templates/words.php:79
+msgid "Omit Suggestion"
+msgstr ""
+
+#: templates/words.php:80 templates/systemusers.php:29
+#: templates/orgusers.php:27
+msgid "Last Change"
+msgstr ""
+
+#: templates/words.php:83 templates/words.php:178
+msgid "Log"
+msgstr ""
+
+#: templates/words.php:100
+msgid "Edit Word"
+msgstr ""
+
+#: templates/words.php:100
+msgid "Add Word"
+msgstr ""
+
+#: templates/words.php:145
+msgid "Fugelement"
+msgstr ""
+
+#: templates/words.php:159
+msgid "Alternatives"
+msgstr ""
+
+#: templates/words.php:172
+msgid "Omit this word from suggestions"
+msgstr ""
+
+#: templates/words.php:201
+msgid "New word"
+msgstr ""
+
+#: templates/login.php:6
+msgid "The hunspell companion."
+msgstr ""
+
+#: templates/login.php:12
+msgid "Session timed out. Log in again"
+msgstr ""
+
+#: templates/login.php:13
+msgid "Give us your e-mail and a password"
+msgstr ""
+
+#: templates/login.php:17 templates/newpass.php:15
+msgid "Email address"
+msgstr ""
+
+#: templates/login.php:18 templates/login.php:19
+msgid "Email address or Username"
+msgstr ""
+
+#: templates/login.php:20 templates/login.php:21 templates/newpass.php:17
+#: templates/myUser.php:29
+msgid "Password"
+msgstr ""
+
+#: templates/login.php:23
+msgid "Remember me"
+msgstr ""
+
+#: templates/login.php:25
+msgid "Sign up"
+msgstr ""
+
+#: templates/login.php:27
+msgid "Forgot your password? Click here to create a new one."
+msgstr ""
+
+#: templates/fugeelement.php:13
+msgid "<span id=\"numrows\">0</span> Fuge Elements"
+msgstr ""
+
+#: templates/fugeelement.php:20
+msgid "New Fuge Element"
+msgstr ""
+
+#: templates/fugeelement.php:49
+msgid "Edit Fuge Element"
+msgstr ""
+
+#: templates/fugeelement.php:49
+msgid "Add Fuge Element"
+msgstr ""
+
+#: templates/fugeelement.php:88 templates/singlevaluetable.php:51
+msgid "Save"
+msgstr ""
+
+#: templates/mySystem.php:16 templates/organizations.php:16
+msgid "Organizations"
+msgstr ""
+
+#: templates/mySystem.php:19 templates/myOrganization.php:30
+#: templates/organizations.php:24 templates/organizations.php:31
+msgid "Users"
+msgstr ""
+
+#: templates/systemusers.php:19
+msgid "Stavekontrolden Users"
+msgstr ""
+
+#: templates/systemusers.php:23
+msgid "User-id"
+msgstr ""
+
+#: templates/systemusers.php:25 templates/orgusers.php:24
+#: templates/orgusers.php:46 templates/myUser.php:20
+msgid "Username"
+msgstr ""
+
+#: templates/systemusers.php:26 templates/orgusers.php:25
+#: templates/orgusers.php:48 templates/myUser.php:24
+msgid "E-mail"
+msgstr ""
+
+#: templates/systemusers.php:27
+msgid "Organization"
+msgstr ""
+
+#: templates/systemusers.php:28 templates/orgusers.php:26
+msgid "Permissions"
+msgstr ""
+
+#: templates/systemusers.php:30 templates/systemusers.php:36
+#: templates/organizations.php:25 templates/organizations.php:31
+#: templates/orgusers.php:28 templates/orgusers.php:34
+msgid "Remove"
+msgstr ""
+
+#: templates/systemusers.php:36
+msgid "New password"
 msgstr ""
 
 #: templates/contact.php:5
@@ -205,9 +713,9 @@ msgstr ""
 
 #: templates/contact.php:6
 msgid ""
-"Stavekontrolden is free and open software. Find the source at <a href="
-"\"https://github.com/jeppebundsgaard/stavekontrolden/\">GitHub</a>. Use it "
-"at your own risk."
+"Stavekontrolden is free and open software. Find the source at <a "
+"href=\"https://github.com/jeppebundsgaard/stavekontrolden/\">GitHub</a>. Use "
+"it at your own risk."
 msgstr ""
 
 #: templates/contact.php:7
@@ -230,8 +738,351 @@ msgstr ""
 msgid "Attributions and Licences"
 msgstr ""
 
-#: templates/editpage.php:11 templates/myOrganization.php:24
+#: templates/uploadwords.php:4
+msgid "Thank you so much!"
+msgstr ""
+
+#: templates/uploadwords.php:5
+msgid ""
+"We will start processing the words. If you want to be part of that work, "
+"please get in contact!"
+msgstr ""
+
+#: templates/uploadwords.php:10
+msgid "We had all the words"
+msgstr ""
+
+#: templates/uploadwords.php:11
+msgid ""
+"Thank you for taking the time to upload your words. We didn't find any words "
+"not in our dictionary already. You can download the latest version of the "
+"spellchecker on the Dictionary page."
+msgstr ""
+
+#: templates/uploadwords.php:16 templates/adminmenu.php:23
+msgid "Give us your words"
+msgstr ""
+
+#: templates/uploadwords.php:17
+msgid ""
+"Upload document or text files (.odt, .txt), markup files "
+"(.html, .sgml, .xml), or typesetting files (.tex, .latex, .nroff, .troff)"
+msgstr ""
+
+#: templates/uploadwords.php:18
+msgid ""
+"It is okay if the document includes words already in the dictionary; they "
+"will be filtered out.<br>It is also okay if the document includes words that "
+"you don't think should be included. You will get the opportunity to edit the "
+"words after upload."
+msgstr ""
+
+#: templates/uploadwords.php:25
+msgid "Choose the file to upload"
+msgstr ""
+
+#: templates/uploadwords.php:26
+msgid "Uploading ..."
+msgstr ""
+
+#: templates/uploadwords.php:34
+msgid "Prepare for inclusion"
+msgstr ""
+
+#: templates/uploadwords.php:35
+msgid ""
+"Please help us by editing the words before final inclusion into the database."
+msgstr ""
+
+#: templates/uploadwords.php:37
+msgid "Change all uppercase words which are not names, to lowercase."
+msgstr ""
+
+#: templates/uploadwords.php:38
+msgid "Reduce all words to their basic form (stem)"
+msgstr ""
+
+#: templates/uploadwords.php:39
+msgid ""
+"Remove doublets, and other words you don't think should be included in the "
+"database."
+msgstr ""
+
+#: templates/uploadwords.php:40
+msgid ""
+"When you think, you are done, hit the <i>'Send to further processing'</i> "
+"button."
+msgstr ""
+
+#: templates/uploadwords.php:49
+msgid "Send to further processing"
+msgstr ""
+
+#: templates/myOrganization.php:18 templates/version.php:14
+msgid "Version"
+msgstr ""
+
+#: templates/myOrganization.php:21
+msgid "Stylesheet"
+msgstr ""
+
+#: templates/myOrganization.php:24 templates/editpage.php:11
 msgid "Front Page"
+msgstr ""
+
+#: templates/myOrganization.php:27
+msgid "Create/Edit Pages"
+msgstr ""
+
+#: templates/orgpages.php:11
+msgid "Pages"
+msgstr ""
+
+#: templates/orgpages.php:15
+msgid "New Page"
+msgstr ""
+
+#: templates/orgpages.php:25
+msgid "Title"
+msgstr ""
+
+#: templates/orgpages.php:26
+msgid "Edit"
+msgstr ""
+
+#: templates/orgpages.php:27
+msgid "Move"
+msgstr ""
+
+#: templates/start_definitions.php:2
+msgid "<span id=\"numrows\">0</span> Start Definitions"
+msgstr ""
+
+#: templates/start_definitions.php:3
+msgid "New Start Definition"
+msgstr ""
+
+#: templates/start_definitions.php:4
+msgid "Start Definition"
+msgstr ""
+
+#: templates/unaccepted_word.php:2
+msgid "<span id=\"numrows\">0</span> Unaccepted Words"
+msgstr ""
+
+#: templates/unaccepted_word.php:3
+msgid "New Unaccepted Word"
+msgstr ""
+
+#: templates/unaccepted_word.php:4
+msgid "Unaccepted Word"
+msgstr ""
+
+#: templates/organizations.php:21 templates/organizations.php:45
+msgid "Language"
+msgstr ""
+
+#: templates/organizations.php:23
+msgid "Url"
+msgstr ""
+
+#: templates/organizations.php:38 templates/organizations.php:52
+msgid "Create Organization"
+msgstr ""
+
+#: templates/organizations.php:49
+msgid "URL (shortname)"
+msgstr ""
+
+#: templates/orgusers.php:19
+msgid "Users in the organization"
+msgstr ""
+
+#: templates/orgusers.php:41 templates/orgusers.php:53
+msgid "Invite user"
+msgstr ""
+
+#: templates/orgusers.php:50
+msgid ""
+"Invite existing users by username or e-mail. The user will have instant "
+"access to your organization."
+msgstr ""
+
+#: templates/orgusers.php:51
+msgid "Only needed if you create a new user"
+msgstr ""
+
+#: templates/orgusers.php:52
+msgid "You only need to provide a password if you create a new user."
+msgstr ""
+
+#: templates/orgusers.php:53
+msgid "Create user"
+msgstr ""
+
+#: templates/statusalternatives.php:4
+msgid "Status Alternatives"
+msgstr ""
+
+#: templates/newpass.php:5
+msgid "The link has expired. We can send you a new one."
+msgstr ""
+
+#: templates/newpass.php:11
+msgid "Create a new password!"
+msgstr ""
+
+#: templates/newpass.php:16
+msgid "New Password"
+msgstr ""
+
+#: templates/newpass.php:20
+msgid "Update"
+msgstr ""
+
+#: templates/adminmenu.php:8
+msgid "Process Words"
+msgstr ""
+
+#: templates/adminmenu.php:10
+msgid "Word Classes"
+msgstr ""
+
+#: templates/adminmenu.php:11
+msgid "Affix Classes"
+msgstr ""
+
+#: templates/adminmenu.php:12
+msgid "Affix Rules"
+msgstr ""
+
+#: templates/adminmenu.php:13
+msgid "Fuge Elements"
+msgstr ""
+
+#: templates/adminmenu.php:15
+msgid "Start Definitions"
+msgstr ""
+
+#: templates/adminmenu.php:16
+msgid "Technical Terms"
+msgstr ""
+
+#: templates/adminmenu.php:17
+msgid "Unaccepted Words"
+msgstr ""
+
+#: templates/adminmenu.php:20
+msgid "Create Dictionary"
+msgstr ""
+
+#: templates/adminmenu.php:24
+msgid "Analyze words"
+msgstr ""
+
+#: templates/adminmenu.php:30
+msgid "Download the manual ..."
+msgstr ""
+
+#: templates/wordclasses.php:9 templates/wordclass.php:9
+msgid "<span id=\"numrows\">0</span> Word classes"
+msgstr ""
+
+#: templates/wordclasses.php:16 templates/wordclass.php:16
+msgid "New Word Class"
+msgstr ""
+
+#: templates/version.php:17
+msgid "Change Version Number"
+msgstr ""
+
+#: templates/myUser.php:14
+msgid "User Data"
+msgstr ""
+
+#: templates/myUser.php:26
+msgid ""
+"You are welcome to change your e-mail. Please remember to use the new "
+"address for login in the future."
+msgstr ""
+
+#: templates/myUser.php:30
+msgid "Unchanged"
+msgstr ""
+
+#: templates/myUser.php:34
+msgid "Organization:"
+msgstr ""
+
+#: templates/myUser.php:37
+msgid "Stay"
+msgstr ""
+
+#: templates/myUser.php:41
+msgid "Remove me!"
+msgstr ""
+
+#: templates/myUser.php:43
+msgid ""
+"If you remove yourself from the organization, you need someone to re-invite "
+"you, before you can come back."
+msgstr ""
+
+#: templates/createdic.php:4
+msgid "Creating Dictionary & Affix-file"
+msgstr ""
+
+#: templates/morphdescr.php:2
+msgid "<span id=\"numrows\">0</span> Morphological Descriptions"
+msgstr ""
+
+#: templates/morphdescr.php:3
+msgid "New Morphological Description"
+msgstr ""
+
+#: templates/affixclass.php:8 templates/affixclasses.php:8
+msgid "<span id=\"numrows\">0</span> Affix Classes"
+msgstr ""
+
+#: templates/affixclass.php:26 templates/affixclasses.php:26
+msgid "Type"
+msgstr ""
+
+#: templates/affixclass.php:28 templates/affixclasses.php:28
+msgid "Corresponding Affix Rules"
+msgstr ""
+
+#: templates/editCSS.php:15
+msgid "Use changes"
+msgstr ""
+
+#: templates/cookies.php:5
+msgid "We don't track you!"
+msgstr ""
+
+#: templates/cookies.php:6
+msgid "We use cookies to remember your choices."
+msgstr ""
+
+#: templates/cookies.php:7
+msgid ""
+"Cookies are small files which the browser saves on your device to make it "
+"possible to remember the settings from one page view to the next."
+msgstr ""
+
+#: templates/cookies.php:7
+msgid ""
+"We only use cookies to remember the choices you made. We don't share "
+"anything with anyone else."
+msgstr ""
+
+#: templates/cookies.php:7
+msgid ""
+"If you have questions about this or anything else, please write an email to"
+msgstr ""
+
+#: templates/orgsettings.php:13
+msgid "Standard Settings"
 msgstr ""
 
 #: templates/editpage.php:11
@@ -294,380 +1145,16 @@ msgstr ""
 msgid "Add header"
 msgstr ""
 
-#: templates/login.php:6
-msgid "The hunspell companion."
+#: templates/technical_term.php:2
+msgid "<span id=\"numrows\">0</span> Technical Term Categories"
 msgstr ""
 
-#: templates/login.php:12
-msgid "Session timed out. Log in again"
+#: templates/technical_term.php:3
+msgid "New Technical Term Category"
 msgstr ""
 
-#: templates/login.php:13
-msgid "Give us your e-mail and a password"
-msgstr ""
-
-#: templates/login.php:17 templates/newpass.php:15
-msgid "Email address"
-msgstr ""
-
-#: templates/login.php:18 templates/login.php:19
-msgid "Email address or Username"
-msgstr ""
-
-#: templates/login.php:20 templates/login.php:21 templates/newpass.php:17
-#: templates/myUser.php:29
-msgid "Password"
-msgstr ""
-
-#: templates/login.php:23
-msgid "Remember me"
-msgstr ""
-
-#: templates/login.php:25
-msgid "Sign up"
-msgstr ""
-
-#: templates/login.php:26 header.php:71 footer.php:32 footer.php:32
-#: header.php:71
-msgid "Log in"
-msgstr ""
-
-#: templates/login.php:27
-msgid "Forgot your password? Click here to create a new one."
-msgstr ""
-
-#: templates/orgusers.php:19
-msgid "Users in the organization"
-msgstr ""
-
-#: templates/orgusers.php:24 templates/orgusers.php:46
-#: templates/systemusers.php:25 templates/myUser.php:20
-msgid "Username"
-msgstr ""
-
-#: templates/orgusers.php:25 templates/orgusers.php:48
-#: templates/systemusers.php:26 templates/myUser.php:24
-msgid "E-mail"
-msgstr ""
-
-#: templates/orgusers.php:26 templates/systemusers.php:28
-msgid "Permissions"
-msgstr ""
-
-#: templates/orgusers.php:27 templates/systemusers.php:29
-#: templates/words.php:79
-msgid "Last Change"
-msgstr ""
-
-#: templates/orgusers.php:28 templates/orgusers.php:34
-#: templates/systemusers.php:30 templates/systemusers.php:36
-#: templates/organizations.php:25 templates/organizations.php:31
-msgid "Remove"
-msgstr ""
-
-#: templates/orgusers.php:41 templates/orgusers.php:53
-msgid "Invite user"
-msgstr ""
-
-#: templates/orgusers.php:50
-msgid ""
-"Invite existing users by username or e-mail. The user will have instant "
-"access to your organization."
-msgstr ""
-
-#: templates/orgusers.php:51
-msgid "Only needed if you create a new user"
-msgstr ""
-
-#: templates/orgusers.php:52
-msgid "You only need to provide a password if you create a new user."
-msgstr ""
-
-#: templates/orgusers.php:53
-msgid "Create user"
-msgstr ""
-
-#: templates/statusalternatives.php:4
-msgid "Status Alternatives"
-msgstr ""
-
-#: templates/fugeelement.php:13
-msgid "<span id=\"numrows\">0</span> Fuge Elements"
-msgstr ""
-
-#: templates/fugeelement.php:20
-msgid "New Fuge Element"
-msgstr ""
-
-#: templates/fugeelement.php:30 templates/fugeelement.php:58
-#: templates/words.php:71
-msgid "Fuge Element"
-msgstr ""
-
-#: templates/fugeelement.php:31 templates/affixrule.php:30
-msgid "Corresponding Affix Classes"
-msgstr ""
-
-#: templates/fugeelement.php:49
-msgid "Edit Fuge Element"
-msgstr ""
-
-#: templates/fugeelement.php:49
-msgid "Add Fuge Element"
-msgstr ""
-
-#: templates/fugeelement.php:72 templates/affixmodal.php:34
-#: templates/affixmodal.php:182
-msgid "Select Affix Class"
-msgstr ""
-
-#: templates/fugeelement.php:75 templates/affixmodal.php:37
-msgid "Create New Affix Class"
-msgstr ""
-
-#: templates/fugeelement.php:86 templates/words.php:186
-#: templates/affixmodal.php:48 templates/affixmodal.php:105
-#: templates/affixmodal.php:194
-msgid "Cancel"
-msgstr ""
-
-#: templates/systemusers.php:19
-msgid "Stavekontrolden Users"
-msgstr ""
-
-#: templates/systemusers.php:23
-msgid "User-id"
-msgstr ""
-
-#: templates/systemusers.php:27
-msgid "Organization"
-msgstr ""
-
-#: templates/systemusers.php:36
-msgid "New password"
-msgstr ""
-
-#: templates/version.php:14 templates/myOrganization.php:18
-msgid "Version"
-msgstr ""
-
-#: templates/version.php:17
-msgid "Change Version Number"
-msgstr ""
-
-#: templates/cookies.php:5
-msgid "We don't track you!"
-msgstr ""
-
-#: templates/cookies.php:6
-msgid "We use cookies to remember your choices."
-msgstr ""
-
-#: templates/cookies.php:7
-msgid ""
-"Cookies are small files which the browser saves on your device to make it "
-"possible to remember the settings from one page view to the next."
-msgstr ""
-
-#: templates/cookies.php:7
-msgid ""
-"We only use cookies to remember the choices you made. We don't share "
-"anything with anyone else."
-msgstr ""
-
-#: templates/cookies.php:7
-msgid ""
-"If you have questions about this or anything else, please write an email to"
-msgstr ""
-
-#: templates/createdic.php:4
-msgid "Creating Dictionary & Affix-file"
-msgstr ""
-
-#: templates/filtersettings.php:4
-msgid "Show"
-msgstr ""
-
-#: templates/filtersettings.php:8
-msgid "In word"
-msgstr ""
-
-#: templates/filtersettings.php:8
-msgid "Beginning of word"
-msgstr ""
-
-#: templates/filtersettings.php:8
-msgid "End of word"
-msgstr ""
-
-#: templates/filtersettings.php:8
-msgid "Strict"
-msgstr ""
-
-#: templates/filtersettings.php:18
-msgid "Search"
-msgstr ""
-
-#: templates/morphdescr.php:2
-msgid "<span id=\"numrows\">0</span> Morphological Descriptions"
-msgstr ""
-
-#: templates/morphdescr.php:3
-msgid "New Morphological Description"
-msgstr ""
-
-#: templates/morphdescr.php:4 templates/adminmenu.php:14
-#: templates/affixmodal.php:168
-msgid "Morphological Description"
-msgstr ""
-
-#: templates/words.php:39
-msgid "<span id=\"numrows\">0</span> Words"
-msgstr ""
-
-#: templates/words.php:46
-msgid "Hide details"
-msgstr ""
-
-#: templates/words.php:46
-msgid "Show details"
-msgstr ""
-
-#: templates/words.php:47
-msgid "Hide log"
-msgstr ""
-
-#: templates/words.php:47
-msgid "Show log"
-msgstr ""
-
-#: templates/words.php:51
-msgid "New Word"
-msgstr ""
-
-#: templates/words.php:58
-msgid ""
-"Click on the word to edit all values. Click on a value to edit directly. Use "
-"Shift+Arrows or TAB to move between values. Cancel with Esc key."
-msgstr ""
-
-#: templates/words.php:66 templates/words.php:108
-msgid "Word"
-msgstr ""
-
-#: templates/words.php:67 templates/words.php:114
-msgid "Status"
-msgstr ""
-
-#: templates/words.php:69 templates/words.php:127
-msgid "Strong Declension"
-msgstr ""
-
-#: templates/words.php:70 templates/words.php:131
-msgid "Misspellings"
-msgstr ""
-
-#: templates/words.php:73 templates/words.php:174
-msgid "Contributor"
-msgstr ""
-
-#: templates/words.php:74 templates/words.php:178
-msgid "Last User"
-msgstr ""
-
-#: templates/words.php:75 templates/words.php:147
-msgid "Word Definition"
-msgstr ""
-
-#: templates/words.php:76 templates/words.php:156
-msgid "Comments"
-msgstr ""
-
-#: templates/words.php:77 templates/words.php:141
-msgid "Technical Term"
-msgstr ""
-
-#: templates/words.php:78
-msgid "Omit Suggestion"
-msgstr ""
-
-#: templates/words.php:82 templates/words.php:170
-msgid "Log"
-msgstr ""
-
-#: templates/words.php:99
-msgid "Edit Word"
-msgstr ""
-
-#: templates/words.php:99
-msgid "Add Word"
-msgstr ""
-
-#: templates/words.php:137
-msgid "Fugelement"
-msgstr ""
-
-#: templates/words.php:151
-msgid "Alternatives"
-msgstr ""
-
-#: templates/words.php:164
-msgid "Omit this word from suggestions"
-msgstr ""
-
-#: templates/words.php:189 templates/affixmodal.php:51
-#: templates/affixmodal.php:108 templates/affixmodal.php:197
-msgid "Save and"
-msgstr ""
-
-#: templates/words.php:191 templates/affixmodal.php:53
-#: templates/affixmodal.php:110 templates/affixmodal.php:199
-msgid "Close"
-msgstr ""
-
-#: templates/words.php:193
-msgid "New word"
-msgstr ""
-
-#: templates/myOrganization.php:21
-msgid "Stylesheet"
-msgstr ""
-
-#: templates/myOrganization.php:27
-msgid "Create/Edit Pages"
-msgstr ""
-
-#: templates/myOrganization.php:30 templates/mySystem.php:19
-#: templates/organizations.php:24 templates/organizations.php:31
-msgid "Users"
-msgstr ""
-
-#: templates/dictionaries.php:4
-msgid "Dictionaries"
-msgstr ""
-
-#: templates/dictionaries.php:5
-msgid "Produced with Stavekontrolden"
-msgstr ""
-
-#: templates/dictionaries.php:13
-msgid "Language Code"
-msgstr ""
-
-#: templates/dictionaries.php:14
-msgid "OpenOffice/LibreOffice Extension"
-msgstr ""
-
-#: templates/dictionaries.php:15
-msgid "Affix file"
-msgstr ""
-
-#: templates/dictionaries.php:16
-msgid "Dictionary file"
-msgstr ""
-
-#: templates/dictionaries.php:17
-msgid "Database tables"
+#: templates/technical_term.php:4
+msgid "Technical Term Category"
 msgstr ""
 
 #: templates/wordstatus.php:2
@@ -680,457 +1167,4 @@ msgstr ""
 
 #: templates/wordstatus.php:4
 msgid "Status Value"
-msgstr ""
-
-#: templates/affixrule.php:8
-msgid "<span id=\"numrows\">0</span> Affix Rules"
-msgstr ""
-
-#: templates/affixrule.php:23 templates/affixclass.php:25
-#: templates/affixmodal.php:78 templates/affixmodal.php:134
-msgid "Description"
-msgstr ""
-
-#: templates/affixrule.php:24 templates/affixmodal.php:143
-msgid "Parent Affix Class"
-msgstr ""
-
-#: templates/affixrule.php:25 templates/affixmodal.php:150
-msgid "Affix"
-msgstr ""
-
-#: templates/affixrule.php:26
-msgid "Strip characters"
-msgstr ""
-
-#: templates/affixrule.php:27 templates/affixmodal.php:158
-msgid "Condition"
-msgstr ""
-
-#: templates/affixrule.php:28 templates/affixmodal.php:162
-msgid "Replacement"
-msgstr ""
-
-#: templates/affixrule.php:29
-msgid "Morphological description"
-msgstr ""
-
-#: templates/newpass.php:5
-msgid "The link has expired. We can send you a new one."
-msgstr ""
-
-#: templates/newpass.php:11
-msgid "Create a new password!"
-msgstr ""
-
-#: templates/newpass.php:16
-msgid "New Password"
-msgstr ""
-
-#: templates/newpass.php:20
-msgid "Update"
-msgstr ""
-
-#: templates/uploadwords.php:4
-msgid "Thank you so much!"
-msgstr ""
-
-#: templates/uploadwords.php:5
-msgid ""
-"We will start processing the words. If you want to be part of that work, "
-"please get in contact!"
-msgstr ""
-
-#: templates/uploadwords.php:10
-msgid "We had all the words"
-msgstr ""
-
-#: templates/uploadwords.php:11
-msgid ""
-"Thank you for taking the time to upload your words. We didn't find any words "
-"not in our dictionary already. You can download the latest version of the "
-"spellchecker on the Dictionary page."
-msgstr ""
-
-#: templates/uploadwords.php:16 templates/adminmenu.php:23
-msgid "Give us your words"
-msgstr ""
-
-#: templates/uploadwords.php:17
-msgid ""
-"Upload document or text files (.odt, .txt), markup files (.html, .sgml, ."
-"xml), or typesetting files (.tex, .latex, .nroff, .troff)"
-msgstr ""
-
-#: templates/uploadwords.php:18
-msgid ""
-"It is okay if the document includes words already in the dictionary; they "
-"will be filtered out.<br>It is also okay if the document includes words that "
-"you don't think should be included. You will get the opportunity to edit the "
-"words after upload."
-msgstr ""
-
-#: templates/uploadwords.php:25
-msgid "Choose the file to upload"
-msgstr ""
-
-#: templates/uploadwords.php:26
-msgid "Uploading ..."
-msgstr ""
-
-#: templates/uploadwords.php:34
-msgid "Prepare for inclusion"
-msgstr ""
-
-#: templates/uploadwords.php:35
-msgid ""
-"Please help us by editing the words before final inclusion into the database."
-msgstr ""
-
-#: templates/uploadwords.php:37
-msgid "Change all uppercase words which are not names, to lowercase."
-msgstr ""
-
-#: templates/uploadwords.php:38
-msgid "Reduce all words to their basic form (stem)"
-msgstr ""
-
-#: templates/uploadwords.php:39
-msgid ""
-"Remove doublets, and other words you don't think should be included in the "
-"database."
-msgstr ""
-
-#: templates/uploadwords.php:40
-msgid ""
-"When you think, you are done, hit the <i>'Send to further processing'</i> "
-"button."
-msgstr ""
-
-#: templates/uploadwords.php:49
-msgid "Send to further processing"
-msgstr ""
-
-#: templates/mySystem.php:16 templates/organizations.php:16
-msgid "Organizations"
-msgstr ""
-
-#: templates/mySystem.php:28 header.php:80 header.php:80
-msgid "My Stavekontrolden"
-msgstr ""
-
-#: templates/organizations.php:21 templates/organizations.php:45
-msgid "Language"
-msgstr ""
-
-#: templates/organizations.php:23
-msgid "Url"
-msgstr ""
-
-#: templates/organizations.php:38 templates/organizations.php:52
-msgid "Create Organization"
-msgstr ""
-
-#: templates/organizations.php:49
-msgid "URL (shortname)"
-msgstr ""
-
-#: templates/adminmenu.php:8
-msgid "Process Words"
-msgstr ""
-
-#: templates/adminmenu.php:10
-msgid "Word Classes"
-msgstr ""
-
-#: templates/adminmenu.php:11
-msgid "Affix Classes"
-msgstr ""
-
-#: templates/adminmenu.php:12
-msgid "Affix Rules"
-msgstr ""
-
-#: templates/adminmenu.php:13
-msgid "Fuge Elements"
-msgstr ""
-
-#: templates/adminmenu.php:15
-msgid "Start Definitions"
-msgstr ""
-
-#: templates/adminmenu.php:16
-msgid "Technical Terms"
-msgstr ""
-
-#: templates/adminmenu.php:17
-msgid "Unaccepted Words"
-msgstr ""
-
-#: templates/adminmenu.php:20
-msgid "Create Dictionary"
-msgstr ""
-
-#: templates/adminmenu.php:24
-msgid "Analyze words"
-msgstr ""
-
-#: templates/adminmenu.php:30
-msgid "Download the manual ..."
-msgstr ""
-
-#: templates/orgpages.php:11
-msgid "Pages"
-msgstr ""
-
-#: templates/orgpages.php:15
-msgid "New Page"
-msgstr ""
-
-#: templates/orgpages.php:25
-msgid "Title"
-msgstr ""
-
-#: templates/orgpages.php:26
-msgid "Edit"
-msgstr ""
-
-#: templates/orgpages.php:27
-msgid "Move"
-msgstr ""
-
-#: templates/unaccepted_word.php:2
-msgid "<span id=\"numrows\">0</span> Unaccepted Words"
-msgstr ""
-
-#: templates/unaccepted_word.php:3
-msgid "New Unaccepted Word"
-msgstr ""
-
-#: templates/unaccepted_word.php:4
-msgid "Unaccepted Word"
-msgstr ""
-
-#: templates/orgsettings.php:13
-msgid "Standard Settings"
-msgstr ""
-
-#: templates/hunspell.php:4
-msgid "Analyze using latest version of the dictionary"
-msgstr ""
-
-#: templates/hunspell.php:9
-msgid "Enter one or more words"
-msgstr ""
-
-#: templates/hunspell.php:13
-msgid "Analyze"
-msgstr ""
-
-#: templates/hunspell.php:17
-msgid "Spellcheck"
-msgstr ""
-
-#: templates/hunspell.php:20
-msgid "Analyze!"
-msgstr ""
-
-#: templates/hunspell.php:24
-msgid "Result"
-msgstr ""
-
-#: templates/affixclass.php:8
-msgid "<span id=\"numrows\">0</span> Affix Classes"
-msgstr ""
-
-#: templates/affixclass.php:15 templates/affixmodal.php:112
-msgid "New Affix Class"
-msgstr ""
-
-#: templates/affixclass.php:26
-msgid "Type"
-msgstr ""
-
-#: templates/affixclass.php:27 templates/affixmodal.php:85
-msgid "Crossproduct"
-msgstr ""
-
-#: templates/affixclass.php:28
-msgid "Corresponding Affix Rules"
-msgstr ""
-
-#: templates/myUser.php:14
-msgid "User Data"
-msgstr ""
-
-#: templates/myUser.php:26
-msgid ""
-"You are welcome to change your e-mail. Please remember to use the new "
-"address for login in the future."
-msgstr ""
-
-#: templates/myUser.php:30
-msgid "Unchanged"
-msgstr ""
-
-#: templates/myUser.php:34
-msgid "Organization:"
-msgstr ""
-
-#: templates/myUser.php:37
-msgid "Stay"
-msgstr ""
-
-#: templates/myUser.php:41
-msgid "Remove me!"
-msgstr ""
-
-#: templates/myUser.php:43
-msgid ""
-"If you remove yourself from the organization, you need someone to re-invite "
-"you, before you can come back."
-msgstr ""
-
-#: templates/affixmodal.php:11
-msgid "Edit Word Class"
-msgstr ""
-
-#: templates/affixmodal.php:11
-msgid "View Word Class"
-msgstr ""
-
-#: templates/affixmodal.php:11
-msgid "Add Word Class"
-msgstr ""
-
-#: templates/affixmodal.php:55
-msgid "New Wordclass"
-msgstr ""
-
-#: templates/affixmodal.php:69
-msgid "Edit Affix Class"
-msgstr ""
-
-#: templates/affixmodal.php:69
-msgid "View Affix Class"
-msgstr ""
-
-#: templates/affixmodal.php:69
-msgid "Add Affix Class"
-msgstr ""
-
-#: templates/affixmodal.php:80
-msgid "Affix Class"
-msgstr ""
-
-#: templates/affixmodal.php:91
-msgid "Associated Affix Rules"
-msgstr ""
-
-#: templates/affixmodal.php:94
-msgid "Create New Affix Rule"
-msgstr ""
-
-#: templates/affixmodal.php:125
-msgid "Edit Affix Rule"
-msgstr ""
-
-#: templates/affixmodal.php:125
-msgid "View Affix Rule"
-msgstr ""
-
-#: templates/affixmodal.php:125
-msgid "Add Affix Rule"
-msgstr ""
-
-#: templates/affixmodal.php:154
-msgid "Strip Characters"
-msgstr ""
-
-#: templates/affixmodal.php:201
-msgid "New Affix Rule"
-msgstr ""
-
-#: templates/editCSS.php:15
-msgid "Use changes"
-msgstr ""
-
-#: header.php:47 header.php:47
-msgid "Frontpage"
-msgstr ""
-
-#: header.php:50 header.php:50
-msgid "Download"
-msgstr ""
-
-#: header.php:75 header.php:75
-msgid "My Organization"
-msgstr ""
-
-#: header.php:85 header.php:85
-msgid "My User"
-msgstr ""
-
-#: index.php:34 index.php:34
-msgid "Error: No organization with that name"
-msgstr ""
-
-#: frontend/login.php:6
-msgid "Not a valid e-mail address"
-msgstr ""
-
-#: frontend/login.php:14
-msgid "E-mail already registered"
-msgstr ""
-
-#: frontend/login.php:21
-msgid "Welcome to Stavekontrolden!"
-msgstr ""
-
-#: frontend/login.php:53
-msgid "Welcome back to Stavekontrolden!"
-msgstr ""
-
-#: frontend/login.php:55
-msgid "E-mail, username or password was wrong"
-msgstr ""
-
-#: frontend/forgotpassword.php:11
-msgid "We couldn't find a  user with that e-mail address."
-msgstr ""
-
-#: frontend/forgotpassword.php:37
-msgid "Stavekontrolden Support"
-msgstr ""
-
-#: frontend/forgotpassword.php:42
-msgid "Create a new password"
-msgstr ""
-
-#: frontend/forgotpassword.php:43
-#, php-format
-msgid ""
-"Hello %1$s,<br>Someone asked for a new password for Stavekontrolden. If it "
-"was not you, please disregard this e-mail.<p>Please click on this link to "
-"create a new password:</p><p><a href=\"%2$s\">%2$s</a></p>"
-msgstr ""
-
-#: footer.php:19 footer.php:30 footer.php:19 footer.php:30
-msgid "Cookies"
-msgstr ""
-
-#: footer.php:20 footer.php:31 footer.php:20 footer.php:31
-msgid "Contact"
-msgstr ""
-
-#: footer.php:25 footer.php:25
-msgid "Log out"
-msgstr ""
-
-#: footer.php:40 footer.php:40
-msgid "Tournament Managed by stavekontrolden"
-msgstr ""
-
-#: footer.php:70 footer.php:70
-msgid "Login"
 msgstr ""

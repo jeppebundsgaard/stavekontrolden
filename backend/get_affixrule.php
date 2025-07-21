@@ -7,16 +7,6 @@ $res=array();
 if($_POST["limit"]>0) $_SESSION["limit"]=$_POST["limit"];
 $show=($_SESSION["limit"]?$_SESSION["limit"]:25);
 
-if($_POST["andThen"]["next"]<0) {
-	$_POST["andThen"]["next"]=floor(($_POST["numrows"]-1)/$show);
-	$_POST["andThen"]["nextsingle"]=$_POST["numrows"]%$show-1;
-	$res["updatebutton"]="lastbutton";
-} else if($_POST["andThen"]["next"] and ($_POST["andThen"]["next"]*$show-1+$_POST["andThen"]["nextsingle"])>=($_POST["numrows"]-1)) {
-	$_POST["andThen"]["next"]=0;
-	$_POST["andThen"]["nextsingle"]=0;	
-	$res["updatebutton"]="firstbutton";
-} 
-
 $cols='r.`id`, c.`description` as c_description, r.`description` as r_description, r.`affix`, r.`stripchars`, r.`condition`, r.`replacement`, m.`morphdescr`, rc.`affixclassid`, c1.`description` as rc_description';
 $wheres=array();
 $f=$_POST["filtersetting"];
@@ -37,25 +27,22 @@ $orderdir=$_POST["order"]?implode("",$_POST["order"]):"";
 $baseq=" from affixrule r left join affixclass c on r.`affixclassid`=c.`id` left join affixrule_to_affixclass rc on r.`id`=rc.`affixruleid` left join affixclass c1 on rc.`affixclassid`=c1.`id` left join morphdescr m on m.id=r.morphdescrid ";
 
 #$orderdesc=" ORDER BY  c.`description`";
-// if($_POST["andThen"]["next"]<0) {
-// 	$reverseorder=array(""=>"DESC","ASC"=>"DESC","DESC"=>"ASC")[$orderdir];
-// 	$orderdir=$reverseorder;
-//     $_POST["andThen"]["next"]+=1;
-// }
-// elseif(!$_POST["andThen"]["next"]){
+if($_POST["andThen"]["next"]<0) {
+	$reverseorder=array(""=>"DESC","ASC"=>"DESC","DESC"=>"ASC")[$orderdir];
+	$orderdir=$reverseorder;
+    $_POST["andThen"]["next"]+=1;
+}
+elseif(!$_POST["andThen"]["next"]){
 	$q="SELECT count(*) as numrows ".$baseq.$where;
-	// echo $q;
-$res["log"].=$q;
 	$result=$mysqli->query($q);
 	if(!$result) $res["log"].=mysqlerror($q); 
 	else $res["numrows"]=$result->fetch_assoc()["numrows"];	
-// }
+}
 $res["numshow"]=abs($_POST["andThen"]["next"])*$show;
 $limit=" LIMIT ".abs($_POST["andThen"]["next"])*$show.",".$show;
 
 $q=$last1."select distinct(r.id),".$custorder.$baseq.$where.$order.$orderdir.$limit.$last2;
-// echo $q;
-$res["log"].=$q;
+$res["log"]=$q;
 $result=$mysqli->query($q);
 if(!$result) $res["log"].=mysqlerror($q); 
 else $rall=$result->fetch_all();

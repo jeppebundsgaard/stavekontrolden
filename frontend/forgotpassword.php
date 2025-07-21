@@ -11,7 +11,7 @@ $result=$mysqli->query($q);
 if ($result->num_rows<1) $warning=_('We couldn\'t find a  user with that e-mail address.');
 else {
 	$r=$result->fetch_assoc();
-	for ($s = '', $i = 0, $z = strlen($a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')-1; $i != 32; $x = rand(0,$z), $s .= $a{$x}, $i++); 
+	for ($s = '', $i = 0, $z = strlen($a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')-1; $i != 32; $x = rand(0,$z), $s .= $a[$x], $i++);
 	$link=$baseurl."/?newpass=".$s;
 // 	$log.=$link;
 	// Load Composer's autoloader

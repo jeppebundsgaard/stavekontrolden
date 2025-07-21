@@ -18,7 +18,7 @@ if(!$c["wordclass"]) {
 }
 else {
 	if($c["wordclassid"]>0) {
-		$q='update wordclass set `wordclass`="'.$c["wordclass"].'" where lang="'.$_SESSION["lang"].'" and id='.$c["wordclassid"];
+		$q='update wordclass set `wordclass`="'.$c["wordclass"].'", providestem='.($c["providestem"]?1:0).' where lang="'.$_SESSION["lang"].'" and id='.$c["wordclassid"];
 		$res["log"]=$q;
 		$result=$mysqli->query($q);
 		
@@ -43,7 +43,7 @@ else {
 	}
 	else {
 	//Status set to 2 when word created
-		$q='insert into wordclass (`lang`,`wordclass`) values ("'.$_SESSION["lang"].'","'.$c["wordclass"].'")'; 
+		$q='insert into wordclass (`lang`,`wordclass`, `providestem`) values ("'.$_SESSION["lang"].'","'.$c["wordclass"].'",'.($c["providestem"]?1:0).')';
 
 		$res["log"]=$q;
 		$result=$mysqli->query($q);

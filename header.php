@@ -1,3 +1,5 @@
+<?php $v="1.02";
+?>
 <!DOCTYPE html>
 <html lang="<?= $lang; ?>">
   <head>

@@ -2,9 +2,8 @@
 
 const path    = require('path')
 const babel   = require('rollup-plugin-babel')
-const resolve = require('@rollup/plugin-node-resolve')
+const resolve = require('rollup-plugin-node-resolve')
 const banner  = require('./banner.js')
-const babelHelpers = require('./babel-helpers.js')
 
 const BUNDLE  = process.env.BUNDLE === 'true'
 
@@ -12,10 +11,14 @@ let fileDest  = 'bootstrap.js'
 const external = ['jquery', 'popper.js']
 const plugins = [
   babel({
-  // Only transpile our source code
-    exclude: 'node_modules/**',
-    // Include only required helpers
-    externalHelpersWhitelist: babelHelpers
+    exclude: 'node_modules/**', // Only transpile our source code
+    externalHelpersWhitelist: [ // Include only required helpers
+      'defineProperties',
+      'createClass',
+      'inheritsLoose',
+      'defineProperty',
+      'objectSpread2'
+    ]
   })
 ]
 const globals = {

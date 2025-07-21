@@ -19,10 +19,10 @@ $result=$mysqli->query($q);
 $fugeelementoptions='';
 while($r=$result->fetch_assoc()) $fugeelementoptions.='<option value="'.$r["id"].'" '.($filters["fugeelementid"]==$r["id"]?"selected":"").'>'.$r["fugeelement"].'</option>';
 
-$q='select `wordclass`, id from wordclass where lang="'.$_SESSION['lang'].'" ORDER BY `wordclass` ';
+$q='select `wordclass`, `providestem`, id from wordclass where lang="'.$_SESSION['lang'].'" ORDER BY `wordclass` ';
 $result=$mysqli->query($q);
 $wordclassoptions='';
-while($r=$result->fetch_assoc()) $wordclassoptions.='<option value="'.$r["id"].'" '.($filters["wordclass"]==$r["id"]?"selected":"").'>'.$r["wordclass"].'</option>';
+while($r=$result->fetch_assoc()) $wordclassoptions.='<option value="'.$r["id"].'" '.($filters["wordclass"]==$r["id"]?"selected":"").' data-providestem="'.$r["providestem"].'">'.$r["wordclass"].'</option>';
 
 $q='select `id`,`technical_term` from technical_term where lang="'.$_SESSION['lang'].'" ORDER BY `technical_term`';
 $result=$mysqli->query($q);
@@ -66,10 +66,10 @@ include($systemdirs["backend"]."affixoptions.php");
 					<th scope="col"><?= _('Word');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word" id="wordsearch" value="<?= $filters["word"];?>"></th>
 					<th scope="col"><?= _('Status');?><br><select class="wordfilter custom-select custom-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></th>
 					<th scope="col"><?= _('Word Class');?><br><select class="wordfilter custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select></th>
+					<th scope="col"><?= _('Stem');?><br><input class="wordfilter form-control form-control-sm" type="text" name="stemtxt" value="<?= $filters["stemtxt"];?>"></th>
 					<th scope="col"><?= _('Strong Declension');?><br><input class="wordfilter form-control form-control-sm" type="text" name="strong_declension"  value="<?= $filters["strong_declension"];?>"></th>
 					<th scope="col"><?= _('Misspellings');?><br><input class="wordfilter form-control form-control-sm" type="text" name="misspellings"  value="<?= $filters["misspellings"];?>"></th>
 					<th scope="col"><?= _('Fuge Element');?><br><select class="wordfilter custom-select custom-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select></th>
-					<th scope="col"><?= _('Synonyms');?><br><input class="wordfilter form-control form-control-sm" name="synonyms" value="<?=$filters["synonyms"];?>"></th>
 					<?php if($_SESSION["showdetails"]) { ?>
 					<th scope="col"><?= _('Contributor');?><br><input class="wordfilter form-control form-control-sm" type="text" name="contributor"  value="<?= $filters["contributor"];?>"></th>
 					<th scope="col"><?= _('Last User');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastuser"  value="<?= $filters["lastuser"];?>"></th>
@@ -121,6 +121,13 @@ include($systemdirs["backend"]."affixoptions.php");
 						<div class="col">
 							<label for="wordclass" class="col-form-label"><?= _('Word Class');?></label>
 							<select class="newword custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select>
+						</div>
+						<div class="col collapse" id="stemcol">
+							<label for="stem" class="col-form-label"><?= _('Stem');?></label>
+							<input class="form-control form-control-sm" type="text" name="stemtxt" id="stemtxt">
+							<div class="dropdown-menu" id="stems">
+							</div>
+							<input class="newword " type="hidden" name="stem" id="stem">
 						</div>
 					</div>
 					<div class="form-row">

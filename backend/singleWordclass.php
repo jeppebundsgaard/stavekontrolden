@@ -6,9 +6,9 @@ if(!$_SESSION["user_id"]) exit;
 #$res=array();
 
 if($_POST["wordid"]) {
-	$q='select wc.`id`, wc.`wordclass` from words w left join wordclass wc on w.wordclass=wc.id where w.id='.$_POST["wordid"];
+	$q='select wc.`id`, wc.`wordclass`, `providestem`  from words w left join wordclass wc on w.wordclass=wc.id where w.id='.$_POST["wordid"];
 } else {
-	$q='select `id`, `wordclass` from wordclass wc where id='.$_POST["id"];
+	$q='select `id`, `wordclass`, `providestem` from wordclass wc where id='.$_POST["id"];
 }
 #$res["log"].=$q;
 $result=$mysqli->query($q);

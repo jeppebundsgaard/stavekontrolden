@@ -1,6 +1,7 @@
 var page=""
 var singlevalue
 var cachenegsearch=[]
+// var cachenullsearch=[]
 var lastsave=""
 $(function() {
   //TODO: Introduce nextpanel to replace !system_id. 
@@ -22,8 +23,18 @@ function whenLoaded_words() {
 		}
 		cachenegsearch=[]
 	}
-	$("#showdetails").click(function() {get_template("words",{showdetails:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
-	$("#showlog").click(function() {get_template("words",{showlog:true,filters:$(".wordfilter").serialize()},"whenLoaded_words"); cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get() })
+	$("#showdetails").click(function() {
+		get_template("words",{showdetails:true,filters:$(".wordfilter").serialize()},"whenLoaded_words");
+		cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get();
+	// cachenullsearch=$(".nullsearch").map(function() {return $(this).hasClass("show")}).get()
+
+	})
+	$("#showlog").click(function() {
+		get_template("words",{showlog:true,filters:$(".wordfilter").serialize()},"whenLoaded_words");
+		cachenegsearch=$(".negsearch").map(function() {return $(this).hasClass("show")}).get();
+		// cachenullsearch=$(".nullsearch").map(function() {return $(this).hasClass("show")}).get()
+
+	})
 	$(".wordsave").click(wordsave)
 	modalSetup()
 	$(".associateaffixclass").change(associateaffixclass)
@@ -36,6 +47,7 @@ function whenLoaded_words() {
 	$("#doeditaffixclass").click(doeditaffixclass)
 	$("#doeditaffixrule").click(doeditaffixrule)
 	$("#newword").click(editNewword)
+	$("#stemtxt").on("keyup",get_stems)
 
 }
 function whenLoaded_wordclass() {
@@ -214,7 +226,7 @@ function wordsave() {
 function wordclasssave() {
 	var andThen=showNext($(this))
 	var affixclasses=$(".wcpool.affixpool .editaffixclass").map(function() {return $(this).data("affixclassid")}).get()
-	send("savewordclass","afterwordclasssave",{wordclass:$("#wordclassform .newword").serialize(),affixclasses:affixclasses,andThen:andThen},"backend")
+	send("savewordclass","afterwordclasssave",{wordclass:$("#wordclassform .newword").serialize(),providestem:$("#providestem").prop("checked")?1:0,affixclasses:affixclasses,andThen:andThen},"backend")
 }
 function fugeelementsave() {
 	var andThen=showNext($(this))
@@ -296,15 +308,25 @@ function afteraffixrulesave(json) {
 	}
 }
 function filters() {
-	$(".wordfilter").wrap('<div class="input-group">').before('<div class="input-group-prepend"><div class="input-group-text posnegsearch"><i class="fas fa-equals fa-xs collapse show "></i><i class="fas fa-not-equal fa-xs collapse negsearch"></i></div></div>')
+	$(".wordfilter").wrap('<div class="input-group">').before('<div class="input-group-prepend"><div class="input-group-text posnegsearch" data-shown="0"><i class="fas fa-equals fa-xs collapse show "></i><i class="fas fa-not-equal fa-xs collapse negsearch"></i></div></div>')
+	// <i class="far fa-circle collapse nullsearch"></i>
 	$("#wordsearch").after('<div class="input-group-append"><div class="input-group-text strictsearch" title="'+_("Accent search")+'"><i class="fas fa-language"></i></div></div>')
 	$(".strictsearch").click(function() {
 		$(this).toggleClass("disabled")
 		if($(this).parent().next().val()!="") getrows()
 	})
+	// $(".nullsearch").on("shown.bs.collapse", function(event){ // Wait for collapse to show
+	// 	getrows()
+	// });
 	$(".posnegsearch").click(function() {
 		$(this).children().toggleClass("show")
 		if($(this).parent().next().val()!="") getrows()
+		// var shown=$(this).data("shown")
+		// $($(this).children()[shown]).collapse("hide")
+		// shown=shown==2?0:shown+1
+		// $($(this).children()[shown]).collapse("show")
+		// $(this).data("shown",shown)
+		// if(shown==0 || shown!=2 && $(this).parent().next().val()!="") getrows() //Change from null to equal,
 	})
 	$(".wordfilter").change(getrows)
 	$("#filtersetting").change(getrows)
@@ -598,6 +620,30 @@ function editWord() {
 	updateNumshow($(this),"wordsform")
 	send("singleWord","editWordModal",{id:id},"backend")
 }
+function get_stems(e) {
+	if (String.fromCharCode(e.keyCode).match(/(\w|[æøåÆØÅáÁéÉîÎúÚýÝüÜðÐþÞ])/g)) {
+		var stemtxt=$(this).val()
+		$("#stem").val("")
+
+		if(stemtxt.length>1) {
+			send("get_stems","got_stems",{stemtxt:stemtxt},"backend")
+		}
+	}
+}
+function got_stems(json) {
+	// console.log(json)
+	$("#stems").html(json.stems)
+	$("#stems").css("display","block")
+	$(".stem").click(choosestem)
+}
+function choosestem() {
+	$("#stem").val($(this).data("stem_id"))
+	$("#stem").focus()
+
+	$("#stemtxt").val($(this).text())
+	$("#stems").html("")
+	$("#stems").css("display","none")
+}
 function editNewword() {
 	$("#wordsform [name=wordstatus]").val(2)
 	$("#wordsform [name=wordstatus]").attr("disabled","disabled")
@@ -624,7 +670,13 @@ function editWordModal(json) {
 	$("#wordsmodal").find(".editwd").collapse("show")
 	$("#wordsmodal").find(".addwd").collapse("hide")
 	$(".newsave").collapse("hide")
+	$("#stemcol").collapse($('#wordsform [name=wordclass] option:selected').data("providestem")==1?"show":"hide")
+	$("#stems").css("display","none")
+	$('#wordsform [name=wordclass]').change(doprovidestem)
 	$("#wordsmodal").modal("show")
+}
+function doprovidestem() {
+	$("#stemcol").collapse($(this).children("option:selected").data("providestem")==1?"show":"hide")
 }
 function populateModal(vars,t) {
 	for(let [k,v] of Object.entries(vars)) {
@@ -751,7 +803,9 @@ function getrows(andThen) {
 	var order={}
 	if(typeof($(".changesort"))!="undefined")
 		order=$(".changesort").map(function(){return ($(this).hasClass("fa-sort-down")?"ASC":($(this).hasClass("fa-sort-up")?"DESC":""))}).get()
-	send("get_"+page,"populateTable",{where:$(".wordfilter").serialize(),filtersetting:$("#filtersetting").val(),strictsearch:$(".strictsearch").hasClass("disabled"),order:order,negsearch:$(".negsearch").map(function() {return $(this).hasClass("show")}).get(),andThen:andThen,numrows:$("#numrows").text(),limit:($(this).attr("id")=="limit"?$(this).val():0),singlevalue:singlevalue},"backend")
+	send("get_"+page,"populateTable",{where:$(".wordfilter").serialize(),filtersetting:$("#filtersetting").val(),strictsearch:$(".strictsearch").hasClass("disabled"),order:order,negsearch:$(".negsearch").map(function() {return $(this).hasClass("show")}).get(),
+		 // nullsearch:$(".nullsearch").map(function() {return $(this).hasClass("show")}).get(),
+		 andThen:andThen,numrows:$("#numrows").text(),limit:($(this).attr("id")=="limit"?$(this).val():0),singlevalue:singlevalue},"backend")
 }
 function showMyOrg() {
 	get_template("myOrganization",{contentdiv:"contentdiv"},"initOrg");

@@ -93,7 +93,6 @@
 <script>var language="<?=$locale;?>"</script>
 <script src="./js/stavekontrolden.js?v=<?=$v;?>"></script>
 <?php 
-$v="0.0.2";
 if($_SESSION["user_id"]) echo('<script src="./js/stavekontroldenadmin.js?v='.$v.'"></script>');
 ?>
 	<?php if($_SESSION["orgMember"] and $_SESSION["user_id"]==1) {?> 
