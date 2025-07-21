@@ -1,4 +1,7 @@
-.htdatabase
+.ht*
 *.oxt
 *.dic
 *.aff
+*.csv
+.~*
+vendor/*
