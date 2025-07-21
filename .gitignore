@@ -1,5 +1,6 @@
 .ht*
 *.oxt
+*.xpi
 *.dic
 *.aff
 *.csv
