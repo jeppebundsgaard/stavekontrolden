@@ -1,4 +1,7 @@
 # Stavekontrolden
+
+Development has moved to https://codeberg.org/jeppebundsgaard/stavekontrolden. Github is no longer safe in the hands of Microsoft.
+
 A frontend for creating and maintaing hunspell dictionaries.
 Stavekontrolden is a tool intended to support the development of the Danish spell checker dictionary and affix-description file to be used with hunspell in programs like LibreOffice, Firefox and many more.
 
