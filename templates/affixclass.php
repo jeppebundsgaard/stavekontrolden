@@ -12,7 +12,7 @@ include($systemdirs["backend"]."affixoptions.php");
 ?>
 		<div class="col-sm">
 			<div class="form-group">
-				<button class="btn btn-small btn-light float-right newaffixclass" data-targetmodal="affixclassmodal"><?= _("New Affix Class");?></button>
+				<button class="btn btn-small btn-light float-end newaffixclass" data-bs-target="affixclassmodal"><?= _("New Affix Class");?></button>
 			</div>
 		</div>
 	</div>
@@ -23,8 +23,8 @@ include($systemdirs["backend"]."affixoptions.php");
 				<thead id="wordhead">
 					<tr class="table-info">
 					<th scope="col"><?= _('Description');?><br><input class="wordfilter form-control form-control-sm" type="text" name="c_description"  value="<?= $filters["description"];?>"></th>
-					<th scope="col"><?= _('Type');?><br><select class="wordfilter custom-select custom-select-sm" name="c_affixclass"><option></option><?=$affixclassoptions;?></select></th>
-					<th scope="col"><?= _('Crossproduct');?><br><select class="wordfilter custom-select custom-select-sm" name="c_crossproduct"><option></option><?=$crossproductoptions;?></select></th>
+					<th scope="col"><?= _('Type');?><br><select class="wordfilter form-select form-select-sm" name="c_affixclass"><option></option><?=$affixclassoptions;?></select></th>
+					<th scope="col"><?= _('Crossproduct');?><br><select class="wordfilter form-select form-select-sm" name="c_crossproduct"><option></option><?=$crossproductoptions;?></select></th>
 					<th scope="col"><?= _('Corresponding Affix Rules');?><br><input class="wordfilter form-control form-control-sm" type="text" name="r_description"  value="<?= $filters["affixrule"];?>"></th>
 					<th scope="col" class="delcol"><?= _('Delete');?></th>
 					</tr>

@@ -20,9 +20,9 @@
 	</div>
 	<div class="row uploadfile collapse show">
 		<div class="col text-center">
-			<div class="custom-file">
-				<input type="file" class="custom-file-input" id="wordfile">
-				<label class="custom-file-label" for="wordfile"><?=_('Choose the file to upload');?></label>
+			<div class="form-control">
+				<input type="file" class="form-control-input" id="wordfile">
+				<label class="form-control-label" for="wordfile"><?=_('Choose the file to upload');?></label>
 				<span class="uploadinfo collapse"><i class="fas fa-spinner fa-spin"></i><?=_('Uploading ...');?></span>
 			</div>
 		</div>

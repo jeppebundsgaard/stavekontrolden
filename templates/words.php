@@ -41,14 +41,12 @@ include($systemdirs["backend"]."affixoptions.php");
 <?php 
 	include($templatedir."filtersettings.php");
 ?>
-		<div class="col-2-sm">
-			<div class="form-group">
-				<button class="btn btn-small btn-light float-right" id="showdetails"><?= ($_SESSION["showdetails"]?_("Hide details"):_("Show details"));?></button>&nbsp;
-				<button class="btn btn-small btn-light float-right" id="showlog"><?= ($_SESSION["showlog"]?_("Hide log"):_("Show log"));?></button>&nbsp;
-			</div>
-		</div>
 		<div class="col-sm">
-				<button class="btn btn-small btn-light float-right" id="newword" data-toggle="modal" data-target="#wordsmodal"><?= _("New Word");?></button>
+			<div class="form-group">
+				<button class="btn btn-small btn-light " id="showdetails"><?= ($_SESSION["showdetails"]?_("Hide details"):_("Show details"));?></button>&nbsp;
+				<button class="btn btn-small btn-light " id="showlog"><?= ($_SESSION["showlog"]?_("Hide log"):_("Show log"));?></button>&nbsp;
+				<button class="btn btn-small btn-light " id="newword" data-bs-toggle="modal" data-bs-target="#wordsmodal"><?= _("New Word");?></button>
+			</div>
 		</div>
 
 	</div>
@@ -64,19 +62,19 @@ include($systemdirs["backend"]."affixoptions.php");
 				<thead id="wordhead">
 					<tr class="table-info">
 					<th scope="col"><?= _('Word');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word" id="wordsearch" value="<?= $filters["word"];?>"></th>
-					<th scope="col"><?= _('Status');?><br><select class="wordfilter custom-select custom-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></th>
-					<th scope="col"><?= _('Word Class');?><br><select class="wordfilter custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select></th>
+					<th scope="col"><?= _('Status');?><br><select class="wordfilter form-select form-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></th>
+					<th scope="col"><?= _('Word Class');?><br><select class="wordfilter form-select form-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select></th>
 					<th scope="col"><?= _('Stem');?><br><input class="wordfilter form-control form-control-sm" type="text" name="stemtxt" value="<?= $filters["stemtxt"];?>"></th>
 					<th scope="col"><?= _('Strong Declension');?><br><input class="wordfilter form-control form-control-sm" type="text" name="strong_declension"  value="<?= $filters["strong_declension"];?>"></th>
 					<th scope="col"><?= _('Misspellings');?><br><input class="wordfilter form-control form-control-sm" type="text" name="misspellings"  value="<?= $filters["misspellings"];?>"></th>
-					<th scope="col"><?= _('Fuge Element');?><br><select class="wordfilter custom-select custom-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select></th>
+					<th scope="col"><?= _('Fuge Element');?><br><select class="wordfilter form-select form-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select></th>
 					<?php if($_SESSION["showdetails"]) { ?>
 					<th scope="col"><?= _('Contributor');?><br><input class="wordfilter form-control form-control-sm" type="text" name="contributor"  value="<?= $filters["contributor"];?>"></th>
 					<th scope="col"><?= _('Last User');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastuser"  value="<?= $filters["lastuser"];?>"></th>
 					<th scope="col"><?= _('Word Definition');?><br><input class="wordfilter form-control form-control-sm" type="text" name="word_definition" value="<?= $filters["word_definition"];?>"></th>
 					<th scope="col"><?= _('Comments');?><br><input class="wordfilter form-control form-control-sm" type="text" name="comments" value="<?= $filters["comments"];?>"></th>
-					<th scope="col"><?= _('Technical Term');?><br><select class="wordfilter custom-select custom-select-sm" name="technical_term"><option></option><?= $technical_termoptions;?></select></th>
-					<th scope="col"><?= _('Omit Suggestion');?><br><select class="wordfilter custom-select custom-select-sm" name="omitsuggestion"><option></option><?= $omitsuggestion_options;?></select></th>
+					<th scope="col"><?= _('Technical Term');?><br><select class="wordfilter form-select form-select-sm" name="technical_term"><option></option><?= $technical_termoptions;?></select></th>
+					<th scope="col"><?= _('Omit Suggestion');?><br><select class="wordfilter form-select form-select-sm" name="omitsuggestion"><option></option><?= $omitsuggestion_options;?></select></th>
 					<th scope="col"><?= _('Last Change');?><br><input class="wordfilter form-control form-control-sm" type="text" name="lastchange"  value="<?= $filters["lastchange"];?>"></th>
 					<?php } ?>
 					<?php if($_SESSION["showlog"]) { ?>
@@ -98,13 +96,13 @@ include($systemdirs["backend"]."affixoptions.php");
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Word");?></span><span class="addwd collapse show"><?=_("Add Word");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<div id="wordsform">
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="word" class="col-form-label"><strong><?= _('Word');?></strong></label>
 							<input class="newword form-control form-control-sm" type="text" name="word">
@@ -113,14 +111,14 @@ include($systemdirs["backend"]."affixoptions.php");
 						</div>
 						<div class="col">
 							<label for="wordstatus" class="col-form-label"><?= _('Status');?></label>
-							<div class="input-group"><input type="text" class="form-control form-control-sm wordstatusbefore wordstatusbeforeelem collapse" disabled="disabled" value=""><div class="input-group-append wordstatusbefore wordstatusbeforeelem collapse"><div class="input-group-text"><i class="fas fa-arrow-right fa-sm"></i></div></div>
-							<select class="newword custom-select custom-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></div>
+							<div class="input-group"><input type="text" class="form-control form-control-sm wordstatusbefore wordstatusbeforeelem collapse" disabled="disabled" value=""><div class="input-group-text wordstatusbefore wordstatusbeforeelem collapse"><i class="fas fa-arrow-right fa-sm"></i></div>
+							<select class="newword form-select form-select-sm" name="wordstatus"><option></option><?=$statusoptions;?></select></div>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="wordclass" class="col-form-label"><?= _('Word Class');?></label>
-							<select class="newword custom-select custom-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select>
+							<select class="newword form-select form-select-sm" name="wordclass"><option></option><?=$wordclassoptions;?></select>
 						</div>
 						<div class="col collapse" id="stemcol">
 							<label for="stem" class="col-form-label"><?= _('Stem');?></label>
@@ -130,7 +128,7 @@ include($systemdirs["backend"]."affixoptions.php");
 							<input class="newword " type="hidden" name="stem" id="stem">
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="strong_declination" class="col-form-label"><?= _('Strong Declension');?></label>
 							<textarea class="newword form-control form-control-sm" name="strong_declension"></textarea>
@@ -140,17 +138,17 @@ include($systemdirs["backend"]."affixoptions.php");
 							<textarea class="newword form-control form-control-sm" name="misspellings"></textarea>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="fugeelementid" class="col-form-label"><?= _('Fugelement');?></label>
-							<select class="newword custom-select custom-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select>
+							<select class="newword form-select form-select-sm" name="fugeelementid"><option></option><?=$fugeelementoptions;?></select>
 						</div>
 						<div class="col">
 							<label for="technical_term" class="col-form-label"><?= _('Technical Term');?></label>
-							<select class="newword custom-select custom-select-sm" name="technical_term"><option></option><?= $technical_termoptions;?></select>
+							<select class="newword form-select form-select-sm" name="technical_term"><option></option><?= $technical_termoptions;?></select>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="word_definition" class="col-form-label"><?= _('Word Definition');?></label>
 							<textarea class="newword form-control form-control-sm" type="text" name="word_definition"></textarea>
@@ -165,7 +163,7 @@ include($systemdirs["backend"]."affixoptions.php");
 							<textarea class="newword form-control form-control-sm" type="text" name="comments"></textarea>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<div class="form-check">
 								<input type="checkbox" class="newword form-check-input" name="omitsuggestion" id="omitsuggestion" value="1"> 
@@ -173,7 +171,7 @@ include($systemdirs["backend"]."affixoptions.php");
 							</div>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col-6">
 							<label for="log" class="col-form-label"><?= _('Log');?></label>
 							<textarea class="form-control form-control-sm disabled-words"  disabled="disabled" name="log"></textarea>
@@ -191,9 +189,9 @@ include($systemdirs["backend"]."affixoptions.php");
 				</div>
 			</div>
 			<div class="modal-footer">
-				<div class="col float-left"><button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button></div>
+				<div class="col float-start"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><?=_("Cancel");?></button></div>
 				<div class="col ">
-					<span class="float-right">
+					<span class="float-end">
 						<small class="text-muted"><?= _("Save and");?></small>
 						<button type="button" class="btn btn-info wordsave prevsave collapse show"><?=_("Previous");?></button>
 						<button type="button" class="btn btn-primary wordsave" id="wordsave"><?=_("Close");?></button>

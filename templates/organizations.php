@@ -35,7 +35,7 @@
 		</table>
 	</div>
 	<div class="row">
-		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#createOrg" aria-expanded="false" aria-controls="createOrg"><?= _('Create Organization');?></button>
+		<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#createOrg" aria-expanded="false" aria-controls="createOrg"><?= _('Create Organization');?></button>
 	</div>
 	<div class="row">
 		<div class="collapse" id="createOrg">

@@ -10,14 +10,14 @@ foreach(array("inword"=>_("In word"),"beginword"=>_("Beginning of word"),"endwor
 ?>
 		<div class="col-sm">
 			<div class="form-group">
-				<select class="custom-select custom-select-sm" id="limit"><option></option><?=$limitoptions;?></select>
+				<select class="form-select form-select-sm" id="limit"><option></option><?=$limitoptions;?></select>
 			</div>
 		</div>
 		<div class="col-sm">
 			<div class="form-group row">
-				<label for="filtersetting" class="col-sm-6 col-form-label"><span class=" float-right"><?= _('Search');?></span></label>
+				<label for="filtersetting" class="col-sm-6 col-form-label"><span class=" float-end"><?= _('Search');?></span></label>
 				<div class="col-sm-6">
-					<select class="custom-select custom-select-sm" id="filtersetting"><?=$filteroptions;?></select>
+					<select class="form-select form-select-sm" id="filtersetting"><?=$filteroptions;?></select>
 				</div>
 			</div>
 		</div>

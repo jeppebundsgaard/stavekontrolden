@@ -7,8 +7,8 @@
 	include($templatedir."filtersettings.php");
 ?>
 		<div class="col-sm">
-			<div class="form-group float-right">
-				<button class="btn btn-small btn-light float-right" data-toggle="modal" data-target="#promptmodal"><?= $new;?></button>
+			<div class="form-group float-end">
+				<button class="btn btn-small btn-light float-end" data-bs-toggle="modal" data-bs-target="#promptmodal"><?= $new;?></button>
 			</div>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
     <div class="modal-content">
 		<div class="modal-header">
 			<h5 class="modal-title"><?=$colname;?></h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel">
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>

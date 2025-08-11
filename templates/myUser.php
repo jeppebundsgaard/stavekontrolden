@@ -32,13 +32,13 @@
 			<?php if($r["org_id"]) { ?>
 			<div class="form-group">
 				<h4><?= _('Organization:')." ".$r["orgname"]; ?></h4>
-				<div class="custom-control custom-radio custom-control-inline"">
-					<input type="radio" class="custom-control-input userinput" checked="checked" name="org_id" id="org1" value="<?= $r["org_id"];?>">
-					<label class="custom-control-label" for="org1"><?= _('Stay'); ?></label>
+				<div class="form-control form-radio form-control-inline"">
+					<input type="radio" class="form-control-input userinput" checked="checked" name="org_id" id="org1" value="<?= $r["org_id"];?>">
+					<label class="form-control-label" for="org1"><?= _('Stay'); ?></label>
 				</div>
-				<div class="custom-control custom-radio custom-control-inline">
-					<input type="radio" class="custom-control-input userinput" name="org_id" id="org2" value="0" aria-describedby="orgHelp">
-					<label class="custom-control-label" for="org2"><?= _('Remove me!'); ?></label>
+				<div class="form-control form-radio form-control-inline">
+					<input type="radio" class="form-control-input userinput" name="org_id" id="org2" value="0" aria-describedby="orgHelp">
+					<label class="form-control-label" for="org2"><?= _('Remove me!'); ?></label>
 				</div>
 				<small id="orgHelp" class="form-text text-muted"><?= _("If you remove yourself from the organization, you need someone to re-invite you, before you can come back.") ?></small>
 			</div>

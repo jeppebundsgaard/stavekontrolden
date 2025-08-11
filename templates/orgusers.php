@@ -38,7 +38,7 @@
 		</table>
 	</div>
 	<div class="row">
-		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#inviteUser" aria-expanded="false" aria-controls="inviteUser"><?= _('Invite user');?></button>
+		<button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#inviteUser" aria-expanded="false" aria-controls="inviteUser"><?= _('Invite user');?></button>
 	</div>
 	<div class="row">
 		<div class="collapse" id="inviteUser">

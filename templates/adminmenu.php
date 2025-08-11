@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light admin-navbar">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#adminToggler" aria-controls="adminToggler" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminToggler" aria-controls="adminToggler" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 	<div class="collapse tab-pane navbar-collapse" id="adminToggler">
-		<ul class="nav-bar nav  mr-auto mt-2 mt-lg-0 ">
+		<ul class="nav-bar nav  me-auto mt-2 mt-lg-0 ">
 		<?php if(checkpermissions("wordedit","affix","admin")) {?> 
 			<li class="nav-item " id="words"><a class="nav-link adminmenulink" data-page="words" href="#"><?= _('Process Words');?></a></li>
 		<?php } if(checkpermissions("affix","admin")) {?> 
@@ -26,7 +26,7 @@
 		</ul>
 		
 	</div>
-	<div class="col text-right" id="StavekontroldenHelp">
+	<div class="col text-end" id="StavekontroldenHelp">
 		<a href="./help/<?= explode(".",$_SESSION["locale"])[0];?>-help.pdf" target="_blank" title="<?= _('Download the manual ...');?>"><i class="far fa-question-circle"></i></a>
 	</div>
 </nav>

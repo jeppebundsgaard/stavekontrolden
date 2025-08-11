@@ -22,7 +22,7 @@
 					<div class="form-check">
 					<input type="checkbox" id="rememberMe" value=""> <label class="form-check-label" for="rememberMe"><?= _('Remember me');?></label>
 					</div>
-					<?= ($_POST["relogin"]?'<input type="hidden" id="relogin" value="true">':'<button class="btn btn-lg btn-success mr-2 collapse show login" id="applyforsignup" type="button">'._('Sign up').'</button><button class="btn btn-lg btn-primary loginsignup-button login-button collapse signup" id="signup" type="submit">'._('Sign up').'</button>');?>
+					<?= ($_POST["relogin"]?'<input type="hidden" id="relogin" value="true">':'<button class="btn btn-lg btn-success me-2 collapse show login" id="applyforsignup" type="button">'._('Sign up').'</button><button class="btn btn-lg btn-primary loginsignup-button login-button collapse signup" id="signup" type="submit">'._('Sign up').'</button>');?>
 					<button class="btn btn-lg btn-primary loginsignup-button login-button collapse show login" id="login" type="submit"><?= _('Log in');?></button>
 					<p class="small muted"><a class="" id="forgotpassword" href="#"><?= _('Forgot your password? Click here to create a new one.');?></a></p>
 					</form>

@@ -12,7 +12,7 @@
 		</div>
 		<div class="col">
 			<div class="form-group">
-				<button class="btn btn-small btn-light float-right" id="newpage" ><?= _("New Page");?></button>
+				<button class="btn btn-small btn-light float-end" id="newpage" ><?= _("New Page");?></button>
 			</div>
 		</div>
 	</div>

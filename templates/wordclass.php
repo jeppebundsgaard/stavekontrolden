@@ -12,8 +12,8 @@ include($systemdirs["backend"]."affixoptions.php");
 	include($templatedir."filtersettings.php");
 ?>
 		<div class="col-sm">
-			<div class="form-group float-right">
-				<button class="btn btn-small btn-light float-right newwordclass" data-toggle="modal" data-target="#wordclassmodal" data-targetmodal="wordclassmodal"><?= _("New Word Class");?></button>
+			<div class="form-group float-end">
+				<button class="btn btn-small btn-light float-end newwordclass" data-bs-toggle="modal" data-bs-target="#wordclassmodal" data-bs-target="wordclassmodal"><?= _("New Word Class");?></button>
 			</div>
 		</div>
 	</div>

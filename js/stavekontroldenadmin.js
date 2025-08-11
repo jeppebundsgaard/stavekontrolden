@@ -308,9 +308,9 @@ function afteraffixrulesave(json) {
 	}
 }
 function filters() {
-	$(".wordfilter").wrap('<div class="input-group">').before('<div class="input-group-prepend"><div class="input-group-text posnegsearch" data-shown="0"><i class="fas fa-equals fa-xs collapse show "></i><i class="fas fa-not-equal fa-xs collapse negsearch"></i></div></div>')
+	$(".wordfilter").wrap('<div class="input-group">').before('<div class="input-group-text posnegsearch" data-shown="0"><i class="fas fa-equals fa-xs collapse show "></i><i class="fas fa-not-equal fa-xs collapse negsearch"></i></div>')
 	// <i class="far fa-circle collapse nullsearch"></i>
-	$("#wordsearch").after('<div class="input-group-append"><div class="input-group-text strictsearch" title="'+_("Accent search")+'"><i class="fas fa-language"></i></div></div>')
+	$("#wordsearch").after('<div class="input-group-text strictsearch" title="'+_("Accent search")+'"><i class="fas fa-language"></i></div>')
 	$(".strictsearch").click(function() {
 		$(this).toggleClass("disabled")
 		if($(this).parent().next().val()!="") getrows()
@@ -681,7 +681,7 @@ function doprovidestem() {
 function populateModal(vars,t) {
 	for(let [k,v] of Object.entries(vars)) {
 		var elem=$("#"+t+"form"+" [name="+k+"]")
-		if(elem.hasClass("custom-select")) elem.html(elem.html()) // hack to make bootstrap aware that this select has a new selected. Without it, arrow down will show the first option's value, not the next from the one selected now.
+		if(elem.hasClass("form-select")) elem.html(elem.html()) // hack to make bootstrap aware that this select has a new selected. Without it, arrow down will show the first option's value, not the next from the one selected now.
 		if(elem.attr("type")=="checkbox") elem.prop("checked",v>0?true:false) 
 		else elem.val(v)
 	}

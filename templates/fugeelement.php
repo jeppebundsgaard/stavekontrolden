@@ -16,8 +16,8 @@ include($systemdirs["backend"]."affixoptions.php");
 	include($templatedir."filtersettings.php");
 ?>
 		<div class="col-sm">
-			<div class="form-group float-right">
-				<button class="btn btn-small btn-light float-right" id="newfugeelement" data-toggle="modal" data-target="#fugeelementmodal"><?= _("New Fuge Element");?></button>
+			<div class="form-group float-end">
+				<button class="btn btn-small btn-light float-end" id="newfugeelement" data-bs-toggle="modal" data-bs-target="#fugeelementmodal"><?= _("New Fuge Element");?></button>
 			</div>
 		</div>
 	</div>
@@ -47,13 +47,13 @@ include($systemdirs["backend"]."affixoptions.php");
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Fuge Element");?></span><span class="addwd collapse show"><?=_("Add Fuge Element");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<div id="fugeelementform">
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="fugeelement" class="col-form-label"><strong><?= _('Fuge Element');?></strong></label>
 							<input class="newword form-control form-control-sm" type="text" name="fugeelement" id="fugeelementtxt">
@@ -61,21 +61,21 @@ include($systemdirs["backend"]."affixoptions.php");
 							<input class="newword" type="hidden" name="numshow" data-numshow="">
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label class="col-form-label"><strong><?= _('Associated Affix Classes');?></strong></label>
 							
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
-							<select class="custom-select custom-select-sm associateaffixclass"><option disabled selected value="0"><?=_('Select Affix Class');?></option><?=$affixoptions;?></select>
+							<select class="form-select form-select-sm associateaffixclass"><option disabled selected value="0"><?=_('Select Affix Class');?></option><?=$affixoptions;?></select>
 						</div>
 						<div class="col">
 							<button class="btn btn-sm btn-light newaffixclass" name="newaffixclass"><?= _("Create New Affix Class");?></button>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<div class="fepool affixpool"></div>
 						</div>
@@ -83,7 +83,7 @@ include($systemdirs["backend"]."affixoptions.php");
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><?=_("Cancel");?></button>
 				<button type="button" class="btn btn-info fugeelementsave prevsave"><?=_("Previous");?></button>
 				<button type="button" class="btn btn-primary fugeelementsave"><?=_("Save");?></button>
 				<button type="button" class="btn btn-info fugeelementsave nextsave"><?=_("Next");?></button>

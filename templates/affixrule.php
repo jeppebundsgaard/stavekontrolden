@@ -26,7 +26,7 @@ include($systemdirs["backend"]."affixoptions.php");
 					<th scope="col"><?= _('Strip characters');?><br><input class="wordfilter form-control form-control-sm" type="text" name="r_stripchars"  value="<?= $filters["stripchars"];?>"></th>
 					<th scope="col"><?= _('Condition');?><br><input class="wordfilter form-control form-control-sm" type="text" name="r_condition"  value="<?= $filters["condition"];?>"></th>
 					<th scope="col"><?= _('Replacement');?><br><input class="wordfilter form-control form-control-sm" type="text" name="r_replacement"  value="<?= $filters["replacement"];?>"></th>
-					<th scope="col"><?= _('Morphological description');?><br><select class="wordfilter custom-select custom-select-sm" name="r_morphdescrid"><option></option><?=$morphoptions;?></select></th>
+					<th scope="col"><?= _('Morphological description');?><br><select class="wordfilter form-select form-select-sm" name="r_morphdescrid"><option></option><?=$morphoptions;?></select></th>
 					<th scope="col"><?= _('Corresponding Affix Classes');?><br><input class="wordfilter form-control form-control-sm" type="text" name="rc_description"  value="<?= $filters["affixclass"];?>"></th>
 					<th scope="col" class="delcol"><?= _('Delete');?></th>
 					</tr>

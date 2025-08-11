@@ -24,7 +24,7 @@
 <div class="form-group">
 	<label for="orgurl"><?= _('URL') ?></label>
 	<div class="input-group mb-2">
-        <div class="input-group-prepend">
+        <div class="input-group-text">
           <div class="input-group-text">https://<?=$baseurl;?>?o=</div>
         </div>
 		<input type="text" class="form-control orginput" id="orgurl" value="<?= $r["orgurl"];?>" aria-describedby="urlHelp">

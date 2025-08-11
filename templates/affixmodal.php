@@ -9,13 +9,13 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Word Class");?></span><span class="viewwd collapse"><?=_("View Word Class").(checkpermissions("affix","admin")?'&nbsp;<i class="fas fa-edit" id="doeditwordclass"></i>':'');?></span><span class="addwd collapse show"><?=_("Add Word Class");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<div id="wordclassform">
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="wordclass" class="col-form-label"><strong><?= _('Word Class');?></strong></label>
 							<input class="newword form-control form-control-sm" type="text" name="wordclass" id="wordclass">
@@ -23,7 +23,7 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 							<input class="newword" type="hidden" name="numshow" data-numshow="">
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<div class="form-check">
 								<input class="newword form-check-input" type="checkbox" name="providestem" id="providestem">
@@ -31,21 +31,21 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 							</div>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label class="col-form-label"><strong><?= _('Associated Affix Classes');?></strong></label>
 							
 						</div>
 					</div>
-					<div class="form-row collapse show associaterow wcedit">
+					<div class="row collapse show associaterow wcedit">
 						<div class="col">
-							<select class="custom-select custom-select-sm associateaffixclass"><option disabled selected value="0"><?=_('Select Affix Class');?></option><?=$affixoptions;?></select>
+							<select class="form-select form-select-sm associateaffixclass"><option disabled selected value="0"><?=_('Select Affix Class');?></option><?=$affixoptions;?></select>
 						</div>
 						<div class="col">
-							<button class="btn btn-sm btn-light newaffixclass" data-targetmodal="affixclassmodal" name="newaffixclass" ><?= _("Create New Affix Class");?></button>
+							<button class="btn btn-sm btn-light newaffixclass" data-bs-target="affixclassmodal" name="newaffixclass" ><?= _("Create New Affix Class");?></button>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<div class="wcpool affixpool"></div>
 						</div>
@@ -53,9 +53,9 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><?=_("Cancel");?></button>
 				<?= (checkpermissions("affix","admin")?'<div class="col ">
-					<span class="float-right">
+					<span class="float-end">
 						<small class="text-muted associaterow wcedit collapse show">'. _("Save and").'</small>
 						<button type="button" class="btn btn-info prevsave associaterow wcedit wordclasssave collapse show">'._("Previous").'</button>
 						<button type="button" class="btn btn-primary associaterow wcedit wordclasssave collapse show">'._("Close").'</button>
@@ -75,34 +75,34 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Affix Class");?></span><span class="viewwd collapse"><?=_("View Affix Class").(checkpermissions("affix","admin")?'&nbsp;<i class="fas fa-edit" id="doeditaffixclass"></i>':'');?></span><span class="addwd collapse show"><?=_("Add Affix Class");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<div id="affixclassform">
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="description" class="col-form-label"><strong><?= _('Description');?></strong></label>
 							<input class="newword form-control form-control-sm" type="text" name="description">
 							<label for="affixclass" class="col-form-label"><?= _('Affix Class');?></label>
-							<select class="newword custom-select custom-select-sm" name="affixclass"><option></option><?=$affixclassoptions;?></select>
+							<select class="newword form-select form-select-sm" name="affixclass"><option></option><?=$affixclassoptions;?></select>
 							<input class="newword" type="hidden" name="affixclassid" >
 							<input class="newword dontreset" type="hidden" name="newaffixclass">
 							<input class="newword" type="hidden" name="numshow" data-numshow="">
 							<label for="crossproduct" class="col-form-label"><?= _('Crossproduct');?></label>
-							<select class="newword custom-select custom-select-sm" name="crossproduct" id="crossproduct"><option></option><?=$crossproductoptions;?></select>
+							<select class="newword form-select form-select-sm" name="crossproduct" id="crossproduct"><option></option><?=$crossproductoptions;?></select>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label class="col-form-label"><strong><?= _('Associated Affix Rules');?></strong></label>
 						</div>
 						<div class="col collapse show associaterow associateclassrow newaffixrulerow">
-							<button class="btn btn-sm btn-light newaffixrule float-right" data-targetmodal="affixrulemodal" name="newaffixrule" ><?= _("Create New Affix Rule");?></button>
+							<button class="btn btn-sm btn-light newaffixrule float-end" data-bs-target="affixrulemodal" name="newaffixrule" ><?= _("Create New Affix Rule");?></button>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<div class="acpool affixpool"></div>
 						</div>
@@ -110,9 +110,9 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><?=_("Cancel");?></button>
 				<?= (checkpermissions("affix","admin")?'<div class="col ">
-					<span class="float-right">
+					<span class="float-end">
 						<small class="text-muted associaterow associateclassrow saveand collapse show">'. _("Save and").'</small>
 						<button type="button" class="btn btn-info prevsave associaterow associateclassrow affixclasssave collapse show">'._("Previous").'</button>
 						<button type="button" class="btn btn-primary associaterow associateclassrow affixclasssave closesave collapse show">'._("Close").'</button>
@@ -131,13 +131,13 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title"><span class="editwd collapse"><?=_("Edit Affix Rule");?></span><span class="viewwd collapse"><?=_("View Affix Rule").(checkpermissions("affix","admin")?'&nbsp;<i class="fas fa-edit" id="doeditaffixrule"></i>':'');?></span><span class="addwd collapse show"><?=_("Add Affix Rule");?></span></h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancel">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
 				<div id="affixruleform">
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="description" class="col-form-label"><strong><?= _('Description');?></strong></label>
 							<input class="newword form-control form-control-sm" type="text" name="r_description">
@@ -146,14 +146,14 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 							<input class="newword" type="hidden" name="numshow" data-numshow="">
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label class="col-form-label"><?= _('Parent Affix Class');?></label>
 							<input class="form-control form-control-sm dontreset" disabled="disabled" type="text" name="c_description">
 							<input class="newword dontreset" type="hidden" name="affixclassid" >
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="affix" class="col-form-label"><?= _('Affix');?></label>
 							<input class="newword form-control form-control-sm" type="text" name="affix">
@@ -171,26 +171,26 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 							<input class="newword form-control form-control-sm" type="text" name="replacement">
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label for="morphdescr" class="col-form-label"><?= _('Morphological Description');?></label>
-							<select class="newword custom-select custom-select-sm" name="morphdescrid"><option></option><?=$morphoptions;?></select>
+							<select class="newword form-select form-select-sm" name="morphdescrid"><option></option><?=$morphoptions;?></select>
 						</div>
 					
 					
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<label class="col-form-label"><strong><?= _('Associated Affix Classes');?></strong></label>
 							
 						</div>
 					</div>
-					<div class="form-row collapse show associaterow associaterulerow associateaffixclasstorule">
+					<div class="row collapse show associaterow associaterulerow associateaffixclasstorule">
 						<div class="col">
-							<select class="custom-select custom-select-sm associateaffixclass" ><option disabled selected value="0"><?=_('Select Affix Class');?></option><?=$affixoptions;?></select>
+							<select class="form-select form-select-sm associateaffixclass" ><option disabled selected value="0"><?=_('Select Affix Class');?></option><?=$affixoptions;?></select>
 						</div>
 					</div>
-					<div class="form-row">
+					<div class="row">
 						<div class="col">
 							<div class="arpool affixpool"></div>
 						</div>
@@ -199,9 +199,9 @@ while($r=$result->fetch_assoc()) $affixoptions.='<option value="'.$r["id"].'" >'
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"><?=_("Cancel");?></button>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><?=_("Cancel");?></button>
 				<?= (checkpermissions("affix","admin")?'<div class="col ">
-					<span class="float-right">
+					<span class="float-end">
 						<small class="text-muted associaterow associaterulerow collapse show">'. _("Save and").'</small>
 							<button type="button" class="btn btn-info associaterow associaterulerow affixrulesave prevsave collapse show">'._("Previous").'</button>
 							<button type="button" class="btn btn-primary associaterow associaterulerow affixrulesave closesave collapse show">'._("Close").'</button>

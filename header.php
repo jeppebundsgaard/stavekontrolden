@@ -1,4 +1,4 @@
-<?php $v="1.02";
+<?php $v="1.1";
 ?>
 <!DOCTYPE html>
 <html lang="<?= $lang; ?>">
@@ -30,65 +30,67 @@
 <body  class="pb-0 pb-lg-5"> <!-- Removed: d-flex flex-column -->
 	<!-- Header --><!-- add? fixed-top -->
 	<nav class="navbar navbar-expand-md navbar-dark justify-content-between sticky-top site-header d-print-none">
-		<div class="col-3 ">
-			<a class="navbar-brand rounded-circle stavekontrolden-logo align-middle" href="/" aria-label="stavekontrolden">
-				<img src="img/kontrold-logo.png">
-			</a>
-		</div>
-		<div class="col stavekontrolden text-center align-middle">
-			<span class="d-none d-lg-block small"></span><span class="d-block" id="stavekontroldenHeader"></span>
-		</div>
-		<div class="col d-lg-none">
-			<button class="navbar-toggler float-right " type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon "></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse col-12 col-lg-8 justify-content-end float-right" id="navbarToggler">
-				<ul class="navbar-nav">
-					<li class="nav-item active d-flex justify-content-end">
-						<a class="nav-link menulink" href="./"><?= _('Frontpage');?></a>
-					</li>
-					<li class="nav-item active d-flex justify-content-end">
-						<a class="nav-link menulink" href="./?dictionaries=1"><?= _('Download');?></a>
-					</li>
-					<?php 
-					$orgpagesdir=$systemdirs["pages"]."org/".($GLOBALS["langtoorg"][$_SESSION["locale"]]+0)."/";
-					if(file_exists($orgpagesdir)) {
-						if ($handle = opendir($orgpagesdir)) {
-							while (false !== ($e = readdir($handle))) {
-								if ($e != "." && $e != "..") {
-									$f=str_replace(".html","",$e);
-								?>
-								<li class="nav-item active d-flex justify-content-end">
-									<a class="nav-link menulink" href="./?page=<?= $f;?>"><?= $f;?></a>
-								</li>
-								<?php
+		<div class="container-fluid">
+			<div class="col-3 ">
+				<a class="navbar-brand rounded-circle stavekontrolden-logo align-middle" href="/" aria-label="stavekontrolden">
+					<img src="img/kontrold-logo.png" height="40" >
+				</a>
+			</div>
+			<div class="col stavekontrolden text-center align-middle">
+				<span class="d-none d-lg-block small"></span><span class="d-block" id="stavekontroldenHeader"></span>
+			</div>
+			<div class="col d-lg-none">
+				<button class="navbar-toggler float-end " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon "></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse col-12 col-lg-8 justify-content-end float-end" id="navbarToggler">
+					<ul class="navbar-nav">
+						<li class="nav-item active d-flex justify-content-end">
+							<a class="nav-link menulink" href="./"><?= _('Frontpage');?></a>
+						</li>
+						<li class="nav-item active d-flex justify-content-end">
+							<a class="nav-link menulink" href="./?dictionaries=1"><?= _('Download');?></a>
+						</li>
+						<?php
+						$orgpagesdir=$systemdirs["pages"]."org/".($GLOBALS["langtoorg"][$_SESSION["locale"]]+0)."/";
+						if(file_exists($orgpagesdir)) {
+							if ($handle = opendir($orgpagesdir)) {
+								while (false !== ($e = readdir($handle))) {
+									if ($e != "." && $e != "..") {
+										$f=str_replace(".html","",$e);
+									?>
+									<li class="nav-item active d-flex justify-content-end">
+										<a class="nav-link menulink" href="./?page=<?= $f;?>"><?= $f;?></a>
+									</li>
+									<?php
+									}
 								}
+								closedir($handle);
 							}
-							closedir($handle);
 						}
-					}
-					?>
-					<?= (!$_SESSION["user_id"]?'<li class="nav-item active d-flex justify-content-end">
-						<a class="nav-link menulink" href="./?backend=1">'._('Log in').'</a>
-					</li>':''); ;?>
-					<?php if($_SESSION["orgMember"] and $_SESSION["permissions"]=="admin") {?> 
-						<li class="nav-item active d-flex justify-content-end" id="showMyOrg">
-							<a class="nav-link menulink" href="#"><?= _('My Organization');?></a>
-						</li>
-					<?php }?>
-					<?php if($_SESSION["orgMember"] and $_SESSION["user_id"]==1) {?> 
-						<li class="nav-item active d-flex justify-content-end" id="showMyStavekontrolden">
-							<a class="nav-link menulink" href="#"><?= _('My Stavekontrolden');?></a>
-						</li>
-					<?php }
-					if($_SESSION["user_id"]) {?> 
-						<li class="nav-item active d-flex justify-content-end" id="showMyUser">
-							<a class="nav-link menulink" href="#"><?= _('My User');?></a>
-						</li>
-					<?php }?>
-				</ul>
-			
+						?>
+						<?= (!$_SESSION["user_id"]?'<li class="nav-item active d-flex justify-content-end">
+							<a class="nav-link menulink" href="./?backend=1">'._('Log in').'</a>
+						</li>':''); ;?>
+						<?php if($_SESSION["orgMember"] and $_SESSION["permissions"]=="admin") {?>
+							<li class="nav-item active d-flex justify-content-end" id="showMyOrg">
+								<a class="nav-link menulink" href="#"><?= _('My Organization');?></a>
+							</li>
+						<?php }?>
+						<?php if($_SESSION["orgMember"] and $_SESSION["user_id"]==1) {?>
+							<li class="nav-item active d-flex justify-content-end" id="showMyStavekontrolden">
+								<a class="nav-link menulink" href="#"><?= _('My Stavekontrolden');?></a>
+							</li>
+						<?php }
+						if($_SESSION["user_id"]) {?>
+							<li class="nav-item active d-flex justify-content-end" id="showMyUser">
+								<a class="nav-link menulink" href="#"><?= _('My User');?></a>
+							</li>
+						<?php }?>
+					</ul>
+
+			</div>
 		</div>
 	</nav>
 	<div id="adminmenu">
